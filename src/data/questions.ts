@@ -236,7 +236,228 @@ export const subjects: Subject[] = [
     name: "English Language",
     description: "Grammar, Comprehension, Vocabulary and Literature",
     icon: "book-open",
-    questions: []
+    questions: [
+      {
+        id: 1,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nThe posh cars were sandwiched between two _____ ones",
+        options: [
+          { id: "A", text: "dented" },
+          { id: "B", text: "rugged" },
+          { id: "C", text: "rickety" },
+          { id: "D", text: "modest" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 2,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nA trivial issue often becomes _____ when it is not properly handled",
+        options: [
+          { id: "A", text: "valuable" },
+          { id: "B", text: "serious" },
+          { id: "C", text: "unbearable" },
+          { id: "D", text: "ordinary" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 3,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nThe rockstar's stellar performance constrasted sharply with the _____ showing of the amateur group",
+        options: [
+          { id: "A", text: "Routine" },
+          { id: "B", text: "Woeful" },
+          { id: "C", text: "Mundane" },
+          { id: "D", text: "Awkward" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 4,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nTolu was sanctioned for late coming but his friend was _____",
+        options: [
+          { id: "A", text: "Pardoned" },
+          { id: "B", text: "Ignored" },
+          { id: "C", text: "Exempted" },
+          { id: "D", text: "Released" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 5,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nWhile other teachers' support for the action was Victor was _____ dogged",
+        options: [
+          { id: "A", text: "Declining" },
+          { id: "B", text: "Woeful" },
+          { id: "C", text: "Disappointing" },
+          { id: "D", text: "Wavering" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 6,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nSome people are good at terminating other people's projects but are not capable of _____ theirs",
+        options: [
+          { id: "A", text: "Initiating" },
+          { id: "B", text: "Organizing" },
+          { id: "C", text: "Executing" },
+          { id: "D", text: "Designing" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 7,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nThe precarious terraces of the stadium have been transformed into a _____ walkway",
+        options: [
+          { id: "A", text: "Durable" },
+          { id: "B", text: "Secure" },
+          { id: "C", text: "Smooth" },
+          { id: "D", text: "Narrow" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 8,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nIf one thing irritates you, it might _____ another",
+        options: [
+          { id: "A", text: "Delight" },
+          { id: "B", text: "Concern" },
+          { id: "C", text: "Invigorate" },
+          { id: "D", text: "Bother" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 9,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nJane was loud as a teenager but _____ as an adult",
+        options: [
+          { id: "A", text: "Peaceful" },
+          { id: "B", text: "Reserved" },
+          { id: "C", text: "Humble" },
+          { id: "D", text: "Respectful" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 10,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nDo not always reprimand your children, it is good to _____ them at times",
+        options: [
+          { id: "A", text: "Advise" },
+          { id: "B", text: "Forgive" },
+          { id: "C", text: "Compliment" },
+          { id: "D", text: "Pamper" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 11,
+        text: "Choose the words that best complete each of the following sentences:\n\nThe aggrieved customers staged a fierce _____ on the street",
+        options: [
+          { id: "A", text: "Fight" },
+          { id: "B", text: "Protest" },
+          { id: "C", text: "Argument" },
+          { id: "D", text: "Contest" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 12,
+        text: "Choose the words that best complete each of the following sentences:\n\nThe accused was brought before the jury for a court _____",
+        options: [
+          { id: "A", text: "Sitting" },
+          { id: "B", text: "Hearing" },
+          { id: "C", text: "Judging" },
+          { id: "D", text: "Proceeding" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 13,
+        text: "Choose the words that best complete each of the following sentences:\n\nFrom his _____ one can tell that he is an athlete",
+        options: [
+          { id: "A", text: "Physique" },
+          { id: "B", text: "Stature" },
+          { id: "C", text: "Gait" },
+          { id: "D", text: "Anatomy" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 14,
+        text: "Choose the words that best complete each of the following sentences:\n\nThe death of that journalist is still _____ in mystery",
+        options: [
+          { id: "A", text: "Conveyed" },
+          { id: "B", text: "Shadowed" },
+          { id: "C", text: "Shrouded" },
+          { id: "D", text: "Confined" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 15,
+        text: "Choose the words that best complete each of the following sentences:\n\nThe defendant was charged with _____ because he caused his neighbour's death",
+        options: [
+          { id: "A", text: "Fratricide" },
+          { id: "B", text: "Patricide" },
+          { id: "C", text: "Genocide" },
+          { id: "D", text: "Homicide" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 16,
+        text: "Choose the words that best complete each of the following sentences:\n\nSeeing a young crop _____ from the soil is a rare experience",
+        options: [
+          { id: "A", text: "Trail" },
+          { id: "B", text: "Sprout" },
+          { id: "C", text: "Project" },
+          { id: "D", text: "Creep" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 17,
+        text: "Choose the words that best complete each of the following sentences:\n\nLawyers are still making efforts to interpret the new _____",
+        options: [
+          { id: "A", text: "Language" },
+          { id: "B", text: "Technique" },
+          { id: "C", text: "System" },
+          { id: "D", text: "Statute" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 18,
+        text: "Choose the words that best complete each of the following sentences:\n\nThe cargo was intercepted on sea by _____",
+        options: [
+          { id: "A", text: "Pirates" },
+          { id: "B", text: "Thieves" },
+          { id: "C", text: "Terrorists" },
+          { id: "D", text: "Robbers" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 19,
+        text: "Choose the words that best complete each of the following sentences:\n\nThe doctors _____ Bola's grandmother after the heart attack",
+        options: [
+          { id: "A", text: "Regenerated" },
+          { id: "B", text: "Resuscitated" },
+          { id: "C", text: "Resurrected" },
+          { id: "D", text: "Revivified" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 20,
+        text: "Choose the words that best complete each of the following sentences:\n\nBecause the couple cannot agree on many things, their relationship is now _____",
+        options: [
+          { id: "A", text: "Stressed" },
+          { id: "B", text: "Uneasy" },
+          { id: "C", text: "Strained" },
+          { id: "D", text: "Tensed" }
+        ],
+        correctAnswer: "C"
+      }
+    ]
   }
 ];
 
