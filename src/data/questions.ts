@@ -1,4 +1,3 @@
-
 export interface Question {
   id: number;
   text: string;
@@ -456,6 +455,457 @@ export const subjects: Subject[] = [
           { id: "D", text: "Tensed" }
         ],
         correctAnswer: "C"
+      },
+      {
+        id: 31,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nParents encourage their children to excercise financial prucence",
+        options: [
+          { id: "A", text: "Caution" },
+          { id: "B", text: "Credence" },
+          { id: "C", text: "Sincerity" },
+          { id: "D", text: "Precision" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 32,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nAwa decieved Ahmed into handing over all his savings",
+        options: [
+          { id: "A", text: "Cooked" },
+          { id: "B", text: "Betrayed" },
+          { id: "C", text: "Fooled" },
+          { id: "D", text: "Cheated" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 33,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nIt turned out that the plaintiff's claim was false",
+        options: [
+          { id: "A", text: "Surmise" },
+          { id: "B", text: "Contention" },
+          { id: "C", text: "Allegation" },
+          { id: "D", text: "Pronouncement" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 34,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nThe aggrieved faction held a clandestine meeting",
+        options: [
+          { id: "A", text: "Secret" },
+          { id: "B", text: "Quiet" },
+          { id: "C", text: "Brief" },
+          { id: "D", text: "Quick" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 35,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nMorgan Pharmacy is the sole distributor of the antiviral drug.",
+        options: [
+          { id: "A", text: "Creditable" },
+          { id: "B", text: "Only" },
+          { id: "C", text: "First" },
+          { id: "D", text: "Major" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 36,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nPolice officers holding batons impounded the banker's car.",
+        options: [
+          { id: "A", text: "Damaged" },
+          { id: "B", text: "Banned" },
+          { id: "C", text: "Seized" },
+          { id: "D", text: "Collected" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 37,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nThe English teacher is always cheerful",
+        options: [
+          { id: "A", text: "Satisfied" },
+          { id: "B", text: "Zealous" },
+          { id: "C", text: "Gleeful" },
+          { id: "D", text: "Careful" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 38,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nThe chairman is of the opinion that laying off workers is pernicious to the growth of the company",
+        options: [
+          { id: "A", text: "Harmful" },
+          { id: "B", text: "Irrelevant" },
+          { id: "C", text: "Indispensable" },
+          { id: "D", text: "Crucial" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 39,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nIt was she that commanded me to leave the room",
+        options: [
+          { id: "A", text: "Encourage" },
+          { id: "B", text: "Persuaded" },
+          { id: "C", text: "Ordered" },
+          { id: "D", text: "Induced" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 40,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nThe valedictorian was admired for her perseverance while at school",
+        options: [
+          { id: "A", text: "Patience" },
+          { id: "B", text: "Humility" },
+          { id: "C", text: "Enthusiasm" },
+          { id: "D", text: "Tenacity" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 41,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe fisherman said he sighted a _____ of fish in the river",
+        options: [
+          { id: "A", text: "Pack" },
+          { id: "B", text: "Swarm" },
+          { id: "C", text: "Shoal" },
+          { id: "D", text: "Colony" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 42,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe principal corrected no one else but _____",
+        options: [
+          { id: "A", text: "I" },
+          { id: "B", text: "Me" },
+          { id: "C", text: "She" },
+          { id: "D", text: "Myself" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 43,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe thug was _____ murder",
+        options: [
+          { id: "A", text: "Sued with" },
+          { id: "B", text: "Charged with" },
+          { id: "C", text: "Convicted for" },
+          { id: "D", text: "charged for" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 44,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nAsokoro office _____ is located in Ibadan.",
+        options: [
+          { id: "A", text: "Headquarter" },
+          { id: "B", text: "Headquarters'" },
+          { id: "C", text: "Headquarters" },
+          { id: "D", text: "Headquarter's" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 45,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nJohn should be through with his work _____?",
+        options: [
+          { id: "A", text: "Isn't it" },
+          { id: "B", text: "Shouldn't he" },
+          { id: "C", text: "Can't he" },
+          { id: "D", text: "Didn't he" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 46,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThis is the man _____ I said told me the interesting story",
+        options: [
+          { id: "A", text: "Who" },
+          { id: "B", text: "Whom" },
+          { id: "C", text: "Whose" },
+          { id: "D", text: "Which" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 47,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe accused forgot _____",
+        options: [
+          { id: "A", text: "Why the police said" },
+          { id: "B", text: "That the police said" },
+          { id: "C", text: "When the police said" },
+          { id: "D", text: "What the police said" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 48,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe officer _____ is my brother",
+        options: [
+          { id: "A", text: "On uniform" },
+          { id: "B", text: "With uniform" },
+          { id: "C", text: "In uniform" },
+          { id: "D", text: "In uniform dress" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 49,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe footballers have been practicing _____",
+        options: [
+          { id: "A", text: "In the stadium hard all morning" },
+          { id: "B", text: "Hard in the stadium all morning" },
+          { id: "C", text: "All morning hard in the stadium" },
+          { id: "D", text: "All morning in the stadium hard" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 50,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nProfessor John is the leader of the _____ committee to review the new book",
+        options: [
+          { id: "A", text: "Fifty-man" },
+          { id: "B", text: "Fifty-man's" },
+          { id: "C", text: "Fifty-men" },
+          { id: "D", text: "Fifty-men's" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 51,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nJames appears wiser than his friends",
+        options: [
+          { id: "A", text: "More" },
+          { id: "B", text: "Most" },
+          { id: "C", text: "Much" },
+          { id: "D", text: "Much more" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 52,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThat word famous athlete is guilty, _____ way you look at it",
+        options: [
+          { id: "A", text: "Whichever" },
+          { id: "B", text: "However" },
+          { id: "C", text: "Whatever" },
+          { id: "D", text: "Whenever" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 53,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nWe were all afraid when the alarm _____",
+        options: [
+          { id: "A", text: "Rang up" },
+          { id: "B", text: "Went off" },
+          { id: "C", text: "Died off" },
+          { id: "D", text: "Ran off" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 54,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe material used for sewing my dress is _____ to yours",
+        options: [
+          { id: "A", text: "More superior" },
+          { id: "B", text: "Most superior" },
+          { id: "C", text: "Superior" },
+          { id: "D", text: "Very superior" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 55,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe chairman wasn't privy _____ that information",
+        options: [
+          { id: "A", text: "To" },
+          { id: "B", text: "At" },
+          { id: "C", text: "With" },
+          { id: "D", text: "On" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 56,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nWe were lucky our driver didn't die in the accident, _____?",
+        options: [
+          { id: "A", text: "Isn't it" },
+          { id: "B", text: "Weren't we" },
+          { id: "C", text: "Didn't we" },
+          { id: "D", text: "Did we" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 57,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe _____ were decorated with flowers",
+        options: [
+          { id: "A", text: "Girls shoes" },
+          { id: "B", text: "Girls' hoes" },
+          { id: "C", text: "Girl' shoes'" },
+          { id: "D", text: "Girls shoe'" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 58,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nBefore the lecturer entered the hall, we _____ the board",
+        options: [
+          { id: "A", text: "Clean" },
+          { id: "B", text: "Have cleaned" },
+          { id: "C", text: "Are cleaning" },
+          { id: "D", text: "Had cleaned" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 59,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\n_____ the hours of nine and ten, the surgeons completed the operation",
+        options: [
+          { id: "A", text: "Before" },
+          { id: "B", text: "Between" },
+          { id: "C", text: "In" },
+          { id: "D", text: "Upon" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 60,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nMother bought _____ at the fair",
+        options: [
+          { id: "A", text: "An expensive red Japanese car" },
+          { id: "B", text: "A Japanese red expensive car" },
+          { id: "C", text: "An expensive Japanese red car" },
+          { id: "D", text: "A red expensive Japanese car" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 61,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe duty of our teacher is to give instructions; _____ is to obey",
+        options: [
+          { id: "A", text: "Ours" },
+          { id: "B", text: "Our's" },
+          { id: "C", text: "Our" },
+          { id: "D", text: "Ours'" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 62,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe teacher has _____ with the principal",
+        options: [
+          { id: "A", text: "Fallen apart" },
+          { id: "B", text: "Fallen off" },
+          { id: "C", text: "Fallen out" },
+          { id: "D", text: "Fallen down" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 63,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nA meeting was called _____ the instance of the chairman",
+        options: [
+          { id: "A", text: "By" },
+          { id: "B", text: "On" },
+          { id: "C", text: "At" },
+          { id: "D", text: "For" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 64,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nBusiness is poor these days _____ workers are on strike",
+        options: [
+          { id: "A", text: "Whereas" },
+          { id: "B", text: "So that" },
+          { id: "C", text: "No matter" },
+          { id: "D", text: "Because" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 65,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe test seemed _____ simple that we thought we would all pass",
+        options: [
+          { id: "A", text: "So" },
+          { id: "B", text: "Very" },
+          { id: "C", text: "Too" },
+          { id: "D", text: "Over" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 66,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nTayo: I thik I can now solve the problem. Essien: _____",
+        options: [
+          { id: "A", text: "Neither can I" },
+          { id: "B", text: "So I can" },
+          { id: "C", text: "So do I" },
+          { id: "D", text: "Either do I" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 67,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe _____ scientist has discovered a cure for cancer",
+        options: [
+          { id: "A", text: "Young brilliant Nigerian" },
+          { id: "B", text: "Nigerian brilliant young" },
+          { id: "C", text: "Young Nigerian brilliant" },
+          { id: "D", text: "Brilliant young Nigerian" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 68,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe couple _____ their first child when I entered college",
+        options: [
+          { id: "A", text: "Were not having" },
+          { id: "B", text: "Hadn't had" },
+          { id: "C", text: "Haven't had" },
+          { id: "D", text: "Hasn't had" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 69,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe fire fighters worked hard to _____ the inferno",
+        options: [
+          { id: "A", text: "Put off" },
+          { id: "B", text: "Put out" },
+          { id: "C", text: "Put away" },
+          { id: "D", text: "Put by" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 70,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThose novels are interesting. I wonder if you can get me _____",
+        options: [
+          { id: "A", text: "Others such many" },
+          { id: "B", text: "Many such others" },
+          { id: "C", text: "Many others such" },
+          { id: "D", text: "Such many others" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 71,
+        text: "In the following passage, the numbered gaps indicate missing words:\n\nJim had his first --71-- in professional boxing when he was seventeen and that match has remained indelible in his memory.",
+        options: [
+          { id: "A", text: "Bout" },
+          { id: "B", text: "Session" },
+          { id: "C", text: "Entry" },
+          { id: "D", text: "Attempt" }
+        ],
+        correctAnswer: "A"
       }
     ]
   }
