@@ -167,8 +167,8 @@ const TestPage = () => {
             score={score}
             totalQuestions={questions.length}
             restartTest={restartTest}
-            questions={questions}
-            userAnswers={answers}
+            questions={questions || []}
+            userAnswers={answers || {}}
           />
         )}
       </div>

@@ -85,7 +85,7 @@ const ResultsCard: React.FC<ResultsCardProps> = ({
           {showReview ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
         </Button>
 
-        {showReview && (
+        {showReview && questions && questions.length > 0 && (
           <div className="space-y-6">
             <h2 className="text-xl font-bold text-center mb-4">Answer Review</h2>
             {questions.map((question) => {
@@ -102,7 +102,7 @@ const ResultsCard: React.FC<ResultsCardProps> = ({
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 pt-0">
-                    {question.options.map((option) => {
+                    {question.options && question.options.map((option) => {
                       const isUserSelection = option.id === userAnswer;
                       const isCorrectAnswer = option.id === question.correctAnswer;
                       
