@@ -32,11 +32,21 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     return '';
   };
 
+  // Function to format question text by italicizing underlined words
+  const formatQuestionText = (text: string) => {
+    // Check if the question contains "underlined word" phrase
+    if (text.includes("underlined word")) {
+      // Replace instances of underlined with italic
+      return text.replace(/underlined/g, "<em>underlined</em>");
+    }
+    return text;
+  };
+
   return (
     <Card className="mb-6">
       <CardHeader className="pb-3">
         <CardTitle className="text-lg font-medium">
-          {question.id}. {question.text}
+          {question.id}. <span dangerouslySetInnerHTML={{ __html: formatQuestionText(question.text) }} />
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-3">
