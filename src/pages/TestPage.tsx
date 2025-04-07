@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getSubjectById } from '@/data/questions';
@@ -6,7 +5,7 @@ import QuestionCard from '@/components/QuestionCard';
 import ResultsCard from '@/components/ResultsCard';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, ArrowRight, CheckCircle } from 'lucide-react';
-import { toast } from '@/components/ui/sonner';
+import { toast } from 'sonner';
 
 const TestPage = () => {
   const { subjectId } = useParams<{ subjectId: string }>();
@@ -18,7 +17,6 @@ const TestPage = () => {
   const [showResults, setShowResults] = useState(false);
   const [score, setScore] = useState(0);
   
-  // Redirect if subject doesn't exist or has no questions
   useEffect(() => {
     if (!subject || subject.questions.length === 0) {
       toast("Subject not found or has no questions yet", {
