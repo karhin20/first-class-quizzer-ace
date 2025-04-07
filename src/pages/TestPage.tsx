@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getSubjectById } from '@/data/questions';
@@ -166,6 +167,8 @@ const TestPage = () => {
             score={score}
             totalQuestions={questions.length}
             restartTest={restartTest}
+            questions={questions}
+            userAnswers={answers}
           />
         )}
       </div>
