@@ -34,7 +34,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
 
   // Function to format question text by italicizing specific words
   const formatQuestionText = (text: string) => {
-    // Check if the question contains special phrases to format
+    // Format specific phrases for questions with "underlined word"
     if (text.includes("underlined word")) {
       // Replace instances of underlined with italic
       return text.replace(/underlined/g, "<em>underlined</em>");
@@ -42,9 +42,15 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     
     // For questions with words to find their meanings
     if (text.includes("nearest in meaning to the")) {
-      // Italicize the word after "underlined word"
+      // Italicize words after "underlined word"
       return text.replace(/nearest in meaning to the underlined word (.+?)$/i, 
         'nearest in meaning to the <em>underlined word</em> $1');
+    }
+    
+    // For biology classification questions where scientific names should be italicized
+    if (text.includes("binomial name") || text.includes("scientific name")) {
+      // Italicize scientific names that follow standard binomial nomenclature pattern (Genus species)
+      return text.replace(/\b([A-Z][a-z]+\s+[a-z]+)\b/g, "<em>$1</em>");
     }
     
     return text;
