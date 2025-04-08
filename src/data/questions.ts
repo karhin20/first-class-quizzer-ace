@@ -908,6 +908,454 @@ export const subjects: Subject[] = [
         correctAnswer: "A"
       }
     ]
+  },
+  {
+    id: "biology",
+    name: "Biology",
+    description: "Cell structure, Functions, and Transport mechanisms",
+    icon: "microscope",
+    questions: [
+      {
+        id: 1,
+        text: "Who is credited with the discovery of cells in 1665?",
+        options: [
+          { id: "A", text: "C. Nageli and C. Cramer" },
+          { id: "B", text: "Robert Hooke" },
+          { id: "C", text: "Antony van Leeuwenhoek" },
+          { id: "D", text: "Matthias Schleiden" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 2,
+        text: "What is the fundamental structural and functional unit of all living things?",
+        options: [
+          { id: "A", text: "Organelle" },
+          { id: "B", text: "Tissue" },
+          { id: "C", text: "Cell" },
+          { id: "D", text: "Molecule" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 3,
+        text: "What is the thin, transparent, elastic, and selectively permeable membrane covering a cell called?",
+        options: [
+          { id: "A", text: "Cell wall" },
+          { id: "B", text: "Nuclear envelope" },
+          { id: "C", text: "Cytoplasm" },
+          { id: "D", text: "Plasma membrane (or Cell membrane)" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 4,
+        text: "The term \"cell membrane\" was given by:",
+        options: [
+          { id: "A", text: "Robert Hooke" },
+          { id: "B", text: "C. Nageli and C. Cramer" },
+          { id: "C", text: "The text does not specify" },
+          { id: "D", text: "Rudolf Virchow" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 5,
+        text: "The cell membrane is primarily composed of which two types of molecules?",
+        options: [
+          { id: "A", text: "Carbohydrates and Nucleic Acids" },
+          { id: "B", text: "Proteins and Nucleic Acids" },
+          { id: "C", text: "Phospholipids and Proteins" },
+          { id: "D", text: "Lipids and Carbohydrates" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 6,
+        text: "The lipid component of the cell membrane forms a structure called the:",
+        options: [
+          { id: "A", text: "Protein channel" },
+          { id: "B", text: "Cytoskeleton" },
+          { id: "C", text: "Phospholipid bilayer" },
+          { id: "D", text: "Glycocalyx" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 7,
+        text: "In the phospholipid bilayer, the tails are _______ and the heads are _______.",
+        options: [
+          { id: "A", text: "Hydrophilic, Hydrophobic" },
+          { id: "B", text: "Hydrophobic, Hydrophilic" },
+          { id: "C", text: "Both Hydrophilic" },
+          { id: "D", text: "Both Hydrophobic" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 8,
+        text: "The cell membrane structure is described as a \"fluid mosaic\" because:",
+        options: [
+          { id: "A", text: "It is rigid and proteins are fixed in place." },
+          { id: "B", text: "It is composed only of lipids arranged in a pattern." },
+          { id: "C", text: "The lipid and protein components can move and are scattered like a mosaic." },
+          { id: "D", text: "It allows all substances to pass through freely." }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 9,
+        text: "Which property of the cell membrane allows it to recover from minor physical damage?",
+        options: [
+          { id: "A", text: "Its rigidity" },
+          { id: "B", text: "Its thickness" },
+          { id: "C", text: "Its selective permeability" },
+          { id: "D", text: "Its fluidity" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 10,
+        text: "According to the text, membranes are easily damaged by:",
+        options: [
+          { id: "A", text: "Water and oxygen" },
+          { id: "B", text: "Cold temperatures and bases" },
+          { id: "C", text: "Heat, acids, and fat solvents (like alcohol)" },
+          { id: "D", text: "Sugars and salts" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 11,
+        text: "Which term best describes the cell membrane's ability to allow only certain molecules to pass through?",
+        options: [
+          { id: "A", text: "Impermeable" },
+          { id: "B", text: "Fully permeable" },
+          { id: "C", text: "Selectively permeable" },
+          { id: "D", text: "Osmotic" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 12,
+        text: "Which of the following is NOT listed as a function of the cell membrane itself?",
+        options: [
+          { id: "A", text: "Acting as a physical barrier" },
+          { id: "B", text: "Facilitating communication between cells" },
+          { id: "C", text: "Performing protein synthesis" },
+          { id: "D", text: "Anchoring the cytoskeleton" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 13,
+        text: "Some membrane proteins function as _______, catalysing chemical reactions on the membrane surface.",
+        options: [
+          { id: "A", text: "Receptors" },
+          { id: "B", text: "Pores" },
+          { id: "C", text: "Enzymes" },
+          { id: "D", text: "Anchors" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 14,
+        text: "Membrane proteins that bind to hormones are known as:",
+        options: [
+          { id: "A", text: "Transport proteins" },
+          { id: "B", text: "Enzymes" },
+          { id: "C", text: "Structural proteins" },
+          { id: "D", text: "Receptor sites" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 15,
+        text: "Proteins that use ATP to move materials across the membrane against their concentration gradient are involved in:",
+        options: [
+          { id: "A", text: "Diffusion" },
+          { id: "B", text: "Osmosis" },
+          { id: "C", text: "Active transport" },
+          { id: "D", text: "Facilitated diffusion" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 16,
+        text: "What is the net movement of molecules from a region of higher concentration to a region of lower concentration called?",
+        options: [
+          { id: "A", text: "Osmosis" },
+          { id: "B", text: "Active Transport" },
+          { id: "C", text: "Diffusion" },
+          { id: "D", text: "Endocytosis" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 17,
+        text: "Which factor would increase the rate of diffusion?",
+        options: [
+          { id: "A", text: "Lower temperature" },
+          { id: "B", text: "Smaller concentration gradient" },
+          { id: "C", text: "Larger particle size" },
+          { id: "D", text: "Higher temperature" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 18,
+        text: "Which factor would decrease the rate of diffusion?",
+        options: [
+          { id: "A", text: "Stirring the medium" },
+          { id: "B", text: "A steeper concentration gradient" },
+          { id: "C", text: "A thicker surface membrane" },
+          { id: "D", text: "A larger surface area" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 19,
+        text: "The movement of oxygen from the lungs into the blood is an example of:",
+        options: [
+          { id: "A", text: "Osmosis" },
+          { id: "B", text: "Active Transport" },
+          { id: "C", text: "Diffusion" },
+          { id: "D", text: "Exocytosis" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 20,
+        text: "Osmosis is the movement of _______ molecules across a semi-permeable membrane.",
+        options: [
+          { id: "A", text: "Solute" },
+          { id: "B", text: "Water" },
+          { id: "C", text: "Gas" },
+          { id: "D", text: "Protein" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 21,
+        text: "In osmosis, water moves from a _______ solution (higher water concentration) to a _______ solution (lower water concentration).",
+        options: [
+          { id: "A", text: "Strong, Weak" },
+          { id: "B", text: "Hypertonic, Hypotonic" },
+          { id: "C", text: "Weak, Strong" },
+          { id: "D", text: "Isotonic, Hypertonic" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 22,
+        text: "A solution with a lower concentration of solutes (higher water concentration) compared to another solution is called:",
+        options: [
+          { id: "A", text: "Hypertonic" },
+          { id: "B", text: "Isotonic" },
+          { id: "C", text: "Hypotonic" },
+          { id: "D", text: "Concentrated" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 23,
+        text: "A solution with a higher concentration of solutes (lower water concentration) compared to another solution is called:",
+        options: [
+          { id: "A", text: "Hypertonic" },
+          { id: "B", text: "Isotonic" },
+          { id: "C", text: "Hypotonic" },
+          { id: "D", text: "Dilute" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 24,
+        text: "What happens to an animal cell (like a red blood cell) when placed in a hypotonic solution (like pure water)?",
+        options: [
+          { id: "A", text: "It shrinks (crenation)" },
+          { id: "B", text: "It bursts (haemolysis)" },
+          { id: "C", text: "It becomes flaccid" },
+          { id: "D", text: "No change occurs" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 25,
+        text: "What happens to a plant cell when placed in a hypotonic solution (like pure water)?",
+        options: [
+          { id: "A", text: "It shrinks" },
+          { id: "B", text: "It bursts" },
+          { id: "C", text: "It becomes turgid (firm)" },
+          { id: "D", text: "It undergoes plasmolysis" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 26,
+        text: "What happens to an animal cell when placed in a hypertonic solution (salty water)?",
+        options: [
+          { id: "A", text: "It shrinks (crenation)" },
+          { id: "B", text: "It bursts (haemolysis)" },
+          { id: "C", text: "It becomes turgid" },
+          { id: "D", text: "No change occurs" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 27,
+        text: "What happens to a plant cell when placed in a hypertonic solution (very salty water)?",
+        options: [
+          { id: "A", text: "It swells and becomes turgid" },
+          { id: "B", text: "It bursts" },
+          { id: "C", text: "It becomes flaccid and may undergo plasmolysis" },
+          { id: "D", text: "No change occurs" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 28,
+        text: "What is plasmolysis?",
+        options: [
+          { id: "A", text: "The bursting of an animal cell in water." },
+          { id: "B", text: "The shrinking of the cytoplasm and cell membrane away from the cell wall in a plant cell." },
+          { id: "C", text: "The swelling of a plant cell in water." },
+          { id: "D", text: "The process of active transport in plant cells." }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 29,
+        text: "The absorption of water from the soil by plant root hairs occurs primarily through:",
+        options: [
+          { id: "A", text: "Diffusion" },
+          { id: "B", text: "Active Transport" },
+          { id: "C", text: "Osmosis" },
+          { id: "D", text: "Endocytosis" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 30,
+        text: "Which transport process requires the cell to expend energy in the form of ATP?",
+        options: [
+          { id: "A", text: "Diffusion" },
+          { id: "B", text: "Osmosis" },
+          { id: "C", text: "Facilitated Diffusion" },
+          { id: "D", text: "Active Transport" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 31,
+        text: "Active transport moves substances:",
+        options: [
+          { id: "A", text: "From high concentration to low concentration without energy" },
+          { id: "B", text: "From low concentration to high concentration using energy" },
+          { id: "C", text: "Only water molecules across a membrane" },
+          { id: "D", text: "By engulfing large particles" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 32,
+        text: "The absorption of mineral salts from the soil by root hairs, even when the soil concentration is low, is an example of:",
+        options: [
+          { id: "A", text: "Osmosis" },
+          { id: "B", text: "Diffusion" },
+          { id: "C", text: "Active Transport" },
+          { id: "D", text: "Plasmolysis" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 33,
+        text: "What is the general term for the process of transporting large molecules into cells by forming vesicles from the cell membrane?",
+        options: [
+          { id: "A", text: "Exocytosis" },
+          { id: "B", text: "Diffusion" },
+          { id: "C", text: "Osmosis" },
+          { id: "D", text: "Endocytosis" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 34,
+        text: "What type of endocytosis involves the cell taking in large solid materials (\"cell eating\")?",
+        options: [
+          { id: "A", text: "Pinocytosis" },
+          { id: "B", text: "Exocytosis" },
+          { id: "C", text: "Phagocytosis" },
+          { id: "D", text: "Active transport" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 35,
+        text: "What type of endocytosis involves the cell taking in liquid substances (\"cell drinking\")?",
+        options: [
+          { id: "A", text: "Pinocytosis" },
+          { id: "B", text: "Exocytosis" },
+          { id: "C", text: "Phagocytosis" },
+          { id: "D", text: "Diffusion" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 36,
+        text: "An Amoeba engulfing food particles is an example of:",
+        options: [
+          { id: "A", text: "Pinocytosis" },
+          { id: "B", text: "Exocytosis" },
+          { id: "C", text: "Phagocytosis" },
+          { id: "D", text: "Osmosis" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 37,
+        text: "What is the process where vesicles formed inside the cell fuse with the cell membrane to release their contents outside the cell?",
+        options: [
+          { id: "A", text: "Endocytosis" },
+          { id: "B", text: "Pinocytosis" },
+          { id: "C", text: "Phagocytosis" },
+          { id: "D", text: "Exocytosis" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 38,
+        text: "The secretion of enzymes from a cell is an example of:",
+        options: [
+          { id: "A", text: "Endocytosis" },
+          { id: "B", text: "Exocytosis" },
+          { id: "C", text: "Diffusion" },
+          { id: "D", text: "Osmosis" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 39,
+        text: "In the beetroot experiment described in Activity 3.1, why does the boiling water change colour when beetroot is placed in it?",
+        options: [
+          { id: "A", text: "Osmosis causes water to enter the beetroot cells." },
+          { id: "B", text: "Diffusion causes sugar to leave the beetroot." },
+          { id: "C", text: "Boiling damages the cell membranes, allowing pigment to leak out via diffusion." },
+          { id: "D", text: "Active transport pumps pigment out of the cells." }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 40,
+        text: "If two solutions have the same solute concentration, they are said to be:",
+        options: [
+          { id: "A", text: "Hypertonic" },
+          { id: "B", text: "Hypotonic" },
+          { id: "C", text: "Isotonic" },
+          { id: "D", text: "Plasmolysed" }
+        ],
+        correctAnswer: "C"
+      }
+    ]
   }
 ];
 

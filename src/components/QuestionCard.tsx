@@ -32,13 +32,21 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     return '';
   };
 
-  // Function to format question text by italicizing underlined words
+  // Function to format question text by italicizing specific words
   const formatQuestionText = (text: string) => {
-    // Check if the question contains "underlined word" phrase
+    // Check if the question contains special phrases to format
     if (text.includes("underlined word")) {
       // Replace instances of underlined with italic
       return text.replace(/underlined/g, "<em>underlined</em>");
     }
+    
+    // For questions with words to find their meanings
+    if (text.includes("nearest in meaning to the")) {
+      // Italicize the word after "underlined word"
+      return text.replace(/nearest in meaning to the underlined word (.+?)$/i, 
+        'nearest in meaning to the <em>underlined word</em> $1');
+    }
+    
     return text;
   };
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { BookOpen, Calculator, Beaker } from 'lucide-react';
+import { BookOpen, Calculator, Beaker, Microscope } from 'lucide-react';
 
 interface SubjectCardProps {
   id: string;
@@ -29,6 +29,8 @@ const SubjectCard: React.FC<SubjectCardProps> = ({
         return <Calculator className="h-6 w-6 text-blue-600" />;
       case 'beaker':
         return <Beaker className="h-6 w-6 text-blue-600" />;
+      case 'microscope':
+        return <Microscope className="h-6 w-6 text-blue-600" />;
       default:
         return <BookOpen className="h-6 w-6 text-blue-600" />;
     }
