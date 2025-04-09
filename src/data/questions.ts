@@ -364,6 +364,94 @@ export const subjects: Subject[] = [
           { id: "D", text: "All cells contain DNA in a nucleus" }
         ],
         correctAnswer: "D"
+      },
+      {
+        id: 13,
+        text: "What is classification in biology?",
+        options: [
+          { id: "A", text: "The study of animal behaviour." },
+          { id: "B", text: "The process of identifying organisms using keys." },
+          { id: "C", text: "The process of grouping living things into categories based on shared characteristics and relationships." },
+          { id: "D", text: "The naming of organisms using Latin." }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 14,
+        text: "Which Swedish botanist developed the hierarchical system of classification and binomial nomenclature still largely used today?",
+        options: [
+          { id: "A", text: "Aristotle" },
+          { id: "B", text: "Robert Hooke" },
+          { id: "C", text: "Charles Darwin" },
+          { id: "D", text: "Carolus Linnaeus (Carl Linnaeus)" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 15,
+        text: "In the modern hierarchical classification system, which taxon is the broadest and most general?",
+        options: [
+          { id: "A", text: "Species" },
+          { id: "B", text: "Genus" },
+          { id: "C", text: "Kingdom" },
+          { id: "D", text: "Domain" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 16,
+        text: "Which taxon is the smallest and most specific level in the hierarchical classification system?",
+        options: [
+          { id: "A", text: "Domain" },
+          { id: "B", text: "Kingdom" },
+          { id: "C", text: "Family" },
+          { id: "D", text: "Species" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 17,
+        text: "Classifying organisms based on physical characteristics like shape, size, and colour relates to which factor?",
+        options: [
+          { id: "A", text: "Physiology" },
+          { id: "B", text: "Genetic information" },
+          { id: "C", text: "Morphology" },
+          { id: "D", text: "Ecological information" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 18,
+        text: "Classification based on differences and similarities in DNA and gene composition uses which factor?",
+        options: [
+          { id: "A", text: "Morphology" },
+          { id: "B", text: "Genetic information" },
+          { id: "C", text: "Physiology" },
+          { id: "D", text: "Evolutionary relationships" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 19,
+        text: "Classifying organisms based on functions and processes like metabolism and reproduction relates to which factor?",
+        options: [
+          { id: "A", text: "Morphology" },
+          { id: "B", text: "Genetic information" },
+          { id: "C", text: "Physiology" },
+          { id: "D", text: "Ecological information" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 20,
+        text: "Grouping organisms based on their habitat, behaviour, and interactions with other living things uses which factor?",
+        options: [
+          { id: "A", text: "Morphology" },
+          { id: "B", text: "Genetic information" },
+          { id: "C", text: "Physiology" },
+          { id: "D", text: "Ecological information" }
+        ],
+        correctAnswer: "D"
       }
     ]
   },
@@ -704,680 +792,4 @@ export const subjects: Subject[] = [
         correctAnswer: "D"
       },
       {
-        id: 31,
-        text: "Active transport moves substances:",
-        options: [
-          { id: "A", text: "From high concentration to low concentration without energy" },
-          { id: "B", text: "From low concentration to high concentration using energy" },
-          { id: "C", text: "Only water molecules across a membrane" },
-          { id: "D", text: "By engulfing large particles" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 32,
-        text: "The absorption of mineral salts from the soil by root hairs, even when the soil concentration is low, is an example of:",
-        options: [
-          { id: "A", text: "Osmosis" },
-          { id: "B", text: "Diffusion" },
-          { id: "C", text: "Active Transport" },
-          { id: "D", text: "Plasmolysis" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 33,
-        text: "What is the general term for the process of transporting large molecules into cells by forming vesicles from the cell membrane?",
-        options: [
-          { id: "A", text: "Exocytosis" },
-          { id: "B", text: "Diffusion" },
-          { id: "C", text: "Osmosis" },
-          { id: "D", text: "Endocytosis" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 34,
-        text: "What type of endocytosis involves the cell taking in large solid materials (\"cell eating\")?",
-        options: [
-          { id: "A", text: "Pinocytosis" },
-          { id: "B", text: "Exocytosis" },
-          { id: "C", text: "Phagocytosis" },
-          { id: "D", text: "Active transport" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 35,
-        text: "What type of endocytosis involves the cell taking in liquid substances (\"cell drinking\")?",
-        options: [
-          { id: "A", text: "Pinocytosis" },
-          { id: "B", text: "Exocytosis" },
-          { id: "C", text: "Phagocytosis" },
-          { id: "D", text: "Diffusion" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 36,
-        text: "An Amoeba engulfing food particles is an example of:",
-        options: [
-          { id: "A", text: "Pinocytosis" },
-          { id: "B", text: "Exocytosis" },
-          { id: "C", text: "Phagocytosis" },
-          { id: "D", text: "Osmosis" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 37,
-        text: "What is the process where vesicles formed inside the cell fuse with the cell membrane to release their contents outside the cell?",
-        options: [
-          { id: "A", text: "Endocytosis" },
-          { id: "B", text: "Pinocytosis" },
-          { id: "C", text: "Phagocytosis" },
-          { id: "D", text: "Exocytosis" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 38,
-        text: "The secretion of enzymes from a cell is an example of:",
-        options: [
-          { id: "A", text: "Endocytosis" },
-          { id: "B", text: "Exocytosis" },
-          { id: "C", text: "Diffusion" },
-          { id: "D", text: "Osmosis" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 39,
-        text: "In the beetroot experiment described in Activity 3.1, why does the boiling water change colour when beetroot is placed in it?",
-        options: [
-          { id: "A", text: "Osmosis causes water to enter the beetroot cells." },
-          { id: "B", text: "Diffusion causes sugar to leave the beetroot." },
-          { id: "C", text: "Boiling damages the cell membranes, allowing pigment to leak out via diffusion." },
-          { id: "D", text: "Active transport pumps pigment out of the cells." }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 40,
-        text: "If two solutions have the same solute concentration, they are said to be:",
-        options: [
-          { id: "A", text: "Hypertonic" },
-          { id: "B", text: "Hypotonic" },
-          { id: "C", text: "Isotonic" },
-          { id: "D", text: "Plasmolysed" }
-        ],
-        correctAnswer: "C"
-      }
-    ]
-  },
-  {
-    id: "mathematics",
-    name: "Mathematics",
-    description: "Algebra, Geometry, Arithmetic and Statistics",
-    icon: "calculator",
-    questions: []
-  },
-  {
-    id: "english",
-    name: "English Language",
-    description: "Grammar, Comprehension, Vocabulary and Literature",
-    icon: "book-open",
-    questions: [
-      {
-        id: 1,
-        text: "Choose the one that is most nearly opposite in meaning to the <em>audacity</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nObi's family is known for their audacity, so one is surprised at his _____",
-        options: [
-          { id: "A", text: "Cowardice" },
-          { id: "B", text: "Irritability" },
-          { id: "C", text: "Moodiness" },
-          { id: "D", text: "Insolence" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 2,
-        text: "Choose the one that is most nearly opposite in meaning to the <em>careless</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nBayo is careless in his ways while Tayo is",
-        options: [
-          { id: "A", text: "Lovable" },
-          { id: "B", text: "Meticulous" },
-          { id: "C", text: "Difficult" },
-          { id: "D", text: "Reserved" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 3,
-        text: "Choose the one that is most nearly opposite in meaning to the <em>stringent</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nIn this country, the law against armed robbery is stringent whereas that against smoking in public places is _____",
-        options: [
-          { id: "A", text: "Accurate" },
-          { id: "B", text: "Complex" },
-          { id: "C", text: "Lax" },
-          { id: "D", text: "Easy" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 4,
-        text: "Choose the one that is most nearly opposite in meaning to the <em>facility</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nThe purpose of education is to facility progress, not to _____ it",
-        options: [
-          { id: "A", text: "Prevent" },
-          { id: "B", text: "Impede" },
-          { id: "C", text: "Stampede" },
-          { id: "D", text: "Restrain" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 5,
-        text: "Choose the one that is most nearly opposite in meaning to the <em>temporal</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nThese days many people concentrate on temporal things to the detriment of the _____",
-        options: [
-          { id: "A", text: "Tangible" },
-          { id: "B", text: "Durable" },
-          { id: "C", text: "Unchanging" },
-          { id: "D", text: "Spiritual" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 6,
-        text: "Choose the one that is most nearly opposite in meaning to the <em>liberal</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nWhile your parents are _____, mine are liberal in their views",
-        options: [
-          { id: "A", text: "Strict" },
-          { id: "B", text: "Intimidating" },
-          { id: "C", text: "Conservative" },
-          { id: "D", text: "Discerning" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 7,
-        text: "Choose the one that is most nearly opposite in meaning to the <em>direct</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nThe judge expected direct answers but the accused was _____",
-        options: [
-          { id: "A", text: "Illusive" },
-          { id: "B", text: "Secretive" },
-          { id: "C", text: "Delusive" },
-          { id: "D", text: "Evasive" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 8,
-        text: "Choose the one that is most nearly opposite in meaning to the <em>generous</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nKofi is generous whereas his wife is _____",
-        options: [
-          { id: "A", text: "Sparing" },
-          { id: "B", text: "Stingy" },
-          { id: "C", text: "Unkind" },
-          { id: "D", text: "Harsh" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 9,
-        text: "Choose the one that is most nearly opposite in meaning to the <em>uncouth</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nHis manners are uncouth, while his wife's are _____",
-        options: [
-          { id: "A", text: "Clever" },
-          { id: "B", text: "Classic" },
-          { id: "C", text: "Refined" },
-          { id: "D", text: "Purified" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 10,
-        text: "Choose the one that is most nearly opposite in meaning to the <em>peak</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nThe peak of Mount Everest is about six miles from its _____",
-        options: [
-          { id: "A", text: "Base" },
-          { id: "B", text: "Depth" },
-          { id: "C", text: "Source" },
-          { id: "D", text: "Root" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 11,
-        text: "Choose the words that best complete each of the following sentences:\n\nThe recent floods in some countries have _____ many lives",
-        options: [
-          { id: "A", text: "Claimed" },
-          { id: "B", text: "Drowned" },
-          { id: "C", text: "Buried" },
-          { id: "D", text: "Injured" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 12,
-        text: "Choose the words that best complete each of the following sentences:\n\nHe does not smoke so the gift of an ashtray will not be quite _____",
-        options: [
-          { id: "A", text: "Admirable" },
-          { id: "B", text: "Applicable" },
-          { id: "C", text: "Appropriate" },
-          { id: "D", text: "Attractive" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 13,
-        text: "Choose the words that best complete each of the following sentences:\n\nThe reviewer did an excellent job at the book _____",
-        options: [
-          { id: "A", text: "Launch" },
-          { id: "B", text: "Premiere" },
-          { id: "C", text: "Session" },
-          { id: "D", text: "Briefing" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 14,
-        text: "Choose the words that best complete each of the following sentences:\n\nThe governor filed an _____ against the ruling of the tribunal",
-        options: [
-          { id: "A", text: "Injunction" },
-          { id: "B", text: "Objection" },
-          { id: "C", text: "Application" },
-          { id: "D", text: "Appeal" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 15,
-        text: "Choose the words that best complete each of the following sentences:\n\nAt the terminus, all passengers on the train will have to _____",
-        options: [
-          { id: "A", text: "Alight" },
-          { id: "B", text: "Disembark" },
-          { id: "C", text: "Descend" },
-          { id: "D", text: "Dismount" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 16,
-        text: "Choose the words that best complete each of the following sentences:\n\nReading the _____ of the famous",
-        options: [
-          { id: "A", text: "Memoirs" },
-          { id: "B", text: "Chronicles" },
-          { id: "C", text: "Life" },
-          { id: "D", text: "Monument" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 17,
-        text: "Choose the words that best complete each of the following sentences:\n\nThe smaller boys had always drawn back in fear when the bully raised a fist, but this time they did not _____",
-        options: [
-          { id: "A", text: "Advance" },
-          { id: "B", text: "Agree" },
-          { id: "C", text: "Retaliate" },
-          { id: "D", text: "Recoil" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 18,
-        text: "Choose the words that best complete each of the following sentences:\n\nThe old man prayed for the _____ of his sins before he died",
-        options: [
-          { id: "A", text: "Omission" },
-          { id: "B", text: "Commission" },
-          { id: "C", text: "Permission" },
-          { id: "D", text: "Remission" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 19,
-        text: "Choose the words that best complete each of the following sentences:\n\nInflation has caused the cost of goods to _____",
-        options: [
-          { id: "A", text: "Escalate" },
-          { id: "B", text: "Ascend" },
-          { id: "C", text: "Intensify" },
-          { id: "D", text: "Progress" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 20,
-        text: "Choose the words that best complete each of the following sentences:\n\nThe economy of the country has remained _____ despite the crisis",
-        options: [
-          { id: "A", text: "Strong" },
-          { id: "B", text: "Realistic" },
-          { id: "C", text: "Tough" },
-          { id: "D", text: "Firm" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 21,
-        text: "Choose the interpretation that is most appropriate for each sentence:\n\nThe principal raised eyebrows at the student's explanation. This means that the principal",
-        options: [
-          { id: "A", text: "Was unhappy about the explanation" },
-          { id: "B", text: "Rejected the explanation" },
-          { id: "C", text: "Considered the explanation" },
-          { id: "D", text: "Was surprised by the explanation" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 22,
-        text: "Choose the interpretation that is most appropriate for each sentence:\n\nMary made a clean breast of everything. This means that Mary",
-        options: [
-          { id: "A", text: "Won everyone over" },
-          { id: "B", text: "Told the whole truth" },
-          { id: "C", text: "Did everything efficiently" },
-          { id: "D", text: "Changed the way things were done" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 23,
-        text: "Choose the interpretation that is most appropriate for each sentence:\n\nHad it not rained, I would have visited you. This means that",
-        options: [
-          { id: "A", text: "I visited you even though it rained" },
-          { id: "B", text: "It did not rain and so I visited you" },
-          { id: "C", text: "It rained so I did not visit you" },
-          { id: "D", text: "Because it did not rain, I visited you" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 24,
-        text: "Choose the interpretation that is most appropriate for each sentence:\n\nI hadn't finished talking to Halima, when she snapped my head off. This means that she",
-        options: [
-          { id: "A", text: "Gave me a sharp slap" },
-          { id: "B", text: "Rudely interrupted me" },
-          { id: "C", text: "Hissed at me" },
-          { id: "D", text: "Ordered me to stop talking" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 25,
-        text: "Choose the interpretation that is most appropriate for each sentence:\n\nFranca's behaviour towards Edward leaves much to be desired. This means that Franca's behaviour was",
-        options: [
-          { id: "A", text: "Unsatisfactory" },
-          { id: "B", text: "Appreciated" },
-          { id: "C", text: "Commendable" },
-          { id: "D", text: "Unexpected" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 26,
-        text: "Choose the interpretation that is most appropriate for each sentence:\n\nThe teacher truly had his heart in the right place. This means that he was",
-        options: [
-          { id: "A", text: "Kind and considerate" },
-          { id: "B", text: "Sharp and thorough" },
-          { id: "C", text: "Simple and modest" },
-          { id: "D", text: "Focused and direct" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 27,
-        text: "Choose the interpretation that is most appropriate for each sentence:\n\nOnly teachers could afford a car. This means that",
-        options: [
-          { id: "A", text: "Teachers could afford a car and nothing else" },
-          { id: "B", text: "Teachers and nobody else could afford a car" },
-          { id: "C", text: "Teachers and others could afford a car" },
-          { id: "D", text: "Few teachers could afford a car" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 28,
-        text: "Choose the interpretation that is most appropriate for each sentence:\n\nThe night watchman was given the marching orders because of his negligence. This means that he was",
-        options: [
-          { id: "A", text: "Promoted" },
-          { id: "B", text: "Dismissed" },
-          { id: "C", text: "Counselled" },
-          { id: "D", text: "Suspended" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 29,
-        text: "Choose the interpretation that is most appropriate for each sentence:\n\nMy friend is as dull as ditchwater. This means that my friend is",
-        options: [
-          { id: "A", text: "Dark in complexion" },
-          { id: "B", text: "Extremely boring" },
-          { id: "C", text: "Not intelligent" },
-          { id: "D", text: "Not a trouble maker" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 30,
-        text: "Choose the interpretation that is most appropriate for each sentence:\n\nThe director sees Tim as the joker in the pack. This means that the director considers Tim to be",
-        options: [
-          { id: "A", text: "Unpredictable" },
-          { id: "B", text: "Humourous" },
-          { id: "C", text: "Nonchallant" },
-          { id: "D", text: "Unimportant" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 31,
-        text: "Choose the word or group of words that is nearest in meaning to the <em>strategic</em> as it is used in the sentence:\n\nThe president of the student union said it was strategic to boycott classes to press home their demands",
-        options: [
-          { id: "A", text: "Acceptable" },
-          { id: "B", text: "Ethical" },
-          { id: "C", text: "Practical" },
-          { id: "D", text: "Tactical" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 32,
-        text: "Choose the word or group of words that is nearest in meaning to the <em>proscription</em> as it is used in the sentence:\n\nThe proscription of the political parties was one of the steps taken by the military",
-        options: [
-          { id: "A", text: "Launching" },
-          { id: "B", text: "Expulsion" },
-          { id: "C", text: "Banning" },
-          { id: "D", text: "Removal" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 33,
-        text: "Choose the word or group of words that is nearest in meaning to the <em>frustrating</em> as it is used in the sentence:\n\nFarmers sometimes go through the frustrating experience of having to watch their produce rot",
-        options: [
-          { id: "A", text: "Disheartening" },
-          { id: "B", text: "Dismaying" },
-          { id: "C", text: "Annoying" },
-          { id: "D", text: "Frightening" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 34,
-        text: "Choose the word or group of words that is nearest in meaning to the <em>stunned</em> as it is used in the sentence:\n\nThe acrobatic displays left the spectators stunned",
-        options: [
-          { id: "A", text: "Amused" },
-          { id: "B", text: "Enticed" },
-          { id: "C", text: "Astonished" },
-          { id: "D", text: "Elated" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 35,
-        text: "Choose the word or group of words that is nearest in meaning to the <em>resplendent</em> as it is used in the sentence:\n\nBinetou looked quite resplendent in that red dress",
-        options: [
-          { id: "A", text: "Expensive" },
-          { id: "B", text: "Stunning" },
-          { id: "C", text: "Respectable" },
-          { id: "D", text: "Conspicuous" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 36,
-        text: "Choose the word or group of words that is nearest in meaning to the <em>mundane</em> as it is used in the sentence:\n\nIt is foolish to depend entirely on mundane things",
-        options: [
-          { id: "A", text: "Imported" },
-          { id: "B", text: "Material" },
-          { id: "C", text: "Attractive" },
-          { id: "D", text: "Expensive" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 37,
-        text: "Choose the word or group of words that is nearest in meaning to the <em>pragmatic</em> as it is used in the sentence:\n\nOnly a pragmatic approach will solve this problem",
-        options: [
-          { id: "A", text: "Constant" },
-          { id: "B", text: "Careful" },
-          { id: "C", text: "Practical" },
-          { id: "D", text: "Drastic" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 38,
-        text: "Choose the word or group of words that is nearest in meaning to the <em>rebutted</em> as it is used in the sentence:\n\nThe governor rebutted all the allegations against him",
-        options: [
-          { id: "A", text: "Rejected" },
-          { id: "B", text: "Removed" },
-          { id: "C", text: "Revoked" },
-          { id: "D", text: "Refuted" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 39,
-        text: "Choose the word or group of words that is nearest in meaning to the <em>injunction</em> as it is used in the sentence:\n\nHe was jailed for failing to obey the court injunction",
-        options: [
-          { id: "A", text: "Law" },
-          { id: "B", text: "Order" },
-          { id: "C", text: "Fine" },
-          { id: "D", text: "Proceedings" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 40,
-        text: "Choose the word or group of words that is nearest in meaning to the <em>alleviation</em> as it is used in the sentence:\n\nThe World Bank made funds available to the government for poverty alleviation",
-        options: [
-          { id: "A", text: "Reduction" },
-          { id: "B", text: "Removal" },
-          { id: "C", text: "Termination" },
-          { id: "D", text: "Elimination" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 41,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe two players protested against the _____",
-        options: [
-          { id: "A", text: "Fitness twice-weekly practice" },
-          { id: "B", text: "Practice fitness twice-weekly" },
-          { id: "C", text: "Twice-weekly practice fitness" },
-          { id: "D", text: "Twice-weekly fitness practice" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 42,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nIf I _____ what actually happened, I would have punished him",
-        options: [
-          { id: "A", text: "Had heard" },
-          { id: "B", text: "have had" },
-          { id: "C", text: "Had had" },
-          { id: "D", text: "Have heard" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 43,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nShe was certainly going to the cinema, _____?",
-        options: [
-          { id: "A", text: "Isn't she" },
-          { id: "B", text: "Isn't it" },
-          { id: "C", text: "Wasn't it" },
-          { id: "D", text: "Wasn't she" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 44,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nTheir _____ house is by the side of the road",
-        options: [
-          { id: "A", text: "Father-in-law's" },
-          { id: "B", text: "Father's-in-law" },
-          { id: "C", text: "Fathers'-in-law" },
-          { id: "D", text: "Father-in-laws" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 45,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nHe _____ his ideas very clearly at meetings",
-        options: [
-          { id: "A", text: "Puts out" },
-          { id: "B", text: "Puts across" },
-          { id: "C", text: "Puts away" },
-          { id: "D", text: "Puts in" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 46,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nRemember to return it to Ruth; ______ hers",
-        options: [
-          { id: "A", text: "Is" },
-          { id: "B", text: "It's" },
-          { id: "C", text: "It" },
-          { id: "D", text: "Its" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 47,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nI want to know your religious _____",
-        options: [
-          { id: "A", text: "Believe" },
-          { id: "B", text: "Believing" },
-          { id: "C", text: "Beliefs" },
-          { id: "D", text: "Believes" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 48,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe student did the assignment, but not _____ the way I had expected",
-        options: [
-          { id: "A", text: "Just" },
-          { id: "B", text: "Quite" },
-          { id: "C", text: "Hardly" },
-          { id: "D", text: "As" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 49,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nBola invited Joe and _____ to the show",
-        options: [
-          { id: "A", text: "I" },
-          { id: "B", text: "Myself" },
-          { id: "C", text: "Me" },
-          { id: "D", text: "Himself" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 50,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nHighlights _____ the events will be televised today",
-        options: [
-          { id: "A", text: "Of" },
-          { id: "B", text: "For" },
-          { id: "C", text: "In" },
-          { id: "D", text: "On" }
-        ],
-        correctAnswer: "A"
-      }
-    ]
-  }
-];
+        id: 3

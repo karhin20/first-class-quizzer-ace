@@ -34,30 +34,42 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
 
   // Function to format question text by italicizing specific words
   const formatQuestionText = (text: string) => {
-    // Format specific phrases for questions with "underlined word"
+    // If text already has HTML formatting, return as is
     if (text.includes("<em>")) {
-      return text; // If already has HTML, return as is
+      return text;
     }
     
+    // Format questions about "underlined word"
     if (text.includes("underlined word")) {
-      // Replace instances of underlined with italic
       return text.replace(/underlined/g, "<em>underlined</em>");
     }
     
-    // For questions with words to find their meanings
+    // Format questions about meanings of words
     if (text.includes("nearest in meaning to the")) {
-      // Italicize words after "nearest in meaning to the"
       return text.replace(/nearest in meaning to the (\w+)/i, 
         'nearest in meaning to the <em>$1</em>');
     }
     
-    // For biology classification questions where scientific names should be italicized
-    if (text.includes("binomial name") || text.includes("scientific name")) {
-      // Italicize scientific names that follow standard binomial nomenclature pattern (Genus species)
-      return text.replace(/\b([A-Z][a-z]+\s+[a-z]+)\b/g, "<em>$1</em>");
+    // Format scientific and binomial names in biology questions
+    // Look for patterns like "Homo sapiens", "Amoeba proteus", etc.
+    if (/\b[A-Z][a-z]+ [a-z]+\b/.test(text)) {
+      return text.replace(/\b([A-Z][a-z]+ [a-z]+)\b/g, "<em>$1</em>");
     }
     
-    return text;
+    // Format terms that should be emphasized in classification questions
+    const termsToItalicize = [
+      "Domain", "Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species",
+      "binomial nomenclature", "classification", "taxonomy"
+    ];
+    
+    let formattedText = text;
+    termsToItalicize.forEach(term => {
+      // Use word boundary to prevent replacing parts of words
+      const regex = new RegExp(`\\b${term}\\b`, 'g');
+      formattedText = formattedText.replace(regex, `<em>${term}</em>`);
+    });
+    
+    return formattedText;
   };
 
   return (
