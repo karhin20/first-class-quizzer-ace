@@ -22,212 +22,6 @@ export const getSubjectById = (id: string): Subject | undefined => {
 
 export const subjects: Subject[] = [
   {
-    id: "integrated-science",
-    name: "Integrated Science",
-    description: "Physics, Chemistry, Biology and Agricultural Science",
-    icon: "beaker",
-    questions: [
-      {
-        id: 1,
-        text: "Bacteria belong to Kingdom",
-        options: [
-          { id: "A", text: "Animalia" },
-          { id: "B", text: "Fungi" },
-          { id: "C", text: "Prokaryotae" },
-          { id: "D", text: "Proctoctista" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 2,
-        text: "In a simple electric circuit the device that regulates the current flow is the",
-        options: [
-          { id: "A", text: "ammeter" },
-          { id: "B", text: "amplifier" },
-          { id: "C", text: "resistor" },
-          { id: "D", text: "rheostat" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 3,
-        text: "Which of the following organisms is a producer?",
-        options: [
-          { id: "A", text: "grasshopper" },
-          { id: "B", text: "Spirogyra" },
-          { id: "C", text: "Rhizopus" },
-          { id: "D", text: "Virus" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 4,
-        text: "Examples of hydrocarbons belonging to alkane series are",
-        options: [
-          { id: "A", text: "C2H6 and C3H8" },
-          { id: "B", text: "C2H2 and C3H6" },
-          { id: "C", text: "C2H8 and C3H8" },
-          { id: "D", text: "C4H10 and C2H4" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 5,
-        text: "Green manure is beneficial to the soil if the plant material is",
-        options: [
-          { id: "A", text: "free from pests" },
-          { id: "B", text: "grown with fertilizer" },
-          { id: "C", text: "ploughed into the moist soil just before flowering" },
-          { id: "D", text: "ploughed into the moist soil after harvesting" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 6,
-        text: "Lactic acid can be found in",
-        options: [
-          { id: "A", text: "grape" },
-          { id: "B", text: "orange" },
-          { id: "C", text: "palm oil" },
-          { id: "D", text: "sour milk" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 7,
-        text: "Evaporation of liquid increases with",
-        options: [
-          { id: "A", text: "decrease in density of the liquid" },
-          { id: "B", text: "increase in atmospheric pressure" },
-          { id: "C", text: "decrease in the exposed surface area" },
-          { id: "D", text: "decrease in temperature" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 8,
-        text: "Which of the following processes is a physical change?",
-        options: [
-          { id: "A", text: "Electrolysis of aqueous sodium chloride" },
-          { id: "B", text: "Fermentation of palm wine" },
-          { id: "C", text: "Separation of sand from water" },
-          { id: "D", text: "Burning of magnesium ribbon in air" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 9,
-        text: "Soil conservation can be achieved through",
-        options: [
-          { id: "A", text: "agroforestry" },
-          { id: "B", text: "intercropping" },
-          { id: "C", text: "mixed cropping" },
-          { id: "D", text: "introduction of green legumes" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 10,
-        text: "A laterally inverted image is one which is",
-        options: [
-          { id: "A", text: "real and formed in front of the mirror" },
-          { id: "B", text: "real and formed behind the mirror" },
-          { id: "C", text: "virtual and formed behind the mirror" },
-          { id: "D", text: "virtual and formed in front of the mirror" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 11,
-        text: "Killing water snails with molluscides results in the control of",
-        options: [
-          { id: "A", text: "ascariasis" },
-          { id: "B", text: "onchocerciasis" },
-          { id: "C", text: "shistosomiasis" },
-          { id: "D", text: "trypanosomiasis" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 12,
-        text: "The vacuum between the two walls in a vacuum flask minimizes heat transfer by\nI. conduction\nII. convection\nIII. radiation\nWhich of the above statements is/are correct?",
-        options: [
-          { id: "A", text: "I only" },
-          { id: "B", text: "I and II only" },
-          { id: "C", text: "II and III only" },
-          { id: "D", text: "I, II and III" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 13,
-        text: "An atom of element X is made up of 17 electrons and 18 neutrons. What is the mass number of the element?",
-        options: [
-          { id: "A", text: "17" },
-          { id: "B", text: "18" },
-          { id: "C", text: "34" },
-          { id: "D", text: "35" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 14,
-        text: "Biodiversity is defined as",
-        options: [
-          { id: "A", text: "study of living things" },
-          { id: "B", text: "variation in forms of life" },
-          { id: "C", text: "classification of living things" },
-          { id: "D", text: "living and non-living things in habitats" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 15,
-        text: "Which of the following methods is/are used in making magnets?\nI. Single touch\nII. Double touch\nIII. Electrical",
-        options: [
-          { id: "A", text: "I only" },
-          { id: "B", text: "I and III only" },
-          { id: "C", text: "II and III only" },
-          { id: "D", text: "I, II and III" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 16,
-        text: "The most effective method of reducing erosion on hilly lands is by",
-        options: [
-          { id: "A", text: "terracing" },
-          { id: "B", text: "applying organic manure" },
-          { id: "C", text: "creating wind breaks" },
-          { id: "D", text: "erection of barriers" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 17,
-        text: "Which of the following features does not adapt a leaf of a flowering plant for photosynthesis?",
-        options: [
-          { id: "A", text: "Being thin in shape" },
-          { id: "B", text: "Being flat and broad" },
-          { id: "C", text: "Possession of starch" },
-          { id: "D", text: "Possession of numerous stomata" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 18,
-        text: "Steel is preferred to pure iron for constructional work because",
-        options: [
-          { id: "A", text: "steel is cheaper than iron" },
-          { id: "B", text: "steel is harder and stronger than iron" },
-          { id: "C", text: "iron poses more health hazard than steel" },
-          { id: "D", text: "steel is more shiny than iron" }
-        ],
-        correctAnswer: "B"
-      }
-    ]
-  },
-  {
     id: "biology",
     name: "Biology",
     description: "Cell Biology, Anatomy, Ecology and Evolution",
@@ -1120,6 +914,902 @@ export const subjects: Subject[] = [
           { id: "D", text: "Active Transport" }
         ],
         correctAnswer: "D"
+      }
+    ]
+  },
+  {
+    id: "english",
+    name: "English Language",
+    description: "WASSCE/WAEC English Language (2022)",
+    icon: "book",
+    questions: [
+      {
+        id: 1,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence: Obi's family is known for their ***audacity***, so one is surprised at his _____",
+        options: [
+          { id: "A", text: "Cowardice" },
+          { id: "B", text: "Irritability" },
+          { id: "C", text: "Moodiness" },
+          { id: "D", text: "Insolence" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 2,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence: Bayo is ***careless*** in his ways while Tayo is",
+        options: [
+          { id: "A", text: "Lovable" },
+          { id: "B", text: "Meticulous" },
+          { id: "C", text: "Difficult" },
+          { id: "D", text: "Reserved" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 3,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence: In this country, the law against armed robbery is ***stringent*** whereas that against smoking in public places is _____",
+        options: [
+          { id: "A", text: "Accurate" },
+          { id: "B", text: "Complex" },
+          { id: "C", text: "Lax" },
+          { id: "D", text: "Easy" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 4,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence: The purpose of education is to ***facilitate*** progress, not to _____ it",
+        options: [
+          { id: "A", text: "Prevent" },
+          { id: "B", text: "Impede" },
+          { id: "C", text: "Stampede" },
+          { id: "D", text: "Restrain" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 5,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence: These days many people concentrate on ***temporal*** things to the detriment of the _____",
+        options: [
+          { id: "A", text: "Tangible" },
+          { id: "B", text: "Durable" },
+          { id: "C", text: "Unchanging" },
+          { id: "D", text: "Spiritual" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 6,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence: While your parents are _____, mine are ***liberal*** in their views",
+        options: [
+          { id: "A", text: "Strict" },
+          { id: "B", text: "Intimidating" },
+          { id: "C", text: "Conservative" },
+          { id: "D", text: "Discerning" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 7,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence: The judge expected ***direct*** answers but the accused was _____",
+        options: [
+          { id: "A", text: "Illusive" },
+          { id: "B", text: "Secretive" },
+          { id: "C", text: "Delusive" },
+          { id: "D", text: "Evasive" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 8,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence: Kofi is ***generous*** whereas his wife is _____",
+        options: [
+          { id: "A", text: "Sparing" },
+          { id: "B", text: "Stingy" },
+          { id: "C", text: "Unkind" },
+          { id: "D", text: "Harsh" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 9,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence: His manners are ***uncouth***, while his wife's are _____",
+        options: [
+          { id: "A", text: "Clever" },
+          { id: "B", text: "Classic" },
+          { id: "C", text: "Refined" },
+          { id: "D", text: "Purified" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 10,
+        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence: The ***peak*** of Mount Everest is about six miles from its _____",
+        options: [
+          { id: "A", text: "Base" },
+          { id: "B", text: "Depth" },
+          { id: "C", text: "Source" },
+          { id: "D", text: "Root" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 11,
+        text: "Choose the words that best complete each of the following sentences: The recent floods in some countries have _____ many lives",
+        options: [
+          { id: "A", text: "Claimed" },
+          { id: "B", text: "Drowned" },
+          { id: "C", text: "Buried" },
+          { id: "D", text: "Injured" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 12,
+        text: "Choose the words that best complete each of the following sentences: He does not smoke so the gift of an ashtray will not be quite _____",
+        options: [
+          { id: "A", text: "Admirable" },
+          { id: "B", text: "Applicable" },
+          { id: "C", text: "Appropriate" },
+          { id: "D", text: "Attractive" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 13,
+        text: "Choose the words that best complete each of the following sentences: The reviewer did an excellent job at the book _____",
+        options: [
+          { id: "A", text: "Launch" },
+          { id: "B", text: "Premiere" },
+          { id: "C", text: "Session" },
+          { id: "D", text: "Briefing" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 14,
+        text: "Choose the words that best complete each of the following sentences: The governor filed an _____ against the ruling of the tribunal",
+        options: [
+          { id: "A", text: "Injunction" },
+          { id: "B", text: "Objection" },
+          { id: "C", text: "Application" },
+          { id: "D", text: "Appeal" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 15,
+        text: "Choose the words that best complete each of the following sentences: At the terminus, all passengers on the train will have to _____",
+        options: [
+          { id: "A", text: "Alight" },
+          { id: "B", text: "Disembark" },
+          { id: "C", text: "Descend" },
+          { id: "D", text: "Dismount" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 16,
+        text: "Choose the words that best complete each of the following sentences: Reading the _____ of the famous",
+        options: [
+          { id: "A", text: "Memoirs" },
+          { id: "B", text: "Chronicles" },
+          { id: "C", text: "Life" },
+          { id: "D", text: "Monument" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 17,
+        text: "Choose the words that best complete each of the following sentences: The smaller boys had always drawn back in fear when the bully raised a fist, but this time they did not _____",
+        options: [
+          { id: "A", text: "Advance" },
+          { id: "B", text: "Agree" },
+          { id: "C", text: "Retaliate" },
+          { id: "D", text: "Recoil" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 18,
+        text: "Choose the words that best complete each of the following sentences: The old man prayed for the _____ of his sins before he died",
+        options: [
+          { id: "A", text: "Omission" },
+          { id: "B", text: "Commission" },
+          { id: "C", text: "Permission" },
+          { id: "D", text: "Remission" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 19,
+        text: "Choose the words that best complete each of the following sentences: Inflation has caused the cost of goods to _____",
+        options: [
+          { id: "A", text: "Escalate" },
+          { id: "B", text: "Ascend" },
+          { id: "C", text: "Intensify" },
+          { id: "D", text: "Progress" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 20,
+        text: "Choose the words that best complete each of the following sentences: The economy of the country has remained _____ despite the crisis",
+        options: [
+          { id: "A", text: "Strong" },
+          { id: "B", text: "Realistic" },
+          { id: "C", text: "Tough" },
+          { id: "D", text: "Firm" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 21,
+        text: "Choose the interpretation that is most appropriate for each sentence: The principal raised eyebrows at the student's explanation. This means that the principal",
+        options: [
+          { id: "A", text: "Was unhappy about the explanation" },
+          { id: "B", text: "Rejected the explanation" },
+          { id: "C", text: "Considered the explanation" },
+          { id: "D", text: "Was surprised by the explanation" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 22,
+        text: "Choose the interpretation that is most appropriate for each sentence: Mary made a clean breast of everything. This means that Mary",
+        options: [
+          { id: "A", text: "Won everyone over" },
+          { id: "B", text: "Told the whole truth" },
+          { id: "C", text: "Did everything efficiently" },
+          { id: "D", text: "Changed the way things were done" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 23,
+        text: "Choose the interpretation that is most appropriate for each sentence: Had it not rained, I would have visited you. This means that",
+        options: [
+          { id: "A", text: "I visited you even though it rained" },
+          { id: "B", text: "It did not rain and so I visited you" },
+          { id: "C", text: "It rained so I did not visit you" },
+          { id: "D", text: "Because it did not rain, I visited you" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 24,
+        text: "Choose the interpretation that is most appropriate for each sentence: I hadn't finished talking to Halima, when she snapped my head off. This means that she",
+        options: [
+          { id: "A", text: "Gave me a sharp slap" },
+          { id: "B", text: "Rudely interrupted me" },
+          { id: "C", text: "Hissed at me" },
+          { id: "D", text: "Ordered me to stop talking" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 25,
+        text: "Choose the interpretation that is most appropriate for each sentence: Franca's behaviour towards Edward leaves much to be desired. This means that Franca's behaviour was",
+        options: [
+          { id: "A", text: "Unsatisfactory" },
+          { id: "B", text: "Appreciated" },
+          { id: "C", text: "Commendable" },
+          { id: "D", text: "Unexpected" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 26,
+        text: "Choose the interpretation that is most appropriate for each sentence: The teacher truly had his heart in the right place. This means that he was",
+        options: [
+          { id: "A", text: "Kind and considerate" },
+          { id: "B", text: "Sharp and thorough" },
+          { id: "C", text: "Simple and modest" },
+          { id: "D", text: "Focused and direct" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 27,
+        text: "Choose the interpretation that is most appropriate for each sentence: Only teachers could afford a car. This means that",
+        options: [
+          { id: "A", text: "Teachers could afford a car and nothing else" },
+          { id: "B", text: "Teachers and nobody else could afford a car" },
+          { id: "C", text: "Teachers and others could afford a car" },
+          { id: "D", text: "Few teachers could afford a car" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 28,
+        text: "Choose the interpretation that is most appropriate for each sentence: The night watchman was given the marching orders because of his negligence. This means that he was",
+        options: [
+          { id: "A", text: "Promoted" },
+          { id: "B", text: "Dismissed" },
+          { id: "C", text: "Counselled" },
+          { id: "D", text: "Suspended" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 29,
+        text: "Choose the interpretation that is most appropriate for each sentence: My friend is as dull as ditchwater. This means that my friend is",
+        options: [
+          { id: "A", text: "Dark in complexion" },
+          { id: "B", text: "Extremely boring" },
+          { id: "C", text: "Not intelligent" },
+          { id: "D", text: "Not a trouble maker" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 30,
+        text: "Choose the interpretation that is most appropriate for each sentence: The director sees Tim as the joker in the pack. This means that the director considers Tim to be",
+        options: [
+          { id: "A", text: "Unpredictable" },
+          { id: "B", text: "Humourous" },
+          { id: "C", text: "Nonchalant" },
+          { id: "D", text: "Unimportant" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 31,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence: The president of the student union said it was ***strategic*** to boycott classes to press home their demands",
+        options: [
+          { id: "A", text: "Acceptable" },
+          { id: "B", text: "Ethical" },
+          { id: "C", text: "Practical" },
+          { id: "D", text: "Tactical" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 32,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence: The ***proscription*** of the political parties was one of the steps taken by the military",
+        options: [
+          { id: "A", text: "Lauching" },
+          { id: "B", text: "Expulsion" },
+          { id: "C", text: "Banning" },
+          { id: "D", text: "Removal" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 33,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence: Farmers sometimes go through the ***frustrating*** experience of having to watch their produce rot",
+        options: [
+          { id: "A", text: "Disheartening" },
+          { id: "B", text: "Dismaying" },
+          { id: "C", text: "Annoying" },
+          { id: "D", text: "Frightening" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 34,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence: The acrobatic displays left the spectators ***stunned***",
+        options: [
+          { id: "A", text: "Amused" },
+          { id: "B", text: "Enticed" },
+          { id: "C", text: "Astonished" },
+          { id: "D", text: "Elated" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 35,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence: Binetou looked quite ***resplendent*** in that red dress",
+        options: [
+          { id: "A", text: "Expensive" },
+          { id: "B", text: "Stunning" },
+          { id: "C", text: "Respectable" },
+          { id: "D", text: "Conspicuous" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 36,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence: It is foolish to depend entirely on ***mundane*** things",
+        options: [
+          { id: "A", text: "Imported" },
+          { id: "B", text: "Material" },
+          { id: "C", text: "Attractive" },
+          { id: "D", text: "Expensive" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 37,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence: Only a ***pragmatic*** approach will solve this problem",
+        options: [
+          { id: "A", text: "Constant" },
+          { id: "B", text: "Careful" },
+          { id: "C", text: "Practical" },
+          { id: "D", text: "Drastic" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 38,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence: The governor ***rebutted*** all the allegations against him",
+        options: [
+          { id: "A", text: "Rejected" },
+          { id: "B", text: "Removed" },
+          { id: "C", text: "Revoked" },
+          { id: "D", text: "Refuted" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 39,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence: He was jailed for failing to obey the court ***injunction***",
+        options: [
+          { id: "A", text: "Law" },
+          { id: "B", text: "Order" },
+          { id: "C", text: "Fine" },
+          { id: "D", text: "Proceedings" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 40,
+        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence: The World Bank made funds available to the government for poverty ***alleviation***",
+        options: [
+          { id: "A", text: "Reduction" },
+          { id: "B", text: "Removal" },
+          { id: "C", text: "Termination" },
+          { id: "D", text: "Elimination" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 41,
+        text: "Choose the word or group of words that best complete each of the following sentences: The two players protested against the _____",
+        options: [
+          { id: "A", text: "Fitness twice-weekly practice" },
+          { id: "B", text: "Practice fitness twice-weekly" },
+          { id: "C", text: "Twice-weeky practice fitness" },
+          { id: "D", text: "Twice-weekly fitness practice" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 42,
+        text: "Choose the word or group of words that best complete each of the following sentences: If I _____ what actually happened, I would have punished him",
+        options: [
+          { id: "A", text: "Had heard" },
+          { id: "B", text: "have had" },
+          { id: "C", text: "Had had" },
+          { id: "D", text: "Have heard" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 43,
+        text: "Choose the word or group of words that best complete each of the following sentences: She was certainly going to the cinema, _____?",
+        options: [
+          { id: "A", text: "Isn't she" },
+          { id: "B", text: "Isn't it" },
+          { id: "C", text: "Wasn't it" },
+          { id: "D", text: "Wasn't she" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 44,
+        text: "Choose the word or group of words that best complete each of the following sentences: Their _____ house is by the side of the road",
+        options: [
+          { id: "A", text: "Father-in-law's" },
+          { id: "B", text: "Father's-in-law" },
+          { id: "C", text: "Fathers'-in-law" },
+          { id: "D", text: "Father-in-laws" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 45,
+        text: "Choose the word or group of words that best complete each of the following sentences: He _____ his ideas very clearly at meetings",
+        options: [
+          { id: "A", text: "Puts out" },
+          { id: "B", text: "Puts across" },
+          { id: "C", text: "Puts away" },
+          { id: "D", text: "Puts in" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 46,
+        text: "Choose the word or group of words that best complete each of the following sentences: Remember to return it to Ruth; ______ hers",
+        options: [
+          { id: "A", text: "Is" },
+          { id: "B", text: "It's" },
+          { id: "C", text: "It" },
+          { id: "D", text: "Its" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 47,
+        text: "Choose the word or group of words that best complete each of the following sentences: I want to know your religious _____",
+        options: [
+          { id: "A", text: "Believe" },
+          { id: "B", text: "Believing" },
+          { id: "C", text: "Beliefs" },
+          { id: "D", text: "Believes" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 48,
+        text: "Choose the word or group of words that best complete each of the following sentences: The student did the assignment, but not _____ the way I had expected",
+        options: [
+          { id: "A", text: "Just" },
+          { id: "B", text: "Quite" },
+          { id: "C", text: "Hardly" },
+          { id: "D", text: "As" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 49,
+        text: "Choose the word or group of words that best complete each of the following sentences: Bola invited Joe and _____ to the show",
+        options: [
+          { id: "A", text: "I" },
+          { id: "B", text: "Myself" },
+          { id: "C", text: "Me" },
+          { id: "D", text: "Himself" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 50,
+        text: "Choose the word or group of words that best complete each of the following sentences: Highlights _____ the events will be televised today",
+        options: [
+          { id: "A", text: "Of" },
+          { id: "B", text: "For" },
+          { id: "C", text: "In" },
+          { id: "D", text: "On" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 51,
+        text: "Choose the word or group of words that best complete each of the following sentences: When the fire alarm went off, we all _____ the door",
+        options: [
+          { id: "A", text: "Made at" },
+          { id: "B", text: "Made to" },
+          { id: "C", text: "Made after" },
+          { id: "D", text: "Made for" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 52,
+        text: "Choose the word or group of words that best complete each of the following sentences: Jane has stopped smoking, _____?",
+        options: [
+          { id: "A", text: "Hasn't she" },
+          { id: "B", text: "Didn't she" },
+          { id: "C", text: "Isn't it" },
+          { id: "D", text: "Hadn't she" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 53,
+        text: "Choose the word or group of words that best complete each of the following sentences: Graduates find it difficult to secure _____ nowadays",
+        options: [
+          { id: "A", text: "An employment" },
+          { id: "B", text: "Employment" },
+          { id: "C", text: "Employments" },
+          { id: "D", text: "Few employments" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 54,
+        text: "Choose the word or group of words that best complete each of the following sentences: I'll try to convince him as _____ as I can",
+        options: [
+          { id: "A", text: "Best" },
+          { id: "B", text: "Best as" },
+          { id: "C", text: "The best" },
+          { id: "D", text: "Well as" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 55,
+        text: "Choose the word or group of words that best complete each of the following sentences: _____ were classmates in the university",
+        options: [
+          { id: "A", text: "His sister and I" },
+          { id: "B", text: "Me and his sister" },
+          { id: "C", text: "I and his sister" },
+          { id: "D", text: "His sister and me" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 56,
+        text: "Choose the word or group of words that best complete each of the following sentences: Their shop stocks _____ overwhelming variety of goods.",
+        options: [
+          { id: "A", text: "Any" },
+          { id: "B", text: "Every" },
+          { id: "C", text: "An" },
+          { id: "D", text: "Each" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 57,
+        text: "Choose the word or group of words that best complete each of the following sentences: It's a miracle that the child didn't die after the illness, _____?",
+        options: [
+          { id: "A", text: "Did she" },
+          { id: "B", text: "Isn't it" },
+          { id: "C", text: "Didn't she" },
+          { id: "D", text: "Wasn't it" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 58,
+        text: "Choose the word or group of words that best complete each of the following sentences: It is always good to live _____ One's means",
+        options: [
+          { id: "A", text: "Within" },
+          { id: "B", text: "Under" },
+          { id: "C", text: "With" },
+          { id: "D", text: "Through" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 59,
+        text: "Choose the word or group of words that best complete each of the following sentences: How I wish she _____ the books before Tunde arrived",
+        options: [
+          { id: "A", text: "Sees" },
+          { id: "B", text: "Had seen" },
+          { id: "C", text: "Has seen" },
+          { id: "D", text: "Saw" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 60,
+        text: "Choose the word or group of words that best complete each of the following sentences: He is currently the _____ man in this party",
+        options: [
+          { id: "A", text: "Most offended" },
+          { id: "B", text: "More offended" },
+          { id: "C", text: "Very offended" },
+          { id: "D", text: "Much offended" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 61,
+        text: "Choose the word or group of words that best complete each of the following sentences: To _____ did you speak?",
+        options: [
+          { id: "A", text: "Whose" },
+          { id: "B", text: "Whom" },
+          { id: "C", text: "Who" },
+          { id: "D", text: "Which" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 62,
+        text: "Choose the word or group of words that best complete each of the following sentences: _____ all probability, the strike will be called off today",
+        options: [
+          { id: "A", text: "Through" },
+          { id: "B", text: "In" },
+          { id: "C", text: "By" },
+          { id: "D", text: "At" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 63,
+        text: "Choose the word or group of words that best complete each of the following sentences: Amao _____ his master in every way.",
+        options: [
+          { id: "A", text: "Takes after" },
+          { id: "B", text: "Takes over" },
+          { id: "C", text: "Takes up" },
+          { id: "D", text: "Takes on" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 64,
+        text: "Choose the word or group of words that best complete each of the following sentences: He ran _____ that the defenders couldn't catch up with him",
+        options: [
+          { id: "A", text: "Very fast" },
+          { id: "B", text: "Mush faster" },
+          { id: "C", text: "So faster" },
+          { id: "D", text: "So fast" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 65,
+        text: "Choose the word or group of words that best complete each of the following sentences: I told them I would come back as soon as I _____",
+        options: [
+          { id: "A", text: "Should" },
+          { id: "B", text: "Can" },
+          { id: "C", text: "Could" },
+          { id: "D", text: "Will" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 66,
+        text: "Choose the word or group of words that best complete each of the following sentences: Isn't it high time we _____?",
+        options: [
+          { id: "A", text: "Started eating" },
+          { id: "B", text: "Start eating" },
+          { id: "C", text: "Had started" },
+          { id: "D", text: "Start to eat" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 67,
+        text: "Choose the word or group of words that best complete each of the following sentences: The reason he gave, _____ was most unconvincing",
+        options: [
+          { id: "A", text: "Which he had no money" },
+          { id: "B", text: "Since he had no money" },
+          { id: "C", text: "That he had no money" },
+          { id: "D", text: "For he had no money" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 68,
+        text: "Choose the word or group of words that best complete each of the following sentences: Sometimes minor incidents in our lives stand out because we cherish _____",
+        options: [
+          { id: "A", text: "It" },
+          { id: "B", text: "Many" },
+          { id: "C", text: "None" },
+          { id: "D", text: "Them" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 69,
+        text: "Choose the word or group of words that best complete each of the following sentences: An act of cleanliness is to dispose _____ useless items",
+        options: [
+          { id: "A", text: "Away" },
+          { id: "B", text: "Of" },
+          { id: "C", text: "With" },
+          { id: "D", text: "Off" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 70,
+        text: "Choose the word or group of words that best complete each of the following sentences: Two of his _____ left for Europe",
+        options: [
+          { id: "A", text: "Friends" },
+          { id: "B", text: "Friend's" },
+          { id: "C", text: "Friends'" },
+          { id: "D", text: "Friend" }
+        ],
+        correctAnswer: "A"
+      }
+    ]
+  },
+  {
+    id: "statistics-probability",
+    name: "Statistics & Probability",
+    description: "Mean, Median, Mode, Basic Probability Concepts",
+    icon: "calculator", // Using 'calculator' icon
+    questions: [
+      {
+        id: 1,
+        text: "What is the mean of the following set of numbers: 2, 4, 6, 8, 10?",
+        options: [
+          { id: "A", text: "4" },
+          { id: "B", text: "5" },
+          { id: "C", text: "6" },
+          { id: "D", text: "8" }
+        ],
+        correctAnswer: "C" // (2+4+6+8+10) / 5 = 30 / 5 = 6
+      },
+      {
+        id: 2,
+        text: "What is the median of the following set of numbers: 3, 5, 1, 8, 2?",
+        options: [
+          { id: "A", text: "1" },
+          { id: "B", text: "3" },
+          { id: "C", text: "5" },
+          { id: "D", text: "8" }
+        ],
+        correctAnswer: "B" // Sorted: 1, 2, 3, 5, 8. Median is 3.
+      },
+      {
+        id: 3,
+        text: "What is the mode of the following set of numbers: 7, 9, 3, 9, 7, 9, 5?",
+        options: [
+          { id: "A", text: "3" },
+          { id: "B", text: "5" },
+          { id: "C", text: "7" },
+          { id: "D", text: "9" }
+        ],
+        correctAnswer: "D" // 9 appears most frequently (3 times).
+      },
+      {
+        id: 4,
+        text: "If you roll a standard six-sided die, what is the probability of rolling a 4?",
+        options: [
+          { id: "A", text: "1/6" },
+          { id: "B", text: "1/4" },
+          { id: "C", text: "1/3" },
+          { id: "D", text: "1/2" }
+        ],
+        correctAnswer: "A" // One favorable outcome (rolling a 4) out of 6 possible outcomes.
+      },
+      {
+        id: 5,
+        text: "If you flip a fair coin, what is the probability of getting heads?",
+        options: [
+          { id: "A", text: "0" },
+          { id: "B", text: "1/4" },
+          { id: "C", text: "1/2" },
+          { id: "D", text: "1" }
+        ],
+        correctAnswer: "C" // One favorable outcome (heads) out of 2 possible outcomes (heads, tails).
+      },
+      {
+        id: 6,
+        text: "A bag contains 3 red marbles and 2 blue marbles. What is the probability of drawing a blue marble?",
+        options: [
+          { id: "A", text: "1/5" },
+          { id: "B", text: "2/5" },
+          { id: "C", text: "3/5" },
+          { id: "D", text: "2/3" }
+        ],
+        correctAnswer: "B" // 2 blue marbles out of a total of 5 marbles.
+      },
+      {
+        id: 7,
+        text: "What is the range of the following set of numbers: 12, 5, 23, 18, 9?",
+        options: [
+          { id: "A", text: "5" },
+          { id: "B", text: "12" },
+          { id: "C", text: "14" },
+          { id: "D", text: "18" }
+        ],
+        correctAnswer: "D" // Range = Max - Min = 23 - 5 = 18.
+      },
+      {
+        id: 8,
+        text: "In probability, what does an event with a probability of 1 mean?",
+        options: [
+          { id: "A", text: "The event is impossible" },
+          { id: "B", text: "The event has a 50% chance of occurring" },
+          { id: "C", text: "The event is certain to occur" },
+          { id: "D", text: "The probability is unknown" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 9,
+        text: "What is the average (mean) of 10, 20, and 30?",
+        options: [
+          { id: "A", text: "10" },
+          { id: "B", text: "15" },
+          { id: "C", text: "20" },
+          { id: "D", text: "30" }
+        ],
+        correctAnswer: "C" // (10 + 20 + 30) / 3 = 60 / 3 = 20
+      },
+      {
+        id: 10,
+        text: "If you roll a six-sided die, what is the probability of rolling an even number?",
+        options: [
+          { id: "A", text: "1/6" },
+          { id: "B", text: "1/3" },
+          { id: "C", text: "1/2" },
+          { id: "D", text: "2/3" }
+        ],
+        correctAnswer: "C" // Three even numbers (2, 4, 6) out of 6 possible outcomes. 3/6 = 1/2.
       }
     ]
   }

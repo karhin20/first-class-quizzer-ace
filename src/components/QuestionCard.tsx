@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Question } from '@/data/questions';
@@ -32,37 +31,11 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     return '';
   };
 
-  // Function to format question text by italicizing specific words
+  // Function to format question text by converting ***word*** to bold, italic, and underlined HTML
   const formatQuestionText = (text: string) => {
-    // If text already has HTML formatting, return as is
-    if (text.includes("<em>")) {
-      return text;
-    }
-    
-    // Format scientific names like "Amoeba proteus", "Homo sapiens", etc.
-    const scientificNameRegex = /\b([A-Z][a-z]+\s+[a-z]+)\b/g;
-    text = text.replace(scientificNameRegex, "<em>$1</em>");
-    
-    // Format questions about meanings of words
-    if (text.includes("nearest in meaning to the")) {
-      text = text.replace(/nearest in meaning to the (\w+)/i, 
-        'nearest in meaning to the <em>$1</em>');
-    }
-    
-    // Format terms that should be emphasized in classification questions
-    const termsToItalicize = [
-      "Domain", "Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species",
-      "binomial nomenclature", "classification", "taxonomy", "taxon", "taxa", 
-      "Euglena", "Amoeba", "Spirogyra", "morphology", "physiology"
-    ];
-    
-    termsToItalicize.forEach(term => {
-      // Use word boundary to prevent replacing parts of words
-      const regex = new RegExp(`\\b${term}\\b`, 'g');
-      text = text.replace(regex, `<em>${term}</em>`);
-    });
-    
-    return text;
+    // Convert ***word*** to <u><strong><em>word</em></strong></u>
+    const boldItalicRegex = /\*\*\*(.*?)\*\*\*/g;
+    return text.replace(boldItalicRegex, '<u><strong><em>$1</em></strong></u>');
   };
 
   return (
