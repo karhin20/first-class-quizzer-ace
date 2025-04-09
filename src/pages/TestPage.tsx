@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getSubjectById, Question } from '@/data/questions';
 import QuestionCard from '@/components/QuestionCard';
 import ResultsCard from '@/components/ResultsCard';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, ArrowRight, CheckCircle } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle, Clock } from 'lucide-react';
 import { toast } from 'sonner';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -17,6 +17,14 @@ const shuffleArray = <T extends unknown>(array: T[]): T[] => {
   }
   return shuffledArray;
 };
+
+// +++ Restore formatTime function +++
+const formatTime = (seconds: number): string => {
+  const minutes = Math.floor(seconds / 60);
+  const secs = seconds % 60;
+  return `${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+};
+// +++ End restore +++
 
 const TestPage = () => {
   const { subjectId } = useParams<{ subjectId: string }>();
@@ -31,8 +39,10 @@ const TestPage = () => {
   const [showResults, setShowResults] = useState(false);
   const [score, setScore] = useState(0);
   const [[page, direction], setPage] = useState([0, 0]);
+  const [questionTimeRemaining, setQuestionTimeRemaining] = useState<number>(60);
+  const questionTimerIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Shuffle questions and options once on component mount or when subject changes
+  // Shuffle questions, options and initialize timer
   useEffect(() => {
     if (subject && subject.questions.length > 0) {
       const questionsWithOptionsShuffled = subject.questions.map(q => ({
@@ -40,10 +50,12 @@ const TestPage = () => {
         options: shuffleArray(q.options) // Shuffle options for each question
       }));
       setShuffledQuestions(shuffleArray(questionsWithOptionsShuffled)); // Shuffle questions themselves
-      setCurrentQuestionIndex(0); // Reset index when questions are shuffled
-      setAnswers({}); // Reset answers
-      setShowResults(false); // Ensure results aren't shown
-      setScore(0); // Reset score
+      
+      setCurrentQuestionIndex(0);
+      setAnswers({});
+      setShowResults(false);
+      setScore(0);
+      setQuestionTimeRemaining(60);
     } else if (subject === undefined) {
       // Handle subject not found
       toast("Subject not found", {
@@ -67,7 +79,45 @@ const TestPage = () => {
     }
   }, [subject, navigate]);
 
-  
+  // Per-Question Timer Countdown Logic
+  useEffect(() => {
+    // Clear any existing interval
+    if (questionTimerIntervalRef.current) {
+      clearInterval(questionTimerIntervalRef.current);
+    }
+
+    // Start new timer only if results are not shown
+    if (!showResults) {
+      setQuestionTimeRemaining(60); // Reset timer for the new question
+
+      questionTimerIntervalRef.current = setInterval(() => {
+        setQuestionTimeRemaining(prevTime => {
+          if (prevTime <= 1) {
+            clearInterval(questionTimerIntervalRef.current!); // Stop timer
+
+            // Auto-advance or submit
+            if (currentQuestionIndex < shuffledQuestions.length - 1) {
+              toast.warning("Time's up for this question!", { description: "Moving to the next question." });
+              paginate(1); // Go to next question
+            } else {
+              toast.error("Time's up!", { description: "Submitting your test automatically." });
+              handleSubmitTest(true); // Force submit on last question
+            }
+            return 60; // Reset time for display (though interval is cleared)
+          }
+          return prevTime - 1;
+        });
+      }, 1000);
+    }
+
+    // Cleanup interval on component unmount, when results show, or when question index changes
+    return () => {
+      if (questionTimerIntervalRef.current) {
+        clearInterval(questionTimerIntervalRef.current);
+      }
+    };
+  }, [currentQuestionIndex, showResults, shuffledQuestions.length]); // Rerun when question changes or results are shown
+
   // Memoize current question to avoid recalculating on every render
   const currentQuestion = useMemo(() => {
     return shuffledQuestions[currentQuestionIndex];
@@ -109,11 +159,14 @@ const TestPage = () => {
     return newScore;
   };
   
-  const handleSubmitTest = () => {
+  // Modify handleSubmitTest to stop per-question timer
+  const handleSubmitTest = (forceSubmit: boolean = false) => {
+    if (questionTimerIntervalRef.current) clearInterval(questionTimerIntervalRef.current); // Stop current question timer
+
     const answeredQuestions = Object.keys(answers).length;
-    const totalQuestions = shuffledQuestions.length; // Use shuffled length
+    const totalQuestions = shuffledQuestions.length;
     
-    if (answeredQuestions < totalQuestions) {
+    if (!forceSubmit && answeredQuestions < totalQuestions) {
       const unansweredCount = totalQuestions - answeredQuestions;
       toast(`You have ${unansweredCount} unanswered questions`, {
         description: "Are you sure you want to submit?",
@@ -124,17 +177,19 @@ const TestPage = () => {
             setScore(calculatedScore);
             setShowResults(true);
           }
-        }
+        },
       });
-    } else {
+    } else { // Submit if forced (time up) or all questions answered
       const calculatedScore = calculateScore();
       setScore(calculatedScore);
       setShowResults(true);
     }
   };
   
+  // Update restartTest to reset per-question timer
   const restartTest = () => {
-    // Reshuffle questions and options on restart
+    if (questionTimerIntervalRef.current) clearInterval(questionTimerIntervalRef.current); // Stop any existing timer
+    
     if (subject && subject.questions.length > 0) {
       const questionsWithOptionsShuffled = subject.questions.map(q => ({
         ...q,
@@ -146,6 +201,8 @@ const TestPage = () => {
     setCurrentQuestionIndex(0);
     setShowResults(false);
     setScore(0);
+    setPage([0, 0]); // Reset animation page
+    setQuestionTimeRemaining(60); // Reset timer for the first question
   };
   
   const selectedOption = answers[currentQuestion.id] || null;
@@ -176,12 +233,19 @@ const TestPage = () => {
   };
 
   const paginate = (newDirection: number) => {
-    setPage([page + newDirection, newDirection]);
+    // Clear interval manually *before* changing the index to prevent race conditions
+    if (questionTimerIntervalRef.current) {
+      clearInterval(questionTimerIntervalRef.current);
+    }
+    
+    setPage([currentQuestionIndex + newDirection, newDirection]); // Update animation page state first
+    
     if (newDirection > 0) {
       goToNextQuestion();
     } else {
       goToPreviousQuestion();
     }
+    // The useEffect watching currentQuestionIndex will handle resetting the timer value and starting the new interval
   };
 
   return (
@@ -192,12 +256,18 @@ const TestPage = () => {
             <div className="flex justify-between items-center mb-6">
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">{subject.name} Test</h1>
-                <p className="text-gray-600">Answer all questions</p>
+                <p className="text-gray-600">Question {currentQuestionIndex + 1} of {totalQuestionsCount}</p>
               </div>
-              <div className="bg-blue-50 px-4 py-2 rounded-lg">
-                <span className="text-blue-800 font-medium">
-                  {answeredQuestionsCount} of {totalQuestionsCount} answered
-                </span>
+              <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 bg-yellow-100 px-3 py-1 rounded-full text-yellow-800 font-medium text-sm border border-yellow-300">
+                  <Clock className="h-4 w-4" />
+                  <span>{formatTime(questionTimeRemaining)}</span>
+                </div>
+                <div className="bg-blue-50 px-4 py-2 rounded-lg">
+                  <span className="text-blue-800 font-medium">
+                    {answeredQuestionsCount} of {totalQuestionsCount} answered
+                  </span>
+                </div>
               </div>
             </div>
             
@@ -254,7 +324,7 @@ const TestPage = () => {
               
               {isLastQuestion ? (
                 <Button 
-                  onClick={handleSubmitTest}
+                  onClick={() => handleSubmitTest()}
                   className="flex items-center gap-2 bg-green-600 hover:bg-green-700"
                 >
                   <CheckCircle className="h-4 w-4" />
