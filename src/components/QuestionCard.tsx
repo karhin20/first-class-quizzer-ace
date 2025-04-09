@@ -39,37 +39,30 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
       return text;
     }
     
-    // Format questions about "underlined word"
-    if (text.includes("underlined word")) {
-      return text.replace(/underlined/g, "<em>underlined</em>");
-    }
+    // Format scientific names like "Amoeba proteus", "Homo sapiens", etc.
+    const scientificNameRegex = /\b([A-Z][a-z]+\s+[a-z]+)\b/g;
+    text = text.replace(scientificNameRegex, "<em>$1</em>");
     
     // Format questions about meanings of words
     if (text.includes("nearest in meaning to the")) {
-      return text.replace(/nearest in meaning to the (\w+)/i, 
+      text = text.replace(/nearest in meaning to the (\w+)/i, 
         'nearest in meaning to the <em>$1</em>');
-    }
-    
-    // Format scientific and binomial names in biology questions
-    // Look for patterns like "Homo sapiens", "Amoeba proteus", etc.
-    if (/\b[A-Z][a-z]+ [a-z]+\b/.test(text)) {
-      return text.replace(/\b([A-Z][a-z]+ [a-z]+)\b/g, "<em>$1</em>");
     }
     
     // Format terms that should be emphasized in classification questions
     const termsToItalicize = [
       "Domain", "Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species",
-      "binomial nomenclature", "classification", "taxonomy"
+      "binomial nomenclature", "classification", "taxonomy", "taxon", "taxa", 
+      "Euglena", "Amoeba", "Spirogyra", "morphology", "physiology"
     ];
     
-    let formattedText = text;
     termsToItalicize.forEach(term => {
       // Use word boundary to prevent replacing parts of words
       const regex = new RegExp(`\\b${term}\\b`, 'g');
-      formattedText = formattedText.replace(regex, `<em>${term}</em>`);
+      text = text.replace(regex, `<em>${term}</em>`);
     });
     
-    return formattedText;
+    return text;
   };
 
   return (

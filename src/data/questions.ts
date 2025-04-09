@@ -452,6 +452,336 @@ export const subjects: Subject[] = [
           { id: "D", text: "Ecological information" }
         ],
         correctAnswer: "D"
+      },
+      {
+        id: 21,
+        text: "The most common type of classification, used by Linnaeus, which arranges groups in nested orders from broad to specific, is called:",
+        options: [
+          { id: "A", text: "Cladistics" },
+          { id: "B", text: "Phylogenetic Classification" },
+          { id: "C", text: "Hierarchical Classification" },
+          { id: "D", text: "Numerical Classification" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 22,
+        text: "Which type of classification is based on arbitrary standards chosen for convenience, often using easily observable features?",
+        options: [
+          { id: "A", text: "Natural Classification" },
+          { id: "B", text: "Artificial Classification" },
+          { id: "C", text: "Phylogenetic Classification" },
+          { id: "D", text: "Hierarchical Classification" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 23,
+        text: "What is a key difference between Natural and Artificial classification?",
+        options: [
+          { id: "A", text: "Natural uses Latin names, Artificial uses common names." },
+          { id: "B", text: "Natural considers evolutionary history, Artificial often uses convenient, observable features." },
+          { id: "C", text: "Natural classification is less flexible than Artificial classification." },
+          { id: "D", text: "Natural classification is only used for plants, Artificial for animals." }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 24,
+        text: "Which type of classification aims primarily to understand the natural relationships and diversity of life?",
+        options: [
+          { id: "A", text: "Artificial Classification" },
+          { id: "B", text: "Numerical Classification" },
+          { id: "C", text: "Natural Classification" },
+          { id: "D", text: "Practical Classification" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 25,
+        text: "Which of the following is NOT listed as an importance of classifying organisms?",
+        options: [
+          { id: "A", text: "Organising the diversity of life systematically." },
+          { id: "B", text: "Facilitating communication among biologists." },
+          { id: "C", text: "Preventing organisms from evolving further." },
+          { id: "D", text: "Helping identify endangered species for conservation." }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 26,
+        text: "In the hierarchical classification, which rank falls between Phylum/Division and Order?",
+        options: [
+          { id: "A", text: "Kingdom" },
+          { id: "B", text: "Family" },
+          { id: "C", text: "Genus" },
+          { id: "D", text: "Class" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 27,
+        text: "Which sequence correctly lists the major taxa from broadest to most specific?",
+        options: [
+          { id: "A", text: "Kingdom, Phylum, Order, Class, Family, Genus, Species" },
+          { id: "B", text: "Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species" },
+          { id: "C", text: "Species, Genus, Family, Order, Class, Phylum, Kingdom, Domain" },
+          { id: "D", text: "Domain, Phylum, Kingdom, Class, Family, Order, Genus, Species" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 28,
+        text: "According to the example classification provided, Amoeba proteus belongs to which Kingdom?",
+        options: [
+          { id: "A", text: "Animalia" },
+          { id: "B", text: "Plantae" },
+          { id: "C", text: "Fungi" },
+          { id: "D", text: "Protista" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 29,
+        text: "What is the defining characteristic of organisms belonging to the same species?",
+        options: [
+          { id: "A", text: "They live in the same habitat." },
+          { id: "B", text: "They look exactly identical." },
+          { id: "C", text: "They can interbreed and produce fertile offspring." },
+          { id: "D", text: "They belong to the same genus." }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 30,
+        text: "What is binomial nomenclature?",
+        options: [
+          { id: "A", text: "A system for classifying organisms into kingdoms." },
+          { id: "B", text: "A two-part naming system for organisms using genus and species names." },
+          { id: "C", text: "A method for creating dichotomous keys." },
+          { id: "D", text: "The study of the evolutionary history of species." }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 31,
+        text: "Who introduced the system of binomial nomenclature?",
+        options: [
+          { id: "A", text: "Aristotle" },
+          { id: "B", text: "Charles Darwin" },
+          { id: "C", text: "Gregor Mendel" },
+          { id: "D", text: "Carolus Linnaeus" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 32,
+        text: "The scientific name Homo sapiens consists of which two taxonomic ranks?",
+        options: [
+          { id: "A", text: "Family and Genus" },
+          { id: "B", text: "Genus and Species" },
+          { id: "C", text: "Kingdom and Phylum" },
+          { id: "D", text: "Order and Class" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 33,
+        text: "How should binomial names be written according to the text?",
+        options: [
+          { id: "A", text: "Both parts capitalized, underlined together." },
+          { id: "B", text: "First part capitalized, second part lowercase, in italics or underlined separately." },
+          { id: "C", text: "Both parts lowercase, in bold." },
+          { id: "D", text: "First part lowercase, second part capitalized, in italics." }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 34,
+        text: "In the binomial name Zea mays (Maize), which part is the genus name?",
+        options: [
+          { id: "A", text: "Zea" },
+          { id: "B", text: "mays" },
+          { id: "C", text: "Both Zea and mays" },
+          { id: "D", text: "Neither Zea nor mays" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 35,
+        text: "What is a primary significance of using binomial nomenclature?",
+        options: [
+          { id: "A", text: "It describes the organism's appearance fully." },
+          { id: "B", text: "It ensures uniformity and clear communication among biologists globally." },
+          { id: "C", text: "It indicates the organism's age." },
+          { id: "D", text: "It is easier for non-scientists to remember than common names." }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 36,
+        text: "What is the binomial name for humans provided in the text?",
+        options: [
+          { id: "A", text: "Canis lupus" },
+          { id: "B", text: "Panthera leo" },
+          { id: "C", text: "Homo sapiens" },
+          { id: "D", text: "Macaca mulatta" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 37,
+        text: "According to Table 4.2, what is the binomial name for Maize?",
+        options: [
+          { id: "A", text: "Manihot esculenta" },
+          { id: "B", text: "Oryza sativa" },
+          { id: "C", text: "Zea mays" },
+          { id: "D", text: "Theobroma cacao" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 38,
+        text: "What is the primary mode of nutrition for Amoeba proteus?",
+        options: [
+          { id: "A", text: "Autotrophic (photosynthesis)" },
+          { id: "B", text: "Heterotrophic (feeding on other organisms)" },
+          { id: "C", text: "Chemotrophic (using chemicals for energy)" },
+          { id: "D", text: "Saprophytic (feeding on dead organic matter)" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 39,
+        text: "How does Amoeba capture its food?",
+        options: [
+          { id: "A", text: "Using cilia to sweep food into a mouth pore." },
+          { id: "B", text: "Filtering water through its cell membrane." },
+          { id: "C", text: "Engulfing it using pseudopods (phagocytosis)." },
+          { id: "D", text: "Absorbing dissolved nutrients directly from the water." }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 40,
+        text: "What structures does Amoeba use for movement and feeding?",
+        options: [
+          { id: "A", text: "Flagella" },
+          { id: "B", text: "Cilia" },
+          { id: "C", text: "Pseudopods (false feet)" },
+          { id: "D", text: "Pellicle contractions" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 41,
+        text: "How does Amoeba primarily reproduce?",
+        options: [
+          { id: "A", text: "Sexually through conjugation" },
+          { id: "B", text: "Asexually through binary fission" },
+          { id: "C", text: "Budding" },
+          { id: "D", text: "Spore formation" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 42,
+        text: "How does respiration (gas exchange) occur in Amoeba?",
+        options: [
+          { id: "A", text: "Through specialized lung-like structures." },
+          { id: "B", text: "Using gills to extract oxygen from water." },
+          { id: "C", text: "By diffusion across the general body surface (plasmalemma)." },
+          { id: "D", text: "It does not require oxygen." }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 43,
+        text: "What process does Amoeba use to maintain water balance, especially in freshwater?",
+        options: [
+          { id: "A", text: "Phagocytosis" },
+          { id: "B", text: "Binary fission" },
+          { id: "C", text: "Osmoregulation (using contractile vacuoles)" },
+          { id: "D", text: "Active transport of salts" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 44,
+        text: "Which is listed as a potential negative economic or health impact of some Amoeba species?",
+        options: [
+          { id: "A", text: "They consume excess algae in ponds." },
+          { id: "B", text: "They are used extensively in genetic engineering." },
+          { id: "C", text: "Some species are parasitic/pathogenic (e.g., causing dysentery)." },
+          { id: "D", text: "They deplete oxygen levels in water." }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 45,
+        text: "Where is Euglena viridis commonly found?",
+        options: [
+          { id: "A", text: "Dry soil" },
+          { id: "B", text: "Saltwater oceans" },
+          { id: "C", text: "Stagnant freshwater ponds and streams" },
+          { id: "D", text: "Inside the digestive tract of animals" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 46,
+        text: "What term describes Euglena's ability to be both autotrophic and heterotrophic?",
+        options: [
+          { id: "A", text: "Parasitic" },
+          { id: "B", text: "Saprophytic" },
+          { id: "C", text: "Mixotrophic" },
+          { id: "D", text: "Chemotrophic" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 47,
+        text: "What structures within Euglena allow it to perform photosynthesis?",
+        options: [
+          { id: "A", text: "Mitochondria" },
+          { id: "B", text: "Contractile vacuoles" },
+          { id: "C", text: "Chloroplasts" },
+          { id: "D", text: "Nucleus" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 48,
+        text: "What structure helps Euglena detect light?",
+        options: [
+          { id: "A", text: "Pellicle" },
+          { id: "B", text: "Flagellum" },
+          { id: "C", text: "Eyespot (stigma)" },
+          { id: "D", text: "Nucleolus" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 49,
+        text: "How does Euglena primarily reproduce under favourable conditions?",
+        options: [
+          { id: "A", text: "Conjugation" },
+          { id: "B", text: "Fragmentation" },
+          { id: "C", text: "Longitudinal binary fission" },
+          { id: "D", text: "Budding" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 50,
+        text: "How does Euglena primarily move in water?",
+        options: [
+          { id: "A", text: "Using pseudopods" },
+          { id: "B", text: "Using cilia" },
+          { id: "C", text: "Using a flagellum" },
+          { id: "D", text: "Contracting its pellicle (euglenoid movement is secondary)" }
+        ],
+        correctAnswer: "C"
       }
     ]
   },
@@ -790,6 +1120,7 @@ export const subjects: Subject[] = [
           { id: "D", text: "Active Transport" }
         ],
         correctAnswer: "D"
-      },
-      {
-        id: 3
+      }
+    ]
+  }
+];
