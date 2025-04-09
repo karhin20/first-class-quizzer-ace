@@ -1,4 +1,3 @@
-
 export interface Question {
   id: number;
   text: string;
@@ -239,1393 +238,479 @@ export const subjects: Subject[] = [
     questions: [
       {
         id: 1,
-        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nThe posh cars were sandwiched between two _____ ones",
+        text: "Choose the one that is most nearly opposite in meaning to the <em>audacity</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nObi's family is known for their audacity, so one is surprised at his _____",
         options: [
-          { id: "A", text: "dented" },
-          { id: "B", text: "rugged" },
-          { id: "C", text: "rickety" },
-          { id: "D", text: "modest" }
+          { id: "A", text: "Cowardice" },
+          { id: "B", text: "Irritability" },
+          { id: "C", text: "Moodiness" },
+          { id: "D", text: "Insolence" }
         ],
-        correctAnswer: "D"
+        correctAnswer: "A"
       },
       {
         id: 2,
-        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nA trivial issue often becomes _____ when it is not properly handled",
+        text: "Choose the one that is most nearly opposite in meaning to the <em>careless</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nBayo is careless in his ways while Tayo is",
         options: [
-          { id: "A", text: "valuable" },
-          { id: "B", text: "serious" },
-          { id: "C", text: "unbearable" },
-          { id: "D", text: "ordinary" }
+          { id: "A", text: "Lovable" },
+          { id: "B", text: "Meticulous" },
+          { id: "C", text: "Difficult" },
+          { id: "D", text: "Reserved" }
         ],
         correctAnswer: "B"
       },
       {
         id: 3,
-        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nThe rockstar's stellar performance constrasted sharply with the _____ showing of the amateur group",
+        text: "Choose the one that is most nearly opposite in meaning to the <em>stringent</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nIn this country, the law against armed robbery is stringent whereas that against smoking in public places is _____",
         options: [
-          { id: "A", text: "Routine" },
-          { id: "B", text: "Woeful" },
-          { id: "C", text: "Mundane" },
-          { id: "D", text: "Awkward" }
+          { id: "A", text: "Accurate" },
+          { id: "B", text: "Complex" },
+          { id: "C", text: "Lax" },
+          { id: "D", text: "Easy" }
         ],
-        correctAnswer: "B"
+        correctAnswer: "C"
       },
       {
         id: 4,
-        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nTolu was sanctioned for late coming but his friend was _____",
+        text: "Choose the one that is most nearly opposite in meaning to the <em>facility</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nThe purpose of education is to facility progress, not to _____ it",
         options: [
-          { id: "A", text: "Pardoned" },
-          { id: "B", text: "Ignored" },
-          { id: "C", text: "Exempted" },
-          { id: "D", text: "Released" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 5,
-        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nWhile other teachers' support for the action was Victor was _____ dogged",
-        options: [
-          { id: "A", text: "Declining" },
-          { id: "B", text: "Woeful" },
-          { id: "C", text: "Disappointing" },
-          { id: "D", text: "Wavering" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 6,
-        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nSome people are good at terminating other people's projects but are not capable of _____ theirs",
-        options: [
-          { id: "A", text: "Initiating" },
-          { id: "B", text: "Organizing" },
-          { id: "C", text: "Executing" },
-          { id: "D", text: "Designing" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 7,
-        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nThe precarious terraces of the stadium have been transformed into a _____ walkway",
-        options: [
-          { id: "A", text: "Durable" },
-          { id: "B", text: "Secure" },
-          { id: "C", text: "Smooth" },
-          { id: "D", text: "Narrow" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 8,
-        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nIf one thing irritates you, it might _____ another",
-        options: [
-          { id: "A", text: "Delight" },
-          { id: "B", text: "Concern" },
-          { id: "C", text: "Invigorate" },
-          { id: "D", text: "Bother" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 9,
-        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nJane was loud as a teenager but _____ as an adult",
-        options: [
-          { id: "A", text: "Peaceful" },
-          { id: "B", text: "Reserved" },
-          { id: "C", text: "Humble" },
-          { id: "D", text: "Respectful" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 10,
-        text: "Choose the one that is most nearly opposite in meaning to the underlined word and that will, at the same time, correctly fill the gap in the sentence:\n\nDo not always reprimand your children, it is good to _____ them at times",
-        options: [
-          { id: "A", text: "Advise" },
-          { id: "B", text: "Forgive" },
-          { id: "C", text: "Compliment" },
-          { id: "D", text: "Pamper" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 11,
-        text: "Choose the words that best complete each of the following sentences:\n\nThe aggrieved customers staged a fierce _____ on the street",
-        options: [
-          { id: "A", text: "Fight" },
-          { id: "B", text: "Protest" },
-          { id: "C", text: "Argument" },
-          { id: "D", text: "Contest" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 12,
-        text: "Choose the words that best complete each of the following sentences:\n\nThe accused was brought before the jury for a court _____",
-        options: [
-          { id: "A", text: "Sitting" },
-          { id: "B", text: "Hearing" },
-          { id: "C", text: "Judging" },
-          { id: "D", text: "Proceeding" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 13,
-        text: "Choose the words that best complete each of the following sentences:\n\nFrom his _____ one can tell that he is an athlete",
-        options: [
-          { id: "A", text: "Physique" },
-          { id: "B", text: "Stature" },
-          { id: "C", text: "Gait" },
-          { id: "D", text: "Anatomy" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 14,
-        text: "Choose the words that best complete each of the following sentences:\n\nThe death of that journalist is still _____ in mystery",
-        options: [
-          { id: "A", text: "Conveyed" },
-          { id: "B", text: "Shadowed" },
-          { id: "C", text: "Shrouded" },
-          { id: "D", text: "Confined" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 15,
-        text: "Choose the words that best complete each of the following sentences:\n\nThe defendant was charged with _____ because he caused his neighbour's death",
-        options: [
-          { id: "A", text: "Fratricide" },
-          { id: "B", text: "Patricide" },
-          { id: "C", text: "Genocide" },
-          { id: "D", text: "Homicide" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 16,
-        text: "Choose the words that best complete each of the following sentences:\n\nSeeing a young crop _____ from the soil is a rare experience",
-        options: [
-          { id: "A", text: "Trail" },
-          { id: "B", text: "Sprout" },
-          { id: "C", text: "Project" },
-          { id: "D", text: "Creep" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 17,
-        text: "Choose the words that best complete each of the following sentences:\n\nLawyers are still making efforts to interpret the new _____",
-        options: [
-          { id: "A", text: "Language" },
-          { id: "B", text: "Technique" },
-          { id: "C", text: "System" },
-          { id: "D", text: "Statute" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 18,
-        text: "Choose the words that best complete each of the following sentences:\n\nThe cargo was intercepted on sea by _____",
-        options: [
-          { id: "A", text: "Pirates" },
-          { id: "B", text: "Thieves" },
-          { id: "C", text: "Terrorists" },
-          { id: "D", text: "Robbers" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 19,
-        text: "Choose the words that best complete each of the following sentences:\n\nThe doctors _____ Bola's grandmother after the heart attack",
-        options: [
-          { id: "A", text: "Regenerated" },
-          { id: "B", text: "Resuscitated" },
-          { id: "C", text: "Resurrected" },
-          { id: "D", text: "Revivified" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 20,
-        text: "Choose the words that best complete each of the following sentences:\n\nBecause the couple cannot agree on many things, their relationship is now _____",
-        options: [
-          { id: "A", text: "Stressed" },
-          { id: "B", text: "Uneasy" },
-          { id: "C", text: "Strained" },
-          { id: "D", text: "Tensed" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 31,
-        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nParents encourage their children to excercise financial prucence",
-        options: [
-          { id: "A", text: "Caution" },
-          { id: "B", text: "Credence" },
-          { id: "C", text: "Sincerity" },
-          { id: "D", text: "Precision" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 32,
-        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nAwa decieved Ahmed into handing over all his savings",
-        options: [
-          { id: "A", text: "Cooked" },
-          { id: "B", text: "Betrayed" },
-          { id: "C", text: "Fooled" },
-          { id: "D", text: "Cheated" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 33,
-        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nIt turned out that the plaintiff's claim was false",
-        options: [
-          { id: "A", text: "Surmise" },
-          { id: "B", text: "Contention" },
-          { id: "C", text: "Allegation" },
-          { id: "D", text: "Pronouncement" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 34,
-        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nThe aggrieved faction held a clandestine meeting",
-        options: [
-          { id: "A", text: "Secret" },
-          { id: "B", text: "Quiet" },
-          { id: "C", text: "Brief" },
-          { id: "D", text: "Quick" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 35,
-        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nMorgan Pharmacy is the sole distributor of the antiviral drug.",
-        options: [
-          { id: "A", text: "Creditable" },
-          { id: "B", text: "Only" },
-          { id: "C", text: "First" },
-          { id: "D", text: "Major" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 36,
-        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nPolice officers holding batons impounded the banker's car.",
-        options: [
-          { id: "A", text: "Damaged" },
-          { id: "B", text: "Banned" },
-          { id: "C", text: "Seized" },
-          { id: "D", text: "Collected" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 37,
-        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nThe English teacher is always cheerful",
-        options: [
-          { id: "A", text: "Satisfied" },
-          { id: "B", text: "Zealous" },
-          { id: "C", text: "Gleeful" },
-          { id: "D", text: "Careful" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 38,
-        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nThe chairman is of the opinion that laying off workers is pernicious to the growth of the company",
-        options: [
-          { id: "A", text: "Harmful" },
-          { id: "B", text: "Irrelevant" },
-          { id: "C", text: "Indispensable" },
-          { id: "D", text: "Crucial" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 39,
-        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nIt was she that commanded me to leave the room",
-        options: [
-          { id: "A", text: "Encourage" },
-          { id: "B", text: "Persuaded" },
-          { id: "C", text: "Ordered" },
-          { id: "D", text: "Induced" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 40,
-        text: "Choose the word or group of words that is nearest in meaning to the underlined word as it is used in the sentence:\n\nThe valedictorian was admired for her perseverance while at school",
-        options: [
-          { id: "A", text: "Patience" },
-          { id: "B", text: "Humility" },
-          { id: "C", text: "Enthusiasm" },
-          { id: "D", text: "Tenacity" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 41,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe fisherman said he sighted a _____ of fish in the river",
-        options: [
-          { id: "A", text: "Pack" },
-          { id: "B", text: "Swarm" },
-          { id: "C", text: "Shoal" },
-          { id: "D", text: "Colony" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 42,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe principal corrected no one else but _____",
-        options: [
-          { id: "A", text: "I" },
-          { id: "B", text: "Me" },
-          { id: "C", text: "She" },
-          { id: "D", text: "Myself" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 43,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe thug was _____ murder",
-        options: [
-          { id: "A", text: "Sued with" },
-          { id: "B", text: "Charged with" },
-          { id: "C", text: "Convicted for" },
-          { id: "D", text: "charged for" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 44,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nAsokoro office _____ is located in Ibadan.",
-        options: [
-          { id: "A", text: "Headquarter" },
-          { id: "B", text: "Headquarters'" },
-          { id: "C", text: "Headquarters" },
-          { id: "D", text: "Headquarter's" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 45,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nJohn should be through with his work _____?",
-        options: [
-          { id: "A", text: "Isn't it" },
-          { id: "B", text: "Shouldn't he" },
-          { id: "C", text: "Can't he" },
-          { id: "D", text: "Didn't he" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 46,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThis is the man _____ I said told me the interesting story",
-        options: [
-          { id: "A", text: "Who" },
-          { id: "B", text: "Whom" },
-          { id: "C", text: "Whose" },
-          { id: "D", text: "Which" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 47,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe accused forgot _____",
-        options: [
-          { id: "A", text: "Why the police said" },
-          { id: "B", text: "That the police said" },
-          { id: "C", text: "When the police said" },
-          { id: "D", text: "What the police said" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 48,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe officer _____ is my brother",
-        options: [
-          { id: "A", text: "On uniform" },
-          { id: "B", text: "With uniform" },
-          { id: "C", text: "In uniform" },
-          { id: "D", text: "In uniform dress" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 49,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe footballers have been practicing _____",
-        options: [
-          { id: "A", text: "In the stadium hard all morning" },
-          { id: "B", text: "Hard in the stadium all morning" },
-          { id: "C", text: "All morning hard in the stadium" },
-          { id: "D", text: "All morning in the stadium hard" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 50,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nProfessor John is the leader of the _____ committee to review the new book",
-        options: [
-          { id: "A", text: "Fifty-man" },
-          { id: "B", text: "Fifty-man's" },
-          { id: "C", text: "Fifty-men" },
-          { id: "D", text: "Fifty-men's" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 51,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nJames appears wiser than his friends",
-        options: [
-          { id: "A", text: "More" },
-          { id: "B", text: "Most" },
-          { id: "C", text: "Much" },
-          { id: "D", text: "Much more" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 52,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThat word famous athlete is guilty, _____ way you look at it",
-        options: [
-          { id: "A", text: "Whichever" },
-          { id: "B", text: "However" },
-          { id: "C", text: "Whatever" },
-          { id: "D", text: "Whenever" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 53,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nWe were all afraid when the alarm _____",
-        options: [
-          { id: "A", text: "Rang up" },
-          { id: "B", text: "Went off" },
-          { id: "C", text: "Died off" },
-          { id: "D", text: "Ran off" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 54,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe material used for sewing my dress is _____ to yours",
-        options: [
-          { id: "A", text: "More superior" },
-          { id: "B", text: "Most superior" },
-          { id: "C", text: "Superior" },
-          { id: "D", text: "Very superior" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 55,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe chairman wasn't privy _____ that information",
-        options: [
-          { id: "A", text: "To" },
-          { id: "B", text: "At" },
-          { id: "C", text: "With" },
-          { id: "D", text: "On" }
-        ],
-        correctAnswer: "A"
-      }
-    ]
-  },
-  {
-    id: "biology",
-    name: "Biology",
-    description: "Cellular Biology, Classification, and Ecology",
-    icon: "microscope",
-    questions: [
-      {
-        id: 1,
-        text: "What is classification in biology?",
-        options: [
-          { id: "A", text: "The study of animal behaviour." },
-          { id: "B", text: "The process of identifying organisms using keys." },
-          { id: "C", text: "The process of grouping living things into categories based on shared characteristics and relationships." },
-          { id: "D", text: "The naming of organisms using Latin." }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 2,
-        text: "Which Swedish botanist developed the hierarchical system of classification and binomial nomenclature still largely used today?",
-        options: [
-          { id: "A", text: "Aristotle" },
-          { id: "B", text: "Robert Hooke" },
-          { id: "C", text: "Charles Darwin" },
-          { id: "D", text: "Carolus Linnaeus (Carl Linnaeus)" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 3,
-        text: "In the modern hierarchical classification system, which taxon is the broadest and most general?",
-        options: [
-          { id: "A", text: "Species" },
-          { id: "B", text: "Genus" },
-          { id: "C", text: "Kingdom" },
-          { id: "D", text: "Domain" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 4,
-        text: "Which taxon is the smallest and most specific level in the hierarchical classification system?",
-        options: [
-          { id: "A", text: "Domain" },
-          { id: "B", text: "Kingdom" },
-          { id: "C", text: "Family" },
-          { id: "D", text: "Species" }
+          { id: "A", text: "Prevent" },
+          { id: "B", text: "Impede" },
+          { id: "C", text: "Stampede" },
+          { id: "D", text: "Restrain" }
         ],
         correctAnswer: "D"
       },
       {
         id: 5,
-        text: "Classifying organisms based on physical characteristics like shape, size, and colour relates to which factor?",
+        text: "Choose the one that is most nearly opposite in meaning to the <em>temporal</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nThese days many people concentrate on temporal things to the detriment of the _____",
         options: [
-          { id: "A", text: "Physiology" },
-          { id: "B", text: "Genetic information" },
-          { id: "C", text: "Morphology" },
-          { id: "D", text: "Ecological information" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 6,
-        text: "Classification based on differences and similarities in DNA and gene composition uses which factor?",
-        options: [
-          { id: "A", text: "Morphology" },
-          { id: "B", text: "Genetic information" },
-          { id: "C", text: "Physiology" },
-          { id: "D", text: "Evolutionary relationships" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 7,
-        text: "Classifying organisms based on functions and processes like metabolism and reproduction relates to which factor?",
-        options: [
-          { id: "A", text: "Morphology" },
-          { id: "B", text: "Genetic information" },
-          { id: "C", text: "Physiology" },
-          { id: "D", text: "Ecological information" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 8,
-        text: "Grouping organisms based on their habitat, behaviour, and interactions with other living things uses which factor?",
-        options: [
-          { id: "A", text: "Morphology" },
-          { id: "B", text: "Genetic information" },
-          { id: "C", text: "Physiology" },
-          { id: "D", text: "Ecological information" }
+          { id: "A", text: "Tangible" },
+          { id: "B", text: "Durable" },
+          { id: "C", text: "Unchanging" },
+          { id: "D", text: "Spiritual" }
         ],
         correctAnswer: "D"
       },
       {
-        id: 9,
-        text: "The most common type of classification, used by Linnaeus, which arranges groups in nested orders from broad to specific, is called:",
+        id: 6,
+        text: "Choose the one that is most nearly opposite in meaning to the <em>liberal</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nWhile your parents are _____, mine are liberal in their views",
         options: [
-          { id: "A", text: "Cladistics" },
-          { id: "B", text: "Phylogenetic Classification" },
-          { id: "C", text: "Hierarchical Classification" },
-          { id: "D", text: "Numerical Classification" }
+          { id: "A", text: "Strict" },
+          { id: "B", text: "Intimidating" },
+          { id: "C", text: "Conservative" },
+          { id: "D", text: "Discerning" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 7,
+        text: "Choose the one that is most nearly opposite in meaning to the <em>direct</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nThe judge expected direct answers but the accused was _____",
+        options: [
+          { id: "A", text: "Illusive" },
+          { id: "B", text: "Secretive" },
+          { id: "C", text: "Delusive" },
+          { id: "D", text: "Evasive" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 8,
+        text: "Choose the one that is most nearly opposite in meaning to the <em>generous</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nKofi is generous whereas his wife is _____",
+        options: [
+          { id: "A", text: "Sparing" },
+          { id: "B", text: "Stingy" },
+          { id: "C", text: "Unkind" },
+          { id: "D", text: "Harsh" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 9,
+        text: "Choose the one that is most nearly opposite in meaning to the <em>uncouth</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nHis manners are uncouth, while his wife's are _____",
+        options: [
+          { id: "A", text: "Clever" },
+          { id: "B", text: "Classic" },
+          { id: "C", text: "Refined" },
+          { id: "D", text: "Purified" }
         ],
         correctAnswer: "C"
       },
       {
         id: 10,
-        text: "Which type of classification is based on arbitrary standards chosen for convenience, often using easily observable features?",
+        text: "Choose the one that is most nearly opposite in meaning to the <em>peak</em> and that will, at the same time, correctly fill the gap in the sentence:\n\nThe peak of Mount Everest is about six miles from its _____",
         options: [
-          { id: "A", text: "Natural Classification" },
-          { id: "B", text: "Artificial Classification" },
-          { id: "C", text: "Phylogenetic Classification" },
-          { id: "D", text: "Hierarchical Classification" }
+          { id: "A", text: "Base" },
+          { id: "B", text: "Depth" },
+          { id: "C", text: "Source" },
+          { id: "D", text: "Root" }
         ],
-        correctAnswer: "B"
+        correctAnswer: "A"
       },
       {
         id: 11,
-        text: "What is a key difference between Natural and Artificial classification?",
+        text: "Choose the words that best complete each of the following sentences:\n\nThe recent floods in some countries have _____ many lives",
         options: [
-          { id: "A", text: "Natural uses Latin names, Artificial uses common names." },
-          { id: "B", text: "Natural considers evolutionary history, Artificial often uses convenient, observable features." },
-          { id: "C", text: "Natural classification is less flexible than Artificial classification." },
-          { id: "D", text: "Natural classification is only used for plants, Artificial for animals." }
+          { id: "A", text: "Claimed" },
+          { id: "B", text: "Drowned" },
+          { id: "C", text: "Buried" },
+          { id: "D", text: "Injured" }
         ],
-        correctAnswer: "B"
+        correctAnswer: "A"
       },
       {
         id: 12,
-        text: "Which type of classification aims primarily to understand the natural relationships and diversity of life?",
+        text: "Choose the words that best complete each of the following sentences:\n\nHe does not smoke so the gift of an ashtray will not be quite _____",
         options: [
-          { id: "A", text: "Artificial Classification" },
-          { id: "B", text: "Numerical Classification" },
-          { id: "C", text: "Natural Classification" },
-          { id: "D", text: "Practical Classification" }
+          { id: "A", text: "Admirable" },
+          { id: "B", text: "Applicable" },
+          { id: "C", text: "Appropriate" },
+          { id: "D", text: "Attractive" }
         ],
         correctAnswer: "C"
       },
       {
         id: 13,
-        text: "Which of the following is NOT listed as an importance of classifying organisms?",
+        text: "Choose the words that best complete each of the following sentences:\n\nThe reviewer did an excellent job at the book _____",
         options: [
-          { id: "A", text: "Organising the diversity of life systematically." },
-          { id: "B", text: "Facilitating communication among biologists." },
-          { id: "C", text: "Preventing organisms from evolving further." },
-          { id: "D", text: "Helping identify endangered species for conservation." }
+          { id: "A", text: "Launch" },
+          { id: "B", text: "Premiere" },
+          { id: "C", text: "Session" },
+          { id: "D", text: "Briefing" }
         ],
-        correctAnswer: "C"
+        correctAnswer: "A"
       },
       {
         id: 14,
-        text: "In the hierarchical classification, which rank falls between Phylum/Division and Order?",
+        text: "Choose the words that best complete each of the following sentences:\n\nThe governor filed an _____ against the ruling of the tribunal",
         options: [
-          { id: "A", text: "Kingdom" },
-          { id: "B", text: "Family" },
-          { id: "C", text: "Genus" },
-          { id: "D", text: "Class" }
+          { id: "A", text: "Injunction" },
+          { id: "B", text: "Objection" },
+          { id: "C", text: "Application" },
+          { id: "D", text: "Appeal" }
         ],
         correctAnswer: "D"
       },
       {
         id: 15,
-        text: "Which sequence correctly lists the major taxa from broadest to most specific?",
+        text: "Choose the words that best complete each of the following sentences:\n\nAt the terminus, all passengers on the train will have to _____",
         options: [
-          { id: "A", text: "Kingdom, Phylum, Order, Class, Family, Genus, Species" },
-          { id: "B", text: "Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species" },
-          { id: "C", text: "Species, Genus, Family, Order, Class, Phylum, Kingdom, Domain" },
-          { id: "D", text: "Domain, Phylum, Kingdom, Class, Family, Order, Genus, Species" }
+          { id: "A", text: "Alight" },
+          { id: "B", text: "Disembark" },
+          { id: "C", text: "Descend" },
+          { id: "D", text: "Dismount" }
         ],
         correctAnswer: "B"
       },
       {
         id: 16,
-        text: "According to the example classification provided, Amoeba proteus belongs to which Kingdom?",
+        text: "Choose the words that best complete each of the following sentences:\n\nReading the _____ of the famous",
         options: [
-          { id: "A", text: "Animalia" },
-          { id: "B", text: "Plantae" },
-          { id: "C", text: "Fungi" },
-          { id: "D", text: "Protista" }
+          { id: "A", text: "Memoirs" },
+          { id: "B", text: "Chronicles" },
+          { id: "C", text: "Life" },
+          { id: "D", text: "Monument" }
         ],
-        correctAnswer: "D"
+        correctAnswer: "A"
       },
       {
         id: 17,
-        text: "What is the defining characteristic of organisms belonging to the same species?",
+        text: "Choose the words that best complete each of the following sentences:\n\nThe smaller boys had always drawn back in fear when the bully raised a fist, but this time they did not _____",
         options: [
-          { id: "A", text: "They live in the same habitat." },
-          { id: "B", text: "They look exactly identical." },
-          { id: "C", text: "They can interbreed and produce fertile offspring." },
-          { id: "D", text: "They belong to the same genus." }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 18,
-        text: "What is binomial nomenclature?",
-        options: [
-          { id: "A", text: "A system for classifying organisms into kingdoms." },
-          { id: "B", text: "A two-part naming system for organisms using genus and species names." },
-          { id: "C", text: "A method for creating dichotomous keys." },
-          { id: "D", text: "The study of the evolutionary history of species." }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 19,
-        text: "Who introduced the system of binomial nomenclature?",
-        options: [
-          { id: "A", text: "Aristotle" },
-          { id: "B", text: "Charles Darwin" },
-          { id: "C", text: "Gregor Mendel" },
-          { id: "D", text: "Carolus Linnaeus" }
+          { id: "A", text: "Advance" },
+          { id: "B", text: "Agree" },
+          { id: "C", text: "Retaliate" },
+          { id: "D", text: "Recoil" }
         ],
         correctAnswer: "D"
       },
       {
-        id: 20,
-        text: "The scientific name Homo sapiens consists of which two taxonomic ranks?",
+        id: 18,
+        text: "Choose the words that best complete each of the following sentences:\n\nThe old man prayed for the _____ of his sins before he died",
         options: [
-          { id: "A", text: "Family and Genus" },
-          { id: "B", text: "Genus and Species" },
-          { id: "C", text: "Kingdom and Phylum" },
-          { id: "D", text: "Order and Class" }
+          { id: "A", text: "Omission" },
+          { id: "B", text: "Commission" },
+          { id: "C", text: "Permission" },
+          { id: "D", text: "Remission" }
         ],
-        correctAnswer: "B"
+        correctAnswer: "D"
+      },
+      {
+        id: 19,
+        text: "Choose the words that best complete each of the following sentences:\n\nInflation has caused the cost of goods to _____",
+        options: [
+          { id: "A", text: "Escalate" },
+          { id: "B", text: "Ascend" },
+          { id: "C", text: "Intensify" },
+          { id: "D", text: "Progress" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 20,
+        text: "Choose the words that best complete each of the following sentences:\n\nThe economy of the country has remained _____ despite the crisis",
+        options: [
+          { id: "A", text: "Strong" },
+          { id: "B", text: "Realistic" },
+          { id: "C", text: "Tough" },
+          { id: "D", text: "Firm" }
+        ],
+        correctAnswer: "A"
       },
       {
         id: 21,
-        text: "How should binomial names be written according to the text?",
+        text: "Choose the interpretation that is most appropriate for each sentence:\n\nThe principal raised eyebrows at the student's explanation. This means that the principal",
         options: [
-          { id: "A", text: "Both parts capitalized, underlined together." },
-          { id: "B", text: "First part capitalized, second part lowercase, in italics or underlined separately." },
-          { id: "C", text: "Both parts lowercase, in bold." },
-          { id: "D", text: "First part lowercase, second part capitalized, in italics." }
+          { id: "A", text: "Was unhappy about the explanation" },
+          { id: "B", text: "Rejected the explanation" },
+          { id: "C", text: "Considered the explanation" },
+          { id: "D", text: "Was surprised by the explanation" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 22,
+        text: "Choose the interpretation that is most appropriate for each sentence:\n\nMary made a clean breast of everything. This means that Mary",
+        options: [
+          { id: "A", text: "Won everyone over" },
+          { id: "B", text: "Told the whole truth" },
+          { id: "C", text: "Did everything efficiently" },
+          { id: "D", text: "Changed the way things were done" }
         ],
         correctAnswer: "B"
       },
       {
-        id: 22,
-        text: "In the binomial name Zea mays (Maize), which part is the genus name?",
+        id: 23,
+        text: "Choose the interpretation that is most appropriate for each sentence:\n\nHad it not rained, I would have visited you. This means that",
         options: [
-          { id: "A", text: "Zea" },
-          { id: "B", text: "mays" },
-          { id: "C", text: "Both Zea and mays" },
-          { id: "D", text: "Neither Zea nor mays" }
+          { id: "A", text: "I visited you even though it rained" },
+          { id: "B", text: "It did not rain and so I visited you" },
+          { id: "C", text: "It rained so I did not visit you" },
+          { id: "D", text: "Because it did not rain, I visited you" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 24,
+        text: "Choose the interpretation that is most appropriate for each sentence:\n\nI hadn't finished talking to Halima, when she snapped my head off. This means that she",
+        options: [
+          { id: "A", text: "Gave me a sharp slap" },
+          { id: "B", text: "Rudely interrupted me" },
+          { id: "C", text: "Hissed at me" },
+          { id: "D", text: "Ordered me to stop talking" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 25,
+        text: "Choose the interpretation that is most appropriate for each sentence:\n\nFranca's behaviour towards Edward leaves much to be desired. This means that Franca's behaviour was",
+        options: [
+          { id: "A", text: "Unsatisfactory" },
+          { id: "B", text: "Appreciated" },
+          { id: "C", text: "Commendable" },
+          { id: "D", text: "Unexpected" }
         ],
         correctAnswer: "A"
       },
       {
-        id: 23,
-        text: "What is a primary significance of using binomial nomenclature?",
-        options: [
-          { id: "A", text: "It describes the organism's appearance fully." },
-          { id: "B", text: "It ensures uniformity and clear communication among biologists globally." },
-          { id: "C", text: "It indicates the organism's age." },
-          { id: "D", text: "It is easier for non-scientists to remember than common names." }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 24,
-        text: "What is the binomial name for humans provided in the text?",
-        options: [
-          { id: "A", text: "Canis lupus" },
-          { id: "B", text: "Panthera leo" },
-          { id: "C", text: "Homo sapiens" },
-          { id: "D", text: "Macaca mulatta" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 25,
-        text: "According to Table 4.2, what is the binomial name for Maize?",
-        options: [
-          { id: "A", text: "Manihot esculenta" },
-          { id: "B", text: "Oryza sativa" },
-          { id: "C", text: "Zea mays" },
-          { id: "D", text: "Theobroma cacao" }
-        ],
-        correctAnswer: "C"
-      },
-      {
         id: 26,
-        text: "What is the primary mode of nutrition for Amoeba proteus?",
+        text: "Choose the interpretation that is most appropriate for each sentence:\n\nThe teacher truly had his heart in the right place. This means that he was",
         options: [
-          { id: "A", text: "Autotrophic (photosynthesis)" },
-          { id: "B", text: "Heterotrophic (feeding on other organisms)" },
-          { id: "C", text: "Chemotrophic (using chemicals for energy)" },
-          { id: "D", text: "Saprophytic (feeding on dead organic matter)" }
+          { id: "A", text: "Kind and considerate" },
+          { id: "B", text: "Sharp and thorough" },
+          { id: "C", text: "Simple and modest" },
+          { id: "D", text: "Focused and direct" }
         ],
-        correctAnswer: "B"
+        correctAnswer: "A"
       },
       {
         id: 27,
-        text: "How does Amoeba capture its food?",
+        text: "Choose the interpretation that is most appropriate for each sentence:\n\nOnly teachers could afford a car. This means that",
         options: [
-          { id: "A", text: "Using cilia to sweep food into a mouth pore." },
-          { id: "B", text: "Filtering water through its cell membrane." },
-          { id: "C", text: "Engulfing it using pseudopods (phagocytosis)." },
-          { id: "D", text: "Absorbing dissolved nutrients directly from the water." }
+          { id: "A", text: "Teachers could afford a car and nothing else" },
+          { id: "B", text: "Teachers and nobody else could afford a car" },
+          { id: "C", text: "Teachers and others could afford a car" },
+          { id: "D", text: "Few teachers could afford a car" }
         ],
-        correctAnswer: "C"
+        correctAnswer: "B"
       },
       {
         id: 28,
-        text: "What structures does Amoeba use for movement and feeding?",
+        text: "Choose the interpretation that is most appropriate for each sentence:\n\nThe night watchman was given the marching orders because of his negligence. This means that he was",
         options: [
-          { id: "A", text: "Flagella" },
-          { id: "B", text: "Cilia" },
-          { id: "C", text: "Pseudopods (false feet)" },
-          { id: "D", text: "Pellicle contractions" }
+          { id: "A", text: "Promoted" },
+          { id: "B", text: "Dismissed" },
+          { id: "C", text: "Counselled" },
+          { id: "D", text: "Suspended" }
         ],
-        correctAnswer: "C"
+        correctAnswer: "B"
       },
       {
         id: 29,
-        text: "How does Amoeba primarily reproduce?",
+        text: "Choose the interpretation that is most appropriate for each sentence:\n\nMy friend is as dull as ditchwater. This means that my friend is",
         options: [
-          { id: "A", text: "Sexually through conjugation" },
-          { id: "B", text: "Asexually through binary fission" },
-          { id: "C", text: "Budding" },
-          { id: "D", text: "Spore formation" }
+          { id: "A", text: "Dark in complexion" },
+          { id: "B", text: "Extremely boring" },
+          { id: "C", text: "Not intelligent" },
+          { id: "D", text: "Not a trouble maker" }
         ],
         correctAnswer: "B"
       },
       {
         id: 30,
-        text: "How does respiration (gas exchange) occur in Amoeba?",
+        text: "Choose the interpretation that is most appropriate for each sentence:\n\nThe director sees Tim as the joker in the pack. This means that the director considers Tim to be",
         options: [
-          { id: "A", text: "Through specialized lung-like structures." },
-          { id: "B", text: "Using gills to extract oxygen from water." },
-          { id: "C", text: "By diffusion across the general body surface (plasmalemma)." },
-          { id: "D", text: "It does not require oxygen." }
+          { id: "A", text: "Unpredictable" },
+          { id: "B", text: "Humourous" },
+          { id: "C", text: "Nonchallant" },
+          { id: "D", text: "Unimportant" }
         ],
-        correctAnswer: "C"
+        correctAnswer: "A"
       },
       {
         id: 31,
-        text: "What process does Amoeba use to maintain water balance, especially in freshwater?",
+        text: "Choose the word or group of words that is nearest in meaning to the <em>strategic</em> as it is used in the sentence:\n\nThe president of the student union said it was strategic to boycott classes to press home their demands",
         options: [
-          { id: "A", text: "Phagocytosis" },
-          { id: "B", text: "Binary fission" },
-          { id: "C", text: "Osmoregulation (using contractile vacuoles)" },
-          { id: "D", text: "Active transport of salts" }
+          { id: "A", text: "Acceptable" },
+          { id: "B", text: "Ethical" },
+          { id: "C", text: "Practical" },
+          { id: "D", text: "Tactical" }
         ],
-        correctAnswer: "C"
+        correctAnswer: "D"
       },
       {
         id: 32,
-        text: "Which is listed as a potential negative economic or health impact of some Amoeba species?",
+        text: "Choose the word or group of words that is nearest in meaning to the <em>proscription</em> as it is used in the sentence:\n\nThe proscription of the political parties was one of the steps taken by the military",
         options: [
-          { id: "A", text: "They consume excess algae in ponds." },
-          { id: "B", text: "They are used extensively in genetic engineering." },
-          { id: "C", text: "Some species are parasitic/pathogenic (e.g., causing dysentery)." },
-          { id: "D", text: "They deplete oxygen levels in water." }
+          { id: "A", text: "Launching" },
+          { id: "B", text: "Expulsion" },
+          { id: "C", text: "Banning" },
+          { id: "D", text: "Removal" }
         ],
         correctAnswer: "C"
       },
       {
         id: 33,
-        text: "Where is Euglena viridis commonly found?",
+        text: "Choose the word or group of words that is nearest in meaning to the <em>frustrating</em> as it is used in the sentence:\n\nFarmers sometimes go through the frustrating experience of having to watch their produce rot",
         options: [
-          { id: "A", text: "Dry soil" },
-          { id: "B", text: "Saltwater oceans" },
-          { id: "C", text: "Stagnant freshwater ponds and streams" },
-          { id: "D", text: "Inside the digestive tract of animals" }
+          { id: "A", text: "Disheartening" },
+          { id: "B", text: "Dismaying" },
+          { id: "C", text: "Annoying" },
+          { id: "D", text: "Frightening" }
         ],
         correctAnswer: "C"
       },
       {
         id: 34,
-        text: "What term describes Euglena's ability to be both autotrophic and heterotrophic?",
+        text: "Choose the word or group of words that is nearest in meaning to the <em>stunned</em> as it is used in the sentence:\n\nThe acrobatic displays left the spectators stunned",
         options: [
-          { id: "A", text: "Parasitic" },
-          { id: "B", text: "Saprophytic" },
-          { id: "C", text: "Mixotrophic" },
-          { id: "D", text: "Chemotrophic" }
+          { id: "A", text: "Amused" },
+          { id: "B", text: "Enticed" },
+          { id: "C", text: "Astonished" },
+          { id: "D", text: "Elated" }
         ],
         correctAnswer: "C"
       },
       {
         id: 35,
-        text: "What structures within Euglena allow it to perform photosynthesis?",
+        text: "Choose the word or group of words that is nearest in meaning to the <em>resplendent</em> as it is used in the sentence:\n\nBinetou looked quite resplendent in that red dress",
         options: [
-          { id: "A", text: "Mitochondria" },
-          { id: "B", text: "Contractile vacuoles" },
-          { id: "C", text: "Chloroplasts" },
-          { id: "D", text: "Nucleus" }
+          { id: "A", text: "Expensive" },
+          { id: "B", text: "Stunning" },
+          { id: "C", text: "Respectable" },
+          { id: "D", text: "Conspicuous" }
         ],
-        correctAnswer: "C"
+        correctAnswer: "B"
       },
       {
         id: 36,
-        text: "What structure helps Euglena detect light?",
+        text: "Choose the word or group of words that is nearest in meaning to the <em>mundane</em> as it is used in the sentence:\n\nIt is foolish to depend entirely on mundane things",
         options: [
-          { id: "A", text: "Pellicle" },
-          { id: "B", text: "Flagellum" },
-          { id: "C", text: "Eyespot (stigma)" },
-          { id: "D", text: "Nucleolus" }
+          { id: "A", text: "Imported" },
+          { id: "B", text: "Material" },
+          { id: "C", text: "Attractive" },
+          { id: "D", text: "Expensive" }
         ],
-        correctAnswer: "C"
+        correctAnswer: "B"
       },
       {
         id: 37,
-        text: "How does Euglena primarily reproduce under favourable conditions?",
+        text: "Choose the word or group of words that is nearest in meaning to the <em>pragmatic</em> as it is used in the sentence:\n\nOnly a pragmatic approach will solve this problem",
         options: [
-          { id: "A", text: "Conjugation" },
-          { id: "B", text: "Fragmentation" },
-          { id: "C", text: "Longitudinal binary fission" },
-          { id: "D", text: "Budding" }
+          { id: "A", text: "Constant" },
+          { id: "B", text: "Careful" },
+          { id: "C", text: "Practical" },
+          { id: "D", text: "Drastic" }
         ],
         correctAnswer: "C"
       },
       {
         id: 38,
-        text: "How does Euglena primarily move in water?",
+        text: "Choose the word or group of words that is nearest in meaning to the <em>rebutted</em> as it is used in the sentence:\n\nThe governor rebutted all the allegations against him",
         options: [
-          { id: "A", text: "Using pseudopods" },
-          { id: "B", text: "Using cilia" },
-          { id: "C", text: "Using a flagellum" },
-          { id: "D", text: "Contracting its pellicle (euglenoid movement is secondary)" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 39,
-        text: "What is the semi-rigid outer covering of Euglena called?",
-        options: [
-          { id: "A", text: "Cell wall" },
-          { id: "B", text: "Cell membrane" },
-          { id: "C", text: "Pellicle" },
-          { id: "D", text: "Capsule" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 40,
-        text: "Euglena stores a carbohydrate compound with potential health benefits called:",
-        options: [
-          { id: "A", text: "Starch" },
-          { id: "B", text: "Glycogen" },
-          { id: "C", text: "Cellulose" },
-          { id: "D", text: "Paramylon" }
+          { id: "A", text: "Rejected" },
+          { id: "B", text: "Removed" },
+          { id: "C", text: "Revoked" },
+          { id: "D", text: "Refuted" }
         ],
         correctAnswer: "D"
       },
-      // Biology Test 2 (Cell Structure and Membrane)
       {
-        id: 41,
-        text: "Who is credited with the discovery of cells in 1665?",
+        id: 39,
+        text: "Choose the word or group of words that is nearest in meaning to the <em>injunction</em> as it is used in the sentence:\n\nHe was jailed for failing to obey the court injunction",
         options: [
-          { id: "A", text: "C. Nageli and C. Cramer" },
-          { id: "B", text: "Robert Hooke" },
-          { id: "C", text: "Antony van Leeuwenhoek" },
-          { id: "D", text: "Matthias Schleiden" }
+          { id: "A", text: "Law" },
+          { id: "B", text: "Order" },
+          { id: "C", text: "Fine" },
+          { id: "D", text: "Proceedings" }
         ],
         correctAnswer: "B"
       },
       {
-        id: 42,
-        text: "What is the fundamental structural and functional unit of all living things?",
+        id: 40,
+        text: "Choose the word or group of words that is nearest in meaning to the <em>alleviation</em> as it is used in the sentence:\n\nThe World Bank made funds available to the government for poverty alleviation",
         options: [
-          { id: "A", text: "Organelle" },
-          { id: "B", text: "Tissue" },
-          { id: "C", text: "Cell" },
-          { id: "D", text: "Molecule" }
+          { id: "A", text: "Reduction" },
+          { id: "B", text: "Removal" },
+          { id: "C", text: "Termination" },
+          { id: "D", text: "Elimination" }
         ],
-        correctAnswer: "C"
+        correctAnswer: "A"
+      },
+      {
+        id: 41,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe two players protested against the _____",
+        options: [
+          { id: "A", text: "Fitness twice-weekly practice" },
+          { id: "B", text: "Practice fitness twice-weekly" },
+          { id: "C", text: "Twice-weekly practice fitness" },
+          { id: "D", text: "Twice-weekly fitness practice" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 42,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nIf I _____ what actually happened, I would have punished him",
+        options: [
+          { id: "A", text: "Had heard" },
+          { id: "B", text: "have had" },
+          { id: "C", text: "Had had" },
+          { id: "D", text: "Have heard" }
+        ],
+        correctAnswer: "A"
       },
       {
         id: 43,
-        text: "What is the thin, transparent, elastic, and selectively permeable membrane covering a cell called?",
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nShe was certainly going to the cinema, _____?",
         options: [
-          { id: "A", text: "Cell wall" },
-          { id: "B", text: "Nuclear envelope" },
-          { id: "C", text: "Cytoplasm" },
-          { id: "D", text: "Plasma membrane (or Cell membrane)" }
+          { id: "A", text: "Isn't she" },
+          { id: "B", text: "Isn't it" },
+          { id: "C", text: "Wasn't it" },
+          { id: "D", text: "Wasn't she" }
         ],
         correctAnswer: "D"
       },
       {
         id: 44,
-        text: "The term 'cell membrane' was given by:",
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nTheir _____ house is by the side of the road",
         options: [
-          { id: "A", text: "Robert Hooke" },
-          { id: "B", text: "C. Nageli and C. Cramer" },
-          { id: "C", text: "The text does not specify" },
-          { id: "D", text: "Rudolf Virchow" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 45,
-        text: "The cell membrane is primarily composed of which two types of molecules?",
-        options: [
-          { id: "A", text: "Carbohydrates and Nucleic Acids" },
-          { id: "B", text: "Proteins and Nucleic Acids" },
-          { id: "C", text: "Phospholipids and Proteins" },
-          { id: "D", text: "Lipids and Carbohydrates" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 46,
-        text: "The lipid component of the cell membrane forms a structure called the:",
-        options: [
-          { id: "A", text: "Protein channel" },
-          { id: "B", text: "Cytoskeleton" },
-          { id: "C", text: "Phospholipid bilayer" },
-          { id: "D", text: "Glycocalyx" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 47,
-        text: "In the phospholipid bilayer, the tails are _______ and the heads are _______.",
-        options: [
-          { id: "A", text: "Hydrophilic, Hydrophobic" },
-          { id: "B", text: "Hydrophobic, Hydrophilic" },
-          { id: "C", text: "Both Hydrophilic" },
-          { id: "D", text: "Both Hydrophobic" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 48,
-        text: "The cell membrane structure is described as a 'fluid mosaic' because:",
-        options: [
-          { id: "A", text: "It is rigid and proteins are fixed in place." },
-          { id: "B", text: "It is composed only of lipids arranged in a pattern." },
-          { id: "C", text: "The lipid and protein components can move and are scattered like a mosaic." },
-          { id: "D", text: "It allows all substances to pass through freely." }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 49,
-        text: "Which property of the cell membrane allows it to recover from minor physical damage?",
-        options: [
-          { id: "A", text: "Its rigidity" },
-          { id: "B", text: "Its thickness" },
-          { id: "C", text: "Its selective permeability" },
-          { id: "D", text: "Its fluidity" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 50,
-        text: "According to the text, membranes are easily damaged by:",
-        options: [
-          { id: "A", text: "Water and oxygen" },
-          { id: "B", text: "Cold temperatures and bases" },
-          { id: "C", text: "Heat, acids, and fat solvents (like alcohol)" },
-          { id: "D", text: "Sugars and salts" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 51,
-        text: "Which term best describes the cell membrane's ability to allow only certain molecules to pass through?",
-        options: [
-          { id: "A", text: "Impermeable" },
-          { id: "B", text: "Fully permeable" },
-          { id: "C", text: "Selectively permeable" },
-          { id: "D", text: "Osmotic" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 52,
-        text: "Which of the following is NOT listed as a function of the cell membrane itself?",
-        options: [
-          { id: "A", text: "Acting as a physical barrier" },
-          { id: "B", text: "Facilitating communication between cells" },
-          { id: "C", text: "Performing protein synthesis" },
-          { id: "D", text: "Anchoring the cytoskeleton" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 53,
-        text: "Some membrane proteins function as _______, catalysing chemical reactions on the membrane surface.",
-        options: [
-          { id: "A", text: "Receptors" },
-          { id: "B", text: "Pores" },
-          { id: "C", text: "Enzymes" },
-          { id: "D", text: "Anchors" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 54,
-        text: "Membrane proteins that bind to hormones are known as:",
-        options: [
-          { id: "A", text: "Transport proteins" },
-          { id: "B", text: "Enzymes" },
-          { id: "C", text: "Structural proteins" },
-          { id: "D", text: "Receptor sites" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 55,
-        text: "Proteins that use ATP to move materials across the membrane against their concentration gradient are involved in:",
-        options: [
-          { id: "A", text: "Diffusion" },
-          { id: "B", text: "Osmosis" },
-          { id: "C", text: "Active transport" },
-          { id: "D", text: "Facilitated diffusion" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 56,
-        text: "What is the net movement of molecules from a region of higher concentration to a region of lower concentration called?",
-        options: [
-          { id: "A", text: "Osmosis" },
-          { id: "B", text: "Active Transport" },
-          { id: "C", text: "Diffusion" },
-          { id: "D", text: "Endocytosis" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 57,
-        text: "Which factor would increase the rate of diffusion?",
-        options: [
-          { id: "A", text: "Lower temperature" },
-          { id: "B", text: "Smaller concentration gradient" },
-          { id: "C", text: "Larger particle size" },
-          { id: "D", text: "Higher temperature" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 58,
-        text: "Which factor would decrease the rate of diffusion?",
-        options: [
-          { id: "A", text: "Stirring the medium" },
-          { id: "B", text: "A steeper concentration gradient" },
-          { id: "C", text: "A thicker surface membrane" },
-          { id: "D", text: "A larger surface area" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 59,
-        text: "The movement of oxygen from the lungs into the blood is an example of:",
-        options: [
-          { id: "A", text: "Osmosis" },
-          { id: "B", text: "Active Transport" },
-          { id: "C", text: "Diffusion" },
-          { id: "D", text: "Exocytosis" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 60,
-        text: "Osmosis is the movement of _______ molecules across a semi-permeable membrane.",
-        options: [
-          { id: "A", text: "Solute" },
-          { id: "B", text: "Water" },
-          { id: "C", text: "Gas" },
-          { id: "D", text: "Protein" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 61,
-        text: "In osmosis, water moves from a _______ solution (higher water concentration) to a _______ solution (lower water concentration).",
-        options: [
-          { id: "A", text: "Strong, Weak" },
-          { id: "B", text: "Hypertonic, Hypotonic" },
-          { id: "C", text: "Weak, Strong" },
-          { id: "D", text: "Isotonic, Hypertonic" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 62,
-        text: "A solution with a lower concentration of solutes (higher water concentration) compared to another solution is called:",
-        options: [
-          { id: "A", text: "Hypertonic" },
-          { id: "B", text: "Isotonic" },
-          { id: "C", text: "Hypotonic" },
-          { id: "D", text: "Concentrated" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 63,
-        text: "A solution with a higher concentration of solutes (lower water concentration) compared to another solution is called:",
-        options: [
-          { id: "A", text: "Hypertonic" },
-          { id: "B", text: "Isotonic" },
-          { id: "C", text: "Hypotonic" },
-          { id: "D", text: "Dilute" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 64,
-        text: "What happens to an animal cell (like a red blood cell) when placed in a hypotonic solution (like pure water)?",
-        options: [
-          { id: "A", text: "It shrinks (crenation)" },
-          { id: "B", text: "It bursts (haemolysis)" },
-          { id: "C", text: "It becomes flaccid" },
-          { id: "D", text: "No change occurs" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 65,
-        text: "What happens to a plant cell when placed in a hypotonic solution (like pure water)?",
-        options: [
-          { id: "A", text: "It shrinks" },
-          { id: "B", text: "It bursts" },
-          { id: "C", text: "It becomes turgid (firm)" },
-          { id: "D", text: "It undergoes plasmolysis" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 66,
-        text: "What happens to an animal cell when placed in a hypertonic solution (salty water)?",
-        options: [
-          { id: "A", text: "It shrinks (crenation)" },
-          { id: "B", text: "It bursts (haemolysis)" },
-          { id: "C", text: "It becomes turgid" },
-          { id: "D", text: "No change occurs" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 67,
-        text: "What happens to a plant cell when placed in a hypertonic solution (very salty water)?",
-        options: [
-          { id: "A", text: "It swells and becomes turgid" },
-          { id: "B", text: "It bursts" },
-          { id: "C", text: "It becomes flaccid and may undergo plasmolysis" },
-          { id: "D", text: "No change occurs" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 68,
-        text: "What is plasmolysis?",
-        options: [
-          { id: "A", text: "The bursting of an animal cell in water." },
-          { id: "B", text: "The shrinking of the cytoplasm and cell membrane away from the cell wall in a plant cell." },
-          { id: "C", text: "The swelling of a plant cell in water." },
-          { id: "D", text: "The process of active transport in plant cells." }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 69,
-        text: "The absorption of water from the soil by plant root hairs occurs primarily through:",
-        options: [
-          { id: "A", text: "Diffusion" },
-          { id: "B", text: "Active Transport" },
-          { id: "C", text: "Osmosis" },
-          { id: "D", text: "Endocytosis" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 70,
-        text: "Which transport process requires the cell to expend energy in the form of ATP?",
-        options: [
-          { id: "A", text: "Diffusion" },
-          { id: "B", text: "Osmosis" },
-          { id: "C", text: "Facilitated Diffusion" },
-          { id: "D", text: "Active Transport" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 71,
-        text: "Active transport moves substances:",
-        options: [
-          { id: "A", text: "From high concentration to low concentration without energy" },
-          { id: "B", text: "From low concentration to high concentration using energy" },
-          { id: "C", text: "Only water molecules across a membrane" },
-          { id: "D", text: "By engulfing large particles" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 72,
-        text: "The absorption of mineral salts from the soil by root hairs, even when the soil concentration is low, is an example of:",
-        options: [
-          { id: "A", text: "Osmosis" },
-          { id: "B", text: "Diffusion" },
-          { id: "C", text: "Active Transport" },
-          { id: "D", text: "Plasmolysis" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 73,
-        text: "What is the general term for the process of transporting large molecules into cells by forming vesicles from the cell membrane?",
-        options: [
-          { id: "A", text: "Exocytosis" },
-          { id: "B", text: "Diffusion" },
-          { id: "C", text: "Osmosis" },
-          { id: "D", text: "Endocytosis" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 74,
-        text: "What type of endocytosis involves the cell taking in large solid materials ('cell eating')?",
-        options: [
-          { id: "A", text: "Pinocytosis" },
-          { id: "B", text: "Exocytosis" },
-          { id: "C", text: "Phagocytosis" },
-          { id: "D", text: "Active transport" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 75,
-        text: "What type of endocytosis involves the cell taking in liquid substances ('cell drinking')?",
-        options: [
-          { id: "A", text: "Pinocytosis" },
-          { id: "B", text: "Exocytosis" },
-          { id: "C", text: "Phagocytosis" },
-          { id: "D", text: "Diffusion" }
-        ],
-        correctAnswer: "A"
-      },
-      {
-        id: 76,
-        text: "An Amoeba engulfing food particles is an example of:",
-        options: [
-          { id: "A", text: "Pinocytosis" },
-          { id: "B", text: "Exocytosis" },
-          { id: "C", text: "Phagocytosis" },
-          { id: "D", text: "Osmosis" }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 77,
-        text: "What is the process where vesicles formed inside the cell fuse with the cell membrane to release their contents outside the cell?",
-        options: [
-          { id: "A", text: "Endocytosis" },
-          { id: "B", text: "Pinocytosis" },
-          { id: "C", text: "Phagocytosis" },
-          { id: "D", text: "Exocytosis" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 78,
-        text: "The secretion of enzymes from a cell is an example of:",
-        options: [
-          { id: "A", text: "Endocytosis" },
-          { id: "B", text: "Exocytosis" },
-          { id: "C", text: "Diffusion" },
-          { id: "D", text: "Osmosis" }
-        ],
-        correctAnswer: "B"
-      },
-      {
-        id: 79,
-        text: "In the beetroot experiment described in Activity 3.1, why does the boiling water change colour when beetroot is placed in it?",
-        options: [
-          { id: "A", text: "Osmosis causes water to enter the beetroot cells." },
-          { id: "B", text: "Diffusion causes sugar to leave the beetroot." },
-          { id: "C", text: "Boiling damages the cell membranes, allowing pigment to leak out via diffusion." },
-          { id: "D", text: "Active transport pumps pigment out of the cells." }
-        ],
-        correctAnswer: "C"
-      },
-      {
-        id: 80,
-        text: "If two solutions have the same solute concentration, they are said to be:",
-        options: [
-          { id: "A", text: "Hypertonic" },
-          { id: "B", text: "Hypotonic" },
-          { id: "C", text: "Isotonic" },
-          { id: "D", text: "Plasmolysed" }
-        ],
-        correctAnswer: "C"
-      }
-    ]
-  }
-];
-
-// Helper function to get a subject by ID
-export const getSubjectById = (subjectId: string): Subject | undefined => {
-  return subjects.find(subject => subject.id === subjectId);
-};
+          { id: "A", text: "Father-in-law's" },
