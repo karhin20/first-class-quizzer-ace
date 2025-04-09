@@ -234,7 +234,138 @@ export const subjects: Subject[] = [
     description: "Cell Biology, Anatomy, Ecology and Evolution",
     icon: "microscope",
     questions: [
-      // Biology test questions would go here
+      {
+        id: 1,
+        text: "The cell membrane is primarily composed of",
+        options: [
+          { id: "A", text: "Phospholipids" },
+          { id: "B", text: "Carbohydrates" },
+          { id: "C", text: "Nucleic acids" },
+          { id: "D", text: "Simple sugars" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 2,
+        text: "Mitochondria are often referred to as the powerhouse of the cell because they",
+        options: [
+          { id: "A", text: "Store genetic information" },
+          { id: "B", text: "Produce ATP through cellular respiration" },
+          { id: "C", text: "Synthesize proteins" },
+          { id: "D", text: "Break down waste materials" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 3,
+        text: "Which of the following is NOT a function of the cell nucleus?",
+        options: [
+          { id: "A", text: "Housing DNA" },
+          { id: "B", text: "Protein synthesis" },
+          { id: "C", text: "Control of cell activities" },
+          { id: "D", text: "Production of ribosomes" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 4,
+        text: "In the process of photosynthesis, the energy from sunlight is converted into",
+        options: [
+          { id: "A", text: "Mechanical energy" },
+          { id: "B", text: "Heat energy" },
+          { id: "C", text: "Chemical energy" },
+          { id: "D", text: "Electrical energy" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 5,
+        text: "The Krebs cycle (citric acid cycle) occurs in the",
+        options: [
+          { id: "A", text: "Mitochondrial matrix" },
+          { id: "B", text: "Nucleus" },
+          { id: "C", text: "Endoplasmic reticulum" },
+          { id: "D", text: "Golgi apparatus" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 6,
+        text: "The presence of which organelle distinguishes plant cells from animal cells?",
+        options: [
+          { id: "A", text: "Mitochondria" },
+          { id: "B", text: "Golgi apparatus" },
+          { id: "C", text: "Chloroplasts" },
+          { id: "D", text: "Nucleus" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 7,
+        text: "Which of the following is responsible for protein synthesis in a cell?",
+        options: [
+          { id: "A", text: "Lysosome" },
+          { id: "B", text: "Ribosome" },
+          { id: "C", text: "Vacuole" },
+          { id: "D", text: "Peroxisome" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 8,
+        text: "Cellular respiration is the process by which",
+        options: [
+          { id: "A", text: "Glucose is broken down to release energy" },
+          { id: "B", text: "Carbon dioxide is converted to oxygen" },
+          { id: "C", text: "Oxygen is converted to carbon dioxide" },
+          { id: "D", text: "Energy is used to build glucose molecules" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 9,
+        text: "Which of the following is NOT part of a eukaryotic cell?",
+        options: [
+          { id: "A", text: "Nuclear membrane" },
+          { id: "B", text: "Ribosome" },
+          { id: "C", text: "Nucleoid region" },
+          { id: "D", text: "Cell membrane" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 10,
+        text: "The process of DNA replication occurs during which phase of the cell cycle?",
+        options: [
+          { id: "A", text: "G1 phase" },
+          { id: "B", text: "S phase" },
+          { id: "C", text: "G2 phase" },
+          { id: "D", text: "M phase" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 11,
+        text: "Which of the following cell structures is responsible for sorting and packaging proteins?",
+        options: [
+          { id: "A", text: "Endoplasmic reticulum" },
+          { id: "B", text: "Mitochondria" },
+          { id: "C", text: "Golgi apparatus" },
+          { id: "D", text: "Lysosome" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 12,
+        text: "Which of the following is NOT a component of the cell theory?",
+        options: [
+          { id: "A", text: "All living things are made up of cells" },
+          { id: "B", text: "Cells arise only from pre-existing cells" },
+          { id: "C", text: "The cell is the basic unit of life" },
+          { id: "D", text: "All cells contain DNA in a nucleus" }
+        ],
+        correctAnswer: "D"
+      }
     ]
   },
   {
