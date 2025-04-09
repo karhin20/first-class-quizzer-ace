@@ -16,6 +16,10 @@ export interface Subject {
   questions: Question[];
 }
 
+export const getSubjectById = (id: string): Subject | undefined => {
+  return subjects.find(subject => subject.id === id);
+};
+
 export const subjects: Subject[] = [
   {
     id: "integrated-science",
@@ -221,6 +225,15 @@ export const subjects: Subject[] = [
         ],
         correctAnswer: "B"
       }
+    ]
+  },
+  {
+    id: "biology",
+    name: "Biology",
+    description: "Cell Biology, Anatomy, Ecology and Evolution",
+    icon: "microscope",
+    questions: [
+      // Biology test questions would go here
     ]
   },
   {
@@ -705,12 +718,4 @@ export const subjects: Subject[] = [
           { id: "A", text: "Isn't she" },
           { id: "B", text: "Isn't it" },
           { id: "C", text: "Wasn't it" },
-          { id: "D", text: "Wasn't she" }
-        ],
-        correctAnswer: "D"
-      },
-      {
-        id: 44,
-        text: "Choose the word or group of words that best complete each of the following sentences:\n\nTheir _____ house is by the side of the road",
-        options: [
-          { id: "A", text: "Father-in-law's" },
+          { id: "D", text: "Was
