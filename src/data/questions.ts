@@ -920,7 +920,7 @@ export const subjects: Subject[] = [
   {
     id: "english",
     name: "English Language",
-    description: "WASSCE/WAEC English Language (2022)",
+    description: "English Language",
     icon: "book",
     questions: [
       {
