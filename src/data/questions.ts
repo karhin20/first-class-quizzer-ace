@@ -1,3 +1,4 @@
+
 export interface Question {
   id: number;
   text: string;
@@ -718,4 +719,87 @@ export const subjects: Subject[] = [
           { id: "A", text: "Isn't she" },
           { id: "B", text: "Isn't it" },
           { id: "C", text: "Wasn't it" },
-          { id: "D", text: "Was
+          { id: "D", text: "Wasn't she" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 44,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nTheir _____ house is by the side of the road",
+        options: [
+          { id: "A", text: "Father-in-law's" },
+          { id: "B", text: "Father's-in-law" },
+          { id: "C", text: "Fathers'-in-law" },
+          { id: "D", text: "Father-in-laws" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 45,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nHe _____ his ideas very clearly at meetings",
+        options: [
+          { id: "A", text: "Puts out" },
+          { id: "B", text: "Puts across" },
+          { id: "C", text: "Puts away" },
+          { id: "D", text: "Puts in" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 46,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nRemember to return it to Ruth; ______ hers",
+        options: [
+          { id: "A", text: "Is" },
+          { id: "B", text: "It's" },
+          { id: "C", text: "It" },
+          { id: "D", text: "Its" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 47,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nI want to know your religious _____",
+        options: [
+          { id: "A", text: "Believe" },
+          { id: "B", text: "Believing" },
+          { id: "C", text: "Beliefs" },
+          { id: "D", text: "Believes" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 48,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nThe student did the assignment, but not _____ the way I had expected",
+        options: [
+          { id: "A", text: "Just" },
+          { id: "B", text: "Quite" },
+          { id: "C", text: "Hardly" },
+          { id: "D", text: "As" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 49,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nBola invited Joe and _____ to the show",
+        options: [
+          { id: "A", text: "I" },
+          { id: "B", text: "Myself" },
+          { id: "C", text: "Me" },
+          { id: "D", text: "Himself" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 50,
+        text: "Choose the word or group of words that best complete each of the following sentences:\n\nHighlights _____ the events will be televised today",
+        options: [
+          { id: "A", text: "Of" },
+          { id: "B", text: "For" },
+          { id: "C", text: "In" },
+          { id: "D", text: "On" }
+        ],
+        correctAnswer: "A"
+      }
+    ]
+  }
+];
