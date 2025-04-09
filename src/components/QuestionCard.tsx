@@ -18,15 +18,15 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
 }) => {
   const getOptionClass = (optionId: string) => {
     if (!showResults) {
-      return selectedOption === optionId ? 'selected-option' : '';
+      return selectedOption === optionId ? 'bg-blue-100 border-blue-400' : '';
     }
     
     if (optionId === question.correctAnswer) {
-      return 'correct-option';
+      return 'bg-green-100 border-green-400';
     }
     
     if (selectedOption === optionId && optionId !== question.correctAnswer) {
-      return 'incorrect-option';
+      return 'bg-red-100 border-red-400';
     }
     
     return '';
@@ -35,6 +35,10 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
   // Function to format question text by italicizing specific words
   const formatQuestionText = (text: string) => {
     // Format specific phrases for questions with "underlined word"
+    if (text.includes("<em>")) {
+      return text; // If already has HTML, return as is
+    }
+    
     if (text.includes("underlined word")) {
       // Replace instances of underlined with italic
       return text.replace(/underlined/g, "<em>underlined</em>");
@@ -42,9 +46,9 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     
     // For questions with words to find their meanings
     if (text.includes("nearest in meaning to the")) {
-      // Italicize words after "underlined word"
-      return text.replace(/nearest in meaning to the underlined word (.+?)$/i, 
-        'nearest in meaning to the <em>underlined word</em> $1');
+      // Italicize words after "nearest in meaning to the"
+      return text.replace(/nearest in meaning to the (\w+)/i, 
+        'nearest in meaning to the <em>$1</em>');
     }
     
     // For biology classification questions where scientific names should be italicized
@@ -67,7 +71,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
         {question.options.map((option) => (
           <div
             key={option.id}
-            className={`p-3 rounded-lg border transition cursor-pointer option-hover ${getOptionClass(option.id)}`}
+            className={`p-3 rounded-lg border transition cursor-pointer hover:bg-gray-50 ${getOptionClass(option.id)}`}
             onClick={() => !showResults && onOptionSelect(option.id)}
           >
             <div className="flex items-start space-x-3">
