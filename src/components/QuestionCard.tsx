@@ -31,18 +31,11 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     return '';
   };
 
-  // Function to format question text by converting ***word*** to bold, italic, and underlined HTML
-  const formatQuestionText = (text: string) => {
-    // Convert ***word*** to <u><strong><em>word</em></strong></u>
-    const boldItalicRegex = /\*\*\*(.*?)\*\*\*/g;
-    return text.replace(boldItalicRegex, '<u><strong><em>$1</em></strong></u>');
-  };
-
   return (
     <Card className="mb-6">
       <CardHeader className="pb-3">
         <CardTitle className="text-lg font-medium">
-          {question.id}. <span dangerouslySetInnerHTML={{ __html: formatQuestionText(question.text) }} />
+          {question.id}. <span dangerouslySetInnerHTML={{ __html: question.text }} />
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-3">

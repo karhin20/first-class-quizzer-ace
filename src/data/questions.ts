@@ -1812,5 +1812,378 @@ export const subjects: Subject[] = [
         correctAnswer: "C" // Three even numbers (2, 4, 6) out of 6 possible outcomes. 3/6 = 1/2.
       }
     ]
+  },
+  {
+    id: "english-2",
+    name: "English Language 2",
+    description: "More English Language Practice",
+    icon: "book",
+    questions: [
+      // Part 1: Opposite in Meaning (1-10)
+      {
+        id: 1,
+        text: "(Choose the option opposite in meaning to the bolded word): The champions were <b><i><u>elated</u></i></b> after the tournament while their opponents looked ______.",
+        options: [ { id: "A", text: "Baffled" }, { id: "B", text: "Dejected" }, { id: "C", text: "Pitiful" }, { id: "D", text: "Uninterested" } ],
+        correctAnswer: "B"
+      },
+      {
+        id: 2,
+        text: "(Choose the option opposite in meaning to the bolded word): While Mr Ade is ______ his son is a <b><i><u>novice</u></i></b>.",
+        options: [ { id: "A", text: "Enlightened" }, { id: "B", text: "Incompetent" }, { id: "C", text: "Clever" }, { id: "D", text: "Experienced" } ],
+        correctAnswer: "D"
+      },
+      {
+        id: 3,
+        text: "(Choose the option opposite in meaning to the bolded word): It is better to use <b><i><u>persuasion</u></i></b> rather than ______ to get witnesses to court.",
+        options: [ { id: "A", text: "Effort" }, { id: "B", text: "Compulsion" }, { id: "C", text: "Influence" }, { id: "D", text: "Pressure" } ],
+        correctAnswer: "B"
+      },
+      {
+        id: 4,
+        text: "(Choose the option opposite in meaning to the bolded word): The <b><i><u>animosity</u></i></b> between Fatou and Sheku is shocking, considering the ______ they once shared.",
+        options: [ { id: "A", text: "Company" }, { id: "B", text: "Friendship" }, { id: "C", text: "Peace" }, { id: "D", text: "Understanding" } ],
+        correctAnswer: "B"
+      },
+      {
+        id: 5,
+        text: "(Choose the option opposite in meaning to the bolded word): The <b><i><u>mulish</u></i></b> driver was admonished to be ______.",
+        options: [ { id: "A", text: "Cautious" }, { id: "B", text: "Reasonable" }, { id: "C", text: "Reliable" }, { id: "D", text: "Considerate" } ],
+        correctAnswer: "B"
+      },
+       {
+        id: 6,
+        text: "(Choose the option opposite in meaning to the bolded word): The old man <b><i><u>rebuked</u></i></b> the thug and his children ______ him for doing so.",
+        options: [ { id: "A", text: "Commended" }, { id: "B", text: "Embraced" }, { id: "C", text: "Hailed" }, { id: "D", text: "Supported" } ],
+        correctAnswer: "A"
+      },
+       {
+        id: 7,
+        text: "(Choose the option opposite in meaning to the bolded word): All drivers were enjoined to obtain <b><i><u>genuine</u></i></b> and ______ licences.",
+        options: [ { id: "A", text: "Artificial" }, { id: "B", text: "Fraudulent" }, { id: "C", text: "Fake" }, { id: "D", text: "Substandard" } ],
+        correctAnswer: "C"
+      },
+       {
+        id: 8,
+        text: "(Choose the option opposite in meaning to the bolded word): There was agitation for the ______ law on libel to be <b><i><u>re-enacted</u></i></b>.",
+        options: [ { id: "A", text: "Enforced" }, { id: "B", text: "Repealed" }, { id: "C", text: "Rejected" }, { id: "D", text: "Cancelled" } ],
+        correctAnswer: "B"
+      },
+       {
+        id: 9,
+        text: "(Choose the option opposite in meaning to the bolded word): The two political parties live today in ______ after four years of <b><i><u>hostility</u></i></b>.",
+        options: [ { id: "A", text: "Happiness" }, { id: "B", text: "Amity" }, { id: "C", text: "Agreement" }, { id: "D", text: "Freedom" } ],
+        correctAnswer: "B"
+      },
+      {
+        id: 10,
+        text: "(Choose the option opposite in meaning to the bolded word): That engineer was said to have used <b><i><u>inferior</u></i></b> than ______ materials in the construction of the collapsed building.",
+        options: [ { id: "A", text: "Excellent" }, { id: "B", text: "Recommended" }, { id: "C", text: "Quality" }, { id: "D", text: "Exceptional" } ],
+        correctAnswer: "A" // Using 'Excellent' as per note
+      },
+      // Part 2: Best Completion (11-15)
+      {
+        id: 11,
+        text: "(Choose the best word to complete the sentence): I could not read what he wrote because his handwriting was ______.",
+        options: [ { id: "A", text: "Tiny" }, { id: "B", text: "Eligible" }, { id: "C", text: "Untidy" }, { id: "D", text: "Illegible" } ],
+        correctAnswer: "D"
+      },
+      {
+        id: 12,
+        text: "(Choose the best word to complete the sentence): When all the items on the agenda had been discussed, the meeting was ______.",
+        options: [ { id: "A", text: "Dismissed" }, { id: "B", text: "Postponed" }, { id: "C", text: "Adjourned" }, { id: "D", text: "Dissolved" } ],
+        correctAnswer: "C"
+      },
+      {
+        id: 13,
+        text: "(Choose the best word to complete the sentence): Occasionally, universities award ______ degrees to outstanding personalities.",
+        options: [ { id: "A", text: "Ceremonial" }, { id: "B", text: "Honorary" }, { id: "C", text: "Temporary" }, { id: "D", text: "Respectable" } ],
+        correctAnswer: "B"
+      },
+      {
+        id: 14,
+        text: "(Choose the best word to complete the sentence): His thoughtlessness is simply beyond ______.",
+        options: [ { id: "A", text: "Idea" }, { id: "B", text: "Tolerance" }, { id: "C", text: "Belief" }, { id: "D", text: "Fate" } ],
+        correctAnswer: "C"
+      },
+      {
+        id: 15,
+        text: "(Choose the best word to complete the sentence): Many doctors have ______ to western countries for better opportunities.",
+        options: [ { id: "A", text: "Migrated" }, { id: "B", text: "Travelled" }, { id: "C", text: "Immigrated" }, { id: "D", text: "Participant" } ],
+        correctAnswer: "A"
+      },
+      // Part 3: Interpretation (16-25)
+       {
+        id: 16,
+        text: "(Choose the best interpretation of the sentence): The recruits are under his tutelage. This means that he ______.",
+        options: [ { id: "A", text: "Assigns work to them" }, { id: "B", text: "Trains them" }, { id: "C", text: "Disciplines them at work" }, { id: "D", text: "Protects them" } ],
+        correctAnswer: "B"
+      },
+       {
+        id: 17,
+        text: "(Choose the best interpretation of the sentence): He listened attentively to her cock-and-bull story. This means that she told ______.",
+        options: [ { id: "A", text: "A terrifying story" }, { id: "B", text: "An interesting story" }, { id: "C", text: "An incredible story" }, { id: "D", text: "A lot of folktales" } ],
+        correctAnswer: "C"
+      },
+      {
+        id: 18,
+        text: "(Choose the best interpretation of the sentence): He has left the country for this good time. This means that he ______.",
+        options: [ { id: "A", text: "Will never come back" }, { id: "B", text: "Left for better conditions" }, { id: "C", text: "Became an adventurer" }, { id: "D", text: "Will improve his credentials" } ],
+        correctAnswer: "A"
+      },
+      {
+        id: 19,
+        text: "(Choose the best interpretation of the sentence): The bus driver smelt a rat when an unregistered vehicle trailed him for several kilometres. This means that the bus driver ______.",
+        options: [ { id: "A", text: "Increased his speed" }, { id: "B", text: "Became nervous" }, { id: "C", text: "Became suspicious" }, { id: "D", text: "Alerted the passengers" } ],
+        correctAnswer: "C"
+      },
+       {
+        id: 20,
+        text: "(Choose the best interpretation of the sentence): The newly employed workers were remunerated handsomely. This means that ______.",
+        options: [ { id: "A", text: "Both old and new workers were paid" }, { id: "B", text: "Only newly employed workers were paid" }, { id: "C", text: "The salaries of the new workers were attractive" }, { id: "D", text: "The salaries of the new workers were paid promptly" } ],
+        correctAnswer: "C"
+      },
+      {
+        id: 21,
+        text: "(Choose the best interpretation of the sentence): The chairman has come under fire over this project. This means that the chairman has been ______.",
+        options: [ { id: "A", text: "Severely criticized" }, { id: "B", text: "Highly praised" }, { id: "C", text: "Given the go-ahead" }, { id: "D", text: "Charged to court" } ],
+        correctAnswer: "A"
+      },
+      {
+        id: 22,
+        text: "(Choose the best interpretation of the sentence): The ugly incidents of the Civil War are water under the bridge. This means that the incidents ______.",
+        options: [ { id: "A", text: "Continue to haunt us" }, { id: "B", text: "Have been remembered again" }, { id: "C", text: "Have been forgotten" }, { id: "D", text: "Cannot be wished away" } ],
+        correctAnswer: "C"
+      },
+       {
+        id: 23,
+        text: "(Choose the best interpretation of the sentence): My heart was in my mouth as I tried to open the envelope. This means that as I opened the envelope, I was ______.",
+        options: [ { id: "A", text: "Very happy" }, { id: "B", text: "Quite eager" }, { id: "C", text: "Deeply disappointed" }, { id: "D", text: "Extremely afraid" } ],
+        correctAnswer: "D"
+      },
+       {
+        id: 24,
+        text: "(Choose the best interpretation of the sentence): Throughout the long argument, the minister maintained his ground over the claim. This means that the minister ______.",
+        options: [ { id: "A", text: "Accepted his error" }, { id: "B", text: "Refused to change his stand" }, { id: "C", text: "Had shifted ground" }, { id: "D", text: "Did not consider every view" } ],
+        correctAnswer: "B"
+      },
+       {
+        id: 25,
+        text: "(Choose the best interpretation of the sentence): John may be sincere, but I suspect that he has an axe to grind. This means that John has a ______.",
+        options: [ { id: "A", text: "Selfish motive" }, { id: "B", text: "Different opinion" }, { id: "C", text: "Motive to defend us" }, { id: "D", text: "Solution to the problem" } ],
+        correctAnswer: "A"
+      },
+      // Part 4: Nearest in Meaning (26-35)
+      {
+        id: 26,
+        text: "(Choose the option nearest in meaning to the bolded word): So much <b><i><u>effluent</u></i></b> has been poured into the stream that its water has become unsafe for drinking.",
+        options: [ { id: "A", text: "Sewage" }, { id: "B", text: "Disinfectant" }, { id: "C", text: "Oil" }, { id: "D", text: "Concoction" } ],
+        correctAnswer: "A"
+      },
+      {
+        id: 27,
+        text: "(Choose the option nearest in meaning to the bolded word): The students became <b><i><u>restive</u></i></b> after the authorities increased their tuition fees.",
+        options: [ { id: "A", text: "Alarmed" }, { id: "B", text: "Violent" }, { id: "C", text: "Noisy" }, { id: "D", text: "Agitated" } ],
+        correctAnswer: "D"
+      },
+       {
+        id: 28,
+        text: "(Choose the option nearest in meaning to the bolded word): Ali plays the guitar with great <b><i><u>dexterity</u></i></b>.",
+        options: [ { id: "A", text: "Wisdom" }, { id: "B", text: "Experience" }, { id: "C", text: "Pride" }, { id: "D", text: "Skill" } ],
+        correctAnswer: "D"
+      },
+      {
+        id: 29,
+        text: "(Choose the option nearest in meaning to the bolded word): Obi's behaviour is <b><i><u>questionable</u></i></b>.",
+        options: [ { id: "A", text: "Debatable" }, { id: "B", text: "Troublesome" }, { id: "C", text: "Annoying" }, { id: "D", text: "Refutable" } ],
+        correctAnswer: "A"
+      },
+      {
+        id: 30,
+        text: "(Choose the option nearest in meaning to the bolded word): The electricity supply in this community is <b><i><u>erratic</u></i></b>.",
+        options: [ { id: "A", text: "Unpredictable" }, { id: "B", text: "Disorderly" }, { id: "C", text: "Low" }, { id: "D", text: "Temporary" } ],
+        correctAnswer: "A"
+      },
+      {
+        id: 31,
+        text: "(Choose the option nearest in meaning to the bolded word): He became really <b><i><u>disheartened</u></i></b> when he heard the news.",
+        options: [ { id: "A", text: "Dejected" }, { id: "B", text: "Dishevelled" }, { id: "C", text: "Worried" }, { id: "D", text: "Disturbed" } ],
+        correctAnswer: "A"
+      },
+      {
+        id: 32,
+        text: "(Choose the option nearest in meaning to the bolded word): The office has taken <b><i><u>stringent</u></i></b> measures to protect its facilities.",
+        options: [ { id: "A", text: "Suitable" }, { id: "B", text: "Rigid" }, { id: "C", text: "Strict" }, { id: "D", text: "Complete" } ],
+        correctAnswer: "C"
+      },
+      {
+        id: 33,
+        text: "(Choose the option nearest in meaning to the bolded word): She was <b><i><u>infuriated</u></i></b> by the shabby appearance of the man who brought her the message from home.",
+        options: [ { id: "A", text: "Shocked" }, { id: "B", text: "Discouraged" }, { id: "C", text: "Annoyed" }, { id: "D", text: "Humiliated" } ],
+        correctAnswer: "C"
+      },
+      {
+        id: 34,
+        text: "(Choose the option nearest in meaning to the bolded word): Henry likes to be involved in <b><i><u>shady</u></i></b> deals.",
+        options: [ { id: "A", text: "Unknown" }, { id: "B", text: "Undisclosed" }, { id: "C", text: "Dishonest" }, { id: "D", text: "Doubtful" } ],
+        correctAnswer: "C"
+      },
+      {
+        id: 35,
+        text: "(Choose the option nearest in meaning to the bolded word): A good student should be <b><i><u>inquisitive</u></i></b>.",
+        options: [ { id: "A", text: "Hardworking" }, { id: "B", text: "Busy" }, { id: "C", text: "Curious" }, { id: "D", text: "Studious" } ],
+        correctAnswer: "C"
+      },
+      // Part 5: Best Completion (36-60)
+      {
+        id: 36,
+        text: "(Choose the best option to complete the sentence): Life in the city is ______ expensive for most people.",
+        options: [ { id: "A", text: "Too much" }, { id: "B", text: "Much" }, { id: "C", text: "Very much" }, { id: "D", text: "Much too" } ],
+        correctAnswer: "D"
+      },
+      {
+        id: 37,
+        text: "(Choose the best option to complete the sentence): My father made me ______ at home.",
+        options: [ { id: "A", text: "Stay" }, { id: "B", text: "Stayed" }, { id: "C", text: "To be staying" }, { id: "D", text: "To stay" } ],
+        correctAnswer: "A"
+      },
+      {
+        id: 38,
+        text: "(Choose the best option to complete the sentence): The long-awaited match was called ______ at the last moment.",
+        options: [ { id: "A", text: "Off" }, { id: "B", text: "Out" }, { id: "C", text: "Down" }, { id: "D", text: "Away" } ],
+        correctAnswer: "A"
+      },
+      {
+        id: 39,
+        text: "(Choose the best option to complete the sentence): Get to work! Don't sit ______ doing nothing.",
+        options: [ { id: "A", text: "About" }, { id: "B", text: "Up" }, { id: "C", text: "On" }, { id: "D", text: "By" } ],
+        correctAnswer: "A"
+      },
+       {
+        id: 40,
+        text: "(Choose the best option to complete the sentence): We promised to tell the truth, ______?",
+        options: [ { id: "A", text: "Isn't it" }, { id: "B", text: "Didn't we" }, { id: "C", text: "Shouldn't we" }, { id: "D", text: "Wasn't it" } ],
+        correctAnswer: "B"
+      },
+       {
+        id: 41,
+        text: "(Choose the best option to complete the sentence): No sooner had we set off ______ it started to rain.",
+        options: [ { id: "A", text: "That" }, { id: "B", text: "When" }, { id: "C", text: "Than" }, { id: "D", text: "As" } ],
+        correctAnswer: "C"
+      },
+      {
+        id: 42,
+        text: "(Choose the best option to complete the sentence): I cannot put up ______ his saucy behaviour.",
+        options: [ { id: "A", text: "On" }, { id: "B", text: "With" }, { id: "C", text: "From" }, { id: "D", text: "By" } ],
+        correctAnswer: "B"
+      },
+      {
+        id: 43,
+        text: "(Choose the best option to complete the sentence): Several ______ attended the two-day economic summit.",
+        options: [ { id: "A", text: "Head of state" }, { id: "B", text: "Heads of states" }, { id: "C", text: "Heads of state" }, { id: "D", text: "Head of states" } ],
+        correctAnswer: "C"
+      },
+       {
+        id: 44,
+        text: "(Choose the best option to complete the sentence): I won't go to the cinema with you I ______ the movie.",
+        options: [ { id: "A", text: "Saw" }, { id: "B", text: "Have seen" }, { id: "C", text: "Seen" }, { id: "D", text: "Had seen" } ],
+        correctAnswer: "B" // Using 'Have seen' as discussed
+      },
+      {
+        id: 45,
+        text: "(Choose the best option to complete the sentence): The committee has submitted its report ______ the students' act.",
+        options: [ { id: "A", text: "On" }, { id: "B", text: "For" }, { id: "C", text: "About" }, { id: "D", text: "At" } ],
+        correctAnswer: "A"
+      },
+      {
+        id: 46,
+        text: "(Choose the best option to complete the sentence): It's been a rough life so far, ______?",
+        options: [ { id: "A", text: "Hasn't it" }, { id: "B", text: "Isn't it" }, { id: "C", text: "Hadn't it" }, { id: "D", text: "Wasn't it" } ],
+        correctAnswer: "A"
+      },
+      {
+        id: 47,
+        text: "(Choose the best option to complete the sentence): If I had known, I ______ not have come.",
+        options: [ { id: "A", text: "Should" }, { id: "B", text: "Ought" }, { id: "C", text: "Would" }, { id: "D", text: "May" } ],
+        correctAnswer: "C"
+      },
+      {
+        id: 48,
+        text: "(Choose the best option to complete the sentence): She had to work from ______.",
+        options: [ { id: "A", text: "Morning till the evening" }, { id: "B", text: "The morning till evening" }, { id: "C", text: "The morning till the evening" }, { id: "D", text: "Morning till evening" } ],
+        correctAnswer: "D"
+      },
+      {
+        id: 49,
+        text: "(Choose the best option to complete the sentence): He did it, but not ______ the way I had expected.",
+        options: [ { id: "A", text: "As" }, { id: "B", text: "Quite" }, { id: "C", text: "Exactly" }, { id: "D", text: "So" } ],
+        correctAnswer: "C"
+      },
+      {
+        id: 50,
+        text: "(Choose the best option to complete the sentence): After stalking its prey for a while, the lion ______ on the kill.",
+        options: [ { id: "A", text: "Closed in" }, { id: "B", text: "Closed up" }, { id: "C", text: "Closed off" }, { id: "D", text: "Closed down" } ],
+        correctAnswer: "A"
+      },
+      {
+        id: 51,
+        text: "(Choose the best option to complete the sentence): Mary and Jane are always quarrelling with ______.",
+        options: [ { id: "A", text: "Each other" }, { id: "B", text: "Themselves" }, { id: "C", text: "Another" }, { id: "D", text: "Other" } ],
+        correctAnswer: "A"
+      },
+      {
+        id: 52,
+        text: "(Choose the best option to complete the sentence): They have been informed of his departure, ______?",
+        options: [ { id: "A", text: "Haven't they" }, { id: "B", text: "Hadn't they" }, { id: "C", text: "Weren't it" }, { id: "D", text: "Isn't it" } ],
+        correctAnswer: "A"
+      },
+      {
+        id: 53,
+        text: "(Choose the best option to complete the sentence): Although some students may be innocent, ______ are guilty of this offence.",
+        options: [ { id: "A", text: "Much" }, { id: "B", text: "Great deal" }, { id: "C", text: "Most" }, { id: "D", text: "A good deal" } ],
+        correctAnswer: "C"
+      },
+      {
+        id: 54,
+        text: "(Choose the best option to complete the sentence): She prefers singing ______ dancing.",
+        options: [ { id: "A", text: "Besides" }, { id: "B", text: "Aside" }, { id: "C", text: "Than" }, { id: "D", text: "To" } ],
+        correctAnswer: "D"
+      },
+      {
+        id: 55,
+        text: "(Choose the best option to complete the sentence): Is that the lady ______ you planned to visit?",
+        options: [ { id: "A", text: "Which" }, { id: "B", text: "Who" }, { id: "C", text: "Whose" }, { id: "D", text: "Whom" } ],
+        correctAnswer: "D"
+      },
+      {
+        id: 56,
+        text: "(Choose the best option to complete the sentence): The children ______ in the pool after school.",
+        options: [ { id: "A", text: "Swam" }, { id: "B", text: "Swim" }, { id: "C", text: "Swimming" }, { id: "D", text: "Swum" } ],
+        correctAnswer: "A"
+      },
+       {
+        id: 57,
+        text: "(Choose the best option to complete the sentence): In spite of all their shortcomings, we cannot ______ admire them.",
+        options: [ { id: "A", text: "Only" }, { id: "B", text: "But" }, { id: "C", text: "Also" }, { id: "D", text: "Still" } ],
+        correctAnswer: "B"
+      },
+      {
+        id: 58,
+        text: "(Choose the best option to complete the sentence): The African extended family system gives ______ members.",
+        options: [ { id: "A", text: "His" }, { id: "B", text: "Her" }, { id: "C", text: "Its" }, { id: "D", text: "Their" } ],
+        correctAnswer: "C"
+      },
+       {
+        id: 59,
+        text: "(Choose the best option to complete the sentence): We all look forward to meeting the ______.",
+        options: [ { id: "A", text: "Beautiful, young, Nigerian musician" }, { id: "B", text: "Young, Nigerian, beautiful musician" }, { id: "C", text: "Nigerian, young, beautiful musician" }, { id: "D", text: "Nigerian, beautiful, young musician" } ],
+        correctAnswer: "A"
+      },
+       {
+        id: 60,
+        text: "(Choose the best option to complete the sentence): One of my ______ is a lecturer in the university.",
+        options: [ { id: "A", text: "Sister" }, { id: "B", text: "Sister's" }, { id: "C", text: "Sisters" }, { id: "D", text: "Sisters'" } ],
+        correctAnswer: "C"
+      }
+    ]
   }
 ];

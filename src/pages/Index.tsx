@@ -1,8 +1,13 @@
 import React from 'react';
-import { subjects } from '@/data/questions';
+import { subjects, Subject } from '@/data/questions';
 import SubjectCard from '@/components/SubjectCard';
 
 const Index = () => {
+  // Sort subjects alphabetically by name
+  const sortedSubjects = [...subjects].sort((a: Subject, b: Subject) => 
+    a.name.localeCompare(b.name)
+  );
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       {/* Optional Header/Nav Placeholder */}
@@ -23,7 +28,7 @@ const Index = () => {
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {subjects.map((subject) => (
+          {sortedSubjects.map((subject) => (
             <SubjectCard
               key={subject.id}
               id={subject.id}
