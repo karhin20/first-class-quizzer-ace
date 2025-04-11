@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -131,9 +130,9 @@ const ResultsCard: React.FC<ResultsCardProps> = ({
                       );
                     })}
                     
-                    <div className="mt-3 text-sm">
+                    <div className="mt-3 text-sm space-y-1">
                       {!userAnswer && (
-                        <p className="text-orange-600 font-medium">You did not answer this question</p>
+                        <p className="text-orange-600 font-medium">You did not answer this question.</p>
                       )}
                       {userAnswer && !isCorrect && (
                         <p className="text-red-600 font-medium">
@@ -145,10 +144,16 @@ const ResultsCard: React.FC<ResultsCardProps> = ({
                           Your answer: {userOption?.text || 'None'} (Correct)
                         </p>
                       )}
-                      {!isCorrect && (
-                        <p className="text-green-600 font-medium">
+                      {(!isCorrect || !userAnswer) && (
+                        <p className="text-green-700 font-medium">
                           Correct answer: {correctOption?.text || 'None'}
                         </p>
+                      )}
+                      {!isCorrect && question.explanation && (
+                        <div className="mt-2 pt-2 border-t border-gray-200">
+                          <p className="text-gray-700 font-semibold">Explanation:</p>
+                          <p className="text-gray-600">{question.explanation}</p>
+                        </div>
                       )}
                     </div>
                   </CardContent>

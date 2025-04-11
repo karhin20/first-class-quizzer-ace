@@ -6,6 +6,7 @@ export interface Question {
     text: string;
   }[];
   correctAnswer: string;
+  explanation?: string; // Add optional explanation field
 }
 
 export interface Subject {
@@ -2183,6 +2184,310 @@ export const subjects: Subject[] = [
         text: "(Choose the best option to complete the sentence): One of my ______ is a lecturer in the university.",
         options: [ { id: "A", text: "Sister" }, { id: "B", text: "Sister's" }, { id: "C", text: "Sisters" }, { id: "D", text: "Sisters'" } ],
         correctAnswer: "C"
+      }
+    ]
+  },
+  {
+    id: "english-3",
+    name: "English Language 3",
+    description: "Further English Language Practice",
+    icon: "book-open", // Slightly different icon
+    questions: [
+      // Part 1: Opposite in Meaning
+      {
+        id: 1,
+        text: "(Choose the option opposite in meaning to the bolded word): The speaker's comments were considered quite <b><i><u>provocative</u></i></b> by the audience.",
+        options: [ { id: "A", text: "Soothing" }, { id: "B", text: "Annoying" }, { id: "C", text: "Stimulating" }, { id: "D", text: "Thoughtful" } ],
+        correctAnswer: "A",
+        explanation: '"Provocative" means causing annoyance or anger. "Soothing" means having a calming effect, which is the opposite.'
+      },
+      {
+        id: 2,
+        text: "(Choose the option opposite in meaning to the bolded word): After the long hike, the explorers were <b><i><u>weary</u></i></b>.",
+        options: [ { id: "A", text: "Tired" }, { id: "B", text: "Energetic" }, { id: "C", text: "Sleepy" }, { id: "D", text: "Thirsty" } ],
+        correctAnswer: "B",
+        explanation: '"Weary" means tired. "Energetic" means having or showing great activity or vitality, the opposite of tired.'
+      },
+      {
+        id: 3,
+        text: "(Choose the option opposite in meaning to the bolded word): The government decided to <b><i><u>curtail</u></i></b> spending on non-essential projects.",
+        options: [ { id: "A", text: "Reduce" }, { id: "B", text: "Stop" }, { id: "C", text: "Expand" }, { id: "D", text: "Postpone" } ],
+        correctAnswer: "C",
+        explanation: '"Curtail" means to reduce or restrict. "Expand" means to increase in size or amount, which is the opposite.'
+      },
+      // Part 2: Nearest in Meaning
+      {
+        id: 4,
+        text: "(Choose the option nearest in meaning to the bolded word): The evidence presented was <b><i><u>tangible</u></i></b> and could not be ignored.",
+        options: [ { id: "A", text: "Clear" }, { id: "B", text: "Important" }, { id: "C", text: "Physical" }, { id: "D", text: "Debatable" } ],
+        correctAnswer: "C",
+        explanation: '"Tangible" means perceptible by touch; clear and definite; real. "Physical" is the closest synonym in this context.'
+      },
+      {
+        id: 5,
+        text: "(Choose the option nearest in meaning to the bolded word): He showed great <b><i><u>fortitude</u></i></b> during the difficult times.",
+        options: [ { id: "A", text: "Strength" }, { id: "B", text: "Courage" }, { id: "C", text: "Patience" }, { id: "D", text: "Wisdom" } ],
+        correctAnswer: "B",
+        explanation: '"Fortitude" means courage in pain or adversity. "Courage" is the nearest synonym.'
+      },
+      // Part 3: Best Completion
+      {
+        id: 6,
+        text: "(Choose the best word to complete the sentence): Despite the initial setback, the team ______ and won the championship.",
+        options: [ { id: "A", text: "Persevered" }, { id: "B", text: "Quit" }, { id: "C", text: "Argued" }, { id: "D", text: "Relaxed" } ],
+        correctAnswer: "A",
+        explanation: '"Persevered" means to continue in a course of action even in the face of difficulty, which fits the context of overcoming a setback to win.'
+      },
+      {
+        id: 7,
+        text: "(Choose the best option to complete the sentence): The librarian asked for silence as the noise was ______ the readers.",
+        options: [ { id: "A", text: "Helping" }, { id: "B", text: "Amusing" }, { id: "C", text: "Disturbing" }, { id: "D", text: "Encouraging" } ],
+        correctAnswer: "C",
+        explanation: 'Libraries require quiet environments for reading. Noise would be "disturbing" to readers.'
+      },
+      {
+        id: 8,
+        text: "(Choose the best option to complete the sentence): If you ______ the rules, you may face consequences.",
+        options: [ { id: "A", text: "Follow" }, { id: "B", text: "Ignore" }, { id: "C", text: "Understand" }, { id: "D", text: "Flout" } ],
+        correctAnswer: "D",
+        explanation: '"Flout" means to openly disregard (a rule, law, or convention), which fits the context of facing consequences for breaking rules.'
+      },
+      // Part 4: Interpretation
+      {
+        id: 9,
+        text: "(Choose the best interpretation of the sentence): The manager decided to nip the problem in the bud. This means the manager decided to ______.",
+        options: [ { id: "A", text: "Investigate the problem thoroughly" }, { id: "B", text: "Deal with the problem at a later stage" }, { id: "C", text: "Stop the problem at an early stage" }, { id: "D", text: "Ignore the problem completely" } ],
+        correctAnswer: "C",
+        explanation: 'The idiom "nip in the bud" means to stop something at an early stage before it develops into something larger or more serious.'
+      },
+      {
+        id: 10,
+        text: "(Choose the best interpretation of the sentence): She felt like a fish out of water at the formal event. This means she felt ______.",
+        options: [ { id: "A", text: "Very comfortable" }, { id: "B", text: "Extremely thirsty" }, { id: "C", text: "Uncomfortable and out of place" }, { id: "D", text: "Happy and excited" } ],
+        correctAnswer: "C",
+        explanation: 'The idiom "like a fish out of water" means feeling awkward or uncomfortable because you are in an unfamiliar situation.'
+      },
+       // Part 1: Opposite in Meaning (Continued)
+      {
+        id: 11,
+        text: "(Choose the option opposite in meaning to the bolded word): The evidence against the defendant was <b><i><u>conclusive</u></i></b>.",
+        options: [ { id: "A", text: "Decisive" }, { id: "B", text: "Clear" }, { id: "C", text: "Doubtful" }, { id: "D", text: "Strong" } ],
+        correctAnswer: "C",
+        explanation: '"Conclusive" means proving something beyond doubt. "Doubtful" means uncertain or questionable, which is the opposite.'
+      },
+      {
+        id: 12,
+        text: "(Choose the option opposite in meaning to the bolded word): His <b><i><u>frugal</u></i></b> lifestyle allowed him to save a lot of money.",
+        options: [ { id: "A", text: "Simple" }, { id: "B", text: "Economical" }, { id: "C", text: "Extravagant" }, { id: "D", text: "Careful" } ],
+        correctAnswer: "C",
+        explanation: '"Frugal" means sparing or economical with regard to money or food. "Extravagant" means lacking restraint in spending money, the opposite.'
+      },
+      {
+        id: 13,
+        text: "(Choose the option opposite in meaning to the bolded word): The teacher found the student\'s excuse <b><i><u>implausible</u></i></b>.",
+        options: [ { id: "A", text: "Unlikely" }, { id: "B", text: "Believable" }, { id: "C", text: "Weak" }, { id: "D", text: "Creative" } ],
+        correctAnswer: "B",
+        explanation: '"Implausible" means not seeming reasonable or probable; failing to convince. "Believable" is the direct opposite.'
+      },
+      // Part 2: Nearest in Meaning (Continued)
+      {
+        id: 14,
+        text: "(Choose the option nearest in meaning to the bolded word): The old map was filled with <b><i><u>obscure</u></i></b> symbols.",
+        options: [ { id: "A", text: "Ancient" }, { id: "B", text: "Clear" }, { id: "C", text: "Unimportant" }, { id: "D", text: "Unclear" } ],
+        correctAnswer: "D",
+        explanation: '"Obscure" means not discovered or known about; uncertain or not clearly expressed. "Unclear" is the nearest synonym.'
+      },
+      {
+        id: 15,
+        text: "(Choose the option nearest in meaning to the bolded word): The company decided to <b><i><u>implement</u></i></b> the new policy immediately.",
+        options: [ { id: "A", text: "Announce" }, { id: "B", text: "Consider" }, { id: "C", text: "Apply" }, { id: "D", text: "Cancel" } ],
+        correctAnswer: "C",
+        explanation: '"Implement" means to put (a decision, plan, agreement, etc.) into effect. "Apply" is the closest meaning in this context.'
+      },
+      {
+        id: 16,
+        text: "(Choose the option nearest in meaning to the bolded word): She gave a <b><i><u>succinct</u></i></b> summary of the main points.",
+        options: [ { id: "A", text: "Long" }, { id: "B", text: "Detailed" }, { id: "C", text: "Brief" }, { id: "D", text: "Confusing" } ],
+        correctAnswer: "C",
+        explanation: '"Succinct" means briefly and clearly expressed. "Brief" is the nearest synonym.'
+      },
+      // Part 3: Best Completion (Continued)
+      {
+        id: 17,
+        text: "(Choose the best word to complete the sentence): The detective had to ______ all the clues to solve the mystery.",
+        options: [ { id: "A", text: "Ignore" }, { id: "B", text: "Assemble" }, { id: "C", text: "Destroy" }, { id: "D", text: "Question" } ],
+        correctAnswer: "B",
+        explanation: 'Detectives "assemble" or gather clues to piece together a solution.'
+      },
+      {
+        id: 18,
+        text: "(Choose the best option to complete the sentence): The politician\'s speech was designed to ______ the crowd.",
+        options: [ { id: "A", text: "Disperse" }, { id: "B", text: "Alienate" }, { id: "C", text: "Pacify" }, { id: "D", text: "Bore" } ],
+        correctAnswer: "C",
+        explanation: 'Politicians often aim to calm or "pacify" a crowd, especially if there is tension.'
+      },
+      {
+        id: 19,
+        text: "(Choose the best option to complete the sentence): Lack of rain ______ the region\'s agricultural output.",
+        options: [ { id: "A", text: "Boosted" }, { id: "B", text: "Improved" }, { id: "C", text: "Hindered" }, { id: "D", text: "Changed" } ],
+        correctAnswer: "C",
+        explanation: 'A lack of rain would negatively impact or "hinder" crop production.'
+      },
+      {
+        id: 20,
+        text: "(Choose the best option to complete the sentence): He was known for his ______ attention to detail.",
+        options: [ { id: "A", text: "Casual" }, { id: "B", text: "Meticulous" }, { id: "C", text: "Occasional" }, { id: "D", text: "Superficial" } ],
+        correctAnswer: "B",
+        explanation: '"Meticulous" means showing great attention to detail; very careful and precise, which fits the description.'
+      },
+      {
+        id: 21,
+        text: "(Choose the best option to complete the sentence): The ancient ruins give us a ______ into the lives of people long ago.",
+        options: [ { id: "A", text: "Command" }, { id: "B", text: "Glimpse" }, { id: "C", text: "Lecture" }, { id: "D", text: "Warning" } ],
+        correctAnswer: "B",
+        explanation: 'Ruins offer a brief view or "glimpse" into the past.'
+      },
+      {
+        id: 22,
+        text: "(Choose the best option to complete the sentence): You must ______ your membership to continue accessing the services.",
+        options: [ { id: "A", text: "Cancel" }, { id: "B", text: "Forget" }, { id: "C", text: "Renew" }, { id: "D", text: "Sell" } ],
+        correctAnswer: "C",
+        explanation: 'Memberships typically need to be "renewed" to remain active.'
+      },
+      // Part 4: Interpretation (Continued)
+      {
+        id: 23,
+        text: "(Choose the best interpretation of the sentence): The boss told the employees to get their act together. This means the boss told them to ______.",
+        options: [ { id: "A", text: "Prepare for a performance" }, { id: "B", text: "Work harder and more effectively" }, { id: "C", text: "Collect their belongings" }, { id: "D", text: "Go on vacation" } ],
+        correctAnswer: "B",
+        explanation: 'The idiom "get your act together" means to start behaving more appropriately or effectively.'
+      },
+      {
+        id: 24,
+        text: "(Choose the best interpretation of the sentence): He decided to spill the beans about the secret plan. This means he decided to ______.",
+        options: [ { id: "A", text: "Spoil the plan" }, { id: "B", text: "Reveal the secret information" }, { id: "C", text: "Make a mess" }, { id: "D", text: "Forget the plan" } ],
+        correctAnswer: "B",
+        explanation: 'The idiom "spill the beans" means to reveal secret information unintentionally or indiscreetly.'
+      },
+      {
+        id: 25,
+        text: "(Choose the best interpretation of the sentence): She was on cloud nine after receiving the award. This means she was ______.",
+        options: [ { id: "A", text: "Feeling unwell" }, { id: "B", text: "Very confused" }, { id: "C", text: "Extremely happy" }, { id: "D", text: "High above the ground" } ],
+        correctAnswer: "C",
+        explanation: 'The idiom "on cloud nine" means being extremely happy and excited.'
+      },
+      {
+        id: 26,
+        text: "(Choose the best interpretation of the sentence): The athlete broke the record by a hair\'s breadth. This means the athlete broke the record ______.",
+        options: [ { id: "A", text: "Easily" }, { id: "B", text: "By a very small margin" }, { id: "C", text: "With a new hairstyle" }, { id: "D", text: "Accidentally" } ],
+        correctAnswer: "B",
+        explanation: 'The idiom "by a hair\'s breadth" means by a very small margin.'
+      },
+      // Part 1: Opposite in Meaning (Round 2)
+      {
+        id: 27,
+        text: "(Choose the option opposite in meaning to the bolded word): The professor\'s lecture was quite <b><i><u>lucid</u></i></b>.",
+        options: [ { id: "A", text: "Clear" }, { id: "B", text: "Long" }, { id: "C", text: "Confusing" }, { id: "D", text: "Boring" } ],
+        correctAnswer: "C",
+        explanation: '"Lucid" means clearly expressed and easy to understand. "Confusing" is the opposite.'
+      },
+      {
+        id: 28,
+        text: "(Choose the option opposite in meaning to the bolded word): They live in an <b><i><u>affluent</u></i></b> neighbourhood.",
+        options: [ { id: "A", text: "Populous" }, { id: "B", text: "Poor" }, { id: "C", text: "Distant" }, { id: "D", text: "Quiet" } ],
+        correctAnswer: "B",
+        explanation: '"Affluent" means wealthy. "Poor" is the opposite.'
+      },
+      // Part 2: Nearest in Meaning (Round 2)
+      {
+        id: 29,
+        text: "(Choose the option nearest in meaning to the bolded word): The lawyer tried to <b><i><u>discredit</u></i></b> the witness\'s testimony.",
+        options: [ { id: "A", text: "Understand" }, { id: "B", text: "Repeat" }, { id: "C", text: "Disbelieve" }, { id: "D", text: "Support" } ],
+        correctAnswer: "C",
+        explanation: '"Discredit" means to harm the good reputation of someone or something, or cause an idea or piece of evidence to seem false or unreliable. "Disbelieve" captures the essence of making the testimony seem unreliable.'
+      },
+      {
+        id: 30,
+        text: "(Choose the option nearest in meaning to the bolded word): His <b><i><u>perfunctory</u></i></b> response showed his lack of interest.",
+        options: [ { id: "A", text: "Enthusiastic" }, { id: "B", text: "Detailed" }, { id: "C", text: "Casual" }, { id: "D", text: "Rude" } ],
+        correctAnswer: "C",
+        explanation: '"Perfunctory" means carried out with a minimum of effort or reflection, often superficially. "Casual" is the closest synonym.'
+      },
+      // Part 3: Best Completion (Round 2)
+      {
+        id: 31,
+        text: "(Choose the best option to complete the sentence): The old bridge was deemed unsafe and is scheduled for ______.",
+        options: [ { id: "A", text: "Renovation" }, { id: "B", text: "Decoration" }, { id: "C", text: "Demolition" }, { id: "D", text: "Celebration" } ],
+        correctAnswer: "C",
+        explanation: 'An unsafe bridge would likely be torn down or undergo "demolition".'
+      },
+      {
+        id: 32,
+        text: "(Choose the best option to complete the sentence): The mediator\'s role was to ______ reconciliation between the two parties.",
+        options: [ { id: "A", text: "Prevent" }, { id: "B", text: "Delay" }, { id: "C", text: "Facilitate" }, { id: "D", text: "Observe" } ],
+        correctAnswer: "C",
+        explanation: 'A mediator helps to make a process easier, i.e., "facilitate" reconciliation.'
+      },
+      {
+        id: 33,
+        text: "(Choose the best option to complete the sentence): She has a ______ for remembering names and faces.",
+        options: [ { id: "A", text: "Problem" }, { id: "B", text: "Habit" }, { id: "C", text: "Knack" }, { id: "D", text: "Difficulty" } ],
+        correctAnswer: "C",
+        explanation: 'A "knack" is an acquired or natural skill at doing something.'
+      },
+      // Part 4: Interpretation (Round 2)
+      {
+        id: 34,
+        text: "(Choose the best interpretation of the sentence): He decided to take the bull by the horns and confront the issue directly. This means he decided to ______.",
+        options: [ { id: "A", text: "Avoid the issue" }, { id: "B", text: "Deal with a difficult situation decisively" }, { id: "C", text: "Get help from others" }, { id: "D", text: "Behave aggressively" } ],
+        correctAnswer: "B",
+        explanation: 'The idiom "take the bull by the horns" means to deal with a difficult or dangerous situation directly and with courage.'
+      },
+      {
+        id: 35,
+        text: "(Choose the best interpretation of the sentence): The project was put on the back burner for a few months. This means the project was ______.",
+        options: [ { id: "A", text: "Completed quickly" }, { id: "B", text: "Given low priority" }, { id: "C", text: "Cancelled entirely" }, { id: "D", text: "Heated up" } ],
+        correctAnswer: "B",
+        explanation: 'To put something "on the back burner" means to give it low priority; to postpone consideration or action.'
+      },
+       // Part 1: Opposite in Meaning (Round 3)
+      {
+        id: 36,
+        text: "(Choose the option opposite in meaning to the bolded word): The politician\'s <b><i><u>equivocal</u></i></b> statements confused the voters.",
+        options: [ { id: "A", text: "Clear" }, { id: "B", text: "Lengthy" }, { id: "C", text: "Ambiguous" }, { id: "D", text: "False" } ],
+        correctAnswer: "A",
+        explanation: '"Equivocal" means open to more than one interpretation; ambiguous. "Clear" or unambiguous is the opposite.'
+      },
+      // Part 2: Nearest in Meaning (Round 3)
+      {
+        id: 37,
+        text: "(Choose the option nearest in meaning to the bolded word): The teacher tried to <b><i><u>elicit</u></i></b> responses from the quiet students.",
+        options: [ { id: "A", text: "Prevent" }, { id: "B", text: "Force" }, { id: "C", text: "Evoke" }, { id: "D", text: "Write" } ],
+        correctAnswer: "C",
+        explanation: '"Elicit" means to evoke or draw out (a response, answer, or fact) from someone. "Evoke" is the closest synonym.'
+      },
+      // Part 3: Best Completion (Round 3)
+      {
+        id: 38,
+        text: "(Choose the best option to complete the sentence): The ______ of fresh air was welcome after being indoors all day.",
+        options: [ { id: "A", text: "Lack" }, { id: "B", text: "Gust" }, { id: "C", text: "Smell" }, { id: "D", text: "Idea" } ],
+        correctAnswer: "B",
+        explanation: 'A "gust" refers to a brief, strong rush of wind or air.'
+      },
+      // Part 4: Interpretation (Round 3)
+      {
+        id: 39,
+        text: "(Choose the best interpretation of the sentence): He always calls a spade a spade. This means that he ______.",
+        options: [ { id: "A", text: "Likes gardening" }, { id: "B", text: "Is a very honest person" }, { id: "C", text: "Speaks plainly and directly" }, { id: "D", text: "Is often rude" } ],
+        correctAnswer: "C",
+        explanation: 'The idiom "call a spade a spade" means to speak frankly and directly, without avoiding unpleasant subjects.'
+      },
+      {
+        id: 40,
+        text: "(Choose the best interpretation of the sentence): It\'s raining cats and dogs outside! This means it\'s raining ______.",
+        options: [ { id: "A", text: "Lightly" }, { id: "B", text: "With animals falling" }, { id: "C", text: "Very heavily" }, { id: "D", text: "Unexpectedly" } ],
+        correctAnswer: "C",
+        explanation: 'The idiom "raining cats and dogs" means raining very heavily.'
       }
     ]
   }
