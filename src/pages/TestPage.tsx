@@ -32,8 +32,8 @@ const TestPage = () => {
   
   const subject = getSubjectById(subjectId || '');
   
-  // State for shuffled questions
-  const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>([]);
+  // State for questions (potentially shuffled)
+  const [currentQuestions, setCurrentQuestions] = useState<Question[]>([]);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [showResults, setShowResults] = useState(false);
@@ -42,15 +42,23 @@ const TestPage = () => {
   const [questionTimeRemaining, setQuestionTimeRemaining] = useState<number>(60);
   const questionTimerIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Shuffle questions, options and initialize timer
+  // Set up questions (shuffle options, maybe shuffle questions) and initialize timer
   useEffect(() => {
     if (subject && subject.questions.length > 0) {
+      // Always shuffle options within each question
       const questionsWithOptionsShuffled = subject.questions.map(q => ({
         ...q,
-        options: shuffleArray(q.options) // Shuffle options for each question
+        options: shuffleArray(q.options) 
       }));
-      setShuffledQuestions(shuffleArray(questionsWithOptionsShuffled)); // Shuffle questions themselves
+
+      // Shuffle question order *unless* it's any Integrated Science subject
+      const finalQuestions = subject.id.startsWith('integrated-science')
+        ? questionsWithOptionsShuffled
+        : shuffleArray(questionsWithOptionsShuffled);
+
+      setCurrentQuestions(finalQuestions);
       
+      // Reset other states
       setCurrentQuestionIndex(0);
       setAnswers({});
       setShowResults(false);
@@ -96,7 +104,7 @@ const TestPage = () => {
             clearInterval(questionTimerIntervalRef.current!); // Stop timer
 
             // Auto-advance or submit
-            if (currentQuestionIndex < shuffledQuestions.length - 1) {
+            if (currentQuestionIndex < currentQuestions.length - 1) {
               toast.warning("Time's up for this question!", { description: "Moving to the next question." });
               paginate(1); // Go to next question
             } else {
@@ -116,15 +124,15 @@ const TestPage = () => {
         clearInterval(questionTimerIntervalRef.current);
       }
     };
-  }, [currentQuestionIndex, showResults, shuffledQuestions.length]); // Rerun when question changes or results are shown
+  }, [currentQuestionIndex, showResults, currentQuestions.length]); // Rerun when question changes or results are shown
 
   // Memoize current question to avoid recalculating on every render
   const currentQuestion = useMemo(() => {
-    return shuffledQuestions[currentQuestionIndex];
-  }, [shuffledQuestions, currentQuestionIndex]);
+    return currentQuestions[currentQuestionIndex];
+  }, [currentQuestions, currentQuestionIndex]);
   
   // Early return if questions haven't been shuffled yet or subject is invalid
-  if (!subject || shuffledQuestions.length === 0 || !currentQuestion) {
+  if (!subject || currentQuestions.length === 0 || !currentQuestion) {
     // Optionally show a loading state here
     return <div>Loading test...</div>; 
   }
@@ -137,7 +145,7 @@ const TestPage = () => {
   };
   
   const goToNextQuestion = () => {
-    if (currentQuestionIndex < shuffledQuestions.length - 1) {
+    if (currentQuestionIndex < currentQuestions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     }
   };
@@ -148,10 +156,10 @@ const TestPage = () => {
     }
   };
   
-  // Update score calculation to use shuffledQuestions
+  // Update score calculation to use currentQuestions
   const calculateScore = () => {
     let newScore = 0;
-    shuffledQuestions.forEach(question => {
+    currentQuestions.forEach(question => {
       if (answers[question.id] === question.correctAnswer) {
         newScore += 1;
       }
@@ -164,7 +172,7 @@ const TestPage = () => {
     if (questionTimerIntervalRef.current) clearInterval(questionTimerIntervalRef.current); // Stop current question timer
 
     const answeredQuestions = Object.keys(answers).length;
-    const totalQuestions = shuffledQuestions.length;
+    const totalQuestions = currentQuestions.length;
     
     if (!forceSubmit && answeredQuestions < totalQuestions) {
       const unansweredCount = totalQuestions - answeredQuestions;
@@ -195,7 +203,11 @@ const TestPage = () => {
         ...q,
         options: shuffleArray(q.options)
       }));
-      setShuffledQuestions(shuffleArray(questionsWithOptionsShuffled));
+      // Re-apply the conditional shuffle logic
+      const finalQuestions = subject.id.startsWith('integrated-science')
+        ? questionsWithOptionsShuffled
+        : shuffleArray(questionsWithOptionsShuffled);
+      setCurrentQuestions(finalQuestions);
     }
     setAnswers({});
     setCurrentQuestionIndex(0);
@@ -206,9 +218,9 @@ const TestPage = () => {
   };
   
   const selectedOption = answers[currentQuestion.id] || null;
-  const isLastQuestion = currentQuestionIndex === shuffledQuestions.length - 1;
+  const isLastQuestion = currentQuestionIndex === currentQuestions.length - 1;
   const answeredQuestionsCount = Object.keys(answers).length;
-  const totalQuestionsCount = shuffledQuestions.length;
+  const totalQuestionsCount = currentQuestions.length;
 
   // Animation variants
   const variants = {
@@ -301,7 +313,7 @@ const TestPage = () => {
             
             {/* Progress Dots Indicator */}
             <div className="flex justify-center space-x-2 mt-4 mb-8">
-              {shuffledQuestions.map((q, index) => (
+              {currentQuestions.map((q, index) => (
                 <div
                   key={q.id}
                   className={`h-3 w-3 rounded-full ${index === currentQuestionIndex ? 'bg-blue-600' : (answers[q.id] ? 'bg-gray-400' : 'bg-gray-200')}`}
@@ -346,7 +358,7 @@ const TestPage = () => {
             score={score}
             totalQuestions={totalQuestionsCount}
             restartTest={restartTest}
-            questions={shuffledQuestions || []}
+            questions={currentQuestions || []}
             userAnswers={answers || {}}
           />
         )}
