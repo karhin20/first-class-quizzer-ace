@@ -592,6 +592,1240 @@ export const subjects: Subject[] = [
     ]
   },
   {
+    id: "biology2",
+    name: "Biology 2",
+    description: "Study of Amoeba, Paramecium, and Euglena",
+    icon: "microscope",
+    questions: [
+      {
+        id: 1,
+        text: "Movement in Amoeba is achieved by means of:",
+        options: [
+          { id: "A", text: "Cilia" },
+          { id: "B", text: "Flagella" },
+          { id: "C", text: "Pseudopodia" },
+          { id: "D", text: "Myonemes" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 2,
+        text: "The process by which Amoeba engulfs solid food particles is known as:",
+        options: [
+          { id: "A", text: "Pinocytosis" },
+          { id: "B", text: "Phagocytosis" },
+          { id: "C", text: "Osmosis" },
+          { id: "D", text: "Diffusion" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 3,
+        text: "Which of the following structures in Amoeba is primarily responsible for osmoregulation?",
+        options: [
+          { id: "A", text: "Food vacuole" },
+          { id: "B", text: "Nucleus" },
+          { id: "C", text: "Contractile vacuole" },
+          { id: "D", text: "Pseudopodium" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 4,
+        text: "Respiration in Amoeba occurs through the:",
+        options: [
+          { id: "A", text: "Mitochondria only" },
+          { id: "B", text: "Contractile vacuole" },
+          { id: "C", text: "General body surface" },
+          { id: "D", text: "Food vacuole" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 5,
+        text: "Amoeba reproduces asexually mainly by:",
+        options: [
+          { id: "A", text: "Conjugation" },
+          { id: "B", text: "Budding" },
+          { id: "C", text: "Binary fission" },
+          { id: "D", text: "Spore formation" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 6,
+        text: "The indigestible food material in Amoeba is egested from the:",
+        options: [
+          { id: "A", text: "Cytoproct" },
+          { id: "B", text: "Contractile vacuole" },
+          { id: "C", text: "General body surface at any point" },
+          { id: "D", text: "Mouth" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 7,
+        text: "During unfavourable conditions, Amoeba may form a:",
+        options: [
+          { id: "A", text: "Gamete" },
+          { id: "B", text: "Zygote" },
+          { id: "C", text: "Cyst" },
+          { id: "D", text: "Spore" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 8,
+        text: "The mode of nutrition exhibited by Amoeba is:",
+        options: [
+          { id: "A", text: "Autotrophic" },
+          { id: "B", text: "Saprophytic" },
+          { id: "C", text: "Holozoic" },
+          { id: "D", text: "Parasitic" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 9,
+        text: "Sensitivity in Amoeba allows it to respond to all the following stimuli EXCEPT:",
+        options: [
+          { id: "A", text: "Light intensity" },
+          { id: "B", text: "Chemical substances" },
+          { id: "C", text: "Sound waves" },
+          { id: "D", text: "Touch" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 10,
+        text: "The part of the Amoeba that contains the genetic material and controls cell activities is the:",
+        options: [
+          { id: "A", text: "Ectoplasm" },
+          { id: "B", text: "Endoplasm" },
+          { id: "C", text: "Cell membrane" },
+          { id: "D", text: "Nucleus" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 11,
+        text: "Growth in Amoeba primarily involves an increase in:",
+        options: [
+          { id: "A", text: "Number of nuclei" },
+          { id: "B", text: "Size of contractile vacuole" },
+          { id: "C", text: "Amount of cytoplasm" },
+          { id: "D", text: "Length of pseudopodia" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 12,
+        text: "Which of these is NOT a characteristic feature of Amoeba?",
+        options: [
+          { id: "A", text: "Presence of a definite shape" },
+          { id: "B", text: "Unicellular organization" },
+          { id: "C", text: "Eukaryotic cell structure" },
+          { id: "D", text: "Movement by pseudopodia" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 13,
+        text: "Locomotion in Paramecium is carried out by:",
+        options: [
+          { id: "A", text: "Pseudopodia" },
+          { id: "B", text: "A single flagellum" },
+          { id: "C", text: "Numerous cilia" },
+          { id: "D", text: "Undulating membrane" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 14,
+        text: "Paramecium has two nuclei; the larger macronucleus controls:",
+        options: [
+          { id: "A", text: "Sexual reproduction" },
+          { id: "B", text: "Osmoregulation" },
+          { id: "C", text: "Vegetative functions and daily activities" },
+          { id: "D", text: "Food digestion" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 15,
+        text: "In Paramecium, ingested food particles are enclosed within a:",
+        options: [
+          { id: "A", text: "Contractile vacuole" },
+          { id: "B", text: "Food vacuole" },
+          { id: "C", text: "Cytostome" },
+          { id: "D", text: "Cytoproct" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 16,
+        text: "Gaseous exchange in Paramecium takes place through the:",
+        options: [
+          { id: "A", text: "Oral groove" },
+          { id: "B", text: "Pellicle and general body surface" },
+          { id: "C", text: "Contractile vacuoles" },
+          { id: "D", text: "Food vacuole" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 17,
+        text: "The structure in Paramecium responsible for the egestion of indigestible food residues is the:",
+        options: [
+          { id: "A", text: "Cytostome" },
+          { id: "B", text: "Oral groove" },
+          { id: "C", text: "Anal pore" },
+          { id: "D", text: "Contractile vacuole pore" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 18,
+        text: "Asexual reproduction in Paramecium occurs by:",
+        options: [
+          { id: "A", text: "Longitudinal binary fission" },
+          { id: "B", text: "Transverse binary fission" },
+          { id: "C", text: "Budding" },
+          { id: "D", text: "Multiple fission" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 19,
+        text: "The sexual process in Paramecium that involves exchange of genetic material is called:",
+        options: [
+          { id: "A", text: "Fertilization" },
+          { id: "B", text: "Sporulation" },
+          { id: "C", text: "Conjugation" },
+          { id: "D", text: "Gametogenesis" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 20,
+        text: "Osmoregulation in Paramecium is performed by:",
+        options: [
+          { id: "A", text: "The pellicle" },
+          { id: "B", text: "Two contractile vacuoles" },
+          { id: "C", text: "The cytostome" },
+          { id: "D", text: "Food vacuoles" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 21,
+        text: "Which defensive structures are found in the ectoplasm of Paramecium?",
+        options: [
+          { id: "A", text: "Chloroplasts" },
+          { id: "B", text: "Myonemes" },
+          { id: "C", text: "Trichocysts" },
+          { id: "D", text: "Kinetosomes" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 22,
+        text: "The path food takes in Paramecium after entering the cytostome is:",
+        options: [
+          { id: "A", text: "Cytostome → Food vacuole → Cytopharynx → Cytoproct" },
+          { id: "B", text: "Oral groove → Mouth → Cytopharynx → Food vacuole" },
+          { id: "C", text: "Cytopharynx → Cytostome → Food vacuole → Oral groove" },
+          { id: "D", text: "Food vacuole → Cytostome → Cytoproct → Cytopharynx" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 23,
+        text: "The micronucleus in Paramecium is primarily involved in:",
+        options: [
+          { id: "A", text: "Controlling metabolic activities" },
+          { id: "B", text: "Osmoregulation" },
+          { id: "C", text: "Reproduction" },
+          { id: "D", text: "Movement" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 24,
+        text: "The slipper-like shape of Paramecium is maintained by the:",
+        options: [
+          { id: "A", text: "Cytoplasm" },
+          { id: "B", text: "Pellicle" },
+          { id: "C", text: "Cilia" },
+          { id: "D", text: "Contractile vacuoles" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 25,
+        text: "Euglena moves with the aid of a:",
+        options: [
+          { id: "A", text: "Pseudopodium" },
+          { id: "B", text: "Single long flagellum" },
+          { id: "C", text: "Ring of cilia" },
+          { id: "D", text: "Pair of flagella" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 26,
+        text: "The mode of nutrition in Euglena when sunlight is available is primarily:",
+        options: [
+          { id: "A", text: "Holozoic" },
+          { id: "B", text: "Saprophytic" },
+          { id: "C", text: "Autotrophic (photosynthetic)" },
+          { id: "D", text: "Parasitic" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 27,
+        text: "The light-sensitive organelle in Euglena is the:",
+        options: [
+          { id: "A", text: "Nucleus" },
+          { id: "B", text: "Chloroplast" },
+          { id: "C", text: "Stigma (eyespot)" },
+          { id: "D", text: "Contractile vacuole" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 28,
+        text: "In the absence of light, Euglena can exhibit which mode of nutrition?",
+        options: [
+          { id: "A", text: "Chemosynthetic" },
+          { id: "B", text: "Holozoic" },
+          { id: "C", text: "Saprophytic" },
+          { id: "D", text: "Exclusively photosynthetic" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 29,
+        text: "The carbohydrate food reserve in Euglena is stored as:",
+        options: [
+          { id: "A", text: "Starch" },
+          { id: "B", text: "Glycogen" },
+          { id: "C", text: "Granules" },
+          { id: "D", text: "Cellulose" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 30,
+        text: "Osmoregulation and excretion of some metabolic wastes in Euglena are carried out by the:",
+        options: [
+          { id: "A", text: "Pellicle" },
+          { id: "B", text: "Reservoir" },
+          { id: "C", text: "Contractile vacuole" },
+          { id: "D", text: "Paramylum body" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 31,
+        text: "Asexual reproduction in Euglena typically occurs by:",
+        options: [
+          { id: "A", text: "Transverse binary fission" },
+          { id: "B", text: "Longitudinal binary fission" },
+          { id: "C", text: "Budding" },
+          { id: "D", text: "Conjugation" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 32,
+        text: "The flexible body covering that helps Euglena maintain its shape and also allows for metaboly is the:",
+        options: [
+          { id: "A", text: "Cell wall" },
+          { id: "B", text: "Plasma membrane" },
+          { id: "C", text: "Pellicle" },
+          { id: "D", text: "Cuticle" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 33,
+        text: "Euglena exhibits positive phototaxis, meaning it moves:",
+        options: [
+          { id: "A", text: "Away from light" },
+          { id: "B", text: "Towards light" },
+          { id: "C", text: "Towards gravity" },
+          { id: "D", text: "Away from chemicals" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 34,
+        text: "The site of photosynthesis in Euglena is the:",
+        options: [
+          { id: "A", text: "Mitochondrion" },
+          { id: "B", text: "Ribosome" },
+          { id: "C", text: "Chloroplast" },
+          { id: "D", text: "Nucleolus" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 35,
+        text: "Which of these features is present in Euglena but absent in Amoeba and Paramecium?",
+        options: [
+          { id: "A", text: "Contractile vacuole" },
+          { id: "B", text: "Nucleus" },
+          { id: "C", text: "Chloroplasts" },
+          { id: "D", text: "Cilia" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 36,
+        text: "The gullet in Euglena leads into a structure called the:",
+        options: [
+          { id: "A", text: "Cytostome" },
+          { id: "B", text: "Food vacuole" },
+          { id: "C", text: "Reservoir" },
+          { id: "D", text: "Stigma" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 37,
+        text: "Which of the following is a common feature to Amoeba, Paramecium, and Euglena?",
+        options: [
+          { id: "A", text: "Presence of chloroplasts" },
+          { id: "B", text: "Movement by cilia" },
+          { id: "C", text: "Unicellular organization" },
+          { id: "D", text: "Presence of a cell wall" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 38,
+        text: "A key difference between the nutrition of Euglena and Paramecium is that Euglena can be:",
+        options: [
+          { id: "A", text: "Holozoic" },
+          { id: "B", text: "Autotrophic" },
+          { id: "C", text: "Parasitic" },
+          { id: "D", text: "Saprozoic only" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 39,
+        text: "Which structure is used for osmoregulation in all three organisms: Amoeba, Paramecium, and Euglena?",
+        options: [
+          { id: "A", text: "Food vacuole" },
+          { id: "B", text: "Cell membrane" },
+          { id: "C", text: "Contractile vacuole" },
+          { id: "D", text: "Nucleus" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 40,
+        text: "Binary fission is a method of asexual reproduction found in:",
+        options: [
+          { id: "A", text: "Amoeba only" },
+          { id: "B", text: "Paramecium and Euglena only" },
+          { id: "C", text: "Amoeba and Euglena only" },
+          { id: "D", text: "Amoeba, Paramecium, and Euglena" }
+        ],
+        correctAnswer: "D"
+      }
+    ]
+  },
+  {
+    id: "biology3",
+    name: "Biology 3",
+    description: "Study of Spirogyra and Rhizopus",
+    icon: "microscope",
+    questions: [
+      {
+        id: 1,
+        text: "Spirogyra belongs to the group of algae known as:",
+        options: [
+          { id: "A", text: "Rhodophyta (Red algae)" },
+          { id: "B", text: "Phaeophyta (Brown algae)" },
+          { id: "C", text: "Chlorophyta (Green algae)" },
+          { id: "D", text: "Cyanobacteria (Blue-green algae)" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 2,
+        text: "The most distinctive feature of Spirogyra cells is the presence of:",
+        options: [
+          { id: "A", text: "A single large central vacuole" },
+          { id: "B", text: "Numerous small chloroplasts" },
+          { id: "C", text: "A spiral-shaped chloroplast (or chloroplasts)" },
+          { id: "D", text: "A prominent cell wall made of chitin" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 3,
+        text: "Spirogyra is commonly found in:",
+        options: [
+          { id: "A", text: "Marine water" },
+          { id: "B", text: "Dry terrestrial habitats" },
+          { id: "C", text: "Freshwater ponds and ditches" },
+          { id: "D", text: "Hot springs" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 4,
+        text: "The mode of nutrition in Spirogyra is:",
+        options: [
+          { id: "A", text: "Holozoic" },
+          { id: "B", text: "Saprophytic" },
+          { id: "C", text: "Autotrophic (Photosynthetic)" },
+          { id: "D", text: "Parasitic" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 5,
+        text: "Asexual reproduction in Spirogyra commonly occurs by:",
+        options: [
+          { id: "A", text: "Budding" },
+          { id: "B", text: "Spore formation" },
+          { id: "C", text: "Fragmentation" },
+          { id: "D", text: "Conjugation" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 6,
+        text: "The sexual reproduction process in Spirogyra involving the fusion of gametes from two different filaments is called:",
+        options: [
+          { id: "A", text: "Isogamy" },
+          { id: "B", text: "Anisogamy" },
+          { id: "C", text: "Oogamy" },
+          { id: "D", text: "Scalariform conjugation" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 7,
+        text: "During conjugation in Spirogyra, the structure formed after the fusion of two gametes is called a:",
+        options: [
+          { id: "A", text: "Zoospore" },
+          { id: "B", text: "Zygospore" },
+          { id: "C", text: "Oospore" },
+          { id: "D", text: "Aplanospore" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 8,
+        text: "The zygospore of Spirogyra is typically:",
+        options: [
+          { id: "A", text: "Haploid and motile" },
+          { id: "B", text: "Diploid and resistant to harsh conditions" },
+          { id: "C", text: "Haploid and non-motile" },
+          { id: "D", text: "Diploid and short-lived" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 9,
+        text: "Each cell of a Spirogyra filament is:",
+        options: [
+          { id: "A", text: "Multinucleate" },
+          { id: "B", text: "Anucleate" },
+          { id: "C", text: "Uninucleate" },
+          { id: "D", text: "Binucleate" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 10,
+        text: "The cell wall of Spirogyra is primarily composed of:",
+        options: [
+          { id: "A", text: "Chitin" },
+          { id: "B", text: "Lignin" },
+          { id: "C", text: "Cellulose and pectin" },
+          { id: "D", text: "Silica" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 11,
+        text: "Pyrenoids found within the chloroplasts of Spirogyra are associated with:",
+        options: [
+          { id: "A", text: "Light absorption" },
+          { id: "B", text: "Starch storage" },
+          { id: "C", text: "DNA replication" },
+          { id: "D", text: "Movement" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 12,
+        text: "The type of sexual reproduction where gametes from adjacent cells of the same filament fuse is known as:",
+        options: [
+          { id: "A", text: "Scalariform conjugation" },
+          { id: "B", text: "Lateral conjugation" },
+          { id: "C", text: "Fragmentation" },
+          { id: "D", text: "Parthenogenesis" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 13,
+        text: "Spirogyra filaments feel slimy due to the presence of:",
+        options: [
+          { id: "A", text: "Excess starch" },
+          { id: "B", text: "A mucilaginous sheath" },
+          { id: "C", text: "Thick cellulose walls" },
+          { id: "D", text: "Numerous flagella" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 14,
+        text: "Growth in a Spirogyra filament occurs by:",
+        options: [
+          { id: "A", text: "Apical cell division only" },
+          { id: "B", text: "Basal cell division only" },
+          { id: "C", text: "Intercalary cell division (any cell can divide)" },
+          { id: "D", text: "Enlargement of existing cells only" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 15,
+        text: "After germination, the zygospore of Spirogyra undergoes meiosis to form:",
+        options: [
+          { id: "A", text: "Four diploid zoospores" },
+          { id: "B", text: "Four haploid nuclei, leading to a new haploid filament" },
+          { id: "C", text: "One diploid filament" },
+          { id: "D", text: "Many haploid gametes" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 16,
+        text: "Rhizopus belongs to the kingdom:",
+        options: [
+          { id: "A", text: "Plantae" },
+          { id: "B", text: "Animalia" },
+          { id: "C", text: "Fungi" },
+          { id: "D", text: "Protista" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 17,
+        text: "The network of thread-like filaments that make up the body of Rhizopus is called:",
+        options: [
+          { id: "A", text: "Hyphae" },
+          { id: "B", text: "Mycelium" },
+          { id: "C", text: "Rhizoids" },
+          { id: "D", text: "Sporangium" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 18,
+        text: "The mode of nutrition in Rhizopus is:",
+        options: [
+          { id: "A", text: "Autotrophic" },
+          { id: "B", text: "Holozoic" },
+          { id: "C", text: "Saprophytic" },
+          { id: "D", text: "Parasitic" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 19,
+        text: "Rhizopus anchors itself to the substrate and absorbs nutrients using structures called:",
+        options: [
+          { id: "A", text: "Stolons" },
+          { id: "B", text: "Sporangiophores" },
+          { id: "C", text: "Rhizoids" },
+          { id: "D", text: "Columella" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 20,
+        text: "Asexual reproduction in Rhizopus occurs primarily through the formation of:",
+        options: [
+          { id: "A", text: "Conidia" },
+          { id: "B", text: "Zygospores" },
+          { id: "C", text: "Ascospores" },
+          { id: "D", text: "Sporangiospores" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 21,
+        text: "The stalk that bears the sporangium in Rhizopus is known as the:",
+        options: [
+          { id: "A", text: "Stolon" },
+          { id: "B", text: "Sporangiophore" },
+          { id: "C", text: "Columella" },
+          { id: "D", text: "Rhizoid" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 22,
+        text: "The spores produced asexually in Rhizopus are formed inside a sac-like structure called the:",
+        options: [
+          { id: "A", text: "Conidiophore" },
+          { id: "B", text: "Zygosporangium" },
+          { id: "C", text: "Sporangium" },
+          { id: "D", text: "Ascus" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 23,
+        text: "The dome-shaped sterile structure within the sporangium of Rhizopus, into which the sporangiophore extends, is the:",
+        options: [
+          { id: "A", text: "Apophysis" },
+          { id: "B", text: "Peridium" },
+          { id: "C", text: "Columella" },
+          { id: "D", text: "Operculum" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 24,
+        text: "Sexual reproduction in Rhizopus involves the fusion of compatible hyphae (gametangia) to form a thick-walled resting spore called a:",
+        options: [
+          { id: "A", text: "Zoospore" },
+          { id: "B", text: "Zygospore" },
+          { id: "C", text: "Oospore" },
+          { id: "D", text: "Basidiospore" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 25,
+        text: "Rhizopus species are often referred to as 'bread mould' because they commonly grow on:",
+        options: [
+          { id: "A", text: "Living plants" },
+          { id: "B", text: "Starchy foods like bread" },
+          { id: "C", text: "Animal tissues" },
+          { id: "D", text: "Marine algae" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 26,
+        text: "The hyphae of Rhizopus are typically:",
+        options: [
+          { id: "A", text: "Septate and multinucleate" },
+          { id: "B", text: "Aseptate (coenocytic) and multinucleate" },
+          { id: "C", text: "Septate and uninucleate" },
+          { id: "D", text: "Aseptate and uninucleate" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 27,
+        text: "The cell wall of Rhizopus is primarily composed of:",
+        options: [
+          { id: "A", text: "Cellulose" },
+          { id: "B", text: "Lignin" },
+          { id: "C", text: "Chitin" },
+          { id: "D", text: "Peptidoglycan" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 28,
+        text: "Which of the following structures in Rhizopus is haploid?",
+        options: [
+          { id: "A", text: "Zygospore" },
+          { id: "B", text: "Sporangiospore" },
+          { id: "C", text: "Mature sporangium before spore formation" },
+          { id: "D", text: "Gametangia before fusion" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 29,
+        text: "The horizontal hyphae that spread over the surface of the substrate in Rhizopus are called:",
+        options: [
+          { id: "A", text: "Rhizoids" },
+          { id: "B", text: "Sporangiophores" },
+          { id: "C", text: "Stolons" },
+          { id: "D", text: "Columellae" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 30,
+        text: "The dispersal of Rhizopus spores is mainly achieved by:",
+        options: [
+          { id: "A", text: "Water currents" },
+          { id: "B", text: "Wind currents" },
+          { id: "C", text: "Insect vectors" },
+          { id: "D", text: "Self-propulsion" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 31,
+        text: "Which of the following is a characteristic shared by both Spirogyra and Rhizopus?",
+        options: [
+          { id: "A", text: "Autotrophic nutrition" },
+          { id: "B", text: "Presence of chloroplasts" },
+          { id: "C", text: "Eukaryotic cell structure" },
+          { id: "D", text: "Movement by flagella" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 32,
+        text: "A major difference between Spirogyra and Rhizopus is that:",
+        options: [
+          { id: "A", text: "Spirogyra is multicellular, while Rhizopus is unicellular" },
+          { id: "B", text: "Spirogyra is photosynthetic, while Rhizopus is saprophytic" },
+          { id: "C", text: "Spirogyra reproduces by spores, while Rhizopus reproduces by fragmentation" },
+          { id: "D", text: "Spirogyra has a cell wall of chitin, while Rhizopus has cellulose" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 33,
+        text: "Zygospore formation is a part of sexual reproduction in:",
+        options: [
+          { id: "A", text: "Spirogyra only" },
+          { id: "B", text: "Rhizopus only" },
+          { id: "C", text: "Both Spirogyra and Rhizopus" },
+          { id: "D", text: "Neither Spirogyra nor Rhizopus" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 34,
+        text: "Which organism possesses rhizoids for anchorage and absorption?",
+        options: [
+          { id: "A", text: "Spirogyra" },
+          { id: "B", text: "Rhizopus" },
+          { id: "C", text: "Both Spirogyra and Rhizopus" },
+          { id: "D", text: "Neither Spirogyra nor Rhizopus" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 35,
+        text: "Chlorophyll is present in the cells of:",
+        options: [
+          { id: "A", text: "Spirogyra only" },
+          { id: "B", text: "Rhizopus only" },
+          { id: "C", text: "Both Spirogyra and Rhizopus" },
+          { id: "D", text: "Neither Spirogyra nor Rhizopus" }
+        ],
+        correctAnswer: "A"
+      }
+    ]
+  },
+  {
+    id: "biology4",
+    name: "Biology 4",
+    description: "Study of Mosses and Ferns",
+    icon: "microscope",
+    questions: [
+      {
+        id: 1,
+        text: "Mosses belong to the division:",
+        options: [
+          { id: "A", text: "Pteridophyta" },
+          { id: "B", text: "Bryophyta" },
+          { id: "C", text: "Spermatophyta" },
+          { id: "D", text: "Thallophyta" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 2,
+        text: "The dominant generation in the life cycle of a moss is the:",
+        options: [
+          { id: "A", text: "Sporophyte" },
+          { id: "B", text: "Gametophyte" },
+          { id: "C", text: "Prothallus" },
+          { id: "D", text: "Zygote" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 3,
+        text: "Mosses are typically found in environments that are:",
+        options: [
+          { id: "A", text: "Dry and sunny" },
+          { id: "B", text: "Salty and marine" },
+          { id: "C", text: "Damp and shady" },
+          { id: "D", text: "Hot and arid" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 4,
+        text: "Anchorage in mosses is primarily achieved by:",
+        options: [
+          { id: "A", text: "True roots" },
+          { id: "B", text: "Tap roots" },
+          { id: "C", text: "Rhizoids" },
+          { id: "D", text: "Holdfasts" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 5,
+        text: "The sporophyte of a moss consists of which of the following three parts?",
+        options: [
+          { id: "A", text: "Root, stem, and leaf" },
+          { id: "B", text: "Foot, seta, and capsule" },
+          { id: "C", text: "Thallus, rhizoids, and gemmae" },
+          { id: "D", text: "Frond, rhizome, and sorus" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 6,
+        text: "In mosses, spores are produced within the:",
+        options: [
+          { id: "A", text: "Antheridium" },
+          { id: "B", text: "Archegonium" },
+          { id: "C", text: "Capsule" },
+          { id: "D", text: "Protonema" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 7,
+        text: "The male sex organ in a moss plant is called the:",
+        options: [
+          { id: "A", text: "Archegonium" },
+          { id: "B", text: "Antheridium" },
+          { id: "C", text: "Oogonium" },
+          { id: "D", text: "Sporangium" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 8,
+        text: "Fertilization in mosses requires the presence of:",
+        options: [
+          { id: "A", text: "Wind" },
+          { id: "B", text: "Insects" },
+          { id: "C", text: "Water" },
+          { id: "D", text: "Dry conditions" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 9,
+        text: "The structure that develops directly from a germinating moss spore is the:",
+        options: [
+          { id: "A", text: "Adult gametophyte" },
+          { id: "B", text: "Sporophyte" },
+          { id: "C", text: "Protonema" },
+          { id: "D", text: "Gemma cup" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 10,
+        text: "Which of the following is a method of asexual reproduction in some mosses?",
+        options: [
+          { id: "A", text: "Conjugation" },
+          { id: "B", text: "Binary fission" },
+          { id: "C", text: "Fragmentation and gemmae formation" },
+          { id: "D", text: "Zoospore formation" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 11,
+        text: "Mosses lack true vascular tissues (xylem and phloem). This means they are:",
+        options: [
+          { id: "A", text: "Heterotrophic" },
+          { id: "B", text: "Non-tracheophytes" },
+          { id: "C", text: "Gymnosperms" },
+          { id: "D", text: "Angiosperms" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 12,
+        text: "The calyptra in a moss capsule is derived from the:",
+        options: [
+          { id: "A", text: "Seta tissue" },
+          { id: "B", text: "Wall of the archegonium" },
+          { id: "C", text: "Foot of the sporophyte" },
+          { id: "D", text: "Operculum" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 13,
+        text: "The primary photosynthetic part of a mature moss plant is the:",
+        options: [
+          { id: "A", text: "Sporophyte" },
+          { id: "B", text: "Seta" },
+          { id: "C", text: "Leafy gametophyte shoot" },
+          { id: "D", text: "Rhizoids" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 14,
+        text: "The ploidy level of the moss gametophyte is:",
+        options: [
+          { id: "A", text: "Haploid (n)" },
+          { id: "B", text: "Diploid (2n)" },
+          { id: "C", text: "Triploid (3n)" },
+          { id: "D", text: "Polyploid" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 15,
+        text: "The collective term for the 'leaves' and 'stem' of a moss gametophyte, though not true leaves and stems, is often referred to as the:",
+        options: [
+          { id: "A", text: "Thallus" },
+          { id: "B", text: "Frond" },
+          { id: "C", text: "Stipe" },
+          { id: "D", text: "Phyllids and caulids" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 16,
+        text: "Ferns belong to the division:",
+        options: [
+          { id: "A", text: "Bryophyta" },
+          { id: "B", text: "Pteridophyta" },
+          { id: "C", text: "Coniferophyta" },
+          { id: "D", text: "Anthophyta" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 17,
+        text: "The dominant generation in the life cycle of a fern is the:",
+        options: [
+          { id: "A", text: "Gametophyte" },
+          { id: "B", text: "Sporophyte" },
+          { id: "C", text: "Protonema" },
+          { id: "D", text: "Prothallus" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 18,
+        text: "The leaves of a fern are typically large and often compound, known as:",
+        options: [
+          { id: "A", text: "Scales" },
+          { id: "B", text: "Needles" },
+          { id: "C", text: "Fronds" },
+          { id: "D", text: "Phylloclades" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 19,
+        text: "Young fern fronds characteristically uncoil in a manner known as:",
+        options: [
+          { id: "A", text: "Reticulate vernation" },
+          { id: "B", text: "Parallel vernation" },
+          { id: "C", text: "Circinate vernation" },
+          { id: "D", text: "Dichotomous branching" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 20,
+        text: "Spores in most ferns are produced in structures called sporangia, which are often clustered into groups known as:",
+        options: [
+          { id: "A", text: "Strobili" },
+          { id: "B", text: "Cones" },
+          { id: "C", text: "Sori" },
+          { id: "D", text: "Gemmae cups" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 21,
+        text: "The small, heart-shaped, independent gametophyte of a fern is called a:",
+        options: [
+          { id: "A", text: "Protonema" },
+          { id: "B", text: "Prothallus" },
+          { id: "C", text: "Thallus" },
+          { id: "D", text: "Strobilus" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 22,
+        text: "Ferns possess true roots, stems (often a rhizome), and leaves, and contain vascular tissues. This makes them:",
+        options: [
+          { id: "A", text: "Non-tracheophytes" },
+          { id: "B", text: "Tracheophytes" },
+          { id: "C", text: "Gymnosperms" },
+          { id: "D", text: "Bryophytes" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 23,
+        text: "The protective flap of tissue covering a sorus in some fern species is called the:",
+        options: [
+          { id: "A", text: "Calyptra" },
+          { id: "B", text: "Operculum" },
+          { id: "C", text: "Annulus" },
+          { id: "D", text: "Indusium" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 24,
+        text: "In ferns, antheridia and archegonia are typically found on the:",
+        options: [
+          { id: "A", text: "Sporophyte leaves" },
+          { id: "B", text: "Rhizome" },
+          { id: "C", text: "Prothallus" },
+          { id: "D", text: "Seta of the sporophyte" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 25,
+        text: "Like mosses, fertilization in ferns is dependent on:",
+        options: [
+          { id: "A", text: "Wind dispersal of gametes" },
+          { id: "B", text: "Pollination by insects" },
+          { id: "C", text: "The presence of water for sperm motility" },
+          { id: "D", text: "Dry, arid conditions" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 26,
+        text: "The ploidy level of the fern sporophyte (the visible fern plant) is:",
+        options: [
+          { id: "A", text: "Haploid (n)" },
+          { id: "B", text: "Diploid (2n)" },
+          { id: "C", text: "Triploid (3n)" },
+          { id: "D", text: "A mix of haploid and diploid cells" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 27,
+        text: "A fern rhizome is a modified:",
+        options: [
+          { id: "A", text: "Root" },
+          { id: "B", text: "Leaf" },
+          { id: "C", text: "Stem" },
+          { id: "D", text: "Flower" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 28,
+        text: "The ring of specialized cells in a fern sporangium that aids in spore dispersal by hygroscopic movements is the:",
+        options: [
+          { id: "A", text: "Indusium" },
+          { id: "B", text: "Stomium" },
+          { id: "C", text: "Annulus" },
+          { id: "D", text: "Peristome" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 29,
+        text: "Most common ferns are homosporous, meaning they produce:",
+        options: [
+          { id: "A", text: "Only one type of spore which develops into a bisexual gametophyte" },
+          { id: "B", text: "Two types of spores: microspores and megaspores" },
+          { id: "C", text: "Spores that are all female" },
+          { id: "D", text: "Spores that are all male" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 30,
+        text: "After fertilization in a fern, the zygote develops into the:",
+        options: [
+          { id: "A", text: "Gametophyte" },
+          { id: "B", text: "Prothallus" },
+          { id: "C", text: "Embryonic sporophyte" },
+          { id: "D", text: "Spore" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 31,
+        text: "Which of the following is a characteristic shared by both mosses and ferns?",
+        options: [
+          { id: "A", text: "Dominant sporophyte generation" },
+          { id: "B", text: "Presence of true vascular tissues" },
+          { id: "C", text: "Alternation of generations in their life cycle" },
+          { id: "D", text: "Production of seeds" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 32,
+        text: "A major difference between mosses and ferns is that:",
+        options: [
+          { id: "A", text: "Mosses are photosynthetic, while ferns are not" },
+          { id: "B", text: "Ferns have a dominant sporophyte, while mosses have a dominant gametophyte" },
+          { id: "C", text: "Mosses require water for fertilization, while ferns do not" },
+          { id: "D", text: "Ferns produce flowers, while mosses produce cones" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 33,
+        text: "Which of these possess true roots, stems, and leaves?",
+        options: [
+          { id: "A", text: "Mosses only" },
+          { id: "B", text: "Ferns only" },
+          { id: "C", text: "Both mosses and ferns" },
+          { id: "D", text: "Neither mosses nor ferns" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 34,
+        text: "The gametophyte generation is photosynthetic and independent in:",
+        options: [
+          { id: "A", text: "Mosses only (as the main plant body)" },
+          { id: "B", text: "Ferns only (as the prothallus)" },
+          { id: "C", text: "Both mosses and ferns" },
+          { id: "D", text: "Neither; the sporophyte is always the photosynthetic stage" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 35,
+        text: "Water is essential for the completion of the sexual life cycle in:",
+        options: [
+          { id: "A", text: "Mosses only" },
+          { id: "B", text: "Ferns only" },
+          { id: "C", text: "Both mosses and ferns" },
+          { id: "D", text: "Seed-bearing plants only" }
+        ],
+        correctAnswer: "C"
+      }
+    ]
+  },
+  {
     id: "english",
     name: "English Language",
     description: "Grammar, Vocabulary, Comprehension",
