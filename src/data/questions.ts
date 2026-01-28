@@ -3362,5 +3362,456 @@ export const subjects: Subject[] = [
         correctAnswer: "A"
       }
     ]
+  },
+  {
+    id: "english-noun-phrases-clauses",
+    name: "English: Noun Phrases & Clauses",
+    description: "Identify noun phrases, noun clauses, and their grammatical names in sentences",
+    icon: "book-open",
+    questions: [
+      // Noun Phrases - Identification
+      {
+        id: 1,
+        text: "Identify the grammatical name of the underlined expression: <u>The tall man in the black coat</u> walked quickly down the street.",
+        options: [
+          { id: "A", text: "Noun clause" },
+          { id: "B", text: "Noun phrase" },
+          { id: "C", text: "Adverbial phrase" },
+          { id: "D", text: "Adjectival phrase" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 2,
+        text: "What is the grammatical function of the underlined expression? <u>The tall man in the black coat</u> walked quickly down the street.",
+        options: [
+          { id: "A", text: "Object of the verb" },
+          { id: "B", text: "Complement of the verb" },
+          { id: "C", text: "Subject of the verb" },
+          { id: "D", text: "Adverbial modifier" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 3,
+        text: "Identify the grammatical name of the underlined expression: She bought <u>a beautiful red dress with golden buttons</u>.",
+        options: [
+          { id: "A", text: "Noun phrase" },
+          { id: "B", text: "Adverbial phrase" },
+          { id: "C", text: "Noun clause" },
+          { id: "D", text: "Prepositional phrase" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 4,
+        text: "What is the grammatical function of the underlined expression? She bought <u>a beautiful red dress with golden buttons</u>.",
+        options: [
+          { id: "A", text: "Subject of the verb" },
+          { id: "B", text: "Complement of the verb" },
+          { id: "C", text: "Object of the verb" },
+          { id: "D", text: "Indirect object" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 5,
+        text: "Identify the grammatical name of the underlined expression: The teacher gave <u>the brilliant student</u> a prize.",
+        options: [
+          { id: "A", text: "Direct object" },
+          { id: "B", text: "Noun phrase" },
+          { id: "C", text: "Adjectival phrase" },
+          { id: "D", text: "Noun clause" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 6,
+        text: "What is the grammatical function of the underlined expression? The teacher gave <u>the brilliant student</u> a prize.",
+        options: [
+          { id: "A", text: "Direct object" },
+          { id: "B", text: "Subject of the verb" },
+          { id: "C", text: "Indirect object" },
+          { id: "D", text: "Complement" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 7,
+        text: "Identify the grammatical name of the underlined expression: My father is <u>a renowned professor of mathematics</u>.",
+        options: [
+          { id: "A", text: "Noun clause" },
+          { id: "B", text: "Adverbial phrase" },
+          { id: "C", text: "Noun phrase" },
+          { id: "D", text: "Prepositional phrase" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 8,
+        text: "What is the grammatical function of the underlined expression? My father is <u>a renowned professor of mathematics</u>.",
+        options: [
+          { id: "A", text: "Subject of the verb" },
+          { id: "B", text: "Object of the verb" },
+          { id: "C", text: "Complement of the verb" },
+          { id: "D", text: "Indirect object" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 9,
+        text: "Identify the grammatical name of the underlined expression: We elected <u>John, the most qualified candidate</u>, as chairman.",
+        options: [
+          { id: "A", text: "Noun clause" },
+          { id: "B", text: "Noun phrase in apposition" },
+          { id: "C", text: "Adverbial phrase" },
+          { id: "D", text: "Adjectival phrase" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 10,
+        text: "What is the grammatical function of the underlined expression? We elected <u>John, the most qualified candidate</u>, as chairman.",
+        options: [
+          { id: "A", text: "Subject of the verb" },
+          { id: "B", text: "Indirect object" },
+          { id: "C", text: "Object of the verb" },
+          { id: "D", text: "Complement" }
+        ],
+        correctAnswer: "C"
+      },
+      // Noun Clauses - Identification
+      {
+        id: 11,
+        text: "Identify the grammatical name of the underlined expression: <u>What he said at the meeting</u> surprised everyone.",
+        options: [
+          { id: "A", text: "Noun phrase" },
+          { id: "B", text: "Adverbial clause" },
+          { id: "C", text: "Noun clause" },
+          { id: "D", text: "Relative clause" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 12,
+        text: "What is the grammatical function of the underlined expression? <u>What he said at the meeting</u> surprised everyone.",
+        options: [
+          { id: "A", text: "Object of the verb" },
+          { id: "B", text: "Subject of the verb" },
+          { id: "C", text: "Complement of the verb" },
+          { id: "D", text: "Adverbial modifier" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 13,
+        text: "Identify the grammatical name of the underlined expression: I don't know <u>why she left so early</u>.",
+        options: [
+          { id: "A", text: "Noun phrase" },
+          { id: "B", text: "Adverbial clause" },
+          { id: "C", text: "Noun clause" },
+          { id: "D", text: "Adjectival clause" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 14,
+        text: "What is the grammatical function of the underlined expression? I don't know <u>why she left so early</u>.",
+        options: [
+          { id: "A", text: "Subject of the verb" },
+          { id: "B", text: "Object of the verb" },
+          { id: "C", text: "Complement of the verb" },
+          { id: "D", text: "Indirect object" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 15,
+        text: "Identify the grammatical name of the underlined expression: The problem is <u>that we don't have enough time</u>.",
+        options: [
+          { id: "A", text: "Noun phrase" },
+          { id: "B", text: "Relative clause" },
+          { id: "C", text: "Adverbial clause" },
+          { id: "D", text: "Noun clause" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 16,
+        text: "What is the grammatical function of the underlined expression? The problem is <u>that we don't have enough time</u>.",
+        options: [
+          { id: "A", text: "Subject of the verb" },
+          { id: "B", text: "Object of the verb" },
+          { id: "C", text: "Complement of the verb" },
+          { id: "D", text: "Apposition" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 17,
+        text: "Identify the grammatical name of the underlined expression: She asked <u>whether I could help her with the project</u>.",
+        options: [
+          { id: "A", text: "Adverbial clause" },
+          { id: "B", text: "Noun clause" },
+          { id: "C", text: "Relative clause" },
+          { id: "D", text: "Conditional clause" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 18,
+        text: "What is the grammatical function of the underlined expression? She asked <u>whether I could help her with the project</u>.",
+        options: [
+          { id: "A", text: "Subject of the verb" },
+          { id: "B", text: "Complement of the verb" },
+          { id: "C", text: "Object of the verb" },
+          { id: "D", text: "Adverbial modifier" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 19,
+        text: "Identify the grammatical name of the underlined expression: <u>Whoever finishes first</u> will receive a reward.",
+        options: [
+          { id: "A", text: "Noun phrase" },
+          { id: "B", text: "Adverbial clause" },
+          { id: "C", text: "Noun clause" },
+          { id: "D", text: "Adjectival clause" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 20,
+        text: "What is the grammatical function of the underlined expression? <u>Whoever finishes first</u> will receive a reward.",
+        options: [
+          { id: "A", text: "Object of the verb" },
+          { id: "B", text: "Subject of the verb" },
+          { id: "C", text: "Complement" },
+          { id: "D", text: "Indirect object" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 21,
+        text: "Identify the grammatical name of the underlined expression: I gave <u>whoever needed it</u> some money.",
+        options: [
+          { id: "A", text: "Noun phrase" },
+          { id: "B", text: "Noun clause" },
+          { id: "C", text: "Relative clause" },
+          { id: "D", text: "Adverbial clause" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 22,
+        text: "What is the grammatical function of the underlined expression? I gave <u>whoever needed it</u> some money.",
+        options: [
+          { id: "A", text: "Direct object" },
+          { id: "B", text: "Subject of the verb" },
+          { id: "C", text: "Indirect object" },
+          { id: "D", text: "Complement" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 23,
+        text: "Identify the grammatical name of the underlined expression: The fact is <u>that nobody cares about the issue</u>.",
+        options: [
+          { id: "A", text: "Noun phrase" },
+          { id: "B", text: "Noun clause" },
+          { id: "C", text: "Adverbial clause" },
+          { id: "D", text: "Relative clause" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 24,
+        text: "What is the grammatical function of the underlined expression? The fact is <u>that nobody cares about the issue</u>.",
+        options: [
+          { id: "A", text: "Subject of the verb" },
+          { id: "B", text: "Object of the verb" },
+          { id: "C", text: "Complement of the verb" },
+          { id: "D", text: "Noun in apposition" }
+        ],
+        correctAnswer: "C"
+      },
+      // More complex examples
+      {
+        id: 25,
+        text: "Identify the grammatical name of the underlined expression: They believed <u>that the earth was flat</u>.",
+        options: [
+          { id: "A", text: "Noun phrase" },
+          { id: "B", text: "Adverbial clause" },
+          { id: "C", text: "Noun clause" },
+          { id: "D", text: "Adjectival clause" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 26,
+        text: "What is the grammatical function of the underlined expression? They believed <u>that the earth was flat</u>.",
+        options: [
+          { id: "A", text: "Subject of the verb" },
+          { id: "B", text: "Complement of the verb" },
+          { id: "C", text: "Indirect object" },
+          { id: "D", text: "Object of the verb" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 27,
+        text: "Identify the grammatical name of the underlined expression: <u>The young lady standing by the door</u> is my sister.",
+        options: [
+          { id: "A", text: "Noun clause" },
+          { id: "B", text: "Noun phrase" },
+          { id: "C", text: "Adverbial phrase" },
+          { id: "D", text: "Adjectival phrase" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 28,
+        text: "What is the grammatical function of the underlined expression? <u>The young lady standing by the door</u> is my sister.",
+        options: [
+          { id: "A", text: "Object of the verb" },
+          { id: "B", text: "Complement of the verb" },
+          { id: "C", text: "Subject of the verb" },
+          { id: "D", text: "Apposition" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 29,
+        text: "Identify the grammatical name of the underlined expression: We discussed <u>how to solve the problem</u>.",
+        options: [
+          { id: "A", text: "Noun phrase" },
+          { id: "B", text: "Infinitive phrase" },
+          { id: "C", text: "Noun clause" },
+          { id: "D", text: "Adverbial clause" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 30,
+        text: "What is the grammatical function of the underlined expression? We discussed <u>how to solve the problem</u>.",
+        options: [
+          { id: "A", text: "Subject of the verb" },
+          { id: "B", text: "Object of the verb" },
+          { id: "C", text: "Complement of the verb" },
+          { id: "D", text: "Indirect object" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 31,
+        text: "Identify the grammatical name of the underlined expression: <u>That she passed the exam</u> made her parents happy.",
+        options: [
+          { id: "A", text: "Noun phrase" },
+          { id: "B", text: "Relative clause" },
+          { id: "C", text: "Noun clause" },
+          { id: "D", text: "Adverbial clause" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 32,
+        text: "What is the grammatical function of the underlined expression? <u>That she passed the exam</u> made her parents happy.",
+        options: [
+          { id: "A", text: "Object of the verb" },
+          { id: "B", text: "Complement of the verb" },
+          { id: "C", text: "Apposition" },
+          { id: "D", text: "Subject of the verb" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 33,
+        text: "Identify the grammatical name of the underlined expression: The news, <u>that the president had resigned</u>, shocked the nation.",
+        options: [
+          { id: "A", text: "Noun clause in apposition" },
+          { id: "B", text: "Relative clause" },
+          { id: "C", text: "Adverbial clause" },
+          { id: "D", text: "Noun phrase" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 34,
+        text: "What is the grammatical function of the underlined expression? The news, <u>that the president had resigned</u>, shocked the nation.",
+        options: [
+          { id: "A", text: "Subject of the verb" },
+          { id: "B", text: "Apposition to 'the news'" },
+          { id: "C", text: "Object of the verb" },
+          { id: "D", text: "Complement" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 35,
+        text: "Identify the grammatical name of the underlined expression: I am not sure <u>where he went after the party</u>.",
+        options: [
+          { id: "A", text: "Adverbial clause" },
+          { id: "B", text: "Noun phrase" },
+          { id: "C", text: "Noun clause" },
+          { id: "D", text: "Relative clause" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 36,
+        text: "What is the grammatical function of the underlined expression? I am not sure <u>where he went after the party</u>.",
+        options: [
+          { id: "A", text: "Subject of the verb" },
+          { id: "B", text: "Object of the adjective 'sure'" },
+          { id: "C", text: "Complement of the verb" },
+          { id: "D", text: "Indirect object" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 37,
+        text: "Identify the grammatical name of the underlined expression: <u>His sudden departure from the meeting</u> raised many questions.",
+        options: [
+          { id: "A", text: "Noun clause" },
+          { id: "B", text: "Noun phrase" },
+          { id: "C", text: "Adverbial phrase" },
+          { id: "D", text: "Gerund phrase" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 38,
+        text: "What is the grammatical function of the underlined expression? <u>His sudden departure from the meeting</u> raised many questions.",
+        options: [
+          { id: "A", text: "Object of the verb" },
+          { id: "B", text: "Complement of the verb" },
+          { id: "C", text: "Subject of the verb" },
+          { id: "D", text: "Apposition" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 39,
+        text: "Identify the grammatical name of the underlined expression: Tell me <u>what you want for your birthday</u>.",
+        options: [
+          { id: "A", text: "Noun phrase" },
+          { id: "B", text: "Adverbial clause" },
+          { id: "C", text: "Noun clause" },
+          { id: "D", text: "Relative clause" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 40,
+        text: "What is the grammatical function of the underlined expression? Tell me <u>what you want for your birthday</u>.",
+        options: [
+          { id: "A", text: "Indirect object" },
+          { id: "B", text: "Direct object" },
+          { id: "C", text: "Subject of the verb" },
+          { id: "D", text: "Complement" }
+        ],
+        correctAnswer: "B"
+      }
+    ]
   }
 ];
