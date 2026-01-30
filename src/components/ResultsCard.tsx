@@ -11,6 +11,7 @@ interface ResultsCardProps {
   restartTest: () => void;
   questions: Question[];
   userAnswers: Record<number, string>;
+  testName: string;
 }
 
 const ResultsCard: React.FC<ResultsCardProps> = ({ 
@@ -18,7 +19,8 @@ const ResultsCard: React.FC<ResultsCardProps> = ({
   totalQuestions, 
   restartTest,
   questions,
-  userAnswers
+  userAnswers,
+  testName
 }) => {
   const navigate = useNavigate();
   const percentage = Math.round((score / totalQuestions) * 100);
@@ -37,6 +39,7 @@ const ResultsCard: React.FC<ResultsCardProps> = ({
     <div className="space-y-8">
       <Card className="mb-6 max-w-xl mx-auto">
         <CardHeader className="pb-3 text-center">
+          <p className="text-sm text-muted-foreground mb-1">{testName}</p>
           <CardTitle className="text-2xl">Test Results</CardTitle>
         </CardHeader>
         <CardContent className="text-center space-y-4">
