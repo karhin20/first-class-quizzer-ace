@@ -3813,5 +3813,235 @@ export const subjects: Subject[] = [
         correctAnswer: "B"
       }
     ]
+  },
+  {
+    id: "integrated-science-cells",
+    name: "Integrated Science: Cell Structure & Specialized Cells",
+    description: "Cell organelles, their functions, and specialized cells in plants and animals",
+    icon: "microscope",
+    questions: [
+      // Section 1: Cell Organelles
+      {
+        id: 1,
+        text: "The jelly-like substance where most chemical reactions occur in the cell is the:",
+        options: [
+          { id: "A", text: "Nucleus" },
+          { id: "B", text: "Cytoplasm" },
+          { id: "C", text: "Cell wall" },
+          { id: "D", text: "Vacuole" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 2,
+        text: "Which organelle is responsible for protein synthesis?",
+        options: [
+          { id: "A", text: "Ribosome" },
+          { id: "B", text: "Lysosome" },
+          { id: "C", text: "Golgi body" },
+          { id: "D", text: "Mitochondrion" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 3,
+        text: "The selectively permeable barrier of the cell is the:",
+        options: [
+          { id: "A", text: "Cell wall" },
+          { id: "B", text: "Nuclear membrane" },
+          { id: "C", text: "Cell membrane" },
+          { id: "D", text: "Tonoplast" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 4,
+        text: "Which of the following is found in both plant and animal cells?",
+        options: [
+          { id: "A", text: "Chloroplast" },
+          { id: "B", text: "Large central vacuole" },
+          { id: "C", text: "Cell membrane" },
+          { id: "D", text: "Cellulose wall" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 5,
+        text: "The organelle containing enzymes that break down waste materials is the:",
+        options: [
+          { id: "A", text: "Nucleus" },
+          { id: "B", text: "Lysosome" },
+          { id: "C", text: "Mitochondrion" },
+          { id: "D", text: "Ribosome" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 6,
+        text: "The \"brain\" of the cell which contains DNA is the:",
+        options: [
+          { id: "A", text: "Nucleolus" },
+          { id: "B", text: "Nucleus" },
+          { id: "C", text: "Mitochondrion" },
+          { id: "D", text: "Cytoplasm" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 7,
+        text: "What is the primary function of the Golgi apparatus?",
+        options: [
+          { id: "A", text: "Energy production" },
+          { id: "B", text: "Packaging and secretion" },
+          { id: "C", text: "Photosynthesis" },
+          { id: "D", text: "Protein synthesis" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 8,
+        text: "In a plant cell, the vacuole is filled with a fluid called:",
+        options: [
+          { id: "A", text: "Cytoplasm" },
+          { id: "B", text: "Nucleoplasm" },
+          { id: "C", text: "Cell sap" },
+          { id: "D", text: "Blood" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 9,
+        text: "The Rough Endoplasmic Reticulum (RER) appears \"rough\" because it has ____ attached to it.",
+        options: [
+          { id: "A", text: "Mitochondria" },
+          { id: "B", text: "Ribosomes" },
+          { id: "C", text: "Lysosomes" },
+          { id: "D", text: "Chloroplasts" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 10,
+        text: "Which of these provides mechanical support and shape to a plant cell?",
+        options: [
+          { id: "A", text: "Cell membrane" },
+          { id: "B", text: "Cell wall" },
+          { id: "C", text: "Vacuole" },
+          { id: "D", text: "Cytoplasm" }
+        ],
+        correctAnswer: "B"
+      },
+      // Section 2: Specialized Cells
+      {
+        id: 11,
+        text: "Which cell lacks a nucleus at maturity to provide more space for oxygen transport?",
+        options: [
+          { id: "A", text: "Nerve cell" },
+          { id: "B", text: "Red blood cell" },
+          { id: "C", text: "White blood cell" },
+          { id: "D", text: "Sperm cell" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 12,
+        text: "The long, thin projection of a nerve cell used to transmit impulses is called the:",
+        options: [
+          { id: "A", text: "Dendrite" },
+          { id: "B", text: "Axon" },
+          { id: "C", text: "Cilia" },
+          { id: "D", text: "Flagellum" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 13,
+        text: "Which specialized plant cell is responsible for opening and closing stomata?",
+        options: [
+          { id: "A", text: "Xylem vessel" },
+          { id: "B", text: "Phloem cell" },
+          { id: "C", text: "Guard cell" },
+          { id: "D", text: "Root hair cell" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 14,
+        text: "The presence of many mitochondria in a sperm cell tail is to:",
+        options: [
+          { id: "A", text: "Store genetic info" },
+          { id: "B", text: "Provide energy for movement" },
+          { id: "C", text: "Digest the egg membrane" },
+          { id: "D", text: "Carry oxygen" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 15,
+        text: "A root hair cell is characterized by its:",
+        options: [
+          { id: "A", text: "Numerous chloroplasts" },
+          { id: "B", text: "Lack of a nucleus" },
+          { id: "C", text: "Large surface area" },
+          { id: "D", text: "Thick waxy cuticle" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 16,
+        text: "Which cell is specialized for fighting infections?",
+        options: [
+          { id: "A", text: "Red blood cell" },
+          { id: "B", text: "Platelet" },
+          { id: "C", text: "White blood cell" },
+          { id: "D", text: "Muscle cell" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 17,
+        text: "Ciliated epithelial cells are found in the respiratory tract to:",
+        options: [
+          { id: "A", text: "Absorb food" },
+          { id: "B", text: "Move mucus" },
+          { id: "C", text: "Exchange gases" },
+          { id: "D", text: "Produce heat" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 18,
+        text: "Muscle cells contain a high number of ____ for contraction energy.",
+        options: [
+          { id: "A", text: "Ribosomes" },
+          { id: "B", text: "Vacuoles" },
+          { id: "C", text: "Mitochondria" },
+          { id: "D", text: "Chloroplasts" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 19,
+        text: "The specialized cell in plants that transports water is the:",
+        options: [
+          { id: "A", text: "Sieve tube" },
+          { id: "B", text: "Xylem" },
+          { id: "C", text: "Companion cell" },
+          { id: "D", text: "Palisade cell" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 20,
+        text: "Which cell is adapted for photosynthesis by having many chloroplasts?",
+        options: [
+          { id: "A", text: "Epidermal cell" },
+          { id: "B", text: "Root hair cell" },
+          { id: "C", text: "Palisade mesophyll" },
+          { id: "D", text: "Guard cell" }
+        ],
+        correctAnswer: "C"
+      }
+    ]
   }
 ];
