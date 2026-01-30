@@ -100,7 +100,7 @@ const ResultsCard: React.FC<ResultsCardProps> = ({
                 <Card key={question.id} className="mb-4">
                   <CardHeader className="pb-2">
                     <CardTitle className="text-md">
-                      {question.id}. {question.text}
+                      <span dangerouslySetInnerHTML={{ __html: `${question.id}. ${question.text}` }} />
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 pt-0">
