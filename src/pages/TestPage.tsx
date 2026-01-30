@@ -360,6 +360,7 @@ const TestPage = () => {
             restartTest={restartTest}
             questions={currentQuestions || []}
             userAnswers={answers || {}}
+            testName={subject.name}
           />
         )}
       </div>
