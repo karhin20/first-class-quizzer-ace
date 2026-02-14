@@ -22,6 +22,8 @@ const AdminResults = () => {
   const navigate = useNavigate();
   const [results, setResults] = useState<AdminResult[]>([]);
   const [loading, setLoading] = useState(true);
+  const [studentFilter, setStudentFilter] = useState('');
+  const [testFilter, setTestFilter] = useState('');
 
   useEffect(() => {
     if (!isAdmin) {
@@ -68,6 +70,13 @@ const AdminResults = () => {
     fetchResults();
   }, [isAdmin, navigate]);
 
+  const filteredResults = results.filter((r) => {
+    const matchStudent = r.student_name.toLowerCase().includes(studentFilter.toLowerCase()) ||
+      r.student_email.toLowerCase().includes(studentFilter.toLowerCase());
+    const matchTest = r.test_name.toLowerCase().includes(testFilter.toLowerCase());
+    return matchStudent && matchTest;
+  });
+
   if (!isAdmin) return null;
 
   return (
@@ -81,10 +90,32 @@ const AdminResults = () => {
             <CardTitle className="text-2xl">All Student Results (Admin)</CardTitle>
           </CardHeader>
           <CardContent>
+
+            <div className="flex flex-col md:flex-row gap-4 mb-6">
+              <div className="flex-1">
+                <input
+                  type="text"
+                  placeholder="Filter by Student Name or Email..."
+                  value={studentFilter}
+                  onChange={(e) => setStudentFilter(e.target.value)}
+                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div className="flex-1">
+                <input
+                  type="text"
+                  placeholder="Filter by Test Name..."
+                  value={testFilter}
+                  onChange={(e) => setTestFilter(e.target.value)}
+                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+
             {loading ? (
               <p className="text-muted-foreground">Loading results...</p>
-            ) : results.length === 0 ? (
-              <p className="text-muted-foreground">No test results yet.</p>
+            ) : filteredResults.length === 0 ? (
+              <p className="text-muted-foreground">No matching results found.</p>
             ) : (
               <Table>
                 <TableHeader>
@@ -98,7 +129,7 @@ const AdminResults = () => {
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  {results.map((r) => (
+                  {filteredResults.map((r) => (
                     <TableRow key={r.id}>
                       <TableCell className="font-medium">{r.student_name}</TableCell>
                       <TableCell className="text-muted-foreground">{r.student_email}</TableCell>
