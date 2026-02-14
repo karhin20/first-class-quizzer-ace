@@ -28,25 +28,51 @@ const TestLeaderboard = () => {
         if (!subject) return;
 
         const fetchLeaderboard = async () => {
-            const { data, error } = await supabase
+            // 1. Fetch test results
+            const { data: testData, error: testError } = await supabase
                 .from('test_results')
-                .select(`
-          id,
-          score,
-          total_questions,
-          completed_at,
-          profiles (
-            name
-          )
-        `)
+                .select('*')
                 .eq('test_id', subject.id)
                 .order('score', { ascending: false })
                 .limit(50);
 
-            if (!error && data) {
-                // Transform data to match interface if necessary, though Supabase returns nested objects
-                setEntries(data as any);
+            if (testError || !testData) {
+                console.error('Error fetching results:', testError);
+                setLoading(false);
+                return;
             }
+
+            // 2. Fetch profiles for these results
+            // Extract unique user_ids
+            const userIds = [...new Set(testData.map((r: any) => r.user_id))];
+
+            const { data: profiles, error: profileError } = await supabase
+                .from('profiles')
+                .select('user_id, name')
+                .in('user_id', userIds);
+
+            if (profileError) {
+                console.error('Error fetching profiles:', profileError);
+            }
+
+            // Create a map of user_id -> profile
+            const profileMap = new Map((profiles || []).map((p: any) => [p.user_id, p]));
+
+            // 3. Combine data
+            const combinedData: LeaderboardEntry[] = testData.map((r: any) => {
+                const profile = profileMap.get(r.user_id);
+                return {
+                    id: r.id,
+                    score: r.score,
+                    total_questions: r.total_questions,
+                    completed_at: r.completed_at,
+                    profiles: {
+                        name: profile?.name || 'Anonymous'
+                    }
+                };
+            });
+
+            setEntries(combinedData);
             setLoading(false);
         };
 
