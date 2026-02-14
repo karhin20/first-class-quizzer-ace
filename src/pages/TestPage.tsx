@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getSubjectById, Question } from '@/data/questions';
+import { useAuth } from '@/hooks/useAuth';
+import { supabase } from '@/integrations/supabase/client';
 import QuestionCard from '@/components/QuestionCard';
 import ResultsCard from '@/components/ResultsCard';
 import { Button } from '@/components/ui/button';
@@ -29,6 +31,7 @@ const formatTime = (seconds: number): string => {
 const TestPage = () => {
   const { subjectId } = useParams<{ subjectId: string }>();
   const navigate = useNavigate();
+  const { user } = useAuth();
   
   const subject = getSubjectById(subjectId || '');
   
@@ -168,29 +171,40 @@ const TestPage = () => {
   };
   
   // Modify handleSubmitTest to stop per-question timer
-  const handleSubmitTest = (forceSubmit: boolean = false) => {
-    if (questionTimerIntervalRef.current) clearInterval(questionTimerIntervalRef.current); // Stop current question timer
+  const handleSubmitTest = async (forceSubmit: boolean = false) => {
+    if (questionTimerIntervalRef.current) clearInterval(questionTimerIntervalRef.current);
 
     const answeredQuestions = Object.keys(answers).length;
     const totalQuestions = currentQuestions.length;
     
+    const doSubmit = async () => {
+      const calculatedScore = calculateScore();
+      setScore(calculatedScore);
+      setShowResults(true);
+
+      // Save results to database if user is logged in
+      if (user && subject) {
+        await supabase.from('test_results').insert({
+          user_id: user.id,
+          test_id: subject.id,
+          test_name: subject.name,
+          score: calculatedScore,
+          total_questions: totalQuestions,
+        } as any);
+      }
+    };
+
     if (!forceSubmit && answeredQuestions < totalQuestions) {
       const unansweredCount = totalQuestions - answeredQuestions;
       toast(`You have ${unansweredCount} unanswered questions`, {
         description: "Are you sure you want to submit?",
         action: {
           label: "Submit anyway",
-          onClick: () => {
-            const calculatedScore = calculateScore();
-            setScore(calculatedScore);
-            setShowResults(true);
-          }
+          onClick: () => doSubmit(),
         },
       });
-    } else { // Submit if forced (time up) or all questions answered
-      const calculatedScore = calculateScore();
-      setScore(calculatedScore);
-      setShowResults(true);
+    } else {
+      await doSubmit();
     }
   };
   
