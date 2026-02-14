@@ -12,6 +12,7 @@ import AuthPage from "./pages/AuthPage";
 import MyResults from "./pages/MyResults";
 import AdminResults from "./pages/AdminResults";
 import NotFound from "./pages/NotFound";
+import ProtectedRoute from "@/components/ProtectedRoute";
 
 const queryClient = new QueryClient();
 
@@ -26,9 +27,11 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/auth" element={<AuthPage />} />
-            <Route path="/test/:subjectId" element={<TestPage />} />
-            <Route path="/my-results" element={<MyResults />} />
-            <Route path="/admin/results" element={<AdminResults />} />
+            <Route element={<ProtectedRoute />}>
+              <Route path="/test/:subjectId" element={<TestPage />} />
+              <Route path="/my-results" element={<MyResults />} />
+              <Route path="/admin/results" element={<AdminResults />} />
+            </Route>
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
