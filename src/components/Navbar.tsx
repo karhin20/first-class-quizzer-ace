@@ -13,7 +13,7 @@ const Navbar = () => {
     <header className="bg-white border-b shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
         <Link to="/" className="text-lg font-bold text-foreground">
-          Early Rain Test App
+          ADJ Test App
         </Link>
         <div className="flex items-center gap-3">
           {user ? (

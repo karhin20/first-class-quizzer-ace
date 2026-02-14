@@ -11,6 +11,7 @@ import TestPage from "./pages/TestPage";
 import AuthPage from "./pages/AuthPage";
 import MyResults from "./pages/MyResults";
 import AdminResults from "./pages/AdminResults";
+import TestLeaderboard from "./pages/TestLeaderboard";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "@/components/ProtectedRoute";
 
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/auth" element={<AuthPage />} />
             <Route element={<ProtectedRoute />}>
               <Route path="/test/:subjectId" element={<TestPage />} />
+              <Route path="/test/:subjectId/results" element={<TestLeaderboard />} />
               <Route path="/my-results" element={<MyResults />} />
               <Route path="/admin/results" element={<AdminResults />} />
             </Route>
