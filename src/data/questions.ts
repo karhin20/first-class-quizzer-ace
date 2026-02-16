@@ -4271,5 +4271,453 @@ export const subjects: Subject[] = [
         correctAnswer: "B"
       }
     ]
+  },
+  {
+    id: "english-nouns-adjectives",
+    name: "English: Nouns & Adjectives (Phrases and Clauses)",
+    description: "Noun phrases, noun clauses, adjective phrases, adjective clauses and their functions (WASSCE standard)",
+    icon: "book-open",
+    questions: [
+      {
+        id: 1,
+        text: "Identify the <u>noun phrase</u> in the sentence: <i>The tall man in the black coat</i> walked briskly.",
+        options: [
+          { id: "A", text: "walked briskly" },
+          { id: "B", text: "The tall man in the black coat" },
+          { id: "C", text: "in the black coat" },
+          { id: "D", text: "briskly" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 2,
+        text: "Which of the following is a <u>noun clause</u>?",
+        options: [
+          { id: "A", text: "because he was late" },
+          { id: "B", text: "running down the street" },
+          { id: "C", text: "what she said surprised everyone" },
+          { id: "D", text: "the big red ball" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 3,
+        text: "In the sentence <i>That he passed the exam is wonderful news</i>, the noun clause functions as the ___.",
+        options: [
+          { id: "A", text: "object" },
+          { id: "B", text: "complement" },
+          { id: "C", text: "subject" },
+          { id: "D", text: "adverbial" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 4,
+        text: "Identify the <u>adjective phrase</u> in: The girl <i>full of confidence</i> answered the question.",
+        options: [
+          { id: "A", text: "The girl" },
+          { id: "B", text: "answered the question" },
+          { id: "C", text: "full of confidence" },
+          { id: "D", text: "the question" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 5,
+        text: "An <u>adjective clause</u> is also known as a ___.",
+        options: [
+          { id: "A", text: "noun clause" },
+          { id: "B", text: "relative clause" },
+          { id: "C", text: "adverbial clause" },
+          { id: "D", text: "main clause" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 6,
+        text: "In the sentence <i>The book <u>which I borrowed</u> is interesting</i>, the underlined part is a(n) ___.",
+        options: [
+          { id: "A", text: "noun clause" },
+          { id: "B", text: "adverbial clause" },
+          { id: "C", text: "adjective clause" },
+          { id: "D", text: "noun phrase" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 7,
+        text: "Which word typically introduces an <u>adjective clause</u>?",
+        options: [
+          { id: "A", text: "because" },
+          { id: "B", text: "who" },
+          { id: "C", text: "although" },
+          { id: "D", text: "if" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 8,
+        text: "In the sentence <i>I know <u>where she lives</u></i>, the underlined clause is a ___.",
+        options: [
+          { id: "A", text: "adjective clause" },
+          { id: "B", text: "adverbial clause" },
+          { id: "C", text: "noun clause" },
+          { id: "D", text: "main clause" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 9,
+        text: "A noun phrase typically consists of ___.",
+        options: [
+          { id: "A", text: "a verb and its modifiers" },
+          { id: "B", text: "a noun/pronoun and its modifiers" },
+          { id: "C", text: "an adjective and an adverb" },
+          { id: "D", text: "a preposition and its object" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 10,
+        text: "Identify the <u>noun clause</u> in: <i>Whoever finishes first will get a prize.</i>",
+        options: [
+          { id: "A", text: "will get a prize" },
+          { id: "B", text: "a prize" },
+          { id: "C", text: "Whoever finishes first" },
+          { id: "D", text: "finishes first" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 11,
+        text: "The noun clause in <i>She asked <u>whether we would attend</u></i> functions as the ___.",
+        options: [
+          { id: "A", text: "subject" },
+          { id: "B", text: "object" },
+          { id: "C", text: "complement" },
+          { id: "D", text: "adverbial" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 12,
+        text: "Which of these contains an <u>adjective phrase</u>?",
+        options: [
+          { id: "A", text: "She sings beautifully." },
+          { id: "B", text: "The soup, very hot and spicy, burned my tongue." },
+          { id: "C", text: "He ran to the market." },
+          { id: "D", text: "I will go if you come." }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 13,
+        text: "In <i>The man <u>whose car was stolen</u> reported to the police</i>, the underlined clause modifies ___.",
+        options: [
+          { id: "A", text: "police" },
+          { id: "B", text: "reported" },
+          { id: "C", text: "car" },
+          { id: "D", text: "man" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 14,
+        text: "Which is a <u>noun phrase</u>?",
+        options: [
+          { id: "A", text: "quickly and silently" },
+          { id: "B", text: "a beautiful painting on the wall" },
+          { id: "C", text: "because she left early" },
+          { id: "D", text: "which was broken" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 15,
+        text: "In <i>The fact <u>that the earth is round</u> is well known</i>, the underlined clause is a ___.",
+        options: [
+          { id: "A", text: "adjective clause" },
+          { id: "B", text: "adverbial clause" },
+          { id: "C", text: "noun clause in apposition" },
+          { id: "D", text: "relative clause" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 16,
+        text: "An adjective phrase modifies a ___.",
+        options: [
+          { id: "A", text: "verb" },
+          { id: "B", text: "noun or pronoun" },
+          { id: "C", text: "adverb" },
+          { id: "D", text: "preposition" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 17,
+        text: "Identify the function of the noun clause in: <i>The problem is <u>that we have no money</u>.</i>",
+        options: [
+          { id: "A", text: "subject" },
+          { id: "B", text: "object" },
+          { id: "C", text: "complement" },
+          { id: "D", text: "adverbial" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 18,
+        text: "Which sentence contains an <u>adjective clause</u>?",
+        options: [
+          { id: "A", text: "I believe that she is honest." },
+          { id: "B", text: "The woman who spoke is my aunt." },
+          { id: "C", text: "He left because he was tired." },
+          { id: "D", text: "Running fast, she caught the bus." }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 19,
+        text: "The head word in the noun phrase <i>the extremely talented young musician</i> is ___.",
+        options: [
+          { id: "A", text: "extremely" },
+          { id: "B", text: "talented" },
+          { id: "C", text: "young" },
+          { id: "D", text: "musician" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 20,
+        text: "In <i>She is <u>afraid of spiders</u></i>, the underlined part is a(n) ___.",
+        options: [
+          { id: "A", text: "noun phrase" },
+          { id: "B", text: "adjective phrase" },
+          { id: "C", text: "adverb phrase" },
+          { id: "D", text: "adjective clause" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 21,
+        text: "A noun clause can be introduced by all of the following EXCEPT ___.",
+        options: [
+          { id: "A", text: "that" },
+          { id: "B", text: "whether" },
+          { id: "C", text: "although" },
+          { id: "D", text: "what" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 22,
+        text: "In <i>The students <u>eager to learn</u> arrived early</i>, the underlined part is a(n) ___.",
+        options: [
+          { id: "A", text: "noun phrase" },
+          { id: "B", text: "adjective phrase" },
+          { id: "C", text: "adverb phrase" },
+          { id: "D", text: "noun clause" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 23,
+        text: "Which sentence has a noun clause functioning as the <u>object of a preposition</u>?",
+        options: [
+          { id: "A", text: "That he lied is obvious." },
+          { id: "B", text: "I am interested in what you said." },
+          { id: "C", text: "She is the teacher who helped me." },
+          { id: "D", text: "The boy running is my brother." }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 24,
+        text: "Identify the <u>adjective clause</u> in: <i>The house <u>that Jack built</u> collapsed.</i>",
+        options: [
+          { id: "A", text: "The house" },
+          { id: "B", text: "collapsed" },
+          { id: "C", text: "Jack built" },
+          { id: "D", text: "that Jack built" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 25,
+        text: "A <u>restrictive adjective clause</u> ___.",
+        options: [
+          { id: "A", text: "is set off by commas" },
+          { id: "B", text: "provides essential information about the noun" },
+          { id: "C", text: "can be removed without changing the meaning" },
+          { id: "D", text: "always begins with 'which'" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 26,
+        text: "In <i><u>What the teacher said</u> made the students laugh</i>, the noun clause is the ___.",
+        options: [
+          { id: "A", text: "object" },
+          { id: "B", text: "complement" },
+          { id: "C", text: "subject" },
+          { id: "D", text: "appositive" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 27,
+        text: "Which of these is a <u>non-restrictive adjective clause</u>?",
+        options: [
+          { id: "A", text: "The car that I bought is blue." },
+          { id: "B", text: "My father, who is a doctor, lives in Accra." },
+          { id: "C", text: "I know the man standing there." },
+          { id: "D", text: "The dog barking loudly is mine." }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 28,
+        text: "The noun phrase <i>my sister's beautiful new Italian leather bag</i> has the head word ___.",
+        options: [
+          { id: "A", text: "sister's" },
+          { id: "B", text: "beautiful" },
+          { id: "C", text: "leather" },
+          { id: "D", text: "bag" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 29,
+        text: "In <i>The children played with <u>whoever came to visit</u></i>, the underlined clause functions as ___.",
+        options: [
+          { id: "A", text: "subject" },
+          { id: "B", text: "object of the verb" },
+          { id: "C", text: "object of the preposition" },
+          { id: "D", text: "complement" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 30,
+        text: "An adjective clause that begins with <i>where</i> modifies a noun denoting ___.",
+        options: [
+          { id: "A", text: "a person" },
+          { id: "B", text: "a time" },
+          { id: "C", text: "a place" },
+          { id: "D", text: "a reason" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 31,
+        text: "Identify the <u>noun phrase</u> functioning as the object in: <i>She bought <u>a dozen fresh eggs from the market</u>.</i>",
+        options: [
+          { id: "A", text: "She bought" },
+          { id: "B", text: "from the market" },
+          { id: "C", text: "a dozen fresh eggs from the market" },
+          { id: "D", text: "fresh eggs" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 32,
+        text: "Which relative pronoun is used for possession in adjective clauses?",
+        options: [
+          { id: "A", text: "who" },
+          { id: "B", text: "whom" },
+          { id: "C", text: "whose" },
+          { id: "D", text: "which" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 33,
+        text: "In <i>His claim <u>that he was innocent</u> was rejected</i>, the underlined clause is a ___.",
+        options: [
+          { id: "A", text: "adjective clause" },
+          { id: "B", text: "adverbial clause" },
+          { id: "C", text: "noun clause in apposition" },
+          { id: "D", text: "relative clause" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 34,
+        text: "The adjective phrase <i>happy about the results</i> has the head word ___.",
+        options: [
+          { id: "A", text: "about" },
+          { id: "B", text: "results" },
+          { id: "C", text: "happy" },
+          { id: "D", text: "the" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 35,
+        text: "Which sentence contains a noun clause as a <u>direct object</u>?",
+        options: [
+          { id: "A", text: "Where he went is unknown." },
+          { id: "B", text: "The news that she won spread fast." },
+          { id: "C", text: "I believe that honesty is the best policy." },
+          { id: "D", text: "The man who came is my uncle." }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 36,
+        text: "In <i>The city <u>where I was born</u> has changed a lot</i>, the underlined clause is a(n) ___.",
+        options: [
+          { id: "A", text: "noun clause" },
+          { id: "B", text: "adverbial clause" },
+          { id: "C", text: "adjective clause" },
+          { id: "D", text: "noun phrase" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 37,
+        text: "A noun phrase can function as all of the following EXCEPT ___.",
+        options: [
+          { id: "A", text: "subject" },
+          { id: "B", text: "object" },
+          { id: "C", text: "complement" },
+          { id: "D", text: "conjunction" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 38,
+        text: "In <i>The woman, <u>extremely kind and generous</u>, helped the orphans</i>, the underlined part is a(n) ___.",
+        options: [
+          { id: "A", text: "noun clause" },
+          { id: "B", text: "adjective phrase" },
+          { id: "C", text: "adverb clause" },
+          { id: "D", text: "noun phrase" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 39,
+        text: "Which of these is TRUE about adjective clauses?",
+        options: [
+          { id: "A", text: "They modify verbs." },
+          { id: "B", text: "They always come before the noun." },
+          { id: "C", text: "They come immediately after the noun they modify." },
+          { id: "D", text: "They cannot contain a subject and a verb." }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 40,
+        text: "In <i>Nobody knows <u>how the accident happened</u></i>, the underlined clause is a ___.",
+        options: [
+          { id: "A", text: "adjective clause" },
+          { id: "B", text: "adverbial clause" },
+          { id: "C", text: "noun clause" },
+          { id: "D", text: "relative clause" }
+        ],
+        correctAnswer: "C"
+      }
+    ]
   }
 ];
