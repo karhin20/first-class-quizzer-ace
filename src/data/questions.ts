@@ -4040,7 +4040,235 @@ export const subjects: Subject[] = [
           { id: "C", text: "Palisade mesophyll" },
           { id: "D", text: "Guard cell" }
         ],
+      correctAnswer: "C"
+      }
+    ]
+  },
+  {
+    id: "integrated-science-acids",
+    name: "Integrated Science: Acids",
+    description: "Properties, types, reactions and uses of acids (WASSCE standard)",
+    icon: "beaker",
+    questions: [
+      {
+        id: 1,
+        text: "Which of the following is a property of acids?",
+        options: [
+          { id: "A", text: "They turn red litmus paper blue" },
+          { id: "B", text: "They have a sour taste" },
+          { id: "C", text: "They feel soapy to the touch" },
+          { id: "D", text: "They have a pH greater than 7" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 2,
+        text: "What is the pH range of acidic solutions?",
+        options: [
+          { id: "A", text: "0 to 6" },
+          { id: "B", text: "7 to 14" },
+          { id: "C", text: "Exactly 7" },
+          { id: "D", text: "8 to 12" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 3,
+        text: "Which of the following is a strong acid?",
+        options: [
+          { id: "A", text: "Ethanoic acid (CH₃COOH)" },
+          { id: "B", text: "Citric acid" },
+          { id: "C", text: "Hydrochloric acid (HCl)" },
+          { id: "D", text: "Carbonic acid (H₂CO₃)" }
+        ],
         correctAnswer: "C"
+      },
+      {
+        id: 4,
+        text: "What type of ions do acids produce when dissolved in water?",
+        options: [
+          { id: "A", text: "Hydroxide ions (OH⁻)" },
+          { id: "B", text: "Hydrogen ions (H⁺)" },
+          { id: "C", text: "Sodium ions (Na⁺)" },
+          { id: "D", text: "Carbonate ions (CO₃²⁻)" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 5,
+        text: "The reaction between an acid and a base to form salt and water is called:",
+        options: [
+          { id: "A", text: "Oxidation" },
+          { id: "B", text: "Decomposition" },
+          { id: "C", text: "Neutralization" },
+          { id: "D", text: "Displacement" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 6,
+        text: "Which gas is produced when a dilute acid reacts with a metal?",
+        options: [
+          { id: "A", text: "Oxygen" },
+          { id: "B", text: "Carbon dioxide" },
+          { id: "C", text: "Hydrogen" },
+          { id: "D", text: "Nitrogen" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 7,
+        text: "What is produced when an acid reacts with a metal carbonate?",
+        options: [
+          { id: "A", text: "Salt, water and hydrogen" },
+          { id: "B", text: "Salt, water and carbon dioxide" },
+          { id: "C", text: "Salt and oxygen" },
+          { id: "D", text: "Metal oxide and water" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 8,
+        text: "Which of the following is a weak acid?",
+        options: [
+          { id: "A", text: "Sulphuric acid (H₂SO₄)" },
+          { id: "B", text: "Nitric acid (HNO₃)" },
+          { id: "C", text: "Hydrochloric acid (HCl)" },
+          { id: "D", text: "Ethanoic acid (CH₃COOH)" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 9,
+        text: "Which indicator turns pink in acidic solutions?",
+        options: [
+          { id: "A", text: "Blue litmus paper" },
+          { id: "B", text: "Phenolphthalein" },
+          { id: "C", text: "Methyl orange" },
+          { id: "D", text: "Universal indicator" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 10,
+        text: "Sulphuric acid is classified as a diprotic acid because it:",
+        options: [
+          { id: "A", text: "Contains two oxygen atoms" },
+          { id: "B", text: "Can donate two hydrogen ions per molecule" },
+          { id: "C", text: "Reacts with two metals at once" },
+          { id: "D", text: "Has two sulphur atoms" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 11,
+        text: "Which of the following acids is found naturally in the stomach?",
+        options: [
+          { id: "A", text: "Sulphuric acid" },
+          { id: "B", text: "Nitric acid" },
+          { id: "C", text: "Hydrochloric acid" },
+          { id: "D", text: "Phosphoric acid" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 12,
+        text: "What is the correct equation for the reaction of hydrochloric acid with sodium hydroxide?",
+        options: [
+          { id: "A", text: "HCl + NaOH → NaCl + H₂O" },
+          { id: "B", text: "HCl + NaOH → NaH + ClO" },
+          { id: "C", text: "2HCl + NaOH → Na₂Cl + H₂O" },
+          { id: "D", text: "HCl + Na₂O → NaCl + H₂" }
+        ],
+        correctAnswer: "A"
+      },
+      {
+        id: 13,
+        text: "Citric acid is an example of an organic acid found in:",
+        options: [
+          { id: "A", text: "Vinegar" },
+          { id: "B", text: "Citrus fruits" },
+          { id: "C", text: "Milk" },
+          { id: "D", text: "Tea leaves" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 14,
+        text: "Which of the following metals does NOT react with dilute hydrochloric acid?",
+        options: [
+          { id: "A", text: "Zinc" },
+          { id: "B", text: "Iron" },
+          { id: "C", text: "Copper" },
+          { id: "D", text: "Magnesium" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 15,
+        text: "Acid rain is primarily caused by the dissolution of which gases in rainwater?",
+        options: [
+          { id: "A", text: "Oxygen and nitrogen" },
+          { id: "B", text: "Sulphur dioxide and nitrogen oxides" },
+          { id: "C", text: "Carbon monoxide and methane" },
+          { id: "D", text: "Hydrogen and chlorine" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 16,
+        text: "What colour does blue litmus paper turn in an acidic solution?",
+        options: [
+          { id: "A", text: "Green" },
+          { id: "B", text: "Yellow" },
+          { id: "C", text: "Red" },
+          { id: "D", text: "It remains blue" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 17,
+        text: "The basicity of an acid refers to:",
+        options: [
+          { id: "A", text: "The number of oxygen atoms in the acid" },
+          { id: "B", text: "The number of replaceable hydrogen ions per molecule of the acid" },
+          { id: "C", text: "The strength of the acid" },
+          { id: "D", text: "The concentration of the acid" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 18,
+        text: "Trioxonitrate(V) acid is the IUPAC name for:",
+        options: [
+          { id: "A", text: "Sulphuric acid" },
+          { id: "B", text: "Hydrochloric acid" },
+          { id: "C", text: "Nitric acid (HNO₃)" },
+          { id: "D", text: "Phosphoric acid" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 19,
+        text: "Which acid is commonly used in car batteries?",
+        options: [
+          { id: "A", text: "Hydrochloric acid" },
+          { id: "B", text: "Nitric acid" },
+          { id: "C", text: "Ethanoic acid" },
+          { id: "D", text: "Sulphuric acid" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 20,
+        text: "When an acid reacts with a metal oxide, the products are:",
+        options: [
+          { id: "A", text: "Salt and hydrogen" },
+          { id: "B", text: "Salt and water" },
+          { id: "C", text: "Salt, water and carbon dioxide" },
+          { id: "D", text: "Metal and oxygen" }
+        ],
+        correctAnswer: "B"
       }
     ]
   }
