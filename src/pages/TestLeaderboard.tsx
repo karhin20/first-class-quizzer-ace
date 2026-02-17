@@ -58,19 +58,29 @@ const TestLeaderboard = () => {
             // Create a map of user_id -> profile
             const profileMap = new Map((profiles || []).map((p: any) => [p.user_id, p]));
 
-            // 3. Combine data
-            const combinedData: LeaderboardEntry[] = testData.map((r: any) => {
-                const profile = profileMap.get(r.user_id);
-                return {
-                    id: r.id,
-                    score: r.score,
-                    total_questions: r.total_questions,
-                    completed_at: r.completed_at,
-                    profiles: {
-                        name: profile?.name || 'Anonymous'
-                    }
-                };
+            // 3. Keep only highest score per student
+            const bestByUser = new Map<string, any>();
+            testData.forEach((r: any) => {
+                const existing = bestByUser.get(r.user_id);
+                if (!existing || r.score > existing.score) {
+                    bestByUser.set(r.user_id, r);
+                }
             });
+
+            const combinedData: LeaderboardEntry[] = Array.from(bestByUser.values())
+                .sort((a, b) => b.score - a.score)
+                .map((r: any) => {
+                    const profile = profileMap.get(r.user_id);
+                    return {
+                        id: r.id,
+                        score: r.score,
+                        total_questions: r.total_questions,
+                        completed_at: r.completed_at,
+                        profiles: {
+                            name: profile?.name || 'Anonymous'
+                        }
+                    };
+                });
 
             setEntries(combinedData);
             setLoading(false);
