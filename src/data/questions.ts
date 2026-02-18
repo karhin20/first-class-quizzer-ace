@@ -4719,5 +4719,288 @@ export const subjects: Subject[] = [
         correctAnswer: "C"
       }
     ]
+  },
+  {
+    id: "biology5",
+    name: "Biology 5",
+    description: "Cell History, Prokaryotes vs Eukaryotes – WASSCE Standard",
+    icon: "microscope",
+    questions: [
+      {
+        id: 1,
+        text: "Who first observed and named 'cells' after examining thin slices of cork under a microscope?",
+        options: [
+          { id: "A", text: "Anton van Leeuwenhoek" },
+          { id: "B", text: "Robert Hooke" },
+          { id: "C", text: "Matthias Schleiden" },
+          { id: "D", text: "Rudolf Virchow" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 2,
+        text: "Anton van Leeuwenhoek is best known for being the first person to observe",
+        options: [
+          { id: "A", text: "dead cork cells" },
+          { id: "B", text: "living microorganisms (animalcules)" },
+          { id: "C", text: "the nucleus of a cell" },
+          { id: "D", text: "chromosomes during cell division" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 3,
+        text: "Robert Hooke published his observations of cells in 1665 in a book titled",
+        options: [
+          { id: "A", text: "On the Origin of Species" },
+          { id: "B", text: "Micrographia" },
+          { id: "C", text: "Principia Mathematica" },
+          { id: "D", text: "Systema Naturae" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 4,
+        text: "The term 'cell' was coined by Robert Hooke because the structures he saw reminded him of",
+        options: [
+          { id: "A", text: "prison cells" },
+          { id: "B", text: "honeycomb cells" },
+          { id: "C", text: "small rooms (cells) in a monastery" },
+          { id: "D", text: "battery cells" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 5,
+        text: "A colony of cells is best described as",
+        options: [
+          { id: "A", text: "a group of different types of organisms living together" },
+          { id: "B", text: "a group of similar cells living together but each capable of independent existence" },
+          { id: "C", text: "a single cell that has divided many times" },
+          { id: "D", text: "a tissue made up of specialised cells" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 6,
+        text: "Which of the following is an example of a colonial organism?",
+        options: [
+          { id: "A", text: "Amoeba" },
+          { id: "B", text: "Volvox" },
+          { id: "C", text: "Paramecium" },
+          { id: "D", text: "Euglena" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 7,
+        text: "In a colony of cells, each individual cell",
+        options: [
+          { id: "A", text: "depends entirely on other cells for survival" },
+          { id: "B", text: "is highly specialised and cannot survive alone" },
+          { id: "C", text: "can carry out all life processes independently" },
+          { id: "D", text: "has a different genetic makeup from other cells" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 8,
+        text: "Which of the following is the main genetic region found in prokaryotic cells?",
+        options: [
+          { id: "A", text: "Nucleus" },
+          { id: "B", text: "Nucleoid" },
+          { id: "C", text: "Nucleolus" },
+          { id: "D", text: "Nuclear envelope" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 9,
+        text: "The cytoplasm of a prokaryotic cell contains",
+        options: [
+          { id: "A", text: "membrane-bound organelles" },
+          { id: "B", text: "a well-defined nucleus" },
+          { id: "C", text: "ribosomes and enzymes for metabolic reactions" },
+          { id: "D", text: "mitochondria and chloroplasts" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 10,
+        text: "Which structure surrounds the cytoplasm of a prokaryotic cell and controls the movement of substances in and out?",
+        options: [
+          { id: "A", text: "Cell wall" },
+          { id: "B", text: "Capsule" },
+          { id: "C", text: "Plasma membrane" },
+          { id: "D", text: "Nuclear membrane" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 11,
+        text: "What is the function of flagella in prokaryotic cells?",
+        options: [
+          { id: "A", text: "Protein synthesis" },
+          { id: "B", text: "DNA replication" },
+          { id: "C", text: "Locomotion (movement)" },
+          { id: "D", text: "Cell division" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 12,
+        text: "Which of the following is NOT a main part of a prokaryotic cell?",
+        options: [
+          { id: "A", text: "Cytoplasm" },
+          { id: "B", text: "Nucleoid" },
+          { id: "C", text: "Mitochondria" },
+          { id: "D", text: "Plasma membrane" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 13,
+        text: "Prokaryotic cells differ from eukaryotic cells mainly because prokaryotes",
+        options: [
+          { id: "A", text: "have a cell membrane" },
+          { id: "B", text: "lack a membrane-bound nucleus" },
+          { id: "C", text: "contain DNA" },
+          { id: "D", text: "can reproduce" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 14,
+        text: "Eukaryotic cells are found in all of the following groups of organisms EXCEPT",
+        options: [
+          { id: "A", text: "Animals" },
+          { id: "B", text: "Plants" },
+          { id: "C", text: "Fungi" },
+          { id: "D", text: "Bacteria" }
+        ],
+        correctAnswer: "D"
+      },
+      {
+        id: 15,
+        text: "Which of the following is a characteristic feature of eukaryotic cells?",
+        options: [
+          { id: "A", text: "Absence of a nuclear membrane" },
+          { id: "B", text: "Presence of membrane-bound organelles" },
+          { id: "C", text: "Circular DNA without histones" },
+          { id: "D", text: "Smaller ribosomes (70S)" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 16,
+        text: "Which of the following organisms is a prokaryote?",
+        options: [
+          { id: "A", text: "Mushroom" },
+          { id: "B", text: "Amoeba" },
+          { id: "C", text: "Escherichia coli" },
+          { id: "D", text: "Fern" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 17,
+        text: "The main groups of organisms that are eukaryotes include",
+        options: [
+          { id: "A", text: "bacteria and archaea" },
+          { id: "B", text: "animals, plants, fungi, and protists" },
+          { id: "C", text: "only animals and plants" },
+          { id: "D", text: "viruses and bacteria" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 18,
+        text: "Which of the following is a difference between prokaryotic and eukaryotic cells?",
+        options: [
+          { id: "A", text: "Prokaryotes have mitochondria, eukaryotes do not" },
+          { id: "B", text: "Eukaryotes have a true nucleus, prokaryotes do not" },
+          { id: "C", text: "Prokaryotes are always multicellular" },
+          { id: "D", text: "Eukaryotes lack ribosomes" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 19,
+        text: "The DNA in prokaryotic cells is",
+        options: [
+          { id: "A", text: "enclosed in a membrane-bound nucleus" },
+          { id: "B", text: "linear and associated with histones" },
+          { id: "C", text: "circular and found in the nucleoid region" },
+          { id: "D", text: "contained in multiple chromosomes within a nucleus" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 20,
+        text: "Archaea are similar to bacteria in that they are both",
+        options: [
+          { id: "A", text: "eukaryotic" },
+          { id: "B", text: "prokaryotic" },
+          { id: "C", text: "multicellular" },
+          { id: "D", text: "photosynthetic only" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 21,
+        text: "Which of the following organelles is found in eukaryotic cells but NOT in prokaryotic cells?",
+        options: [
+          { id: "A", text: "Ribosome" },
+          { id: "B", text: "Cell membrane" },
+          { id: "C", text: "Endoplasmic reticulum" },
+          { id: "D", text: "Cell wall" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 22,
+        text: "Prokaryotic cells typically reproduce by",
+        options: [
+          { id: "A", text: "mitosis" },
+          { id: "B", text: "meiosis" },
+          { id: "C", text: "binary fission" },
+          { id: "D", text: "budding only" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 23,
+        text: "Van Leeuwenhoek made his observations using",
+        options: [
+          { id: "A", text: "a compound microscope" },
+          { id: "B", text: "an electron microscope" },
+          { id: "C", text: "simple single-lens microscopes he made himself" },
+          { id: "D", text: "a magnifying glass only" }
+        ],
+        correctAnswer: "C"
+      },
+      {
+        id: 24,
+        text: "Which statement about the size of prokaryotic and eukaryotic cells is correct?",
+        options: [
+          { id: "A", text: "Prokaryotic cells are generally larger than eukaryotic cells" },
+          { id: "B", text: "Eukaryotic cells are generally larger than prokaryotic cells" },
+          { id: "C", text: "Both types of cells are always the same size" },
+          { id: "D", text: "Size has nothing to do with cell type" }
+        ],
+        correctAnswer: "B"
+      },
+      {
+        id: 25,
+        text: "The ribosomes found in prokaryotic cells are",
+        options: [
+          { id: "A", text: "80S, the same as in eukaryotes" },
+          { id: "B", text: "70S, which are smaller than those in eukaryotes" },
+          { id: "C", text: "absent; prokaryotes do not have ribosomes" },
+          { id: "D", text: "membrane-bound like in eukaryotes" }
+        ],
+        correctAnswer: "B"
+      }
+    ]
   }
 ];
