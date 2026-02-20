@@ -58,8 +58,8 @@ const TestPage = () => {
         options: shuffleArray(q.options) 
       }));
 
-      // Shuffle question order *unless* it's any Integrated Science subject
-      const finalQuestions = subject.id.startsWith('integrated-science')
+      // Shuffle question order *unless* it's Integrated Science or a global-timer subject (e.g. Statistics)
+      const finalQuestions = (subject.id.startsWith('integrated-science') || isGlobalTimer)
         ? questionsWithOptionsShuffled
         : shuffleArray(questionsWithOptionsShuffled);
 
@@ -228,7 +228,7 @@ const TestPage = () => {
         ...q,
         options: shuffleArray(q.options)
       }));
-      const finalQuestions = subject.id.startsWith('integrated-science')
+      const finalQuestions = (subject.id.startsWith('integrated-science') || isGlobalTimer)
         ? questionsWithOptionsShuffled
         : shuffleArray(questionsWithOptionsShuffled);
       setCurrentQuestions(finalQuestions);
