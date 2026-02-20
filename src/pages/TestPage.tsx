@@ -45,6 +45,10 @@ const TestPage = () => {
   const [questionTimeRemaining, setQuestionTimeRemaining] = useState<number>(60);
   const questionTimerIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Determine timer mode from subject
+  const isGlobalTimer = subject?.timerType === 'global';
+  const globalTotalTime = subject?.totalTimeSeconds ?? 2700;
+
   // Set up questions (shuffle options, maybe shuffle questions) and initialize timer
   useEffect(() => {
     if (subject && subject.questions.length > 0) {
@@ -66,7 +70,8 @@ const TestPage = () => {
       setAnswers({});
       setShowResults(false);
       setScore(0);
-      setQuestionTimeRemaining(60);
+      // Init timer depending on mode
+      setQuestionTimeRemaining(isGlobalTimer ? globalTotalTime : 60);
     } else if (subject === undefined) {
       // Handle subject not found
       toast("Subject not found", {
@@ -90,44 +95,50 @@ const TestPage = () => {
     }
   }, [subject, navigate]);
 
-  // Per-Question Timer Countdown Logic
+  // Timer Countdown Logic
   useEffect(() => {
-    // Clear any existing interval
     if (questionTimerIntervalRef.current) {
       clearInterval(questionTimerIntervalRef.current);
     }
 
-    // Start new timer only if results are not shown
     if (!showResults) {
-      setQuestionTimeRemaining(60); // Reset timer for the new question
+      if (!isGlobalTimer) {
+        // Per-question mode: reset to 60s on every question change
+        setQuestionTimeRemaining(60);
+      }
 
       questionTimerIntervalRef.current = setInterval(() => {
         setQuestionTimeRemaining(prevTime => {
           if (prevTime <= 1) {
-            clearInterval(questionTimerIntervalRef.current!); // Stop timer
+            clearInterval(questionTimerIntervalRef.current!);
 
-            // Auto-advance or submit
-            if (currentQuestionIndex < currentQuestions.length - 1) {
-              toast.warning("Time's up for this question!", { description: "Moving to the next question." });
-              paginate(1); // Go to next question
-            } else {
+            if (isGlobalTimer) {
+              // Global timer ran out — auto submit entire test
               toast.error("Time's up!", { description: "Submitting your test automatically." });
-              handleSubmitTest(true); // Force submit on last question
+              handleSubmitTest(true);
+            } else {
+              // Per-question mode: advance or submit
+              if (currentQuestionIndex < currentQuestions.length - 1) {
+                toast.warning("Time's up for this question!", { description: "Moving to the next question." });
+                paginate(1);
+              } else {
+                toast.error("Time's up!", { description: "Submitting your test automatically." });
+                handleSubmitTest(true);
+              }
             }
-            return 60; // Reset time for display (though interval is cleared)
+            return isGlobalTimer ? globalTotalTime : 60;
           }
           return prevTime - 1;
         });
       }, 1000);
     }
 
-    // Cleanup interval on component unmount, when results show, or when question index changes
     return () => {
       if (questionTimerIntervalRef.current) {
         clearInterval(questionTimerIntervalRef.current);
       }
     };
-  }, [currentQuestionIndex, showResults, currentQuestions.length]); // Rerun when question changes or results are shown
+  }, [currentQuestionIndex, showResults, currentQuestions.length, isGlobalTimer]); // for global timer, question index changes don't reset the timer value
 
   // Memoize current question to avoid recalculating on every render
   const currentQuestion = useMemo(() => {
@@ -208,16 +219,15 @@ const TestPage = () => {
     }
   };
   
-  // Update restartTest to reset per-question timer
+  // Update restartTest to reset timer correctly
   const restartTest = () => {
-    if (questionTimerIntervalRef.current) clearInterval(questionTimerIntervalRef.current); // Stop any existing timer
+    if (questionTimerIntervalRef.current) clearInterval(questionTimerIntervalRef.current);
     
     if (subject && subject.questions.length > 0) {
       const questionsWithOptionsShuffled = subject.questions.map(q => ({
         ...q,
         options: shuffleArray(q.options)
       }));
-      // Re-apply the conditional shuffle logic
       const finalQuestions = subject.id.startsWith('integrated-science')
         ? questionsWithOptionsShuffled
         : shuffleArray(questionsWithOptionsShuffled);
@@ -227,8 +237,8 @@ const TestPage = () => {
     setCurrentQuestionIndex(0);
     setShowResults(false);
     setScore(0);
-    setPage([0, 0]); // Reset animation page
-    setQuestionTimeRemaining(60); // Reset timer for the first question
+    setPage([0, 0]);
+    setQuestionTimeRemaining(isGlobalTimer ? globalTotalTime : 60);
   };
   
   const selectedOption = answers[currentQuestion.id] || null;
@@ -285,9 +295,14 @@ const TestPage = () => {
                 <p className="text-gray-600">Question {currentQuestionIndex + 1} of {totalQuestionsCount}</p>
               </div>
               <div className="flex items-center gap-4">
-                <div className="flex items-center gap-2 bg-yellow-100 px-3 py-1 rounded-full text-yellow-800 font-medium text-sm border border-yellow-300">
+                <div className={`flex items-center gap-2 px-3 py-1 rounded-full font-medium text-sm border ${
+                  questionTimeRemaining <= (isGlobalTimer ? 300 : 10)
+                    ? 'bg-red-100 text-red-800 border-red-300 animate-pulse'
+                    : 'bg-yellow-100 text-yellow-800 border-yellow-300'
+                }`}>
                   <Clock className="h-4 w-4" />
                   <span>{formatTime(questionTimeRemaining)}</span>
+                  {isGlobalTimer && <span className="text-xs opacity-70">total</span>}
                 </div>
                 <div className="bg-blue-50 px-4 py-2 rounded-lg">
                   <span className="text-blue-800 font-medium">

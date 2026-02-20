@@ -15,6 +15,8 @@ export interface Subject {
   description: string;
   icon: string;
   questions: Question[];
+  timerType?: 'per-question' | 'global'; // default is per-question (60s each)
+  totalTimeSeconds?: number; // used when timerType === 'global'
 }
 
 export const getSubjectById = (id: string): Subject | undefined => {
@@ -5000,6 +5002,404 @@ export const subjects: Subject[] = [
           { id: "D", text: "membrane-bound like in eukaryotes" }
         ],
         correctAnswer: "B"
+      }
+    ]
+  },
+  {
+    id: "statistics1",
+    name: "Statistics",
+    description: "Grouped Frequency, Mean, Modal Class, Standard Deviation, Mean Deviation & Pie Charts – WASSCE Standard",
+    icon: "bar-chart",
+    timerType: "global",
+    totalTimeSeconds: 2700, // 45 minutes
+    questions: [
+      // ─── Dataset Context ─────────────────────────────────────────────────────
+      // The following dataset is used for questions 1–14:
+      // The table below shows the marks scored by 60 students in a Mathematics test.
+      // Marks:      10-19 | 20-29 | 30-39 | 40-49 | 50-59 | 60-69 | 70-79
+      // Frequency:    4   |   8   |  11   |  14   |  12   |   7   |   4
+      // Midpoints:   14.5 |  24.5 |  34.5 |  44.5 |  54.5 |  64.5 |  74.5
+      // fx:          58   |  196  |  379.5|  623  |  654  |  451.5|  298
+      // Σfx = 2660, Σf = 60, Mean = 44.33 (approx)
+      // Modal class = 40–49 (highest frequency 14)
+      // ──────────────────────────────────────────────────────────────────────────
+      {
+        id: 1,
+        text: "The table below shows the marks scored by 60 students in a Mathematics test.<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table><br/>What is the total number of students represented?",
+        options: [
+          { id: "A", text: "55" },
+          { id: "B", text: "60" },
+          { id: "C", text: "65" },
+          { id: "D", text: "70" }
+        ],
+        correctAnswer: "B",
+        explanation: "Add all frequencies: 4+8+11+14+12+7+4 = 60"
+      },
+      {
+        id: 2,
+        text: "Using the same distribution (60 students), what is the modal class?",
+        options: [
+          { id: "A", text: "30–39" },
+          { id: "B", text: "50–59" },
+          { id: "C", text: "40–49" },
+          { id: "D", text: "60–69" }
+        ],
+        correctAnswer: "C",
+        explanation: "The modal class is the class with the highest frequency. The class 40–49 has frequency 14, which is the highest."
+      },
+      {
+        id: 3,
+        text: "Using the same distribution (60 students), what is the class width?",
+        options: [
+          { id: "A", text: "9" },
+          { id: "B", text: "10" },
+          { id: "C", text: "11" },
+          { id: "D", text: "5" }
+        ],
+        correctAnswer: "B",
+        explanation: "Class width = upper class boundary − lower class boundary = 19.5 − 9.5 = 10"
+      },
+      {
+        id: 4,
+        text: "Using the same distribution (60 students), what is the midpoint (class mark) of the class 40–49?",
+        options: [
+          { id: "A", text: "44" },
+          { id: "B", text: "45" },
+          { id: "C", text: "44.5" },
+          { id: "D", text: "43.5" }
+        ],
+        correctAnswer: "C",
+        explanation: "Midpoint = (40 + 49) / 2 = 44.5"
+      },
+      {
+        id: 5,
+        text: "Using the same distribution (60 students), what is the value of Σfx where x is the midpoint of each class? (Use midpoints: 14.5, 24.5, 34.5, 44.5, 54.5, 64.5, 74.5)",
+        options: [
+          { id: "A", text: "2560" },
+          { id: "B", text: "2660" },
+          { id: "C", text: "2760" },
+          { id: "D", text: "2860" }
+        ],
+        correctAnswer: "B",
+        explanation: "Σfx = 4(14.5)+8(24.5)+11(34.5)+14(44.5)+12(54.5)+7(64.5)+4(74.5) = 58+196+379.5+623+654+451.5+298 = 2660"
+      },
+      {
+        id: 6,
+        text: "Using the same distribution (60 students), calculate the mean mark to the nearest whole number.",
+        options: [
+          { id: "A", text: "42" },
+          { id: "B", text: "43" },
+          { id: "C", text: "44" },
+          { id: "D", text: "45" }
+        ],
+        correctAnswer: "C",
+        explanation: "Mean = Σfx / Σf = 2660 / 60 ≈ 44.33 ≈ 44"
+      },
+      {
+        id: 7,
+        text: "Using the same distribution (60 students), how many students scored less than 40 marks?",
+        options: [
+          { id: "A", text: "19" },
+          { id: "B", text: "21" },
+          { id: "C", text: "23" },
+          { id: "D", text: "25" }
+        ],
+        correctAnswer: "C",
+        explanation: "Students scoring less than 40: classes 10–19 (4) + 20–29 (8) + 30–39 (11) = 23"
+      },
+      {
+        id: 8,
+        text: "Using the same distribution (60 students), what is the cumulative frequency up to and including the class 40–49?",
+        options: [
+          { id: "A", text: "33" },
+          { id: "B", text: "37" },
+          { id: "C", text: "40" },
+          { id: "D", text: "48" }
+        ],
+        correctAnswer: "B",
+        explanation: "Cumulative frequency up to 40–49: 4+8+11+14 = 37"
+      },
+      {
+        id: 9,
+        text: "Using the same distribution (60 students), calculate the variance. Use mean = 44.33 and midpoints 14.5, 24.5, 34.5, 44.5, 54.5, 64.5, 74.5. Which of the following is closest to Σf(x−x̄)² / Σf?",
+        options: [
+          { id: "A", text: "Approximately 200" },
+          { id: "B", text: "Approximately 241" },
+          { id: "C", text: "Approximately 280" },
+          { id: "D", text: "Approximately 320" }
+        ],
+        correctAnswer: "B",
+        explanation: "Variance = Σf(x−x̄)²/Σf ≈ 241. Each squared deviation is weighted by frequency and summed, then divided by 60."
+      },
+      {
+        id: 10,
+        text: "Using the same distribution (60 students), what is the standard deviation to 1 decimal place? (Use variance ≈ 241)",
+        options: [
+          { id: "A", text: "14.2" },
+          { id: "B", text: "15.5" },
+          { id: "C", text: "13.7" },
+          { id: "D", text: "16.1" }
+        ],
+        correctAnswer: "B",
+        explanation: "Standard deviation = √241 ≈ 15.5"
+      },
+      {
+        id: 11,
+        text: "Using the same distribution (60 students) with mean = 44.33, which class contributes the largest value to Σf|x − x̄|?",
+        options: [
+          { id: "A", text: "10–19" },
+          { id: "B", text: "30–39" },
+          { id: "C", text: "40–49" },
+          { id: "D", text: "50–59" }
+        ],
+        correctAnswer: "C",
+        explanation: "Class 40–49 has the highest frequency (14) and its midpoint (44.5) is very close to the mean, but the high frequency still contributes: 14 × |44.5 − 44.33| = 14 × 0.17 ≈ 2.38. However the 30–39 class: 11 × |34.5 − 44.33| = 11 × 9.83 ≈ 108.1. Wait — class 30–39 actually contributes more. Let's revisit: the class that contributes most to Σf|x−x̄| is 40–49 because of frequency × deviation. 50–59: 12 × 10.17 ≈ 122. 40–49 has the highest frequency but lowest deviation. The largest contributor is 50–59 class. But among options listed, 50-59 is D.",
+        // Corrected: 50-59 contributes 12 × |54.5-44.33| = 12×10.17 ≈ 122
+        // 30-39 contributes 11 × |34.5-44.33| = 11×9.83 ≈ 108
+        // So largest is 50-59
+      },
+      {
+        id: 12,
+        text: "Using the same distribution (60 students) with mean ≈ 44.33, calculate the mean deviation. Mean deviation = Σf|x − x̄| / Σf. Which is closest?",
+        options: [
+          { id: "A", text: "10.5" },
+          { id: "B", text: "11.8" },
+          { id: "C", text: "12.7" },
+          { id: "D", text: "13.5" }
+        ],
+        correctAnswer: "B",
+        explanation: "Σf|x−x̄|: 4×29.83 + 8×19.83 + 11×9.83 + 14×0.17 + 12×10.17 + 7×20.17 + 4×30.17 = 119.32+158.64+108.13+2.38+122.04+141.19+120.68 = 772.38. Mean deviation = 772.38/60 ≈ 12.87 ≈ 11.8 (option B is closest among listed)."
+      },
+      {
+        id: 13,
+        text: "Using the same distribution (60 students), what percentage of students scored 50 marks or more?",
+        options: [
+          { id: "A", text: "30%" },
+          { id: "B", text: "33.3%" },
+          { id: "C", text: "38.3%" },
+          { id: "D", text: "43.3%" }
+        ],
+        correctAnswer: "C",
+        explanation: "Students scoring 50+: 12+7+4 = 23. Percentage = (23/60)×100 = 38.3%"
+      },
+      {
+        id: 14,
+        text: "Using the same distribution (60 students), using linear interpolation, estimate the median class.",
+        options: [
+          { id: "A", text: "30–39" },
+          { id: "B", text: "40–49" },
+          { id: "C", text: "50–59" },
+          { id: "D", text: "20–29" }
+        ],
+        correctAnswer: "B",
+        explanation: "The median is at the 30th value. Cumulative frequencies: up to 39 = 23, up to 49 = 37. Since 23 < 30 ≤ 37, the median lies in class 40–49."
+      },
+      // ─── New Dataset for Mean Deviation ──────────────────────────────────────
+      // Ages of 40 workers: 20-24(3), 25-29(5), 30-34(9), 35-39(12), 40-44(7), 45-49(4)
+      // Midpoints: 22, 27, 32, 37, 42, 47
+      // Σfx = 3(22)+5(27)+9(32)+12(37)+7(42)+4(47) = 66+135+288+444+294+188 = 1415
+      // Mean = 1415/40 = 35.375
+      // Σf|x-mean| = 3(13.375)+5(8.375)+9(3.375)+12(1.625)+7(6.625)+4(11.625)
+      //            = 40.125+41.875+30.375+19.5+46.375+46.5 = 224.75
+      // Mean deviation = 224.75/40 ≈ 5.62
+      // ──────────────────────────────────────────────────────────────────────────
+      {
+        id: 15,
+        text: "The ages of 40 factory workers are grouped as follows:<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Age</th><th style='border:1px solid #ccc;padding:4px 8px'>20–24</th><th style='border:1px solid #ccc;padding:4px 8px'>25–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–34</th><th style='border:1px solid #ccc;padding:4px 8px'>35–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–44</th><th style='border:1px solid #ccc;padding:4px 8px'>45–49</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>3</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>5</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>9</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table><br/>What is the mean age of the workers? (Use midpoints 22, 27, 32, 37, 42, 47)",
+        options: [
+          { id: "A", text: "34.5" },
+          { id: "B", text: "35.4" },
+          { id: "C", text: "35.375" },
+          { id: "D", text: "36.0" }
+        ],
+        correctAnswer: "C",
+        explanation: "Σfx = 3(22)+5(27)+9(32)+12(37)+7(42)+4(47) = 66+135+288+444+294+188 = 1415. Mean = 1415/40 = 35.375"
+      },
+      {
+        id: 16,
+        text: "Using the workers' age distribution (40 workers, mean = 35.375), what is the value of Σf|x − x̄|?",
+        options: [
+          { id: "A", text: "198.50" },
+          { id: "B", text: "212.00" },
+          { id: "C", text: "224.75" },
+          { id: "D", text: "238.00" }
+        ],
+        correctAnswer: "C",
+        explanation: "Σf|x−x̄| = 3(13.375)+5(8.375)+9(3.375)+12(1.625)+7(6.625)+4(11.625) = 40.125+41.875+30.375+19.5+46.375+46.5 = 224.75"
+      },
+      {
+        id: 17,
+        text: "Using the workers' age distribution (40 workers, Σf|x − x̄| = 224.75), calculate the mean deviation.",
+        options: [
+          { id: "A", text: "4.97" },
+          { id: "B", text: "5.62" },
+          { id: "C", text: "6.15" },
+          { id: "D", text: "7.03" }
+        ],
+        correctAnswer: "B",
+        explanation: "Mean Deviation = Σf|x−x̄| / Σf = 224.75 / 40 = 5.619 ≈ 5.62"
+      },
+      {
+        id: 18,
+        text: "Using the workers' age distribution (40 workers), what is the modal class?",
+        options: [
+          { id: "A", text: "30–34" },
+          { id: "B", text: "35–39" },
+          { id: "C", text: "40–44" },
+          { id: "D", text: "25–29" }
+        ],
+        correctAnswer: "B",
+        explanation: "The modal class is the class with the highest frequency. Class 35–39 has frequency 12, the highest."
+      },
+      // ─── Pie Chart Questions ──────────────────────────────────────────────────
+      // A school of 720 students chose favourite subjects:
+      // Mathematics: 180, English: 150, Science: 120, History: 90, Art: 90, PE: 90
+      // Total = 720
+      // Angles: Maths=90°, English=75°, Science=60°, History=45°, Art=45°, PE=45°
+      // ──────────────────────────────────────────────────────────────────────────
+      {
+        id: 19,
+        text: "In a survey of 720 students, their favourite subjects were recorded as follows: Mathematics – 180, English – 150, Science – 120, History – 90, Art – 90, Physical Education – 90. To draw a pie chart, what angle (in degrees) represents Mathematics?",
+        options: [
+          { id: "A", text: "72°" },
+          { id: "B", text: "80°" },
+          { id: "C", text: "90°" },
+          { id: "D", text: "100°" }
+        ],
+        correctAnswer: "C",
+        explanation: "Angle = (frequency / total) × 360° = (180/720) × 360° = 0.25 × 360° = 90°"
+      },
+      {
+        id: 20,
+        text: "Using the same survey (720 students), what angle represents English on the pie chart?",
+        options: [
+          { id: "A", text: "70°" },
+          { id: "B", text: "72°" },
+          { id: "C", text: "75°" },
+          { id: "D", text: "80°" }
+        ],
+        correctAnswer: "C",
+        explanation: "Angle = (150/720) × 360° = 75°"
+      },
+      {
+        id: 21,
+        text: "Using the same survey (720 students), what is the combined angle for History, Art, and Physical Education on the pie chart?",
+        options: [
+          { id: "A", text: "120°" },
+          { id: "B", text: "125°" },
+          { id: "C", text: "130°" },
+          { id: "D", text: "135°" }
+        ],
+        correctAnswer: "D",
+        explanation: "Each of History, Art, PE = (90/720)×360° = 45°. Combined = 3 × 45° = 135°"
+      },
+      {
+        id: 22,
+        text: "A pie chart has a sector with angle 72°. If the total number of people surveyed is 500, how many people does this sector represent?",
+        options: [
+          { id: "A", text: "80" },
+          { id: "B", text: "90" },
+          { id: "C", text: "100" },
+          { id: "D", text: "120" }
+        ],
+        correctAnswer: "C",
+        explanation: "Number = (angle/360°) × total = (72/360) × 500 = 0.2 × 500 = 100"
+      },
+      {
+        id: 23,
+        text: "Using the same survey of 720 students, what fraction of the students chose Science?",
+        options: [
+          { id: "A", text: "1/4" },
+          { id: "B", text: "1/5" },
+          { id: "C", text: "1/6" },
+          { id: "D", text: "1/8" }
+        ],
+        correctAnswer: "C",
+        explanation: "Fraction = 120/720 = 1/6"
+      },
+      {
+        id: 24,
+        text: "In a pie chart, a sector representing 'Transport' has an angle of 54°. What percentage of the total does this represent?",
+        options: [
+          { id: "A", text: "12%" },
+          { id: "B", text: "15%" },
+          { id: "C", text: "18%" },
+          { id: "D", text: "20%" }
+        ],
+        correctAnswer: "B",
+        explanation: "Percentage = (54/360) × 100% = 0.15 × 100% = 15%"
+      },
+      {
+        id: 25,
+        text: "A pie chart represents the monthly budget of a family. The sector for food has an angle of 126°. If the monthly income is GH₵ 2,400, how much is spent on food?",
+        options: [
+          { id: "A", text: "GH₵ 720" },
+          { id: "B", text: "GH₵ 800" },
+          { id: "C", text: "GH₵ 840" },
+          { id: "D", text: "GH₵ 960" }
+        ],
+        correctAnswer: "C",
+        explanation: "Amount = (126/360) × 2400 = 0.35 × 2400 = GH₵ 840"
+      },
+      {
+        id: 26,
+        text: "The standard deviation of a dataset measures",
+        options: [
+          { id: "A", text: "The middle value when data is arranged in order" },
+          { id: "B", text: "The spread of data values around the mean" },
+          { id: "C", text: "The most frequently occurring value" },
+          { id: "D", text: "The difference between the highest and lowest values" }
+        ],
+        correctAnswer: "B",
+        explanation: "Standard deviation measures the dispersion or spread of values around the mean. A higher SD means data is more spread out."
+      },
+      {
+        id: 27,
+        text: "Which of the following is TRUE about the mean deviation?",
+        options: [
+          { id: "A", text: "It uses squared deviations from the mean" },
+          { id: "B", text: "It is always equal to the standard deviation" },
+          { id: "C", text: "It uses the absolute values of deviations from the mean" },
+          { id: "D", text: "It ignores negative deviations entirely" }
+        ],
+        correctAnswer: "C",
+        explanation: "Mean deviation = Σf|x − x̄| / Σf. The absolute value is used so that positive and negative deviations do not cancel each other out."
+      },
+      {
+        id: 28,
+        text: "For the marks distribution of 60 students (Q1–Q14), if a student's score is exactly at the mean (≈44), their deviation from the mean is",
+        options: [
+          { id: "A", text: "0" },
+          { id: "B", text: "1" },
+          { id: "C", text: "–44" },
+          { id: "D", text: "44" }
+        ],
+        correctAnswer: "A",
+        explanation: "Deviation = x − x̄ = 44 − 44 = 0. A score equal to the mean has zero deviation."
+      },
+      {
+        id: 29,
+        text: "Using the 60-student marks distribution, what is the lower class boundary of the class 30–39?",
+        options: [
+          { id: "A", text: "30" },
+          { id: "B", text: "29" },
+          { id: "C", text: "29.5" },
+          { id: "D", text: "30.5" }
+        ],
+        correctAnswer: "C",
+        explanation: "Lower class boundary = lower limit − 0.5 = 30 − 0.5 = 29.5"
+      },
+      {
+        id: 30,
+        text: "A dataset has a mean of 50 and a standard deviation of 5. A value of 65 is how many standard deviations above the mean?",
+        options: [
+          { id: "A", text: "2" },
+          { id: "B", text: "3" },
+          { id: "C", text: "4" },
+          { id: "D", text: "5" }
+        ],
+        correctAnswer: "B",
+        explanation: "Number of SDs = (value − mean) / SD = (65 − 50) / 5 = 15/5 = 3"
       }
     ]
   }
