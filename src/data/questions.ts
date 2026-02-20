@@ -5152,11 +5152,8 @@ export const subjects: Subject[] = [
           { id: "C", text: "40–49" },
           { id: "D", text: "50–59" }
         ],
-        correctAnswer: "C",
-        explanation: "Class 40–49 has the highest frequency (14) and its midpoint (44.5) is very close to the mean, but the high frequency still contributes: 14 × |44.5 − 44.33| = 14 × 0.17 ≈ 2.38. However the 30–39 class: 11 × |34.5 − 44.33| = 11 × 9.83 ≈ 108.1. Wait — class 30–39 actually contributes more. Let's revisit: the class that contributes most to Σf|x−x̄| is 40–49 because of frequency × deviation. 50–59: 12 × 10.17 ≈ 122. 40–49 has the highest frequency but lowest deviation. The largest contributor is 50–59 class. But among options listed, 50-59 is D.",
-        // Corrected: 50-59 contributes 12 × |54.5-44.33| = 12×10.17 ≈ 122
-        // 30-39 contributes 11 × |34.5-44.33| = 11×9.83 ≈ 108
-        // So largest is 50-59
+        correctAnswer: "D",
+        explanation: "50–59 contributes 12 × |54.5 − 44.33| = 12 × 10.17 ≈ 122. Compare: 30–39: 11 × 9.83 ≈ 108, 40–49: 14 × 0.17 ≈ 2.4, 10–19: 4 × 29.83 ≈ 119. The largest single contribution is from class 50–59."
       },
       {
         id: 12,

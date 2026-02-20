@@ -52,11 +52,14 @@ const TestPage = () => {
   // Set up questions (shuffle options, maybe shuffle questions) and initialize timer
   useEffect(() => {
     if (subject && subject.questions.length > 0) {
-      // Always shuffle options within each question
-      const questionsWithOptionsShuffled = subject.questions.map(q => ({
-        ...q,
-        options: shuffleArray(q.options) 
-      }));
+      // For global-timer subjects (e.g. Statistics), keep options in fixed order (A, B, C, D)
+      // to support sequential step-by-step maths solving. Other subjects shuffle options.
+      const questionsWithOptionsShuffled = isGlobalTimer
+        ? subject.questions
+        : subject.questions.map(q => ({
+            ...q,
+            options: shuffleArray(q.options)
+          }));
 
       // Shuffle question order *unless* it's Integrated Science or a global-timer subject (e.g. Statistics)
       const finalQuestions = (subject.id.startsWith('integrated-science') || isGlobalTimer)
@@ -224,10 +227,12 @@ const TestPage = () => {
     if (questionTimerIntervalRef.current) clearInterval(questionTimerIntervalRef.current);
     
     if (subject && subject.questions.length > 0) {
-      const questionsWithOptionsShuffled = subject.questions.map(q => ({
-        ...q,
-        options: shuffleArray(q.options)
-      }));
+      const questionsWithOptionsShuffled = isGlobalTimer
+        ? subject.questions
+        : subject.questions.map(q => ({
+            ...q,
+            options: shuffleArray(q.options)
+          }));
       const finalQuestions = (subject.id.startsWith('integrated-science') || isGlobalTimer)
         ? questionsWithOptionsShuffled
         : shuffleArray(questionsWithOptionsShuffled);
