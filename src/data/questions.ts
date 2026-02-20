@@ -1923,7 +1923,7 @@ export const subjects: Subject[] = [
       { id: 33, text: "Choose the option nearest in meaning to the bolded word: The manager decided to <b><i><u>delegate</u></i></b> the task.", options: [{ id: "A", text: "keep" }, { id: "B", text: "assign" }, { id: "C", text: "cancel" }, { id: "D", text: "complete" }], correctAnswer: "B" },
       { id: 34, text: "Choose the option nearest in meaning to the bolded word: He is known for his <b><i><u>meticulous</u></i></b> attention to detail.", options: [{ id: "A", text: "careless" }, { id: "B", text: "hasty" }, { id: "C", text: "thorough" }, { id: "D", text: "brief" }], correctAnswer: "C" },
       { id: 35, text: "Choose the option nearest in meaning to the bolded word: The government implemented <b><i><u>stringent</u></i></b> security measures.", options: [{ id: "A", text: "lax" }, { id: "B", text: "loose" }, { id: "C", text: "strict" }, { id: "D", text: "optional" }], correctAnswer: "C" },
-       // Lexis and Structure 36-40
+      // Lexis and Structure 36-40
       { id: 36, text: "Choose the option that best completes the sentence: Not only ___ late, but he also forgot his homework.", options: [{ id: "A", text: "he was" }, { id: "B", text: "was he" }, { id: "C", text: "he is" }, { id: "D", text: "is he" }], correctAnswer: "B" }, // Inversion after "Not only"
       { id: 37, text: "Choose the option that best completes the sentence: I wish I ___ play the piano.", options: [{ id: "A", text: "can" }, { id: "B", text: "could" }, { id: "C", text: "will" }, { id: "D", text: "may" }], correctAnswer: "B" }, // Subjunctive mood
       { id: 38, text: "Choose the option that best completes the sentence: The committee ___ unable to agree.", options: [{ id: "A", text: "is" }, { id: "B", text: "are" }, { id: "C", text: "was" }, { id: "D", text: "were" }], correctAnswer: "D" }, // Collective noun treated as plural (members unable to agree)
@@ -2297,7 +2297,7 @@ export const subjects: Subject[] = [
         correctAnswer: "C",
         explanation: "An imperative sentence gives a command or makes a request. The subject ('you') is implied."
       },
-       {
+      {
         id: 31,
         text: "What is the mood of the verb in: 'If I were king, I would decree a holiday.'?",
         options: [
@@ -2490,49 +2490,49 @@ export const subjects: Subject[] = [
     description: "Intermediate Concepts in Physics, Chemistry, Biology",
     icon: "beaker",
     questions: [
-        // Physics
-        { id: 1, text: "What is the unit of measurement for electrical resistance?", options: [{ id: "A", text: "Ampere (A)" }, { id: "B", text: "Volt (V)" }, { id: "C", text: "Ohm (Ω)" }, { id: "D", text: "Watt (W)" }], correctAnswer: "C" },
-        { id: 2, text: "Which type of mirror can form a real, inverted image?", options: [{ id: "A", text: "Plane mirror" }, { id: "B", text: "Convex mirror" }, { id: "C", text: "Concave mirror" }, { id: "D", text: "All mirrors" }], correctAnswer: "C" },
-        { id: 3, text: "The transfer of heat through the movement of fluids (liquids or gases) is called:", options: [{ id: "A", text: "Conduction" }, { id: "B", text: "Convection" }, { id: "C", text: "Radiation" }, { id: "D", text: "Insulation" }], correctAnswer: "B" },
-        { id: 4, text: "What property of a wave determines its pitch (for sound) or color (for light)?", options: [{ id: "A", text: "Amplitude" }, { id: "B", text: "Wavelength" }, { id: "C", text: "Frequency" }, { id: "D", text: "Speed" }], correctAnswer: "C" },
-        { id: 5, text: "According to Archimedes' principle, the buoyant force on an object is equal to the:", options: [{ id: "A", text: "Weight of the object" }, { id: "B", text: "Volume of the object" }, { id: "C", text: "Weight of the fluid displaced by the object" }, { id: "D", text: "Density of the object" }], correctAnswer: "C" },
-        { id: 6, text: "Which simple machine is essentially an inclined plane wrapped around a cylinder?", options: [{ id: "A", text: "Lever" }, { id: "B", text: "Pulley" }, { id: "C", text: "Wedge" }, { id: "D", text: "Screw" }], correctAnswer: "D" },
-        { id: 7, text: "Power is calculated as:", options: [{ id: "A", text: "Work / Time" }, { id: "B", text: "Force x Distance" }, { id: "C", text: "Mass x Acceleration" }, { id: "D", text: "Voltage x Resistance" }], correctAnswer: "A" },
-        { id: 8, text: "Momentum is the product of an object's mass and its:", options: [{ id: "A", text: "Acceleration" }, { id: "B", text: "Velocity" }, { id: "C", text: "Weight" }, { id: "D", text: "Force" }], correctAnswer: "B" },
-        { id: 9, text: "In a parallel circuit, the total resistance is always ____ the smallest individual resistance.", options: [{ id: "A", text: "greater than" }, { id: "B", text: "equal to" }, { id: "C", text: "less than" }, { id: "D", text: "double" }], correctAnswer: "C" },
-        { id: 10, text: "Which form of electromagnetic radiation has the highest energy?", options: [{ id: "A", text: "Radio waves" }, { id: "B", text: "Visible light" }, { id: "C", text: "X-rays" }, { id: "D", text: "Gamma rays" }], correctAnswer: "D" },
-        { id: 11, text: "The change of state from gas to liquid is called:", options: [{ id: "A", text: "Evaporation" }, { id: "B", text: "Condensation" }, { id: "C", text: "Sublimation" }, { id: "D", text: "Melting" }], correctAnswer: "B" },
-        { id: 12, text: "Which law states that energy cannot be created or destroyed, only transformed?", options: [{ id: "A", text: "Ohm's Law" }, { id: "B", text: "Newton's Second Law" }, { id: "C", text: "Law of Conservation of Energy" }, { id: "D", text: "Archimedes' Principle" }], correctAnswer: "C" },
-        { id: 13, text: "The splitting of white light into its constituent colours is known as:", options: [{ id: "A", text: "Reflection" }, { id: "B", text: "Refraction" }, { id: "C", text: "Dispersion" }, { id: "D", text: "Diffraction" }], correctAnswer: "C" },
-        // Chemistry
-        { id: 14, text: "Which group in the periodic table contains the noble gases?", options: [{ id: "A", text: "Group 1" }, { id: "B", text: "Group 2" }, { id: "C", text: "Group 17" }, { id: "D", text: "Group 18" }], correctAnswer: "D" },
-        { id: 15, text: "What type of reaction occurs when a substance burns in oxygen?", options: [{ id: "A", text: "Neutralization" }, { id: "B", text: "Decomposition" }, { id: "C", text: "Combustion" }, { id: "D", text: "Precipitation" }], correctAnswer: "C" },
-        { id: 16, text: "A solution with a pH of 9 is considered:", options: [{ id: "A", text: "Acidic" }, { id: "B", text: "Neutral" }, { id: "C", text: "Basic (alkaline)" }, { id: "D", text: "Highly acidic" }], correctAnswer: "C" },
-        { id: 17, text: "Which separation technique is best suited for separating dissolved solids from a liquid?", options: [{ id: "A", text: "Filtration" }, { id: "B", text: "Decantation" }, { id: "C", text: "Evaporation" }, { id: "D", text: "Sieving" }], correctAnswer: "C" },
-        { id: 18, text: "The process of coating iron with zinc to prevent rusting is called:", options: [{ id: "A", text: "Electroplating" }, { id: "B", text: "Galvanizing" }, { id: "C", text: "Anodizing" }, { id: "D", text: "Painting" }], correctAnswer: "B" },
-        { id: 19, text: "What is the main difference between a mixture and a compound?", options: [{ id: "A", text: "Mixtures are always solids, compounds are liquids" }, { id: "B", text: "Components in a mixture retain their properties, while components in a compound do not" }, { id: "C", text: "Mixtures can only be separated by chemical means" }, { id: "D", text: "Compounds have variable compositions" }], correctAnswer: "B" },
-        { id: 20, text: "Which subatomic particles are found in the nucleus of an atom?", options: [{ id: "A", text: "Protons and Electrons" }, { id: "B", text: "Neutrons and Electrons" }, { id: "C", text: "Protons and Neutrons" }, { id: "D", text: "Only Electrons" }], correctAnswer: "C" },
-        { id: 21, text: "Hardness of water is mainly caused by the presence of dissolved salts of:", options: [{ id: "A", text: "Sodium and potassium" }, { id: "B", text: "Calcium and magnesium" }, { id: "C", text: "Iron and aluminium" }, { id: "D", text: "Chlorine and fluorine" }], correctAnswer: "B" },
-        { id: 22, text: "The chemical symbol for Gold is:", options: [{ id: "A", text: "Go" }, { id: "B", text: "Ag" }, { id: "C", text: "Au" }, { id: "D", text: "Gd" }], correctAnswer: "C" },
-        { id: 23, text: "What is produced when an acid reacts with a metal carbonate?", options: [{ id: "A", text: "Salt, water, and hydrogen gas" }, { id: "B", text: "Salt and water only" }, { id: "C", text: "Salt, water, and carbon dioxide gas" }, { id: "D", text: "Salt and hydrogen gas only" }], correctAnswer: "C" },
-        { id: 24, text: "Crude oil is separated into fractions using a process called:", options: [{ id: "A", text: "Filtration" }, { id: "B", text: "Fractional distillation" }, { id: "C", text: "Chromatography" }, { id: "D", text: "Evaporation" }], correctAnswer: "B" },
-        { id: 25, text: "Which of the following is an example of an alloy?", options: [{ id: "A", text: "Water" }, { id: "B", text: "Salt" }, { id: "C", text: "Air" }, { id: "D", text: "Brass" }], correctAnswer: "D" },
-        { id: 26, text: "Polymers are large molecules made up of repeating smaller units called:", options: [{ id: "A", text: "Atoms" }, { id: "B", text: "Isotopes" }, { id: "C", text: "Monomers" }, { id: "D", text: "Compounds" }], correctAnswer: "C" },
-        // Biology
-        { id: 27, text: "Which part of the plant is primarily responsible for absorbing water and minerals from the soil?", options: [{ id: "A", text: "Leaf" }, { id: "B", text: "Stem" }, { id: "C", text: "Flower" }, { id: "D", text: "Root" }], correctAnswer: "D" },
-        { id: 28, text: "The process of releasing energy from food in the presence of oxygen is called:", options: [{ id: "A", text: "Photosynthesis" }, { id: "B", text: "Anaerobic respiration" }, { id: "C", text: "Aerobic respiration" }, { id: "D", text: "Transpiration" }], correctAnswer: "C" },
-        { id: 29, text: "Which type of blood vessel carries blood away from the heart?", options: [{ id: "A", text: "Vein" }, { id: "B", text: "Artery" }, { id: "C", text: "Capillary" }, { id: "D", text: "Ventricle" }], correctAnswer: "B" },
-        { id: 30, text: "What is the name of the tube that connects the throat to the lungs?", options: [{ id: "A", text: "Oesophagus" }, { id: "B", text: "Trachea" }, { id: "C", text: "Bronchus" }, { id: "D", text: "Larynx" }], correctAnswer: "B" },
-        { id: 31, text: "Hormones are chemical messengers produced by which system?", options: [{ id: "A", text: "Nervous system" }, { id: "B", text: "Circulatory system" }, { id: "C", text: "Digestive system" }, { id: "D", text: "Endocrine system" }], correctAnswer: "D" },
-        { id: 32, text: "What is the primary function of the kidneys?", options: [{ id: "A", text: "To pump blood" }, { id: "B", text: "To digest food" }, { id: "C", text: "To filter waste from the blood and produce urine" }, { id: "D", text: "To produce hormones" }], correctAnswer: "C" },
-        { id: 33, text: "Which part of the brain controls balance and coordination?", options: [{ id: "A", text: "Cerebrum" }, { id: "B", text: "Cerebellum" }, { id: "C", text: "Medulla oblongata" }, { id: "D", text: "Hypothalamus" }], correctAnswer: "B" },
-        { id: 34, text: "A group of similar cells performing a specific function is called a(n):", options: [{ id: "A", text: "Organ" }, { id: "B", text: "Organ system" }, { id: "C", text: "Tissue" }, { id: "D", text: "Organism" }], correctAnswer: "C" },
-        { id: 35, text: "The process by which water vapour is lost from the leaves of plants is called:", options: [{ id: "A", text: "Photosynthesis" }, { id: "B", text: "Respiration" }, { id: "C", text: "Transpiration" }, { id: "D", text: "Germination" }], correctAnswer: "C" },
-        { id: 36, text: "Which nutrient is the primary source of energy for the body?", options: [{ id: "A", text: "Proteins" }, { id: "B", text: "Fats" }, { id: "C", text: "Vitamins" }, { id: "D", text: "Carbohydrates" }], correctAnswer: "D" },
-        { id: 37, text: "Vaccination helps the body develop:", options: [{ id: "A", text: "Antibiotics" }, { id: "B", text: "Immunity" }, { id: "C", text: "Antigens" }, { id: "D", text: "Pathogens" }], correctAnswer: "B" },
-        { id: 38, text: "The part of the central nervous system encased within the vertebral column is the:", options: [{ id: "A", text: "Brain" }, { id: "B", text: "Cerebellum" }, { id: "C", text: "Spinal cord" }, { id: "D", text: "Medulla oblongata" }], correctAnswer: "C" },
-        { id: 39, text: "What is the role of decomposers (like bacteria and fungi) in an ecosystem?", options: [{ id: "A", text: "To produce food using sunlight" }, { id: "B", text: "To consume plants" }, { id: "C", text: "To break down dead organic matter" }, { id: "D", text: "To control the population of predators" }], correctAnswer: "C" },
-        { id: 40, text: "Which structure in a plant transports water from the roots to the leaves?", options: [{ id: "A", text: "Phloem" }, { id: "B", text: "Xylem" }, { id: "C", text: "Stomata" }, { id: "D", text: "Epidermis" }], correctAnswer: "B" },
+      // Physics
+      { id: 1, text: "What is the unit of measurement for electrical resistance?", options: [{ id: "A", text: "Ampere (A)" }, { id: "B", text: "Volt (V)" }, { id: "C", text: "Ohm (Ω)" }, { id: "D", text: "Watt (W)" }], correctAnswer: "C" },
+      { id: 2, text: "Which type of mirror can form a real, inverted image?", options: [{ id: "A", text: "Plane mirror" }, { id: "B", text: "Convex mirror" }, { id: "C", text: "Concave mirror" }, { id: "D", text: "All mirrors" }], correctAnswer: "C" },
+      { id: 3, text: "The transfer of heat through the movement of fluids (liquids or gases) is called:", options: [{ id: "A", text: "Conduction" }, { id: "B", text: "Convection" }, { id: "C", text: "Radiation" }, { id: "D", text: "Insulation" }], correctAnswer: "B" },
+      { id: 4, text: "What property of a wave determines its pitch (for sound) or color (for light)?", options: [{ id: "A", text: "Amplitude" }, { id: "B", text: "Wavelength" }, { id: "C", text: "Frequency" }, { id: "D", text: "Speed" }], correctAnswer: "C" },
+      { id: 5, text: "According to Archimedes' principle, the buoyant force on an object is equal to the:", options: [{ id: "A", text: "Weight of the object" }, { id: "B", text: "Volume of the object" }, { id: "C", text: "Weight of the fluid displaced by the object" }, { id: "D", text: "Density of the object" }], correctAnswer: "C" },
+      { id: 6, text: "Which simple machine is essentially an inclined plane wrapped around a cylinder?", options: [{ id: "A", text: "Lever" }, { id: "B", text: "Pulley" }, { id: "C", text: "Wedge" }, { id: "D", text: "Screw" }], correctAnswer: "D" },
+      { id: 7, text: "Power is calculated as:", options: [{ id: "A", text: "Work / Time" }, { id: "B", text: "Force x Distance" }, { id: "C", text: "Mass x Acceleration" }, { id: "D", text: "Voltage x Resistance" }], correctAnswer: "A" },
+      { id: 8, text: "Momentum is the product of an object's mass and its:", options: [{ id: "A", text: "Acceleration" }, { id: "B", text: "Velocity" }, { id: "C", text: "Weight" }, { id: "D", text: "Force" }], correctAnswer: "B" },
+      { id: 9, text: "In a parallel circuit, the total resistance is always ____ the smallest individual resistance.", options: [{ id: "A", text: "greater than" }, { id: "B", text: "equal to" }, { id: "C", text: "less than" }, { id: "D", text: "double" }], correctAnswer: "C" },
+      { id: 10, text: "Which form of electromagnetic radiation has the highest energy?", options: [{ id: "A", text: "Radio waves" }, { id: "B", text: "Visible light" }, { id: "C", text: "X-rays" }, { id: "D", text: "Gamma rays" }], correctAnswer: "D" },
+      { id: 11, text: "The change of state from gas to liquid is called:", options: [{ id: "A", text: "Evaporation" }, { id: "B", text: "Condensation" }, { id: "C", text: "Sublimation" }, { id: "D", text: "Melting" }], correctAnswer: "B" },
+      { id: 12, text: "Which law states that energy cannot be created or destroyed, only transformed?", options: [{ id: "A", text: "Ohm's Law" }, { id: "B", text: "Newton's Second Law" }, { id: "C", text: "Law of Conservation of Energy" }, { id: "D", text: "Archimedes' Principle" }], correctAnswer: "C" },
+      { id: 13, text: "The splitting of white light into its constituent colours is known as:", options: [{ id: "A", text: "Reflection" }, { id: "B", text: "Refraction" }, { id: "C", text: "Dispersion" }, { id: "D", text: "Diffraction" }], correctAnswer: "C" },
+      // Chemistry
+      { id: 14, text: "Which group in the periodic table contains the noble gases?", options: [{ id: "A", text: "Group 1" }, { id: "B", text: "Group 2" }, { id: "C", text: "Group 17" }, { id: "D", text: "Group 18" }], correctAnswer: "D" },
+      { id: 15, text: "What type of reaction occurs when a substance burns in oxygen?", options: [{ id: "A", text: "Neutralization" }, { id: "B", text: "Decomposition" }, { id: "C", text: "Combustion" }, { id: "D", text: "Precipitation" }], correctAnswer: "C" },
+      { id: 16, text: "A solution with a pH of 9 is considered:", options: [{ id: "A", text: "Acidic" }, { id: "B", text: "Neutral" }, { id: "C", text: "Basic (alkaline)" }, { id: "D", text: "Highly acidic" }], correctAnswer: "C" },
+      { id: 17, text: "Which separation technique is best suited for separating dissolved solids from a liquid?", options: [{ id: "A", text: "Filtration" }, { id: "B", text: "Decantation" }, { id: "C", text: "Evaporation" }, { id: "D", text: "Sieving" }], correctAnswer: "C" },
+      { id: 18, text: "The process of coating iron with zinc to prevent rusting is called:", options: [{ id: "A", text: "Electroplating" }, { id: "B", text: "Galvanizing" }, { id: "C", text: "Anodizing" }, { id: "D", text: "Painting" }], correctAnswer: "B" },
+      { id: 19, text: "What is the main difference between a mixture and a compound?", options: [{ id: "A", text: "Mixtures are always solids, compounds are liquids" }, { id: "B", text: "Components in a mixture retain their properties, while components in a compound do not" }, { id: "C", text: "Mixtures can only be separated by chemical means" }, { id: "D", text: "Compounds have variable compositions" }], correctAnswer: "B" },
+      { id: 20, text: "Which subatomic particles are found in the nucleus of an atom?", options: [{ id: "A", text: "Protons and Electrons" }, { id: "B", text: "Neutrons and Electrons" }, { id: "C", text: "Protons and Neutrons" }, { id: "D", text: "Only Electrons" }], correctAnswer: "C" },
+      { id: 21, text: "Hardness of water is mainly caused by the presence of dissolved salts of:", options: [{ id: "A", text: "Sodium and potassium" }, { id: "B", text: "Calcium and magnesium" }, { id: "C", text: "Iron and aluminium" }, { id: "D", text: "Chlorine and fluorine" }], correctAnswer: "B" },
+      { id: 22, text: "The chemical symbol for Gold is:", options: [{ id: "A", text: "Go" }, { id: "B", text: "Ag" }, { id: "C", text: "Au" }, { id: "D", text: "Gd" }], correctAnswer: "C" },
+      { id: 23, text: "What is produced when an acid reacts with a metal carbonate?", options: [{ id: "A", text: "Salt, water, and hydrogen gas" }, { id: "B", text: "Salt and water only" }, { id: "C", text: "Salt, water, and carbon dioxide gas" }, { id: "D", text: "Salt and hydrogen gas only" }], correctAnswer: "C" },
+      { id: 24, text: "Crude oil is separated into fractions using a process called:", options: [{ id: "A", text: "Filtration" }, { id: "B", text: "Fractional distillation" }, { id: "C", text: "Chromatography" }, { id: "D", text: "Evaporation" }], correctAnswer: "B" },
+      { id: 25, text: "Which of the following is an example of an alloy?", options: [{ id: "A", text: "Water" }, { id: "B", text: "Salt" }, { id: "C", text: "Air" }, { id: "D", text: "Brass" }], correctAnswer: "D" },
+      { id: 26, text: "Polymers are large molecules made up of repeating smaller units called:", options: [{ id: "A", text: "Atoms" }, { id: "B", text: "Isotopes" }, { id: "C", text: "Monomers" }, { id: "D", text: "Compounds" }], correctAnswer: "C" },
+      // Biology
+      { id: 27, text: "Which part of the plant is primarily responsible for absorbing water and minerals from the soil?", options: [{ id: "A", text: "Leaf" }, { id: "B", text: "Stem" }, { id: "C", text: "Flower" }, { id: "D", text: "Root" }], correctAnswer: "D" },
+      { id: 28, text: "The process of releasing energy from food in the presence of oxygen is called:", options: [{ id: "A", text: "Photosynthesis" }, { id: "B", text: "Anaerobic respiration" }, { id: "C", text: "Aerobic respiration" }, { id: "D", text: "Transpiration" }], correctAnswer: "C" },
+      { id: 29, text: "Which type of blood vessel carries blood away from the heart?", options: [{ id: "A", text: "Vein" }, { id: "B", text: "Artery" }, { id: "C", text: "Capillary" }, { id: "D", text: "Ventricle" }], correctAnswer: "B" },
+      { id: 30, text: "What is the name of the tube that connects the throat to the lungs?", options: [{ id: "A", text: "Oesophagus" }, { id: "B", text: "Trachea" }, { id: "C", text: "Bronchus" }, { id: "D", text: "Larynx" }], correctAnswer: "B" },
+      { id: 31, text: "Hormones are chemical messengers produced by which system?", options: [{ id: "A", text: "Nervous system" }, { id: "B", text: "Circulatory system" }, { id: "C", text: "Digestive system" }, { id: "D", text: "Endocrine system" }], correctAnswer: "D" },
+      { id: 32, text: "What is the primary function of the kidneys?", options: [{ id: "A", text: "To pump blood" }, { id: "B", text: "To digest food" }, { id: "C", text: "To filter waste from the blood and produce urine" }, { id: "D", text: "To produce hormones" }], correctAnswer: "C" },
+      { id: 33, text: "Which part of the brain controls balance and coordination?", options: [{ id: "A", text: "Cerebrum" }, { id: "B", text: "Cerebellum" }, { id: "C", text: "Medulla oblongata" }, { id: "D", text: "Hypothalamus" }], correctAnswer: "B" },
+      { id: 34, text: "A group of similar cells performing a specific function is called a(n):", options: [{ id: "A", text: "Organ" }, { id: "B", text: "Organ system" }, { id: "C", text: "Tissue" }, { id: "D", text: "Organism" }], correctAnswer: "C" },
+      { id: 35, text: "The process by which water vapour is lost from the leaves of plants is called:", options: [{ id: "A", text: "Photosynthesis" }, { id: "B", text: "Respiration" }, { id: "C", text: "Transpiration" }, { id: "D", text: "Germination" }], correctAnswer: "C" },
+      { id: 36, text: "Which nutrient is the primary source of energy for the body?", options: [{ id: "A", text: "Proteins" }, { id: "B", text: "Fats" }, { id: "C", text: "Vitamins" }, { id: "D", text: "Carbohydrates" }], correctAnswer: "D" },
+      { id: 37, text: "Vaccination helps the body develop:", options: [{ id: "A", text: "Antibiotics" }, { id: "B", text: "Immunity" }, { id: "C", text: "Antigens" }, { id: "D", text: "Pathogens" }], correctAnswer: "B" },
+      { id: 38, text: "The part of the central nervous system encased within the vertebral column is the:", options: [{ id: "A", text: "Brain" }, { id: "B", text: "Cerebellum" }, { id: "C", text: "Spinal cord" }, { id: "D", text: "Medulla oblongata" }], correctAnswer: "C" },
+      { id: 39, text: "What is the role of decomposers (like bacteria and fungi) in an ecosystem?", options: [{ id: "A", text: "To produce food using sunlight" }, { id: "B", text: "To consume plants" }, { id: "C", text: "To break down dead organic matter" }, { id: "D", text: "To control the population of predators" }], correctAnswer: "C" },
+      { id: 40, text: "Which structure in a plant transports water from the roots to the leaves?", options: [{ id: "A", text: "Phloem" }, { id: "B", text: "Xylem" }, { id: "C", text: "Stomata" }, { id: "D", text: "Epidermis" }], correctAnswer: "B" },
     ]
   },
   {
@@ -3253,7 +3253,7 @@ export const subjects: Subject[] = [
         ],
         correctAnswer: "C"
       },
-       {
+      {
         id: 25,
         text: "What type of angle measures exactly 90 degrees?",
         options: [
@@ -3264,7 +3264,7 @@ export const subjects: Subject[] = [
         ],
         correctAnswer: "C"
       },
-       {
+      {
         id: 26,
         text: "What is the value of log base 10 of 100 (log₁₀(100))?",
         options: [
@@ -3275,7 +3275,7 @@ export const subjects: Subject[] = [
         ],
         correctAnswer: "B"
       },
-       {
+      {
         id: 27,
         text: "What is the next number in the sequence: 2, 4, 8, 16, ...?",
         options: [
@@ -4042,7 +4042,7 @@ export const subjects: Subject[] = [
           { id: "C", text: "Palisade mesophyll" },
           { id: "D", text: "Guard cell" }
         ],
-      correctAnswer: "C"
+        correctAnswer: "C"
       }
     ]
   },
@@ -5011,7 +5011,7 @@ export const subjects: Subject[] = [
     description: "Grouped Frequency, Mean, Modal Class, Standard Deviation, Mean Deviation & Pie Charts – WASSCE Standard",
     icon: "bar-chart",
     timerType: "global",
-    totalTimeSeconds: 2700, // 45 minutes
+    totalTimeSeconds: 5400, // 1 hour 30 minutes
     questions: [
       // ─── Dataset Context ─────────────────────────────────────────────────────
       // The following dataset is used for questions 1–14:
@@ -5025,7 +5025,7 @@ export const subjects: Subject[] = [
       // ──────────────────────────────────────────────────────────────────────────
       {
         id: 1,
-        text: "The table below shows the marks scored by 60 students in a Mathematics test.<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table><br/>What is the total number of students represented?",
+        text: "The table below shows the marks scored by students in a Mathematics test.<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table><br/>What is the total number of students represented?",
         options: [
           { id: "A", text: "55" },
           { id: "B", text: "60" },
@@ -5037,7 +5037,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 2,
-        text: "Using the same distribution (60 students), what is the modal class?",
+        text: "Using the distribution shown in the table below, what is the modal class?<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "30–39" },
           { id: "B", text: "50–59" },
@@ -5049,7 +5049,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 3,
-        text: "Using the same distribution (60 students), what is the class width?",
+        text: "Using the distribution shown in the table below, what is the class width?<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "9" },
           { id: "B", text: "10" },
@@ -5061,7 +5061,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 4,
-        text: "Using the same distribution (60 students), what is the midpoint (class mark) of the class 40–49?",
+        text: "Using the distribution shown in the table below, what is the midpoint (class mark) of the class 40–49?<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "44" },
           { id: "B", text: "45" },
@@ -5073,7 +5073,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 5,
-        text: "Using the same distribution (60 students), what is the value of Σfx where x is the midpoint of each class? (Use midpoints: 14.5, 24.5, 34.5, 44.5, 54.5, 64.5, 74.5)",
+        text: "Using the distribution shown in the table below, what is the value of Σfx where x is the midpoint of each class? (Use midpoints: 14.5, 24.5, 34.5, 44.5, 54.5, 64.5, 74.5)<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "2560" },
           { id: "B", text: "2660" },
@@ -5085,7 +5085,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 6,
-        text: "Using the same distribution (60 students), calculate the mean mark to the nearest whole number.",
+        text: "Using the distribution shown in the table below, calculate the mean mark to the nearest whole number.<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "42" },
           { id: "B", text: "43" },
@@ -5097,7 +5097,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 7,
-        text: "Using the same distribution (60 students), how many students scored less than 40 marks?",
+        text: "Using the distribution shown in the table below, how many students scored less than 40 marks?<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "19" },
           { id: "B", text: "21" },
@@ -5109,7 +5109,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 8,
-        text: "Using the same distribution (60 students), what is the cumulative frequency up to and including the class 40–49?",
+        text: "Using the distribution shown in the table below, what is the cumulative frequency up to and including the class 40–49?<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "33" },
           { id: "B", text: "37" },
@@ -5121,7 +5121,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 9,
-        text: "Using the same distribution (60 students), calculate the variance. Use mean = 44.33 and midpoints 14.5, 24.5, 34.5, 44.5, 54.5, 64.5, 74.5. Which of the following is closest to Σf(x−x̄)² / Σf?",
+        text: "Using the distribution shown in the table below, calculate the variance. Use mean = 44.33 and midpoints 14.5, 24.5, 34.5, 44.5, 54.5, 64.5, 74.5. Which of the following is closest to Σf(x−x̄)² / Σf?<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "Approximately 200" },
           { id: "B", text: "Approximately 241" },
@@ -5133,7 +5133,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 10,
-        text: "Using the same distribution (60 students), what is the standard deviation to 1 decimal place? (Use variance ≈ 241)",
+        text: "Using the distribution shown in the table below, what is the standard deviation to 1 decimal place? (Use variance ≈ 241)<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "14.2" },
           { id: "B", text: "15.5" },
@@ -5145,7 +5145,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 11,
-        text: "Using the same distribution (60 students) with mean = 44.33, which class contributes the largest value to Σf|x − x̄|?",
+        text: "Using the distribution shown in the table below with mean = 44.33, which class contributes the largest value to Σf|x − x̄|?<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "10–19" },
           { id: "B", text: "30–39" },
@@ -5157,7 +5157,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 12,
-        text: "Using the same distribution (60 students) with mean ≈ 44.33, calculate the mean deviation. Mean deviation = Σf|x − x̄| / Σf. Which is closest?",
+        text: "Using the distribution shown in the table below with mean ≈ 44.33, calculate the mean deviation. Mean deviation = Σf|x − x̄| / Σf. Which is closest?<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "10.5" },
           { id: "B", text: "11.8" },
@@ -5169,7 +5169,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 13,
-        text: "Using the same distribution (60 students), what percentage of students scored 50 marks or more?",
+        text: "Using the distribution shown in the table below, what percentage of students scored 50 marks or more?<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "30%" },
           { id: "B", text: "33.3%" },
@@ -5181,7 +5181,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 14,
-        text: "Using the same distribution (60 students), using linear interpolation, estimate the median class.",
+        text: "Using the distribution shown in the table below, using linear interpolation, estimate the median class.<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Marks</th><th style='border:1px solid #ccc;padding:4px 8px'>10–19</th><th style='border:1px solid #ccc;padding:4px 8px'>20–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–49</th><th style='border:1px solid #ccc;padding:4px 8px'>50–59</th><th style='border:1px solid #ccc;padding:4px 8px'>60–69</th><th style='border:1px solid #ccc;padding:4px 8px'>70–79</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>8</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>11</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>14</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "30–39" },
           { id: "B", text: "40–49" },
@@ -5202,7 +5202,7 @@ export const subjects: Subject[] = [
       // ──────────────────────────────────────────────────────────────────────────
       {
         id: 15,
-        text: "The ages of 40 factory workers are grouped as follows:<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Age</th><th style='border:1px solid #ccc;padding:4px 8px'>20–24</th><th style='border:1px solid #ccc;padding:4px 8px'>25–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–34</th><th style='border:1px solid #ccc;padding:4px 8px'>35–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–44</th><th style='border:1px solid #ccc;padding:4px 8px'>45–49</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>3</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>5</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>9</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table><br/>What is the mean age of the workers? (Use midpoints 22, 27, 32, 37, 42, 47)",
+        text: "The ages of factory workers are grouped as follows:<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Age</th><th style='border:1px solid #ccc;padding:4px 8px'>20–24</th><th style='border:1px solid #ccc;padding:4px 8px'>25–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–34</th><th style='border:1px solid #ccc;padding:4px 8px'>35–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–44</th><th style='border:1px solid #ccc;padding:4px 8px'>45–49</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>3</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>5</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>9</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table><br/>What is the mean age of the workers? (Use midpoints 22, 27, 32, 37, 42, 47)",
         options: [
           { id: "A", text: "34.5" },
           { id: "B", text: "35.4" },
@@ -5214,7 +5214,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 16,
-        text: "Using the workers' age distribution (40 workers, mean = 35.375), what is the value of Σf|x − x̄|?",
+        text: "Using the distribution shown in the table below (mean = 35.375), what is the value of Σf|x − x̄|?<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Age</th><th style='border:1px solid #ccc;padding:4px 8px'>20–24</th><th style='border:1px solid #ccc;padding:4px 8px'>25–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–34</th><th style='border:1px solid #ccc;padding:4px 8px'>35–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–44</th><th style='border:1px solid #ccc;padding:4px 8px'>45–49</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>3</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>5</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>9</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "198.50" },
           { id: "B", text: "212.00" },
@@ -5226,7 +5226,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 17,
-        text: "Using the workers' age distribution (40 workers, Σf|x − x̄| = 224.75), calculate the mean deviation.",
+        text: "Using the distribution shown in the table below (Σf|x − x̄| = 224.75), calculate the mean deviation.<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Age</th><th style='border:1px solid #ccc;padding:4px 8px'>20–24</th><th style='border:1px solid #ccc;padding:4px 8px'>25–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–34</th><th style='border:1px solid #ccc;padding:4px 8px'>35–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–44</th><th style='border:1px solid #ccc;padding:4px 8px'>45–49</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>3</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>5</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>9</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "4.97" },
           { id: "B", text: "5.62" },
@@ -5238,7 +5238,7 @@ export const subjects: Subject[] = [
       },
       {
         id: 18,
-        text: "Using the workers' age distribution (40 workers), what is the modal class?",
+        text: "Using the distribution shown in the table below, what is the modal class?<br/><br/><table style='border-collapse:collapse;font-size:0.85em'><tr><th style='border:1px solid #ccc;padding:4px 8px'>Age</th><th style='border:1px solid #ccc;padding:4px 8px'>20–24</th><th style='border:1px solid #ccc;padding:4px 8px'>25–29</th><th style='border:1px solid #ccc;padding:4px 8px'>30–34</th><th style='border:1px solid #ccc;padding:4px 8px'>35–39</th><th style='border:1px solid #ccc;padding:4px 8px'>40–44</th><th style='border:1px solid #ccc;padding:4px 8px'>45–49</th></tr><tr><th style='border:1px solid #ccc;padding:4px 8px'>Frequency</th><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>3</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>5</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>9</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>12</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>7</td><td style='border:1px solid #ccc;padding:4px 8px;text-align:center'>4</td></tr></table>",
         options: [
           { id: "A", text: "30–34" },
           { id: "B", text: "35–39" },
