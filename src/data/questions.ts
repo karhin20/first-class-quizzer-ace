@@ -5406,6 +5406,8 @@ export const subjects: Subject[] = [
     name: "Sets & Venn Diagrams",
     description: "Set operations, Venn diagrams (2 & 3 sets), and descriptive set theory – WASSCE Standard",
     icon: "layers",
+    timerType: "global",
+    totalTimeSeconds: 3600, // 60 minutes
     questions: [
       {
         id: 1,
