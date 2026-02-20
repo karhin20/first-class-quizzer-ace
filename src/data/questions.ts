@@ -5400,4 +5400,253 @@ export const subjects: Subject[] = [
       }
     ]
   }
+  ,
+  {
+    id: "sets_venn1",
+    name: "Sets & Venn Diagrams",
+    description: "Set operations, Venn diagrams (2 & 3 sets), and descriptive set theory – WASSCE Standard",
+    icon: "layers",
+    questions: [
+      {
+        id: 1,
+        text: "Which of the following describes a set that contains all the elements under consideration for a particular problem?",
+        options: [
+          { id: "A", text: "Subset" },
+          { id: "B", text: "Universal set" },
+          { id: "C", text: "Empty set" },
+          { id: "D", text: "Power set" }
+        ],
+        correctAnswer: "B",
+        explanation: "The universal set (usually denoted by U or ξ) is the set that contains all the objects or elements being discussed in a particular context."
+      },
+      {
+        id: 2,
+        text: "If P = {2, 3, 5, 7} and Q = {1, 3, 5, 7, 9}, find P ∩ Q.",
+        options: [
+          { id: "A", text: "{3, 5, 7}" },
+          { id: "B", text: "{1, 2, 9}" },
+          { id: "C", text: "{1, 2, 3, 5, 7, 9}" },
+          { id: "D", text: "{5, 7}" }
+        ],
+        correctAnswer: "A",
+        explanation: "P ∩ Q represents the intersection, which contains elements common to both P and Q. Common elements are 3, 5, and 7."
+      },
+      {
+        id: 3,
+        text: "The number of subsets of a set with 4 elements is:",
+        options: [
+          { id: "A", text: "4" },
+          { id: "B", text: "8" },
+          { id: "C", text: "16" },
+          { id: "D", text: "32" }
+        ],
+        correctAnswer: "C",
+        explanation: "The number of subsets is given by 2^n, where n is the number of elements. 2^4 = 2 × 2 × 2 × 2 = 16."
+      },
+      {
+        id: 4,
+        text: "Find the complement of set A if the universal set U = {1, 2, 3, 4, 5, 6} and A = {2, 4, 6}.",
+        options: [
+          { id: "A", text: "{1, 3, 5, 6}" },
+          { id: "B", text: "{1, 2, 3, 4, 5}" },
+          { id: "C", text: "{1, 3, 5}" },
+          { id: "D", text: "{2, 4, 6}" }
+        ],
+        correctAnswer: "C",
+        explanation: "The complement A' consists of all elements in U that are not in A. U - A = {1, 3, 5}."
+      },
+      {
+        id: 5,
+        text: "Two sets are said to be disjoint if:",
+        options: [
+          { id: "A", text: "Their union is the universal set." },
+          { id: "B", text: "They have the same number of elements." },
+          { id: "C", text: "The intersection of the two sets is an empty set." },
+          { id: "D", text: "One is a subset of the other." }
+        ],
+        correctAnswer: "C",
+        explanation: "Disjoint sets have no elements in common, so A ∩ B = ∅."
+      },
+      {
+        id: 6,
+        text: "If n(A) = 20, n(B) = 30, and n(A ∪ B) = 45, find n(A ∩ B).",
+        options: [
+          { id: "A", text: "5" },
+          { id: "B", text: "10" },
+          { id: "C", text: "15" },
+          { id: "D", text: "25" }
+        ],
+        correctAnswer: "A",
+        explanation: "Using the formula: n(A ∪ B) = n(A) + n(B) - n(A ∩ B). 45 = 20 + 30 - n(A ∩ B) => n(A ∩ B) = 50 - 45 = 5."
+      },
+      {
+        id: 7,
+        text: "A set containing no elements is called a/an:",
+        options: [
+          { id: "A", text: "Singleton set" },
+          { id: "B", text: "Infinite set" },
+          { id: "C", text: "Null set" },
+          { id: "D", text: "Universal set" }
+        ],
+        correctAnswer: "C",
+        explanation: "A set with no elements is called a null set or empty set, denoted by { } or ∅."
+      },
+      {
+        id: 8,
+        text: "Which of the following is equivalent to (A ∪ B)' according to De Morgan's Law?",
+        options: [
+          { id: "A", text: "A' ∪ B'" },
+          { id: "B", text: "A' ∩ B'" },
+          { id: "C", text: "A ∩ B" },
+          { id: "D", text: "(A ∩ B)'" }
+        ],
+        correctAnswer: "B",
+        explanation: "De Morgan's First Law states: The complement of the union of two sets is equal to the intersection of their complements: (A ∪ B)' = A' ∩ B'."
+      },
+      {
+        id: 9,
+        text: "In a class of 40 students, 25 play football, 20 play basketball, and 10 play both. How many students play neither sport?",
+        options: [
+          { id: "A", text: "5" },
+          { id: "B", text: "10" },
+          { id: "C", text: "15" },
+          { id: "D", text: "0" }
+        ],
+        correctAnswer: "A",
+        explanation: "Students playing at least one: n(F ∪ B) = n(F) + n(B) - n(F ∩ B) = 25 + 20 - 10 = 35. Neither = Total - At least one = 40 - 35 = 5."
+      },
+      {
+        id: 10,
+        text: "Given X = {x : x is a factor of 12} and Y = {y : y is a multiple of 3, y ≤ 12}. Find n(X ∩ Y).",
+        options: [
+          { id: "A", text: "2" },
+          { id: "B", text: "3" },
+          { id: "C", text: "4" },
+          { id: "D", text: "5" }
+        ],
+        correctAnswer: "B",
+        explanation: "X = {1, 2, 3, 4, 6, 12}. Y = {3, 6, 9, 12}. X ∩ Y = {3, 6, 12}. n(X ∩ Y) = 3."
+      },
+      {
+        id: 11,
+        text: "If U = {x : 1 ≤ x ≤ 10, x is an integer}, P = {primes}, and Q = {even numbers}, find (P ∪ Q)'.",
+        options: [
+          { id: "A", text: "{1, 9}" },
+          { id: "B", text: "{1, 3, 5, 7, 9}" },
+          { id: "C", text: "{4, 6, 8, 10}" },
+          { id: "D", text: "{2}" }
+        ],
+        correctAnswer: "A",
+        explanation: "U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. P = {2, 3, 5, 7}. Q = {2, 4, 6, 8, 10}. P ∪ Q = {2, 3, 4, 5, 6, 7, 8, 10}. (P ∪ Q)' = {1, 9}."
+      },
+      {
+        id: 12,
+        text: "What does A - B represent in set theory?",
+        options: [
+          { id: "A", text: "Elements in both A and B" },
+          { id: "B", text: "Elements in A that are not in B" },
+          { id: "C", text: "Elements in B that are not in A" },
+          { id: "D", text: "The union of A and B minus their intersection" }
+        ],
+        correctAnswer: "B",
+        explanation: "The difference A - B (or A \ B) consists of all elements that belong to A but NOT to B."
+      },
+      {
+        id: 13,
+        text: "A set with only one element is called a:",
+        options: [
+          { id: "A", text: "Unit set (Singleton)" },
+          { id: "B", text: "Empty set" },
+          { id: "C", text: "Finite set" },
+          { id: "D", text: "Subset" }
+        ],
+        correctAnswer: "A",
+        explanation: "A singleton set, also known as a unit set, is a set containing exactly one element."
+      },
+      {
+        id: 14,
+        text: "In a group of 50 people, 35 speak English, 25 speak French, and everyone speaks at least one of the two languages. How many speak both?",
+        options: [
+          { id: "A", text: "5" },
+          { id: "B", text: "10" },
+          { id: "C", text: "15" },
+          { id: "D", text: "20" }
+        ],
+        correctAnswer: "B",
+        explanation: "n(E ∪ F) = n(E) + n(F) - n(E ∩ F). 50 = 35 + 25 - n(E ∩ F). n(E ∩ F) = 60 - 50 = 10."
+      },
+      {
+        id: 15,
+        text: "Which of the following describes the set {x : x² = 9, x is even}?",
+        options: [
+          { id: "A", text: "{3}" },
+          { id: "B", text: "{-3, 3}" },
+          { id: "C", text: "∅" },
+          { id: "D", text: "{0}" }
+        ],
+        correctAnswer: "C",
+        explanation: "x² = 9 implies x = 3 or x = -3. Neither 3 nor -3 is an even number. Therefore, the set is empty (∅)."
+      },
+      {
+        id: 16,
+        text: "If n(A) = 15 and A ⊆ B, then which of the following is definitely true about n(B)?",
+        options: [
+          { id: "A", text: "n(B) < 15" },
+          { id: "B", text: "n(B) = 15" },
+          { id: "C", text: "n(B) ≥ 15" },
+          { id: "D", text: "n(B) ≤ 15" }
+        ],
+        correctAnswer: "C",
+        explanation: "If A is a subset of B (A ⊆ B), then all elements of A are in B. Thus, B must have at least as many elements as A."
+      },
+      {
+        id: 17,
+        text: "In a survey of 100 students, 60 like Mathematics, 50 like Science, and 30 like both. How many like ONLY Science?",
+        options: [
+          { id: "A", text: "20" },
+          { id: "B", text: "30" },
+          { id: "C", text: "50" },
+          { id: "D", text: "70" }
+        ],
+        correctAnswer: "A",
+        explanation: "Only Science = n(Science) - n(Mathematics ∩ Science) = 50 - 30 = 20."
+      },
+      {
+        id: 18,
+        text: "Identify the region (A ∩ B ∩ C) in a 3-set Venn diagram.",
+        options: [
+          { id: "A", text: "Elements in A and B only" },
+          { id: "B", text: "Elements common to all three sets" },
+          { id: "C", text: "Elements in A or B or C" },
+          { id: "D", text: "Elements outside all three sets" }
+        ],
+        correctAnswer: "B",
+        explanation: "The intersection of three sets A, B, and C represents the region where all three sets overlap, containing elements common to all three."
+      },
+      {
+        id: 19,
+        text: "If P = {prime numbers less than 10} and Q = {odd numbers less than 10}, find n(P ∪ Q).",
+        options: [
+          { id: "A", text: "5" },
+          { id: "B", text: "6" },
+          { id: "C", text: "7" },
+          { id: "D", text: "8" }
+        ],
+        correctAnswer: "B",
+        explanation: "P = {2, 3, 5, 7}. Q = {1, 3, 5, 7, 9}. P ∪ Q = {1, 2, 3, 5, 7, 9}. n(P ∪ Q) = 6."
+      },
+      {
+        id: 20,
+        text: "What is the cardinality of the set A = {x : x is a letter in the word 'SUCCESS'}?",
+        options: [
+          { id: "A", text: "7" },
+          { id: "B", text: "5" },
+          { id: "C", text: "4" },
+          { id: "D", text: "3" }
+        ],
+        correctAnswer: "C",
+        explanation: "The distinct letters are {S, U, C, E}. Cardinality is the number of distinct elements. n(A) = 4."
+      }
+    ]
+  }
 ];

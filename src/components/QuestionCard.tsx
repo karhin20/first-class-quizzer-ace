@@ -9,25 +9,25 @@ interface QuestionCardProps {
   onOptionSelect: (optionId: string) => void;
 }
 
-const QuestionCard: React.FC<QuestionCardProps> = ({ 
-  question, 
-  selectedOption, 
-  showResults, 
-  onOptionSelect 
+const QuestionCard: React.FC<QuestionCardProps> = ({
+  question,
+  selectedOption,
+  showResults,
+  onOptionSelect
 }) => {
   const getOptionClass = (optionId: string) => {
     if (!showResults) {
       return selectedOption === optionId ? 'bg-blue-100 border-blue-400' : '';
     }
-    
+
     if (optionId === question.correctAnswer) {
       return 'bg-green-100 border-green-400';
     }
-    
+
     if (selectedOption === optionId && optionId !== question.correctAnswer) {
       return 'bg-red-100 border-red-400';
     }
-    
+
     return '';
   };
 
@@ -35,7 +35,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     <Card className="mb-6">
       <CardHeader className="pb-3">
         <CardTitle className="text-lg font-medium">
-          {question.id}. <span dangerouslySetInnerHTML={{ __html: question.text }} />
+          {question.id}. <div className="inline-block md:inline w-full max-w-full overflow-x-auto align-top scrollbar-thin"><span dangerouslySetInnerHTML={{ __html: question.text }} /></div>
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-3">

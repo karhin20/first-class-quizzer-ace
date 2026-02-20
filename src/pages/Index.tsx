@@ -24,7 +24,7 @@ const Index = () => {
       categorizedSubjects.Biology.push(subject);
     } else if (nameLower.includes('integrated science')) {
       categorizedSubjects['Integrated Science'].push(subject);
-    } else if (nameLower.includes('math') || nameLower.includes('statistics')) {
+    } else if (nameLower.includes('math') || nameLower.includes('statistics') || nameLower.includes('sets') || nameLower.includes('venn')) {
       categorizedSubjects.Maths.push(subject);
     } else {
       categorizedSubjects.Other.push(subject);
@@ -53,7 +53,7 @@ const Index = () => {
           <h1 className="text-xl font-semibold text-gray-800">First Class Quizzer</h1>
         </div>
       </header> */}
-      
+
       <main className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
@@ -63,7 +63,7 @@ const Index = () => {
             Welcome! Select a subject category below to view available tests.
           </p>
         </div>
-        
+
         <div className="space-y-4">
           {categories.map((category) => (
             <div key={category} className="border rounded-lg overflow-hidden shadow-sm bg-white">
@@ -76,8 +76,8 @@ const Index = () => {
                 </h2>
                 {openCategory === category ? <ChevronDown className="h-6 w-6 text-gray-600" /> : <ChevronRight className="h-6 w-6 text-gray-600" />}
               </button>
-              
-              {/* Conditionally render subjects grid */} 
+
+              {/* Conditionally render subjects grid */}
               {openCategory === category && (
                 <div className="p-6 bg-gray-50 border-t">
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
