@@ -5650,5 +5650,619 @@ export const subjects: Subject[] = [
         explanation: "The distinct letters are {S, U, C, E}. Cardinality is the number of distinct elements. n(A) = 4."
       }
     ]
+  },
+  {
+    id: "integrated-science-mock",
+    name: "Integrated Science: Mock",
+    description: "50-question WASSCE-style mock covering Physics, Chemistry, Biology and Earth Science",
+    icon: "beaker",
+    timerType: "global",
+    totalTimeSeconds: 3600, // 60 minutes
+    questions: [
+      // ===== BIOLOGY (Q1–15) =====
+      {
+        id: 1,
+        text: "Which organelle is responsible for protein synthesis in a cell?",
+        options: [
+          { id: "A", text: "Mitochondria" },
+          { id: "B", text: "Ribosome" },
+          { id: "C", text: "Golgi apparatus" },
+          { id: "D", text: "Lysosome" }
+        ],
+        correctAnswer: "B",
+        explanation: "Ribosomes are the sites of protein synthesis, translating mRNA into polypeptide chains."
+      },
+      {
+        id: 2,
+        text: "The process by which green plants manufacture food using sunlight is called",
+        options: [
+          { id: "A", text: "Respiration" },
+          { id: "B", text: "Transpiration" },
+          { id: "C", text: "Photosynthesis" },
+          { id: "D", text: "Osmosis" }
+        ],
+        correctAnswer: "C",
+        explanation: "Photosynthesis is the process by which plants use sunlight, CO₂ and water to produce glucose and oxygen."
+      },
+      {
+        id: 3,
+        text: "Which of the following is NOT a function of the liver?",
+        options: [
+          { id: "A", text: "Production of bile" },
+          { id: "B", text: "Detoxification of harmful substances" },
+          { id: "C", text: "Production of insulin" },
+          { id: "D", text: "Storage of glycogen" }
+        ],
+        correctAnswer: "C",
+        explanation: "Insulin is produced by the islets of Langerhans in the pancreas, not the liver."
+      },
+      {
+        id: 4,
+        text: "The exchange of gases in the lungs takes place at the",
+        options: [
+          { id: "A", text: "Bronchi" },
+          { id: "B", text: "Trachea" },
+          { id: "C", text: "Alveoli" },
+          { id: "D", text: "Bronchioles" }
+        ],
+        correctAnswer: "C",
+        explanation: "Alveoli are thin-walled air sacs in the lungs where oxygen and carbon dioxide are exchanged by diffusion."
+      },
+      {
+        id: 5,
+        text: "Which blood vessel carries oxygenated blood from the lungs to the heart?",
+        options: [
+          { id: "A", text: "Pulmonary artery" },
+          { id: "B", text: "Pulmonary vein" },
+          { id: "C", text: "Aorta" },
+          { id: "D", text: "Vena cava" }
+        ],
+        correctAnswer: "B",
+        explanation: "The pulmonary vein is the only vein that carries oxygenated blood, transporting it from the lungs back to the left atrium of the heart."
+      },
+      {
+        id: 6,
+        text: "An organism that lives on or inside another organism and derives nutrients from it is called a",
+        options: [
+          { id: "A", text: "Saprophyte" },
+          { id: "B", text: "Parasite" },
+          { id: "C", text: "Epiphyte" },
+          { id: "D", text: "Predator" }
+        ],
+        correctAnswer: "B",
+        explanation: "A parasite lives on (ectoparasite) or in (endoparasite) its host and obtains nourishment at the host's expense."
+      },
+      {
+        id: 7,
+        text: "The part of the human eye that controls the amount of light entering is the",
+        options: [
+          { id: "A", text: "Cornea" },
+          { id: "B", text: "Retina" },
+          { id: "C", text: "Iris" },
+          { id: "D", text: "Lens" }
+        ],
+        correctAnswer: "C",
+        explanation: "The iris is a muscular diaphragm that adjusts the size of the pupil to regulate the amount of light reaching the retina."
+      },
+      {
+        id: 8,
+        text: "Which of the following diseases is caused by a virus?",
+        options: [
+          { id: "A", text: "Cholera" },
+          { id: "B", text: "Malaria" },
+          { id: "C", text: "Measles" },
+          { id: "D", text: "Typhoid" }
+        ],
+        correctAnswer: "C",
+        explanation: "Measles is caused by the measles virus (paramyxovirus). Cholera and typhoid are bacterial; malaria is caused by Plasmodium (a protozoan)."
+      },
+      {
+        id: 9,
+        text: "The type of nutrition in which organisms feed on dead and decaying matter is known as",
+        options: [
+          { id: "A", text: "Holozoic" },
+          { id: "B", text: "Parasitic" },
+          { id: "C", text: "Saprophytic" },
+          { id: "D", text: "Autotrophic" }
+        ],
+        correctAnswer: "C",
+        explanation: "Saprophytic nutrition involves organisms (like fungi and bacteria) obtaining nutrients by decomposing dead organic matter."
+      },
+      {
+        id: 10,
+        text: "Which of the following is a characteristic of monocotyledonous plants?",
+        options: [
+          { id: "A", text: "Two seed leaves" },
+          { id: "B", text: "Net-veined leaves" },
+          { id: "C", text: "Parallel leaf venation" },
+          { id: "D", text: "Tap root system" }
+        ],
+        correctAnswer: "C",
+        explanation: "Monocots have parallel leaf venation, fibrous roots, and a single seed leaf (cotyledon)."
+      },
+      {
+        id: 11,
+        text: "The movement of water molecules from a region of higher concentration to a region of lower concentration through a semi-permeable membrane is called",
+        options: [
+          { id: "A", text: "Diffusion" },
+          { id: "B", text: "Osmosis" },
+          { id: "C", text: "Active transport" },
+          { id: "D", text: "Plasmolysis" }
+        ],
+        correctAnswer: "B",
+        explanation: "Osmosis is the movement of water molecules through a selectively permeable membrane from a dilute to a more concentrated solution."
+      },
+      {
+        id: 12,
+        text: "Which of the following is the correct order of the stages of mitosis?",
+        options: [
+          { id: "A", text: "Prophase → Anaphase → Metaphase → Telophase" },
+          { id: "B", text: "Prophase → Metaphase → Anaphase → Telophase" },
+          { id: "C", text: "Metaphase → Prophase → Telophase → Anaphase" },
+          { id: "D", text: "Telophase → Anaphase → Metaphase → Prophase" }
+        ],
+        correctAnswer: "B",
+        explanation: "The correct order is PMAT: Prophase → Metaphase → Anaphase → Telophase."
+      },
+      {
+        id: 13,
+        text: "The hormone responsible for the 'fight or flight' response is",
+        options: [
+          { id: "A", text: "Insulin" },
+          { id: "B", text: "Thyroxine" },
+          { id: "C", text: "Adrenaline" },
+          { id: "D", text: "Oestrogen" }
+        ],
+        correctAnswer: "C",
+        explanation: "Adrenaline (epinephrine) is secreted by the adrenal medulla and prepares the body for emergency situations."
+      },
+      {
+        id: 14,
+        text: "Which of the following organisms is a producer in a food chain?",
+        options: [
+          { id: "A", text: "Grasshopper" },
+          { id: "B", text: "Grass" },
+          { id: "C", text: "Frog" },
+          { id: "D", text: "Snake" }
+        ],
+        correctAnswer: "B",
+        explanation: "Producers (autotrophs) like grass manufacture their own food through photosynthesis and form the base of food chains."
+      },
+      {
+        id: 15,
+        text: "The process by which the kidney removes metabolic waste from the blood is called",
+        options: [
+          { id: "A", text: "Egestion" },
+          { id: "B", text: "Excretion" },
+          { id: "C", text: "Secretion" },
+          { id: "D", text: "Digestion" }
+        ],
+        correctAnswer: "B",
+        explanation: "Excretion is the removal of metabolic waste products from the body. The kidneys excrete urea, excess water and salts."
+      },
+      // ===== CHEMISTRY (Q16–30) =====
+      {
+        id: 16,
+        text: "Which of the following is a chemical change?",
+        options: [
+          { id: "A", text: "Melting of ice" },
+          { id: "B", text: "Dissolving sugar in water" },
+          { id: "C", text: "Rusting of iron" },
+          { id: "D", text: "Evaporation of water" }
+        ],
+        correctAnswer: "C",
+        explanation: "Rusting involves a chemical reaction between iron, oxygen and water to form iron(III) oxide (Fe₂O₃). The other options are physical changes."
+      },
+      {
+        id: 17,
+        text: "The pH of a neutral solution is",
+        options: [
+          { id: "A", text: "0" },
+          { id: "B", text: "7" },
+          { id: "C", text: "14" },
+          { id: "D", text: "1" }
+        ],
+        correctAnswer: "B",
+        explanation: "A neutral solution has a pH of 7. Values below 7 are acidic and above 7 are alkaline."
+      },
+      {
+        id: 18,
+        text: "Which gas is produced when a metal reacts with a dilute acid?",
+        options: [
+          { id: "A", text: "Oxygen" },
+          { id: "B", text: "Carbon dioxide" },
+          { id: "C", text: "Hydrogen" },
+          { id: "D", text: "Nitrogen" }
+        ],
+        correctAnswer: "C",
+        explanation: "When a reactive metal reacts with a dilute acid, hydrogen gas is produced: Metal + Acid → Salt + Hydrogen."
+      },
+      {
+        id: 19,
+        text: "The process of separating a mixture of liquids with different boiling points is called",
+        options: [
+          { id: "A", text: "Filtration" },
+          { id: "B", text: "Evaporation" },
+          { id: "C", text: "Distillation" },
+          { id: "D", text: "Chromatography" }
+        ],
+        correctAnswer: "C",
+        explanation: "Distillation separates miscible liquids based on differences in their boiling points."
+      },
+      {
+        id: 20,
+        text: "An atom of sodium (Na) has an atomic number of 11. How many electrons are in its outermost shell?",
+        options: [
+          { id: "A", text: "1" },
+          { id: "B", text: "2" },
+          { id: "C", text: "8" },
+          { id: "D", text: "11" }
+        ],
+        correctAnswer: "A",
+        explanation: "Sodium's electron configuration is 2, 8, 1. It has 1 electron in its outermost (third) shell."
+      },
+      {
+        id: 21,
+        text: "Which of the following substances is an element?",
+        options: [
+          { id: "A", text: "Water (H₂O)" },
+          { id: "B", text: "Carbon dioxide (CO₂)" },
+          { id: "C", text: "Iron (Fe)" },
+          { id: "D", text: "Sodium chloride (NaCl)" }
+        ],
+        correctAnswer: "C",
+        explanation: "Iron (Fe) is a pure element consisting of only one type of atom. The others are compounds."
+      },
+      {
+        id: 22,
+        text: "The bond formed by the sharing of electrons between two atoms is called",
+        options: [
+          { id: "A", text: "Ionic bond" },
+          { id: "B", text: "Covalent bond" },
+          { id: "C", text: "Metallic bond" },
+          { id: "D", text: "Hydrogen bond" }
+        ],
+        correctAnswer: "B",
+        explanation: "A covalent bond is formed when two atoms share one or more pairs of electrons."
+      },
+      {
+        id: 23,
+        text: "Which of the following is a property of acids?",
+        options: [
+          { id: "A", text: "They turn red litmus paper blue" },
+          { id: "B", text: "They have a soapy feel" },
+          { id: "C", text: "They turn blue litmus paper red" },
+          { id: "D", text: "They have a pH greater than 7" }
+        ],
+        correctAnswer: "C",
+        explanation: "Acids turn blue litmus paper red. Turning red litmus blue, soapy feel, and pH > 7 are properties of bases/alkalis."
+      },
+      {
+        id: 24,
+        text: "The relative molecular mass of H₂SO₄ is (H=1, S=32, O=16)",
+        options: [
+          { id: "A", text: "49" },
+          { id: "B", text: "98" },
+          { id: "C", text: "64" },
+          { id: "D", text: "80" }
+        ],
+        correctAnswer: "B",
+        explanation: "H₂SO₄ = 2(1) + 32 + 4(16) = 2 + 32 + 64 = 98."
+      },
+      {
+        id: 25,
+        text: "Which type of reaction involves the breaking down of a compound into two or more simpler substances?",
+        options: [
+          { id: "A", text: "Synthesis" },
+          { id: "B", text: "Decomposition" },
+          { id: "C", text: "Displacement" },
+          { id: "D", text: "Neutralization" }
+        ],
+        correctAnswer: "B",
+        explanation: "Decomposition is a reaction where a single compound breaks down into two or more simpler products."
+      },
+      {
+        id: 26,
+        text: "Hard water is water that does not lather easily with soap because it contains dissolved",
+        options: [
+          { id: "A", text: "Sodium and potassium salts" },
+          { id: "B", text: "Calcium and magnesium salts" },
+          { id: "C", text: "Iron and zinc salts" },
+          { id: "D", text: "Lead and copper salts" }
+        ],
+        correctAnswer: "B",
+        explanation: "Hard water contains dissolved calcium (Ca²⁺) and magnesium (Mg²⁺) ions which react with soap to form scum."
+      },
+      {
+        id: 27,
+        text: "The percentage of oxygen in the atmosphere is approximately",
+        options: [
+          { id: "A", text: "78%" },
+          { id: "B", text: "21%" },
+          { id: "C", text: "0.03%" },
+          { id: "D", text: "1%" }
+        ],
+        correctAnswer: "B",
+        explanation: "The atmosphere is approximately 78% nitrogen, 21% oxygen, 0.9% argon, and 0.04% carbon dioxide."
+      },
+      {
+        id: 28,
+        text: "The catalyst used in the Haber process for the manufacture of ammonia is",
+        options: [
+          { id: "A", text: "Vanadium(V) oxide" },
+          { id: "B", text: "Platinum" },
+          { id: "C", text: "Iron" },
+          { id: "D", text: "Manganese(IV) oxide" }
+        ],
+        correctAnswer: "C",
+        explanation: "Finely divided iron is used as the catalyst in the Haber process: N₂ + 3H₂ ⇌ 2NH₃."
+      },
+      {
+        id: 29,
+        text: "Which of the following gases is responsible for the depletion of the ozone layer?",
+        options: [
+          { id: "A", text: "Carbon dioxide" },
+          { id: "B", text: "Sulphur dioxide" },
+          { id: "C", text: "Chlorofluorocarbons (CFCs)" },
+          { id: "D", text: "Methane" }
+        ],
+        correctAnswer: "C",
+        explanation: "CFCs release chlorine atoms in the stratosphere which catalytically destroy ozone molecules."
+      },
+      {
+        id: 30,
+        text: "An electrolyte is a substance that",
+        options: [
+          { id: "A", text: "Conducts electricity in solid state" },
+          { id: "B", text: "Conducts electricity when molten or in aqueous solution" },
+          { id: "C", text: "Does not conduct electricity" },
+          { id: "D", text: "Conducts electricity only in solid state" }
+        ],
+        correctAnswer: "B",
+        explanation: "An electrolyte conducts electricity when dissolved in water or in its molten state because its ions are free to move."
+      },
+      // ===== PHYSICS (Q31–43) =====
+      {
+        id: 31,
+        text: "The SI unit of force is the",
+        options: [
+          { id: "A", text: "Joule" },
+          { id: "B", text: "Newton" },
+          { id: "C", text: "Watt" },
+          { id: "D", text: "Pascal" }
+        ],
+        correctAnswer: "B",
+        explanation: "The SI unit of force is the Newton (N), named after Sir Isaac Newton. 1 N = 1 kg·m/s²."
+      },
+      {
+        id: 32,
+        text: "An object of mass 5 kg is acted upon by a net force of 20 N. What is its acceleration?",
+        options: [
+          { id: "A", text: "4 m/s²" },
+          { id: "B", text: "100 m/s²" },
+          { id: "C", text: "15 m/s²" },
+          { id: "D", text: "25 m/s²" }
+        ],
+        correctAnswer: "A",
+        explanation: "Using Newton's second law: F = ma, so a = F/m = 20/5 = 4 m/s²."
+      },
+      {
+        id: 33,
+        text: "Which form of energy is stored in a stretched spring?",
+        options: [
+          { id: "A", text: "Kinetic energy" },
+          { id: "B", text: "Chemical energy" },
+          { id: "C", text: "Elastic potential energy" },
+          { id: "D", text: "Thermal energy" }
+        ],
+        correctAnswer: "C",
+        explanation: "A stretched or compressed spring stores elastic potential energy, which is released when the spring returns to its natural length."
+      },
+      {
+        id: 34,
+        text: "The image formed by a plane mirror is",
+        options: [
+          { id: "A", text: "Real and inverted" },
+          { id: "B", text: "Virtual and laterally inverted" },
+          { id: "C", text: "Real and erect" },
+          { id: "D", text: "Virtual and diminished" }
+        ],
+        correctAnswer: "B",
+        explanation: "A plane mirror produces a virtual, erect, same-size, and laterally inverted image."
+      },
+      {
+        id: 35,
+        text: "The boiling point of water at standard atmospheric pressure is",
+        options: [
+          { id: "A", text: "0°C" },
+          { id: "B", text: "100°C" },
+          { id: "C", text: "273 K" },
+          { id: "D", text: "212°F and 0°C" }
+        ],
+        correctAnswer: "B",
+        explanation: "Water boils at 100°C (373 K or 212°F) at standard atmospheric pressure (1 atm or 101.325 kPa)."
+      },
+      {
+        id: 36,
+        text: "A car travels 120 km in 2 hours. Its average speed is",
+        options: [
+          { id: "A", text: "240 km/h" },
+          { id: "B", text: "60 km/h" },
+          { id: "C", text: "120 km/h" },
+          { id: "D", text: "30 km/h" }
+        ],
+        correctAnswer: "B",
+        explanation: "Average speed = total distance / total time = 120 km / 2 h = 60 km/h."
+      },
+      {
+        id: 37,
+        text: "Which of the following materials is the best conductor of electricity?",
+        options: [
+          { id: "A", text: "Rubber" },
+          { id: "B", text: "Glass" },
+          { id: "C", text: "Copper" },
+          { id: "D", text: "Wood" }
+        ],
+        correctAnswer: "C",
+        explanation: "Copper is an excellent conductor of electricity due to its free-moving delocalised electrons. The others are insulators."
+      },
+      {
+        id: 38,
+        text: "The potential difference across a resistor of 10 Ω carrying a current of 3 A is",
+        options: [
+          { id: "A", text: "30 V" },
+          { id: "B", text: "13 V" },
+          { id: "C", text: "3.3 V" },
+          { id: "D", text: "0.3 V" }
+        ],
+        correctAnswer: "A",
+        explanation: "Using Ohm's law: V = IR = 3 × 10 = 30 V."
+      },
+      {
+        id: 39,
+        text: "Sound cannot travel through",
+        options: [
+          { id: "A", text: "Air" },
+          { id: "B", text: "Water" },
+          { id: "C", text: "Steel" },
+          { id: "D", text: "Vacuum" }
+        ],
+        correctAnswer: "D",
+        explanation: "Sound is a mechanical wave that requires a material medium (solid, liquid, or gas) to propagate. It cannot travel through a vacuum."
+      },
+      {
+        id: 40,
+        text: "The principle of conservation of energy states that energy",
+        options: [
+          { id: "A", text: "Can be created but not destroyed" },
+          { id: "B", text: "Can be destroyed but not created" },
+          { id: "C", text: "Can neither be created nor destroyed but can be transformed" },
+          { id: "D", text: "Is always lost as heat" }
+        ],
+        correctAnswer: "C",
+        explanation: "The law of conservation of energy states that energy cannot be created or destroyed; it can only be transformed from one form to another."
+      },
+      {
+        id: 41,
+        text: "Which instrument is used to measure atmospheric pressure?",
+        options: [
+          { id: "A", text: "Thermometer" },
+          { id: "B", text: "Barometer" },
+          { id: "C", text: "Hydrometer" },
+          { id: "D", text: "Manometer" }
+        ],
+        correctAnswer: "B",
+        explanation: "A barometer measures atmospheric pressure. A manometer measures the pressure of enclosed gases."
+      },
+      {
+        id: 42,
+        text: "The weight of a body on the moon is about",
+        options: [
+          { id: "A", text: "Equal to its weight on Earth" },
+          { id: "B", text: "One-sixth of its weight on Earth" },
+          { id: "C", text: "Six times its weight on Earth" },
+          { id: "D", text: "Twice its weight on Earth" }
+        ],
+        correctAnswer: "B",
+        explanation: "The moon's gravitational field strength is about ⅙ that of Earth, so objects weigh about ⅙ of their Earth weight."
+      },
+      {
+        id: 43,
+        text: "A transformer is used to",
+        options: [
+          { id: "A", text: "Store electrical energy" },
+          { id: "B", text: "Convert AC to DC" },
+          { id: "C", text: "Step up or step down AC voltage" },
+          { id: "D", text: "Measure electrical resistance" }
+        ],
+        correctAnswer: "C",
+        explanation: "A transformer changes (steps up or steps down) alternating current (AC) voltage using electromagnetic induction."
+      },
+      // ===== EARTH SCIENCE & ENVIRONMENT (Q44–50) =====
+      {
+        id: 44,
+        text: "The rock formed from cooled molten magma is called",
+        options: [
+          { id: "A", text: "Sedimentary rock" },
+          { id: "B", text: "Metamorphic rock" },
+          { id: "C", text: "Igneous rock" },
+          { id: "D", text: "Organic rock" }
+        ],
+        correctAnswer: "C",
+        explanation: "Igneous rocks are formed when molten magma or lava cools and solidifies. Examples include granite and basalt."
+      },
+      {
+        id: 45,
+        text: "The water cycle is driven primarily by energy from the",
+        options: [
+          { id: "A", text: "Moon" },
+          { id: "B", text: "Earth's core" },
+          { id: "C", text: "Sun" },
+          { id: "D", text: "Wind" }
+        ],
+        correctAnswer: "C",
+        explanation: "Solar energy drives evaporation, which is the key process in the water cycle."
+      },
+      {
+        id: 46,
+        text: "The major gas responsible for global warming is",
+        options: [
+          { id: "A", text: "Oxygen" },
+          { id: "B", text: "Nitrogen" },
+          { id: "C", text: "Carbon dioxide" },
+          { id: "D", text: "Hydrogen" }
+        ],
+        correctAnswer: "C",
+        explanation: "Carbon dioxide (CO₂) is the primary greenhouse gas contributing to global warming through the greenhouse effect."
+      },
+      {
+        id: 47,
+        text: "Which of the following is a renewable source of energy?",
+        options: [
+          { id: "A", text: "Coal" },
+          { id: "B", text: "Petroleum" },
+          { id: "C", text: "Solar energy" },
+          { id: "D", text: "Natural gas" }
+        ],
+        correctAnswer: "C",
+        explanation: "Solar energy is renewable because it is continuously replenished by the sun. Coal, petroleum, and natural gas are fossil fuels (non-renewable)."
+      },
+      {
+        id: 48,
+        text: "Soil erosion can best be prevented by",
+        options: [
+          { id: "A", text: "Bush burning" },
+          { id: "B", text: "Overgrazing" },
+          { id: "C", text: "Planting cover crops" },
+          { id: "D", text: "Deforestation" }
+        ],
+        correctAnswer: "C",
+        explanation: "Cover crops protect the soil surface from rain impact and wind, and their roots bind the soil together, preventing erosion."
+      },
+      {
+        id: 49,
+        text: "The layer of the atmosphere where weather occurs is the",
+        options: [
+          { id: "A", text: "Stratosphere" },
+          { id: "B", text: "Troposphere" },
+          { id: "C", text: "Mesosphere" },
+          { id: "D", text: "Thermosphere" }
+        ],
+        correctAnswer: "B",
+        explanation: "The troposphere is the lowest layer of the atmosphere (0–12 km) where all weather phenomena occur."
+      },
+      {
+        id: 50,
+        text: "Which of the following practices contributes to the conservation of natural resources?",
+        options: [
+          { id: "A", text: "Illegal mining" },
+          { id: "B", text: "Recycling of materials" },
+          { id: "C", text: "Indiscriminate felling of trees" },
+          { id: "D", text: "Dumping of waste in rivers" }
+        ],
+        correctAnswer: "B",
+        explanation: "Recycling reduces the demand for raw materials and helps conserve natural resources for future generations."
+      }
+    ]
   }
 ];
