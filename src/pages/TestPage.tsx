@@ -43,7 +43,7 @@ const TestPage = () => {
   const [score, setScore] = useState(0);
   const [[page, direction], setPage] = useState([0, 0]);
   const [questionTimeRemaining, setQuestionTimeRemaining] = useState<number>(60);
-  const questionTimerIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const questionTimerIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   // Determine timer mode from subject
   const isGlobalTimer = subject?.timerType === 'global';
