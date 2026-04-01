@@ -11,6 +11,7 @@ const Index = () => {
   const categorizedSubjects: Record<string, Subject[]> = {
     English: [],
     Biology: [],
+    Chemistry: [],
     'Integrated Science': [],
     Maths: [],
     Other: [], // Fallback category
@@ -22,6 +23,8 @@ const Index = () => {
       categorizedSubjects.English.push(subject);
     } else if (nameLower.includes('biology')) {
       categorizedSubjects.Biology.push(subject);
+    } else if (nameLower.includes('chemistry')) {
+      categorizedSubjects.Chemistry.push(subject);
     } else if (nameLower.includes('integrated science')) {
       categorizedSubjects['Integrated Science'].push(subject);
     } else if (nameLower.includes('math') || nameLower.includes('statistics') || nameLower.includes('sets') || nameLower.includes('venn')) {
