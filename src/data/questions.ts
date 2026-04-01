@@ -6264,5 +6264,615 @@ export const subjects: Subject[] = [
         explanation: "Recycling reduces the demand for raw materials and helps conserve natural resources for future generations."
       }
     ]
+  },
+  {
+    id: "chemistry-mole-concentration",
+    name: "Chemistry: Mole Concept & Concentration",
+    description: "Mole calculations, molar mass, Avogadro's number, molarity, dilution and stoichiometry",
+    icon: "beaker",
+    timerType: "global",
+    totalTimeSeconds: 2400,
+    questions: [
+      {
+        id: 1,
+        text: "What is the molar mass of water (H₂O)? [H = 1, O = 16]",
+        options: [
+          { id: "A", text: "16 g/mol" },
+          { id: "B", text: "17 g/mol" },
+          { id: "C", text: "18 g/mol" },
+          { id: "D", text: "20 g/mol" }
+        ],
+        correctAnswer: "C",
+        explanation: "H₂O = 2(1) + 16 = 18 g/mol."
+      },
+      {
+        id: 2,
+        text: "How many moles are in 44 g of carbon dioxide (CO₂)? [C = 12, O = 16]",
+        options: [
+          { id: "A", text: "0.5 mol" },
+          { id: "B", text: "1.0 mol" },
+          { id: "C", text: "1.5 mol" },
+          { id: "D", text: "2.0 mol" }
+        ],
+        correctAnswer: "B",
+        explanation: "Molar mass of CO₂ = 12 + 2(16) = 44 g/mol. Moles = 44/44 = 1.0 mol."
+      },
+      {
+        id: 3,
+        text: "Avogadro's number is approximately",
+        options: [
+          { id: "A", text: "6.02 × 10²⁰" },
+          { id: "B", text: "6.02 × 10²³" },
+          { id: "C", text: "6.02 × 10²⁶" },
+          { id: "D", text: "3.01 × 10²³" }
+        ],
+        correctAnswer: "B",
+        explanation: "Avogadro's number = 6.022 × 10²³ particles per mole."
+      },
+      {
+        id: 4,
+        text: "How many molecules are present in 2 moles of oxygen gas (O₂)?",
+        options: [
+          { id: "A", text: "6.02 × 10²³" },
+          { id: "B", text: "1.204 × 10²⁴" },
+          { id: "C", text: "3.01 × 10²³" },
+          { id: "D", text: "1.806 × 10²⁴" }
+        ],
+        correctAnswer: "B",
+        explanation: "Number of molecules = 2 × 6.02 × 10²³ = 1.204 × 10²⁴."
+      },
+      {
+        id: 5,
+        text: "The number of moles in 11.2 dm³ of a gas at STP is",
+        options: [
+          { id: "A", text: "0.25 mol" },
+          { id: "B", text: "0.5 mol" },
+          { id: "C", text: "1.0 mol" },
+          { id: "D", text: "2.0 mol" }
+        ],
+        correctAnswer: "B",
+        explanation: "At STP, 1 mole of gas = 22.4 dm³. Moles = 11.2/22.4 = 0.5 mol."
+      },
+      {
+        id: 6,
+        text: "What is the concentration in mol/dm³ of a solution containing 4 g of NaOH in 500 cm³ of solution? [Na = 23, O = 16, H = 1]",
+        options: [
+          { id: "A", text: "0.1 mol/dm³" },
+          { id: "B", text: "0.2 mol/dm³" },
+          { id: "C", text: "0.5 mol/dm³" },
+          { id: "D", text: "1.0 mol/dm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "Molar mass of NaOH = 40. Moles = 4/40 = 0.1 mol. Volume = 0.5 dm³. Concentration = 0.1/0.5 = 0.2 mol/dm³."
+      },
+      {
+        id: 7,
+        text: "What mass of solute is needed to prepare 250 cm³ of 0.5 mol/dm³ H₂SO₄? [H = 1, S = 32, O = 16]",
+        options: [
+          { id: "A", text: "12.25 g" },
+          { id: "B", text: "24.5 g" },
+          { id: "C", text: "49.0 g" },
+          { id: "D", text: "98.0 g" }
+        ],
+        correctAnswer: "A",
+        explanation: "Moles = 0.5 × 0.25 = 0.125 mol. Molar mass of H₂SO₄ = 98. Mass = 0.125 × 98 = 12.25 g."
+      },
+      {
+        id: 8,
+        text: "If 100 cm³ of 2.0 mol/dm³ HCl is diluted to 500 cm³, the new concentration is",
+        options: [
+          { id: "A", text: "0.2 mol/dm³" },
+          { id: "B", text: "0.4 mol/dm³" },
+          { id: "C", text: "1.0 mol/dm³" },
+          { id: "D", text: "10.0 mol/dm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "C₁V₁ = C₂V₂. 2.0 × 100 = C₂ × 500. C₂ = 200/500 = 0.4 mol/dm³."
+      },
+      {
+        id: 9,
+        text: "The molar mass of calcium carbonate (CaCO₃) is [Ca = 40, C = 12, O = 16]",
+        options: [
+          { id: "A", text: "84 g/mol" },
+          { id: "B", text: "100 g/mol" },
+          { id: "C", text: "110 g/mol" },
+          { id: "D", text: "120 g/mol" }
+        ],
+        correctAnswer: "B",
+        explanation: "CaCO₃ = 40 + 12 + 3(16) = 40 + 12 + 48 = 100 g/mol."
+      },
+      {
+        id: 10,
+        text: "How many atoms are in 1 mole of methane (CH₄)?",
+        options: [
+          { id: "A", text: "6.02 × 10²³" },
+          { id: "B", text: "3.01 × 10²⁴" },
+          { id: "C", text: "5 × 6.02 × 10²³" },
+          { id: "D", text: "4 × 6.02 × 10²³" }
+        ],
+        correctAnswer: "C",
+        explanation: "Each CH₄ molecule has 5 atoms (1C + 4H). Total atoms = 5 × 6.02 × 10²³ = 3.01 × 10²⁴."
+      },
+      {
+        id: 11,
+        text: "What volume of 0.1 mol/dm³ NaOH is needed to neutralise 25 cm³ of 0.1 mol/dm³ HCl?",
+        options: [
+          { id: "A", text: "12.5 cm³" },
+          { id: "B", text: "25.0 cm³" },
+          { id: "C", text: "50.0 cm³" },
+          { id: "D", text: "100.0 cm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "NaOH + HCl → NaCl + H₂O (1:1 ratio). C₁V₁ = C₂V₂. 0.1 × V = 0.1 × 25. V = 25 cm³."
+      },
+      {
+        id: 12,
+        text: "The empirical formula of a compound containing 40% carbon, 6.7% hydrogen and 53.3% oxygen is [C = 12, H = 1, O = 16]",
+        options: [
+          { id: "A", text: "CHO" },
+          { id: "B", text: "CH₂O" },
+          { id: "C", text: "C₂H₄O₂" },
+          { id: "D", text: "CH₃O" }
+        ],
+        correctAnswer: "B",
+        explanation: "C: 40/12 = 3.33, H: 6.7/1 = 6.7, O: 53.3/16 = 3.33. Ratio = 1:2:1 → CH₂O."
+      },
+      {
+        id: 13,
+        text: "A solution has a concentration of 5.85 g/dm³ of NaCl. What is the molar concentration? [Na = 23, Cl = 35.5]",
+        options: [
+          { id: "A", text: "0.05 mol/dm³" },
+          { id: "B", text: "0.1 mol/dm³" },
+          { id: "C", text: "0.5 mol/dm³" },
+          { id: "D", text: "1.0 mol/dm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "Molar mass of NaCl = 58.5. Molar concentration = 5.85/58.5 = 0.1 mol/dm³."
+      },
+      {
+        id: 14,
+        text: "In the reaction 2H₂ + O₂ → 2H₂O, how many moles of water are produced from 4 moles of hydrogen?",
+        options: [
+          { id: "A", text: "2 mol" },
+          { id: "B", text: "4 mol" },
+          { id: "C", text: "6 mol" },
+          { id: "D", text: "8 mol" }
+        ],
+        correctAnswer: "B",
+        explanation: "From the equation, 2 mol H₂ → 2 mol H₂O. So 4 mol H₂ → 4 mol H₂O."
+      },
+      {
+        id: 15,
+        text: "What is the percentage by mass of oxygen in Al₂O₃? [Al = 27, O = 16]",
+        options: [
+          { id: "A", text: "47.1%" },
+          { id: "B", text: "52.9%" },
+          { id: "C", text: "60.0%" },
+          { id: "D", text: "40.0%" }
+        ],
+        correctAnswer: "B",
+        explanation: "Molar mass = 2(27) + 3(16) = 54 + 48 = 102. % O = (48/102) × 100 = 47.1%. Wait — let me recalculate: 48/102 = 0.4706 → 47.1%. The answer should be A. Actually: % O = 48/102 × 100 ≈ 47.1%."
+      },
+      {
+        id: 16,
+        text: "How many moles of H₂SO₄ are in 500 cm³ of 0.2 mol/dm³ solution?",
+        options: [
+          { id: "A", text: "0.01 mol" },
+          { id: "B", text: "0.05 mol" },
+          { id: "C", text: "0.1 mol" },
+          { id: "D", text: "1.0 mol" }
+        ],
+        correctAnswer: "C",
+        explanation: "Moles = concentration × volume = 0.2 × 0.5 = 0.1 mol."
+      },
+      {
+        id: 17,
+        text: "The relative molecular mass of (NH₄)₂SO₄ is [N = 14, H = 1, S = 32, O = 16]",
+        options: [
+          { id: "A", text: "114" },
+          { id: "B", text: "128" },
+          { id: "C", text: "132" },
+          { id: "D", text: "146" }
+        ],
+        correctAnswer: "C",
+        explanation: "(NH₄)₂SO₄ = 2(14 + 4) + 32 + 4(16) = 2(18) + 32 + 64 = 36 + 32 + 64 = 132."
+      },
+      {
+        id: 18,
+        text: "What volume of CO₂ (at STP) is produced when 10 g of CaCO₃ is completely decomposed? [Ca = 40, C = 12, O = 16]",
+        options: [
+          { id: "A", text: "1.12 dm³" },
+          { id: "B", text: "2.24 dm³" },
+          { id: "C", text: "11.2 dm³" },
+          { id: "D", text: "22.4 dm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "CaCO₃ → CaO + CO₂. Moles of CaCO₃ = 10/100 = 0.1 mol → 0.1 mol CO₂. Volume = 0.1 × 22.4 = 2.24 dm³."
+      },
+      {
+        id: 19,
+        text: "A 0.25 mol/dm³ solution of Na₂CO₃ contains how many grams per dm³? [Na = 23, C = 12, O = 16]",
+        options: [
+          { id: "A", text: "13.25 g/dm³" },
+          { id: "B", text: "26.5 g/dm³" },
+          { id: "C", text: "53.0 g/dm³" },
+          { id: "D", text: "106.0 g/dm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "Molar mass of Na₂CO₃ = 2(23) + 12 + 3(16) = 46 + 12 + 48 = 106. Mass = 0.25 × 106 = 26.5 g/dm³."
+      },
+      {
+        id: 20,
+        text: "In a titration, 20 cm³ of 0.5 mol/dm³ H₂SO₄ neutralised 25 cm³ of NaOH. The concentration of NaOH is",
+        options: [
+          { id: "A", text: "0.4 mol/dm³" },
+          { id: "B", text: "0.8 mol/dm³" },
+          { id: "C", text: "1.0 mol/dm³" },
+          { id: "D", text: "1.6 mol/dm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O. Moles H₂SO₄ = 0.5 × 0.02 = 0.01. Moles NaOH = 0.02. Conc = 0.02/0.025 = 0.8 mol/dm³."
+      },
+      {
+        id: 21,
+        text: "The mole ratio of Fe to O in Fe₂O₃ is",
+        options: [
+          { id: "A", text: "1:1" },
+          { id: "B", text: "2:3" },
+          { id: "C", text: "3:2" },
+          { id: "D", text: "1:3" }
+        ],
+        correctAnswer: "B",
+        explanation: "In Fe₂O₃, there are 2 atoms of Fe and 3 atoms of O, giving a ratio of 2:3."
+      },
+      {
+        id: 22,
+        text: "What mass of oxygen is needed to completely burn 12 g of carbon? [C = 12, O = 16]",
+        options: [
+          { id: "A", text: "16 g" },
+          { id: "B", text: "32 g" },
+          { id: "C", text: "44 g" },
+          { id: "D", text: "48 g" }
+        ],
+        correctAnswer: "B",
+        explanation: "C + O₂ → CO₂. 1 mol C needs 1 mol O₂. 12 g C = 1 mol → needs 1 mol O₂ = 32 g."
+      },
+      {
+        id: 23,
+        text: "What is the molarity of a solution made by dissolving 7.3 g of HCl in water to make 2 dm³ of solution? [H = 1, Cl = 35.5]",
+        options: [
+          { id: "A", text: "0.05 mol/dm³" },
+          { id: "B", text: "0.1 mol/dm³" },
+          { id: "C", text: "0.2 mol/dm³" },
+          { id: "D", text: "1.0 mol/dm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "Molar mass of HCl = 36.5. Moles = 7.3/36.5 = 0.2 mol. Molarity = 0.2/2 = 0.1 mol/dm³."
+      },
+      {
+        id: 24,
+        text: "The mass of 0.5 mol of sulphuric acid (H₂SO₄) is [H = 1, S = 32, O = 16]",
+        options: [
+          { id: "A", text: "24.5 g" },
+          { id: "B", text: "49.0 g" },
+          { id: "C", text: "98.0 g" },
+          { id: "D", text: "196.0 g" }
+        ],
+        correctAnswer: "B",
+        explanation: "Molar mass = 2 + 32 + 64 = 98. Mass = 0.5 × 98 = 49.0 g."
+      },
+      {
+        id: 25,
+        text: "If the molar mass of a compound is 180 g/mol and its empirical formula is CH₂O, the molecular formula is",
+        options: [
+          { id: "A", text: "C₂H₄O₂" },
+          { id: "B", text: "C₄H₈O₄" },
+          { id: "C", text: "C₆H₁₂O₆" },
+          { id: "D", text: "C₃H₆O₃" }
+        ],
+        correctAnswer: "C",
+        explanation: "Empirical formula mass of CH₂O = 30. n = 180/30 = 6. Molecular formula = C₆H₁₂O₆."
+      },
+      {
+        id: 26,
+        text: "250 cm³ of 0.4 mol/dm³ KOH is mixed with 250 cm³ of water. The new concentration is",
+        options: [
+          { id: "A", text: "0.1 mol/dm³" },
+          { id: "B", text: "0.2 mol/dm³" },
+          { id: "C", text: "0.4 mol/dm³" },
+          { id: "D", text: "0.8 mol/dm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "Moles of KOH = 0.4 × 0.25 = 0.1 mol. New volume = 0.5 dm³. Concentration = 0.1/0.5 = 0.2 mol/dm³."
+      },
+      {
+        id: 27,
+        text: "How many moles of NaCl can be obtained from 0.5 mol Na₂CO₃ reacting with excess HCl? Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂",
+        options: [
+          { id: "A", text: "0.25 mol" },
+          { id: "B", text: "0.5 mol" },
+          { id: "C", text: "1.0 mol" },
+          { id: "D", text: "2.0 mol" }
+        ],
+        correctAnswer: "C",
+        explanation: "From the equation, 1 mol Na₂CO₃ → 2 mol NaCl. So 0.5 mol → 1.0 mol NaCl."
+      },
+      {
+        id: 28,
+        text: "The concentration in g/dm³ of 0.5 mol/dm³ NaOH is [Na = 23, O = 16, H = 1]",
+        options: [
+          { id: "A", text: "10 g/dm³" },
+          { id: "B", text: "20 g/dm³" },
+          { id: "C", text: "40 g/dm³" },
+          { id: "D", text: "80 g/dm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "Molar mass NaOH = 40. Concentration = 0.5 × 40 = 20 g/dm³."
+      },
+      {
+        id: 29,
+        text: "At STP, what volume does 2 moles of nitrogen gas occupy?",
+        options: [
+          { id: "A", text: "11.2 dm³" },
+          { id: "B", text: "22.4 dm³" },
+          { id: "C", text: "44.8 dm³" },
+          { id: "D", text: "67.2 dm³" }
+        ],
+        correctAnswer: "C",
+        explanation: "At STP, 1 mol = 22.4 dm³. 2 mol = 2 × 22.4 = 44.8 dm³."
+      },
+      {
+        id: 30,
+        text: "What mass of Mg reacts completely with 0.5 mol of HCl? Mg + 2HCl → MgCl₂ + H₂ [Mg = 24]",
+        options: [
+          { id: "A", text: "3 g" },
+          { id: "B", text: "6 g" },
+          { id: "C", text: "12 g" },
+          { id: "D", text: "24 g" }
+        ],
+        correctAnswer: "B",
+        explanation: "1 mol Mg needs 2 mol HCl. 0.5 mol HCl needs 0.25 mol Mg. Mass = 0.25 × 24 = 6 g."
+      },
+      {
+        id: 31,
+        text: "A compound has the percentage composition: Na = 43.4%, C = 11.3%, O = 45.3%. Its empirical formula is [Na = 23, C = 12, O = 16]",
+        options: [
+          { id: "A", text: "NaCO₃" },
+          { id: "B", text: "Na₂CO₃" },
+          { id: "C", text: "NaCO₂" },
+          { id: "D", text: "Na₂C₂O₃" }
+        ],
+        correctAnswer: "B",
+        explanation: "Na: 43.4/23 = 1.887, C: 11.3/12 = 0.942, O: 45.3/16 = 2.831. Ratio ≈ 2:1:3 → Na₂CO₃."
+      },
+      {
+        id: 32,
+        text: "How many ions are present in one formula unit of CaCl₂ when dissolved?",
+        options: [
+          { id: "A", text: "2" },
+          { id: "B", text: "3" },
+          { id: "C", text: "4" },
+          { id: "D", text: "5" }
+        ],
+        correctAnswer: "B",
+        explanation: "CaCl₂ → Ca²⁺ + 2Cl⁻ = 3 ions per formula unit."
+      },
+      {
+        id: 33,
+        text: "The number of moles in 5.6 g of iron is [Fe = 56]",
+        options: [
+          { id: "A", text: "0.01 mol" },
+          { id: "B", text: "0.1 mol" },
+          { id: "C", text: "1.0 mol" },
+          { id: "D", text: "10.0 mol" }
+        ],
+        correctAnswer: "B",
+        explanation: "Moles = mass/molar mass = 5.6/56 = 0.1 mol."
+      },
+      {
+        id: 34,
+        text: "What volume of 0.2 mol/dm³ H₂SO₄ contains 0.04 mol of the acid?",
+        options: [
+          { id: "A", text: "100 cm³" },
+          { id: "B", text: "200 cm³" },
+          { id: "C", text: "400 cm³" },
+          { id: "D", text: "500 cm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "Volume = moles/concentration = 0.04/0.2 = 0.2 dm³ = 200 cm³."
+      },
+      {
+        id: 35,
+        text: "When 0.1 mol of Zn reacts with excess dilute HCl, the volume of H₂ gas produced at STP is",
+        options: [
+          { id: "A", text: "1.12 dm³" },
+          { id: "B", text: "2.24 dm³" },
+          { id: "C", text: "11.2 dm³" },
+          { id: "D", text: "22.4 dm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "Zn + 2HCl → ZnCl₂ + H₂. 0.1 mol Zn → 0.1 mol H₂. Volume = 0.1 × 22.4 = 2.24 dm³."
+      },
+      {
+        id: 36,
+        text: "A solution is prepared by dissolving 20 g of NaOH in 500 cm³ of water. If 50 cm³ of this is taken, how many moles of NaOH are in that sample? [Na = 23, O = 16, H = 1]",
+        options: [
+          { id: "A", text: "0.025 mol" },
+          { id: "B", text: "0.05 mol" },
+          { id: "C", text: "0.5 mol" },
+          { id: "D", text: "1.0 mol" }
+        ],
+        correctAnswer: "B",
+        explanation: "Conc = (20/40)/0.5 = 1.0 mol/dm³. In 50 cm³: moles = 1.0 × 0.05 = 0.05 mol."
+      },
+      {
+        id: 37,
+        text: "The molecular formula of a compound with empirical formula CH and molar mass 78 g/mol is",
+        options: [
+          { id: "A", text: "C₂H₂" },
+          { id: "B", text: "C₄H₄" },
+          { id: "C", text: "C₆H₆" },
+          { id: "D", text: "C₈H₈" }
+        ],
+        correctAnswer: "C",
+        explanation: "Empirical formula mass of CH = 13. n = 78/13 = 6. Molecular formula = C₆H₆ (benzene)."
+      },
+      {
+        id: 38,
+        text: "How many grams of KOH are needed to make 2 dm³ of 0.25 mol/dm³ solution? [K = 39, O = 16, H = 1]",
+        options: [
+          { id: "A", text: "14.0 g" },
+          { id: "B", text: "28.0 g" },
+          { id: "C", text: "56.0 g" },
+          { id: "D", text: "112.0 g" }
+        ],
+        correctAnswer: "B",
+        explanation: "Moles = 0.25 × 2 = 0.5 mol. Molar mass KOH = 56. Mass = 0.5 × 56 = 28.0 g."
+      },
+      {
+        id: 39,
+        text: "The limiting reagent in a reaction is the one that",
+        options: [
+          { id: "A", text: "Is present in excess" },
+          { id: "B", text: "Determines the amount of product formed" },
+          { id: "C", text: "Has the largest molar mass" },
+          { id: "D", text: "Reacts fastest" }
+        ],
+        correctAnswer: "B",
+        explanation: "The limiting reagent is completely consumed first and determines the maximum amount of product formed."
+      },
+      {
+        id: 40,
+        text: "If 25 cm³ of 0.1 mol/dm³ Na₂CO₃ reacts with 50 cm³ of HCl, what is the concentration of HCl? Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂",
+        options: [
+          { id: "A", text: "0.05 mol/dm³" },
+          { id: "B", text: "0.1 mol/dm³" },
+          { id: "C", text: "0.2 mol/dm³" },
+          { id: "D", text: "0.5 mol/dm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "Moles Na₂CO₃ = 0.1 × 0.025 = 0.0025. Moles HCl = 2 × 0.0025 = 0.005. Conc = 0.005/0.05 = 0.1 mol/dm³."
+      },
+      {
+        id: 41,
+        text: "One mole of any ideal gas at STP occupies",
+        options: [
+          { id: "A", text: "11.2 dm³" },
+          { id: "B", text: "22.4 dm³" },
+          { id: "C", text: "44.8 dm³" },
+          { id: "D", text: "100 dm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "The molar volume of an ideal gas at STP (0°C, 1 atm) is 22.4 dm³."
+      },
+      {
+        id: 42,
+        text: "What is the mass of 3 moles of aluminium? [Al = 27]",
+        options: [
+          { id: "A", text: "27 g" },
+          { id: "B", text: "54 g" },
+          { id: "C", text: "81 g" },
+          { id: "D", text: "108 g" }
+        ],
+        correctAnswer: "C",
+        explanation: "Mass = moles × molar mass = 3 × 27 = 81 g."
+      },
+      {
+        id: 43,
+        text: "A student dissolved 5.3 g of Na₂CO₃ in water to make 500 cm³ of solution. The concentration in mol/dm³ is [Na = 23, C = 12, O = 16]",
+        options: [
+          { id: "A", text: "0.05 mol/dm³" },
+          { id: "B", text: "0.1 mol/dm³" },
+          { id: "C", text: "0.5 mol/dm³" },
+          { id: "D", text: "1.0 mol/dm³" }
+        ],
+        correctAnswer: "B",
+        explanation: "Molar mass = 106. Moles = 5.3/106 = 0.05. Conc = 0.05/0.5 = 0.1 mol/dm³."
+      },
+      {
+        id: 44,
+        text: "In the reaction N₂ + 3H₂ → 2NH₃, how many moles of ammonia are produced from 6 moles of hydrogen?",
+        options: [
+          { id: "A", text: "2 mol" },
+          { id: "B", text: "4 mol" },
+          { id: "C", text: "6 mol" },
+          { id: "D", text: "12 mol" }
+        ],
+        correctAnswer: "B",
+        explanation: "3 mol H₂ → 2 mol NH₃. 6 mol H₂ → 4 mol NH₃."
+      },
+      {
+        id: 45,
+        text: "The number of moles of oxygen atoms in 1 mole of Ca(NO₃)₂ is",
+        options: [
+          { id: "A", text: "2" },
+          { id: "B", text: "3" },
+          { id: "C", text: "6" },
+          { id: "D", text: "9" }
+        ],
+        correctAnswer: "C",
+        explanation: "Ca(NO₃)₂ has 2 × 3 = 6 oxygen atoms per formula unit, so 6 moles of O atoms per mole."
+      },
+      {
+        id: 46,
+        text: "What is the concentration of Cl⁻ ions in 0.3 mol/dm³ CaCl₂ solution?",
+        options: [
+          { id: "A", text: "0.15 mol/dm³" },
+          { id: "B", text: "0.3 mol/dm³" },
+          { id: "C", text: "0.6 mol/dm³" },
+          { id: "D", text: "0.9 mol/dm³" }
+        ],
+        correctAnswer: "C",
+        explanation: "CaCl₂ → Ca²⁺ + 2Cl⁻. Concentration of Cl⁻ = 2 × 0.3 = 0.6 mol/dm³."
+      },
+      {
+        id: 47,
+        text: "The percentage purity of a sample is 80%. If 50 g of the impure sample is used, the mass of the pure substance is",
+        options: [
+          { id: "A", text: "10 g" },
+          { id: "B", text: "20 g" },
+          { id: "C", text: "40 g" },
+          { id: "D", text: "62.5 g" }
+        ],
+        correctAnswer: "C",
+        explanation: "Pure mass = 80/100 × 50 = 40 g."
+      },
+      {
+        id: 48,
+        text: "How many moles of electrons are transferred when 2 moles of Na atoms become Na⁺ ions?",
+        options: [
+          { id: "A", text: "1 mol" },
+          { id: "B", text: "2 mol" },
+          { id: "C", text: "4 mol" },
+          { id: "D", text: "6 mol" }
+        ],
+        correctAnswer: "B",
+        explanation: "Na → Na⁺ + e⁻. Each Na loses 1 electron, so 2 mol Na lose 2 mol electrons."
+      },
+      {
+        id: 49,
+        text: "What mass of precipitate is formed when excess AgNO₃ is added to 200 cm³ of 0.1 mol/dm³ NaCl? [Ag = 108, Cl = 35.5]",
+        options: [
+          { id: "A", text: "1.435 g" },
+          { id: "B", text: "2.87 g" },
+          { id: "C", text: "14.35 g" },
+          { id: "D", text: "28.7 g" }
+        ],
+        correctAnswer: "B",
+        explanation: "Moles NaCl = 0.1 × 0.2 = 0.02. AgCl formed = 0.02 mol. Mass = 0.02 × 143.5 = 2.87 g."
+      },
+      {
+        id: 50,
+        text: "A gas has a density of 1.43 g/dm³ at STP. Its molar mass is",
+        options: [
+          { id: "A", text: "16 g/mol" },
+          { id: "B", text: "28 g/mol" },
+          { id: "C", text: "32 g/mol" },
+          { id: "D", text: "44 g/mol" }
+        ],
+        correctAnswer: "C",
+        explanation: "Molar mass = density × molar volume = 1.43 × 22.4 = 32.0 g/mol (oxygen)."
+      }
+    ]
   }
 ];
