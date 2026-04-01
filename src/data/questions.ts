@@ -6450,8 +6450,8 @@ export const subjects: Subject[] = [
           { id: "C", text: "60.0%" },
           { id: "D", text: "40.0%" }
         ],
-        correctAnswer: "B",
-        explanation: "Molar mass = 2(27) + 3(16) = 54 + 48 = 102. % O = (48/102) × 100 = 47.1%. Wait — let me recalculate: 48/102 = 0.4706 → 47.1%. The answer should be A. Actually: % O = 48/102 × 100 ≈ 47.1%."
+        correctAnswer: "A",
+        explanation: "Molar mass = 2(27) + 3(16) = 54 + 48 = 102. % O = (48/102) × 100 ≈ 47.1%."
       },
       {
         id: 16,
