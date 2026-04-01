@@ -6874,5 +6874,493 @@ export const subjects: Subject[] = [
         explanation: "Molar mass = density × molar volume = 1.43 × 22.4 = 32.0 g/mol (oxygen)."
       }
     ]
+  },
+  {
+    id: "biology-transport",
+    name: "Biology: Cell Transport",
+    description: "Osmosis, diffusion, endocytosis, exocytosis, phagocytosis and pinocytosis",
+    icon: "microscope",
+    questions: [
+      {
+        id: 1,
+        text: "Diffusion is the movement of molecules from a region of",
+        options: [
+          { id: "A", text: "Lower concentration to higher concentration" },
+          { id: "B", text: "Higher concentration to lower concentration" },
+          { id: "C", text: "Equal concentration in both directions" },
+          { id: "D", text: "Higher temperature to lower temperature" }
+        ],
+        correctAnswer: "B",
+        explanation: "Diffusion is the net movement of molecules from a region of higher concentration to a region of lower concentration down the concentration gradient."
+      },
+      {
+        id: 2,
+        text: "Which of the following is NOT required for diffusion to occur?",
+        options: [
+          { id: "A", text: "A concentration gradient" },
+          { id: "B", text: "Kinetic energy of molecules" },
+          { id: "C", text: "ATP energy" },
+          { id: "D", text: "A medium for movement" }
+        ],
+        correctAnswer: "C",
+        explanation: "Diffusion is a passive process and does not require ATP. It relies on the kinetic energy of molecules and a concentration gradient."
+      },
+      {
+        id: 3,
+        text: "Osmosis is best defined as the movement of",
+        options: [
+          { id: "A", text: "Solute molecules through a permeable membrane" },
+          { id: "B", text: "Water molecules through a semi-permeable membrane from a dilute to a concentrated solution" },
+          { id: "C", text: "Gases across a membrane" },
+          { id: "D", text: "Water molecules from a concentrated to a dilute solution" }
+        ],
+        correctAnswer: "B",
+        explanation: "Osmosis is the movement of water molecules from a region of higher water potential (dilute solution) to a region of lower water potential (concentrated solution) through a semi-permeable membrane."
+      },
+      {
+        id: 4,
+        text: "A red blood cell placed in a hypotonic solution will",
+        options: [
+          { id: "A", text: "Shrink (crenate)" },
+          { id: "B", text: "Swell and may burst (lyse)" },
+          { id: "C", text: "Remain the same" },
+          { id: "D", text: "Become flaccid" }
+        ],
+        correctAnswer: "B",
+        explanation: "In a hypotonic solution, water moves into the cell by osmosis, causing it to swell and potentially burst (haemolysis)."
+      },
+      {
+        id: 5,
+        text: "A plant cell placed in a hypertonic solution will undergo",
+        options: [
+          { id: "A", text: "Turgidity" },
+          { id: "B", text: "Lysis" },
+          { id: "C", text: "Plasmolysis" },
+          { id: "D", text: "Cytolysis" }
+        ],
+        correctAnswer: "C",
+        explanation: "In a hypertonic solution, water leaves the plant cell by osmosis, causing the cell membrane to pull away from the cell wall — a process called plasmolysis."
+      },
+      {
+        id: 6,
+        text: "Which of the following factors does NOT affect the rate of diffusion?",
+        options: [
+          { id: "A", text: "Temperature" },
+          { id: "B", text: "Concentration gradient" },
+          { id: "C", text: "Surface area" },
+          { id: "D", text: "Colour of the substance" }
+        ],
+        correctAnswer: "D",
+        explanation: "The rate of diffusion depends on temperature, concentration gradient, surface area, and thickness of the membrane — not the colour of the substance."
+      },
+      {
+        id: 7,
+        text: "Endocytosis is the process by which a cell",
+        options: [
+          { id: "A", text: "Releases substances outside the cell" },
+          { id: "B", text: "Takes in substances by engulfing them with the cell membrane" },
+          { id: "C", text: "Divides into two daughter cells" },
+          { id: "D", text: "Produces energy from glucose" }
+        ],
+        correctAnswer: "B",
+        explanation: "Endocytosis is the process where the cell membrane folds inward to bring substances into the cell, forming a vesicle."
+      },
+      {
+        id: 8,
+        text: "Phagocytosis is specifically the engulfing of",
+        options: [
+          { id: "A", text: "Liquid droplets" },
+          { id: "B", text: "Ions and small molecules" },
+          { id: "C", text: "Large solid particles such as bacteria" },
+          { id: "D", text: "Water molecules only" }
+        ],
+        correctAnswer: "C",
+        explanation: "Phagocytosis (cell eating) involves the engulfing of large solid particles like bacteria, dead cells, or debris by the cell membrane."
+      },
+      {
+        id: 9,
+        text: "Pinocytosis differs from phagocytosis in that pinocytosis involves the uptake of",
+        options: [
+          { id: "A", text: "Solid particles" },
+          { id: "B", text: "Liquid droplets and dissolved substances" },
+          { id: "C", text: "Oxygen gas" },
+          { id: "D", text: "Large organisms" }
+        ],
+        correctAnswer: "B",
+        explanation: "Pinocytosis (cell drinking) involves the uptake of small liquid droplets and dissolved substances, whereas phagocytosis involves solid particles."
+      },
+      {
+        id: 10,
+        text: "Exocytosis is the process by which",
+        options: [
+          { id: "A", text: "A cell takes in food particles" },
+          { id: "B", text: "A cell releases substances to the outside by fusing vesicles with the membrane" },
+          { id: "C", text: "Water enters the cell" },
+          { id: "D", text: "The nucleus divides" }
+        ],
+        correctAnswer: "B",
+        explanation: "Exocytosis is the reverse of endocytosis — vesicles inside the cell fuse with the cell membrane to release their contents outside the cell."
+      },
+      {
+        id: 11,
+        text: "Which type of cell commonly uses phagocytosis to destroy pathogens?",
+        options: [
+          { id: "A", text: "Red blood cells" },
+          { id: "B", text: "White blood cells (phagocytes)" },
+          { id: "C", text: "Nerve cells" },
+          { id: "D", text: "Muscle cells" }
+        ],
+        correctAnswer: "B",
+        explanation: "White blood cells, particularly phagocytes like neutrophils and macrophages, use phagocytosis to engulf and destroy pathogens."
+      },
+      {
+        id: 12,
+        text: "A semi-permeable membrane allows",
+        options: [
+          { id: "A", text: "All molecules to pass through" },
+          { id: "B", text: "No molecules to pass through" },
+          { id: "C", text: "Only certain molecules to pass through based on size" },
+          { id: "D", text: "Only gases to pass through" }
+        ],
+        correctAnswer: "C",
+        explanation: "A semi-permeable (selectively permeable) membrane allows only certain molecules to pass through, typically based on size, charge, or polarity."
+      },
+      {
+        id: 13,
+        text: "When a plant cell is fully turgid, it means",
+        options: [
+          { id: "A", text: "It has lost all its water" },
+          { id: "B", text: "It has absorbed maximum water and the cell wall prevents further expansion" },
+          { id: "C", text: "The cell membrane has burst" },
+          { id: "D", text: "The cell is undergoing plasmolysis" }
+        ],
+        correctAnswer: "B",
+        explanation: "A turgid plant cell has absorbed water by osmosis until the cell wall provides enough pressure to prevent further water entry."
+      },
+      {
+        id: 14,
+        text: "Which of the following is an example of osmosis in living organisms?",
+        options: [
+          { id: "A", text: "Absorption of water by root hair cells" },
+          { id: "B", text: "Exchange of gases in the lungs" },
+          { id: "C", text: "Movement of food along the gut" },
+          { id: "D", text: "Transmission of nerve impulses" }
+        ],
+        correctAnswer: "A",
+        explanation: "Root hair cells absorb water from the soil by osmosis — water moves from the dilute soil solution into the more concentrated cell sap."
+      },
+      {
+        id: 15,
+        text: "Both endocytosis and exocytosis require",
+        options: [
+          { id: "A", text: "A concentration gradient" },
+          { id: "B", text: "Energy (ATP)" },
+          { id: "C", text: "A semi-permeable membrane only" },
+          { id: "D", text: "Sunlight" }
+        ],
+        correctAnswer: "B",
+        explanation: "Both endocytosis and exocytosis are active transport processes that require energy (ATP) to move substances in or out of the cell."
+      },
+      {
+        id: 16,
+        text: "Crenation of a red blood cell occurs when it is placed in a",
+        options: [
+          { id: "A", text: "Hypotonic solution" },
+          { id: "B", text: "Isotonic solution" },
+          { id: "C", text: "Hypertonic solution" },
+          { id: "D", text: "Distilled water" }
+        ],
+        correctAnswer: "C",
+        explanation: "In a hypertonic solution, water leaves the red blood cell by osmosis, causing it to shrink and become crenated."
+      },
+      {
+        id: 17,
+        text: "The process by which white blood cells engulf bacteria is called",
+        options: [
+          { id: "A", text: "Pinocytosis" },
+          { id: "B", text: "Exocytosis" },
+          { id: "C", text: "Osmosis" },
+          { id: "D", text: "Phagocytosis" }
+        ],
+        correctAnswer: "D",
+        explanation: "White blood cells engulf bacteria through phagocytosis — extending pseudopodia around the bacterium to form a phagosome."
+      },
+      {
+        id: 18,
+        text: "In an isotonic solution, a cell will",
+        options: [
+          { id: "A", text: "Gain water and swell" },
+          { id: "B", text: "Lose water and shrink" },
+          { id: "C", text: "Neither gain nor lose water significantly" },
+          { id: "D", text: "Burst immediately" }
+        ],
+        correctAnswer: "C",
+        explanation: "In an isotonic solution, the concentration outside equals inside the cell, so there is no net movement of water."
+      },
+      {
+        id: 19,
+        text: "Which process is used by the cell to secrete hormones and enzymes?",
+        options: [
+          { id: "A", text: "Endocytosis" },
+          { id: "B", text: "Osmosis" },
+          { id: "C", text: "Exocytosis" },
+          { id: "D", text: "Diffusion" }
+        ],
+        correctAnswer: "C",
+        explanation: "Hormones and enzymes are packaged in vesicles by the Golgi apparatus and released outside the cell by exocytosis."
+      },
+      {
+        id: 20,
+        text: "Which of the following best describes facilitated diffusion?",
+        options: [
+          { id: "A", text: "Movement of molecules against a concentration gradient using ATP" },
+          { id: "B", text: "Movement of molecules down a concentration gradient with the help of carrier proteins" },
+          { id: "C", text: "Engulfing of particles by the cell membrane" },
+          { id: "D", text: "Movement of water through a semi-permeable membrane" }
+        ],
+        correctAnswer: "B",
+        explanation: "Facilitated diffusion is a passive process where molecules move down the concentration gradient through specific carrier or channel proteins."
+      },
+      {
+        id: 21,
+        text: "The term 'cell drinking' refers to",
+        options: [
+          { id: "A", text: "Osmosis" },
+          { id: "B", text: "Phagocytosis" },
+          { id: "C", text: "Pinocytosis" },
+          { id: "D", text: "Exocytosis" }
+        ],
+        correctAnswer: "C",
+        explanation: "Pinocytosis literally means 'cell drinking' — it involves the intake of small droplets of extracellular fluid."
+      },
+      {
+        id: 22,
+        text: "Active transport differs from diffusion because active transport",
+        options: [
+          { id: "A", text: "Moves substances down a concentration gradient" },
+          { id: "B", text: "Does not require a membrane" },
+          { id: "C", text: "Requires energy and moves substances against a concentration gradient" },
+          { id: "D", text: "Only moves water molecules" }
+        ],
+        correctAnswer: "C",
+        explanation: "Active transport uses ATP to move substances from a region of lower concentration to higher concentration — against the gradient."
+      },
+      {
+        id: 23,
+        text: "During phagocytosis, the engulfed particle is enclosed in a structure called a",
+        options: [
+          { id: "A", text: "Ribosome" },
+          { id: "B", text: "Phagosome" },
+          { id: "C", text: "Lysosome" },
+          { id: "D", text: "Nucleosome" }
+        ],
+        correctAnswer: "B",
+        explanation: "When a phagocyte engulfs a particle, it is enclosed in a membrane-bound vesicle called a phagosome, which then fuses with a lysosome for digestion."
+      },
+      {
+        id: 24,
+        text: "Which of the following increases the rate of osmosis?",
+        options: [
+          { id: "A", text: "Decreasing the temperature" },
+          { id: "B", text: "Increasing the concentration difference between the two solutions" },
+          { id: "C", text: "Using a thicker membrane" },
+          { id: "D", text: "Reducing the surface area of the membrane" }
+        ],
+        correctAnswer: "B",
+        explanation: "A greater concentration difference (steeper gradient) increases the rate of osmosis as more water molecules move to equalise the concentration."
+      },
+      {
+        id: 25,
+        text: "Receptor-mediated endocytosis involves",
+        options: [
+          { id: "A", text: "Random uptake of fluid" },
+          { id: "B", text: "Specific binding of molecules to receptors on the cell surface before internalisation" },
+          { id: "C", text: "Release of waste products" },
+          { id: "D", text: "Passive movement of ions" }
+        ],
+        correctAnswer: "B",
+        explanation: "Receptor-mediated endocytosis is a highly specific form of endocytosis where molecules bind to specific receptors on the cell surface, triggering internalisation."
+      },
+      {
+        id: 26,
+        text: "The wilting of a plant is primarily caused by",
+        options: [
+          { id: "A", text: "Excessive water absorption" },
+          { id: "B", text: "Loss of water from cells making them flaccid" },
+          { id: "C", text: "Too much sunlight" },
+          { id: "D", text: "Excess mineral uptake" }
+        ],
+        correctAnswer: "B",
+        explanation: "Wilting occurs when plant cells lose water by osmosis, becoming flaccid. Without turgor pressure, the plant cannot support itself."
+      },
+      {
+        id: 27,
+        text: "Which organelle is responsible for digesting the contents of a phagosome?",
+        options: [
+          { id: "A", text: "Mitochondrion" },
+          { id: "B", text: "Ribosome" },
+          { id: "C", text: "Lysosome" },
+          { id: "D", text: "Golgi apparatus" }
+        ],
+        correctAnswer: "C",
+        explanation: "Lysosomes contain hydrolytic enzymes that digest the contents of phagosomes after the phagosome-lysosome fusion."
+      },
+      {
+        id: 28,
+        text: "Diffusion of oxygen from the alveoli into the blood is an example of",
+        options: [
+          { id: "A", text: "Active transport" },
+          { id: "B", text: "Osmosis" },
+          { id: "C", text: "Simple diffusion" },
+          { id: "D", text: "Endocytosis" }
+        ],
+        correctAnswer: "C",
+        explanation: "Oxygen moves from the alveoli (high concentration) into the blood (low concentration) by simple diffusion down the concentration gradient."
+      },
+      {
+        id: 29,
+        text: "A solution with the same concentration as the cell contents is described as",
+        options: [
+          { id: "A", text: "Hypertonic" },
+          { id: "B", text: "Hypotonic" },
+          { id: "C", text: "Isotonic" },
+          { id: "D", text: "Saturated" }
+        ],
+        correctAnswer: "C",
+        explanation: "An isotonic solution has the same solute concentration as the cell, resulting in no net movement of water."
+      },
+      {
+        id: 30,
+        text: "Neurotransmitters are released from nerve endings into the synaptic cleft by",
+        options: [
+          { id: "A", text: "Diffusion" },
+          { id: "B", text: "Osmosis" },
+          { id: "C", text: "Exocytosis" },
+          { id: "D", text: "Phagocytosis" }
+        ],
+        correctAnswer: "C",
+        explanation: "Neurotransmitter-containing vesicles fuse with the presynaptic membrane and release their contents into the synapse by exocytosis."
+      },
+      {
+        id: 31,
+        text: "The main difference between pinocytosis and phagocytosis is",
+        options: [
+          { id: "A", text: "Pinocytosis requires ATP but phagocytosis does not" },
+          { id: "B", text: "Phagocytosis takes in solids while pinocytosis takes in liquids" },
+          { id: "C", text: "Only pinocytosis involves the cell membrane" },
+          { id: "D", text: "Phagocytosis occurs in plant cells only" }
+        ],
+        correctAnswer: "B",
+        explanation: "Phagocytosis ('cell eating') engulfs large solid particles, while pinocytosis ('cell drinking') takes in small liquid droplets."
+      },
+      {
+        id: 32,
+        text: "Osmotic pressure is the pressure required to",
+        options: [
+          { id: "A", text: "Push solute across a membrane" },
+          { id: "B", text: "Prevent the net movement of water across a semi-permeable membrane" },
+          { id: "C", text: "Break the cell wall" },
+          { id: "D", text: "Speed up diffusion" }
+        ],
+        correctAnswer: "B",
+        explanation: "Osmotic pressure is the minimum pressure needed to prevent water from flowing through a semi-permeable membrane by osmosis."
+      },
+      {
+        id: 33,
+        text: "Which of the following is a passive transport process?",
+        options: [
+          { id: "A", text: "Phagocytosis" },
+          { id: "B", text: "Exocytosis" },
+          { id: "C", text: "Osmosis" },
+          { id: "D", text: "Sodium-potassium pump" }
+        ],
+        correctAnswer: "C",
+        explanation: "Osmosis is a passive process — it does not require energy. Phagocytosis, exocytosis, and the sodium-potassium pump are all active processes."
+      },
+      {
+        id: 34,
+        text: "Amoeba feeds by the process of",
+        options: [
+          { id: "A", text: "Pinocytosis" },
+          { id: "B", text: "Phagocytosis" },
+          { id: "C", text: "Osmosis" },
+          { id: "D", text: "Exocytosis" }
+        ],
+        correctAnswer: "B",
+        explanation: "Amoeba uses phagocytosis to engulf food particles by extending pseudopodia around them."
+      },
+      {
+        id: 35,
+        text: "The wall pressure that counteracts turgor pressure in plant cells is called",
+        options: [
+          { id: "A", text: "Osmotic pressure" },
+          { id: "B", text: "Hydrostatic pressure" },
+          { id: "C", text: "Wall pressure" },
+          { id: "D", text: "Root pressure" }
+        ],
+        correctAnswer: "C",
+        explanation: "Wall pressure is the equal and opposite pressure exerted by the rigid cell wall against the turgor pressure of the expanding cell contents."
+      },
+      {
+        id: 36,
+        text: "During exocytosis, which cellular structure packages substances for secretion?",
+        options: [
+          { id: "A", text: "Nucleus" },
+          { id: "B", text: "Golgi apparatus" },
+          { id: "C", text: "Ribosome" },
+          { id: "D", text: "Centriole" }
+        ],
+        correctAnswer: "B",
+        explanation: "The Golgi apparatus modifies, packages, and sorts proteins and lipids into vesicles for secretion by exocytosis."
+      },
+      {
+        id: 37,
+        text: "The perfume spreading across a room is an example of",
+        options: [
+          { id: "A", text: "Osmosis" },
+          { id: "B", text: "Active transport" },
+          { id: "C", text: "Diffusion" },
+          { id: "D", text: "Endocytosis" }
+        ],
+        correctAnswer: "C",
+        explanation: "Perfume molecules spread from a region of high concentration to low concentration by diffusion through the air."
+      },
+      {
+        id: 38,
+        text: "Which of the following correctly pairs the process with its type?",
+        options: [
+          { id: "A", text: "Osmosis — active transport" },
+          { id: "B", text: "Phagocytosis — passive transport" },
+          { id: "C", text: "Exocytosis — active transport" },
+          { id: "D", text: "Diffusion — active transport" }
+        ],
+        correctAnswer: "C",
+        explanation: "Exocytosis requires energy (ATP) and is therefore an active transport process. Osmosis and diffusion are passive."
+      },
+      {
+        id: 39,
+        text: "De-plasmolysis occurs when a plasmolysed cell is placed in",
+        options: [
+          { id: "A", text: "A hypertonic solution" },
+          { id: "B", text: "A hypotonic solution" },
+          { id: "C", text: "An isotonic solution" },
+          { id: "D", text: "A saturated salt solution" }
+        ],
+        correctAnswer: "B",
+        explanation: "In a hypotonic solution, water re-enters the plasmolysed cell by osmosis, and the cell membrane moves back towards the cell wall (de-plasmolysis)."
+      },
+      {
+        id: 40,
+        text: "Which of the following statements about endocytosis is FALSE?",
+        options: [
+          { id: "A", text: "It is an active process requiring energy" },
+          { id: "B", text: "It involves the cell membrane forming vesicles" },
+          { id: "C", text: "It occurs commonly in plant cells" },
+          { id: "D", text: "It includes both phagocytosis and pinocytosis" }
+        ],
+        correctAnswer: "C",
+        explanation: "Endocytosis is rare in plant cells because the rigid cell wall prevents the membrane from folding inward easily. It is much more common in animal cells."
+      }
+    ]
   }
 ];
