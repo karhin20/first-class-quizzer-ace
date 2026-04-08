@@ -6271,7 +6271,7 @@ export const subjects: Subject[] = [
     description: "Mole calculations, molar mass, Avogadro's number, molarity, dilution and stoichiometry",
     icon: "beaker",
     timerType: "global",
-    totalTimeSeconds: 2400,
+    totalTimeSeconds: 5400,
     questions: [
       {
         id: 1,
