@@ -7362,5 +7362,493 @@ export const subjects: Subject[] = [
         explanation: "Endocytosis is rare in plant cells because the rigid cell wall prevents the membrane from folding inward easily. It is much more common in animal cells."
       }
     ]
+  },
+  {
+    id: "maths-percentages",
+    name: "Maths: Percentages",
+    description: "Percentage error, percentage change, percentage decrease & increase, and discount calculations",
+    icon: "calculator",
+    questions: [
+      {
+        id: 1,
+        text: "A boy measured the length of a rope as 12.5 m instead of the actual length of 12.0 m. What is the percentage error?",
+        options: [
+          { id: "A", text: "4.17%" },
+          { id: "B", text: "5.00%" },
+          { id: "C", text: "3.85%" },
+          { id: "D", text: "2.50%" }
+        ],
+        correctAnswer: "A",
+        explanation: "Percentage error = (|12.5 − 12.0| / 12.0) × 100 = (0.5/12.0) × 100 = 4.17%."
+      },
+      {
+        id: 2,
+        text: "The population of a town increased from 25,000 to 30,000. What is the percentage increase?",
+        options: [
+          { id: "A", text: "25%" },
+          { id: "B", text: "20%" },
+          { id: "C", text: "16.67%" },
+          { id: "D", text: "15%" }
+        ],
+        correctAnswer: "B",
+        explanation: "Percentage increase = ((30,000 − 25,000) / 25,000) × 100 = (5,000/25,000) × 100 = 20%."
+      },
+      {
+        id: 3,
+        text: "A trader bought goods for GH₵200 and sold them for GH₵170. What is the percentage decrease in price?",
+        options: [
+          { id: "A", text: "17.65%" },
+          { id: "B", text: "15%" },
+          { id: "C", text: "30%" },
+          { id: "D", text: "85%" }
+        ],
+        correctAnswer: "B",
+        explanation: "Percentage decrease = ((200 − 170) / 200) × 100 = (30/200) × 100 = 15%."
+      },
+      {
+        id: 4,
+        text: "A shop gives a 15% discount on an article marked GH₵800. What is the selling price?",
+        options: [
+          { id: "A", text: "GH₵680" },
+          { id: "B", text: "GH₵700" },
+          { id: "C", text: "GH₵720" },
+          { id: "D", text: "GH₵650" }
+        ],
+        correctAnswer: "A",
+        explanation: "Discount = 15% of 800 = GH₵120. Selling price = 800 − 120 = GH₵680."
+      },
+      {
+        id: 5,
+        text: "The actual weight of a bag of rice is 50 kg but it was measured as 48 kg. Calculate the percentage error.",
+        options: [
+          { id: "A", text: "2%" },
+          { id: "B", text: "4%" },
+          { id: "C", text: "4.17%" },
+          { id: "D", text: "3.85%" }
+        ],
+        correctAnswer: "B",
+        explanation: "Percentage error = (|50 − 48| / 50) × 100 = (2/50) × 100 = 4%."
+      },
+      {
+        id: 6,
+        text: "A student scored 45 marks in a test but should have scored 50 marks. What is the percentage error?",
+        options: [
+          { id: "A", text: "10%" },
+          { id: "B", text: "11.11%" },
+          { id: "C", text: "5%" },
+          { id: "D", text: "9.09%" }
+        ],
+        correctAnswer: "A",
+        explanation: "Percentage error = (|50 − 45| / 50) × 100 = (5/50) × 100 = 10%."
+      },
+      {
+        id: 7,
+        text: "The price of a book increased from GH₵24 to GH₵30. Find the percentage increase.",
+        options: [
+          { id: "A", text: "20%" },
+          { id: "B", text: "25%" },
+          { id: "C", text: "30%" },
+          { id: "D", text: "80%" }
+        ],
+        correctAnswer: "B",
+        explanation: "Percentage increase = ((30 − 24) / 24) × 100 = (6/24) × 100 = 25%."
+      },
+      {
+        id: 8,
+        text: "A car was bought for GH₵15,000 and sold for GH₵12,000. What is the percentage loss?",
+        options: [
+          { id: "A", text: "25%" },
+          { id: "B", text: "20%" },
+          { id: "C", text: "15%" },
+          { id: "D", text: "80%" }
+        ],
+        correctAnswer: "B",
+        explanation: "Percentage loss = ((15,000 − 12,000) / 15,000) × 100 = (3,000/15,000) × 100 = 20%."
+      },
+      {
+        id: 9,
+        text: "An article costs GH₵500 and a discount of 12% is given. How much does the buyer pay?",
+        options: [
+          { id: "A", text: "GH₵460" },
+          { id: "B", text: "GH₵440" },
+          { id: "C", text: "GH₵450" },
+          { id: "D", text: "GH₵480" }
+        ],
+        correctAnswer: "B",
+        explanation: "Discount = 12% of 500 = GH₵60. Buyer pays 500 − 60 = GH₵440."
+      },
+      {
+        id: 10,
+        text: "After a 20% increase, the new price of a shirt is GH₵60. What was the original price?",
+        options: [
+          { id: "A", text: "GH₵48" },
+          { id: "B", text: "GH₵50" },
+          { id: "C", text: "GH₵52" },
+          { id: "D", text: "GH₵55" }
+        ],
+        correctAnswer: "B",
+        explanation: "Let original = x. Then 1.2x = 60, so x = 60/1.2 = GH₵50."
+      },
+      {
+        id: 11,
+        text: "The measured value of a quantity is 9.8 and the true value is 10.0. Find the percentage error.",
+        options: [
+          { id: "A", text: "0.2%" },
+          { id: "B", text: "2%" },
+          { id: "C", text: "20%" },
+          { id: "D", text: "0.02%" }
+        ],
+        correctAnswer: "B",
+        explanation: "Percentage error = (|10.0 − 9.8| / 10.0) × 100 = (0.2/10) × 100 = 2%."
+      },
+      {
+        id: 12,
+        text: "A man's salary decreased from GH₵4,000 to GH₵3,200. What is the percentage decrease?",
+        options: [
+          { id: "A", text: "20%" },
+          { id: "B", text: "25%" },
+          { id: "C", text: "15%" },
+          { id: "D", text: "80%" }
+        ],
+        correctAnswer: "A",
+        explanation: "Percentage decrease = ((4,000 − 3,200) / 4,000) × 100 = (800/4,000) × 100 = 20%."
+      },
+      {
+        id: 13,
+        text: "A television set marked GH₵2,400 is sold at a discount of 10% followed by a further discount of 5%. What is the final selling price?",
+        options: [
+          { id: "A", text: "GH₵2,040" },
+          { id: "B", text: "GH₵2,052" },
+          { id: "C", text: "GH₵2,160" },
+          { id: "D", text: "GH₵2,100" }
+        ],
+        correctAnswer: "B",
+        explanation: "After 10% discount: 2,400 × 0.90 = 2,160. After further 5%: 2,160 × 0.95 = GH₵2,052."
+      },
+      {
+        id: 14,
+        text: "If the value of a house appreciated by 30% to become GH₵260,000, what was the original value?",
+        options: [
+          { id: "A", text: "GH₵180,000" },
+          { id: "B", text: "GH₵200,000" },
+          { id: "C", text: "GH₵220,000" },
+          { id: "D", text: "GH₵190,000" }
+        ],
+        correctAnswer: "B",
+        explanation: "Let original = x. Then 1.3x = 260,000, so x = 260,000/1.3 = GH₵200,000."
+      },
+      {
+        id: 15,
+        text: "A student measured the height of a building as 15.4 m. The actual height is 16.0 m. What is the percentage error?",
+        options: [
+          { id: "A", text: "3.75%" },
+          { id: "B", text: "3.90%" },
+          { id: "C", text: "6.00%" },
+          { id: "D", text: "4.00%" }
+        ],
+        correctAnswer: "A",
+        explanation: "Percentage error = (|16.0 − 15.4| / 16.0) × 100 = (0.6/16) × 100 = 3.75%."
+      },
+      {
+        id: 16,
+        text: "The enrolment of a school increased from 1,200 to 1,500. Find the percentage increase in enrolment.",
+        options: [
+          { id: "A", text: "20%" },
+          { id: "B", text: "30%" },
+          { id: "C", text: "25%" },
+          { id: "D", text: "80%" }
+        ],
+        correctAnswer: "C",
+        explanation: "Percentage increase = ((1,500 − 1,200) / 1,200) × 100 = (300/1,200) × 100 = 25%."
+      },
+      {
+        id: 17,
+        text: "A dealer buys a bicycle for GH₵350 and sells it at a 40% profit. What is the selling price?",
+        options: [
+          { id: "A", text: "GH₵470" },
+          { id: "B", text: "GH₵490" },
+          { id: "C", text: "GH₵500" },
+          { id: "D", text: "GH₵420" }
+        ],
+        correctAnswer: "B",
+        explanation: "Selling price = 350 + (40% of 350) = 350 + 140 = GH₵490."
+      },
+      {
+        id: 18,
+        text: "After a discount of 25%, a dress costs GH₵150. What was the original price?",
+        options: [
+          { id: "A", text: "GH₵175" },
+          { id: "B", text: "GH₵180" },
+          { id: "C", text: "GH₵200" },
+          { id: "D", text: "GH₵225" }
+        ],
+        correctAnswer: "C",
+        explanation: "Let original = x. 0.75x = 150, so x = 150/0.75 = GH₵200."
+      },
+      {
+        id: 19,
+        text: "The weight of a packet of sugar decreased from 2 kg to 1.8 kg. What is the percentage decrease?",
+        options: [
+          { id: "A", text: "20%" },
+          { id: "B", text: "10%" },
+          { id: "C", text: "11.11%" },
+          { id: "D", text: "0.2%" }
+        ],
+        correctAnswer: "B",
+        explanation: "Percentage decrease = ((2 − 1.8) / 2) × 100 = (0.2/2) × 100 = 10%."
+      },
+      {
+        id: 20,
+        text: "A trader offers two successive discounts of 20% and 10% on goods marked GH₵1,000. What is the final price?",
+        options: [
+          { id: "A", text: "GH₵700" },
+          { id: "B", text: "GH₵720" },
+          { id: "C", text: "GH₵750" },
+          { id: "D", text: "GH₵680" }
+        ],
+        correctAnswer: "B",
+        explanation: "After 20%: 1,000 × 0.80 = 800. After 10%: 800 × 0.90 = GH₵720."
+      },
+      {
+        id: 21,
+        text: "The true value of g is 10 m/s² but a student obtained 9.5 m/s². Calculate the percentage error.",
+        options: [
+          { id: "A", text: "5.26%" },
+          { id: "B", text: "5%" },
+          { id: "C", text: "0.5%" },
+          { id: "D", text: "50%" }
+        ],
+        correctAnswer: "B",
+        explanation: "Percentage error = (|10 − 9.5| / 10) × 100 = (0.5/10) × 100 = 5%."
+      },
+      {
+        id: 22,
+        text: "A commodity selling for GH₵450 is increased by 20%. What is the new price?",
+        options: [
+          { id: "A", text: "GH₵500" },
+          { id: "B", text: "GH₵540" },
+          { id: "C", text: "GH₵560" },
+          { id: "D", text: "GH₵520" }
+        ],
+        correctAnswer: "B",
+        explanation: "New price = 450 + (20% of 450) = 450 + 90 = GH₵540."
+      },
+      {
+        id: 23,
+        text: "After a 10% decrease, the value of a share became GH₵90. What was the original value?",
+        options: [
+          { id: "A", text: "GH₵99" },
+          { id: "B", text: "GH₵100" },
+          { id: "C", text: "GH₵110" },
+          { id: "D", text: "GH₵95" }
+        ],
+        correctAnswer: "B",
+        explanation: "Let original = x. 0.9x = 90, so x = 90/0.9 = GH₵100."
+      },
+      {
+        id: 24,
+        text: "A shopkeeper marks an item at GH₵600 and offers a 5% discount for cash. How much does a cash buyer pay?",
+        options: [
+          { id: "A", text: "GH₵570" },
+          { id: "B", text: "GH₵580" },
+          { id: "C", text: "GH₵550" },
+          { id: "D", text: "GH₵595" }
+        ],
+        correctAnswer: "A",
+        explanation: "Discount = 5% of 600 = 30. Cash price = 600 − 30 = GH₵570."
+      },
+      {
+        id: 25,
+        text: "The length of a metal rod was recorded as 3.05 m but the correct length is 3.00 m. What is the percentage error?",
+        options: [
+          { id: "A", text: "1.64%" },
+          { id: "B", text: "1.67%" },
+          { id: "C", text: "5.00%" },
+          { id: "D", text: "0.05%" }
+        ],
+        correctAnswer: "B",
+        explanation: "Percentage error = (|3.05 − 3.00| / 3.00) × 100 = (0.05/3) × 100 ≈ 1.67%."
+      },
+      {
+        id: 26,
+        text: "The number of students in a class decreased from 80 to 60. What is the percentage decrease?",
+        options: [
+          { id: "A", text: "20%" },
+          { id: "B", text: "30%" },
+          { id: "C", text: "25%" },
+          { id: "D", text: "33.33%" }
+        ],
+        correctAnswer: "C",
+        explanation: "Percentage decrease = ((80 − 60) / 80) × 100 = (20/80) × 100 = 25%."
+      },
+      {
+        id: 27,
+        text: "A man invested GH₵5,000 and received GH₵6,500 after one year. What is his percentage profit?",
+        options: [
+          { id: "A", text: "23.08%" },
+          { id: "B", text: "25%" },
+          { id: "C", text: "30%" },
+          { id: "D", text: "35%" }
+        ],
+        correctAnswer: "C",
+        explanation: "Percentage profit = ((6,500 − 5,000) / 5,000) × 100 = (1,500/5,000) × 100 = 30%."
+      },
+      {
+        id: 28,
+        text: "A pair of shoes is marked at GH₵320 with a trade discount of 15%. What does a retailer pay?",
+        options: [
+          { id: "A", text: "GH₵260" },
+          { id: "B", text: "GH₵268" },
+          { id: "C", text: "GH₵272" },
+          { id: "D", text: "GH₵280" }
+        ],
+        correctAnswer: "C",
+        explanation: "Discount = 15% of 320 = 48. Retailer pays = 320 − 48 = GH₵272."
+      },
+      {
+        id: 29,
+        text: "A farmer harvested 400 tubers of yam last year and 520 this year. What is the percentage increase?",
+        options: [
+          { id: "A", text: "23.08%" },
+          { id: "B", text: "25%" },
+          { id: "C", text: "30%" },
+          { id: "D", text: "120%" }
+        ],
+        correctAnswer: "C",
+        explanation: "Percentage increase = ((520 − 400) / 400) × 100 = (120/400) × 100 = 30%."
+      },
+      {
+        id: 30,
+        text: "An item originally priced at GH₵180 is reduced by 33⅓%. What is the new price?",
+        options: [
+          { id: "A", text: "GH₵100" },
+          { id: "B", text: "GH₵120" },
+          { id: "C", text: "GH₵140" },
+          { id: "D", text: "GH₵60" }
+        ],
+        correctAnswer: "B",
+        explanation: "33⅓% of 180 = 60. New price = 180 − 60 = GH₵120."
+      },
+      {
+        id: 31,
+        text: "The area of a circle was calculated as 78.5 cm² instead of the correct value of 80 cm². Calculate the percentage error.",
+        options: [
+          { id: "A", text: "1.88%" },
+          { id: "B", text: "1.91%" },
+          { id: "C", text: "2.00%" },
+          { id: "D", text: "1.50%" }
+        ],
+        correctAnswer: "A",
+        explanation: "Percentage error = (|80 − 78.5| / 80) × 100 = (1.5/80) × 100 = 1.875% ≈ 1.88%."
+      },
+      {
+        id: 32,
+        text: "A company's profit fell from GH₵50,000 to GH₵35,000. What is the percentage decrease?",
+        options: [
+          { id: "A", text: "42.86%" },
+          { id: "B", text: "25%" },
+          { id: "C", text: "30%" },
+          { id: "D", text: "15%" }
+        ],
+        correctAnswer: "C",
+        explanation: "Percentage decrease = ((50,000 − 35,000) / 50,000) × 100 = (15,000/50,000) × 100 = 30%."
+      },
+      {
+        id: 33,
+        text: "A phone is sold at GH₵1,200 after a 20% increase. What was its original price?",
+        options: [
+          { id: "A", text: "GH₵960" },
+          { id: "B", text: "GH₵1,000" },
+          { id: "C", text: "GH₵980" },
+          { id: "D", text: "GH₵1,100" }
+        ],
+        correctAnswer: "B",
+        explanation: "Let original = x. 1.2x = 1,200, so x = 1,200/1.2 = GH₵1,000."
+      },
+      {
+        id: 34,
+        text: "A store offers a flat discount of GH₵75 on a product worth GH₵500. What percentage discount is this?",
+        options: [
+          { id: "A", text: "12%" },
+          { id: "B", text: "12.5%" },
+          { id: "C", text: "15%" },
+          { id: "D", text: "10%" }
+        ],
+        correctAnswer: "C",
+        explanation: "Percentage discount = (75/500) × 100 = 15%."
+      },
+      {
+        id: 35,
+        text: "If 250 out of 1,000 workers in a factory were laid off, what is the percentage decrease in workforce?",
+        options: [
+          { id: "A", text: "20%" },
+          { id: "B", text: "30%" },
+          { id: "C", text: "25%" },
+          { id: "D", text: "75%" }
+        ],
+        correctAnswer: "C",
+        explanation: "Percentage decrease = (250/1,000) × 100 = 25%."
+      },
+      {
+        id: 36,
+        text: "A watch was bought for GH₵250 and sold at a 12% loss. What was the selling price?",
+        options: [
+          { id: "A", text: "GH₵210" },
+          { id: "B", text: "GH₵220" },
+          { id: "C", text: "GH₵230" },
+          { id: "D", text: "GH₵200" }
+        ],
+        correctAnswer: "B",
+        explanation: "Loss = 12% of 250 = 30. Selling price = 250 − 30 = GH₵220."
+      },
+      {
+        id: 37,
+        text: "An article marked at GH₵4,000 is offered with successive discounts of 10%, 10%, and 5%. What is the net selling price?",
+        options: [
+          { id: "A", text: "GH₵3,078" },
+          { id: "B", text: "GH₵3,000" },
+          { id: "C", text: "GH₵3,240" },
+          { id: "D", text: "GH₵3,100" }
+        ],
+        correctAnswer: "A",
+        explanation: "After 10%: 4,000 × 0.9 = 3,600. After 10%: 3,600 × 0.9 = 3,240. After 5%: 3,240 × 0.95 = GH₵3,078."
+      },
+      {
+        id: 38,
+        text: "The temperature of a liquid was measured as 98°C instead of 100°C. What is the percentage error?",
+        options: [
+          { id: "A", text: "1%" },
+          { id: "B", text: "2%" },
+          { id: "C", text: "2.04%" },
+          { id: "D", text: "0.98%" }
+        ],
+        correctAnswer: "B",
+        explanation: "Percentage error = (|100 − 98| / 100) × 100 = (2/100) × 100 = 2%."
+      },
+      {
+        id: 39,
+        text: "A trader sells an article for GH₵840 making a profit of 40%. What was the cost price?",
+        options: [
+          { id: "A", text: "GH₵500" },
+          { id: "B", text: "GH₵550" },
+          { id: "C", text: "GH₵600" },
+          { id: "D", text: "GH₵650" }
+        ],
+        correctAnswer: "C",
+        explanation: "Let cost = x. 1.4x = 840, so x = 840/1.4 = GH₵600."
+      },
+      {
+        id: 40,
+        text: "A laptop originally priced at GH₵3,500 is now sold for GH₵2,800 during a sale. What is the percentage discount?",
+        options: [
+          { id: "A", text: "15%" },
+          { id: "B", text: "20%" },
+          { id: "C", text: "25%" },
+          { id: "D", text: "30%" }
+        ],
+        correctAnswer: "B",
+        explanation: "Discount = 3,500 − 2,800 = 700. Percentage discount = (700/3,500) × 100 = 20%."
+      }
+    ]
   }
 ];
