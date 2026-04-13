@@ -7368,6 +7368,8 @@ export const subjects: Subject[] = [
     name: "Maths: Percentages",
     description: "Percentage error, percentage change, percentage decrease & increase, and discount calculations",
     icon: "calculator",
+    timerType: "global",
+    totalTimeSeconds: 3600,
     questions: [
       {
         id: 1,
